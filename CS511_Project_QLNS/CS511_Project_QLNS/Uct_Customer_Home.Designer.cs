@@ -56,7 +56,7 @@
             this.customPanel1.Radius = 5;
             this.customPanel1.Size = new System.Drawing.Size(425, 45);
             this.customPanel1.TabIndex = 0;
-            this.customPanel1.Thickness = 1F;
+            this.customPanel1.Thickness = 2F;
             // 
             // txt_search
             // 
