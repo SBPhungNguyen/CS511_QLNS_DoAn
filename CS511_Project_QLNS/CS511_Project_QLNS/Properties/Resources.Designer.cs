@@ -143,6 +143,26 @@ namespace CS511_Project_QLNS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_search {
+            get {
+                object obj = ResourceManager.GetObject("icon_search", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_search_green {
+            get {
+                object obj = ResourceManager.GetObject("icon_search_green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Search_Image3 {
             get {
                 object obj = ResourceManager.GetObject("Search_Image3", resourceCulture);

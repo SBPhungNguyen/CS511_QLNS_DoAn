@@ -10,3 +10,4 @@ D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_
 D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_Project_QLNS.exe
 D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_Project_QLNS.pdb
 D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_Project_QLNS.Form1.resources
+D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_Project_QLNS.Uct_Customer_Home.resources
