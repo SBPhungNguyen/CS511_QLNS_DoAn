@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace CS511_Project_QLNS
 {
-    public partial class Uct_Customer_Cart : UserControl
+    public partial class Uct_Cus_Product : UserControl
     {
-        public Uct_Customer_Cart()
+        public Uct_Cus_Product()
         {
             InitializeComponent();
-            fpnl_cart.AutoScroll = true;
-            fpnl_cart.WrapContents = true;
         }
     }
 }

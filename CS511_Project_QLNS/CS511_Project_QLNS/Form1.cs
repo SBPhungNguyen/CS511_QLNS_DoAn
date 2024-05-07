@@ -16,7 +16,11 @@ namespace CS511_Project_QLNS
         {
             InitializeComponent();
 
-            Uct_Customer_Home uct = new Uct_Customer_Home();
+            //Uct_Customer_Home uct = new Uct_Customer_Home();
+            //uct.Location = new System.Drawing.Point(235, 105);
+            //this.Controls.Add(uct);
+
+            Uct_Customer_Cart uct = new Uct_Customer_Cart(); 
             uct.Location = new System.Drawing.Point(235, 105);
             this.Controls.Add(uct);
         }

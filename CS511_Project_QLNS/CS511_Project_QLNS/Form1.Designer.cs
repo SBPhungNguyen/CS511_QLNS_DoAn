@@ -70,6 +70,7 @@
             // 
             // customPictureBox1
             // 
+            this.customPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.customPictureBox1.Border = 1;
             this.customPictureBox1.BorderCap = System.Drawing.Drawing2D.DashCap.Flat;
             this.customPictureBox1.BorderStyle1 = System.Drawing.Drawing2D.DashStyle.DashDotDot;
