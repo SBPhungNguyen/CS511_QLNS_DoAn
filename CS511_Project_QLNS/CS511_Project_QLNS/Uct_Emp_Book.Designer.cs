@@ -1,0 +1,144 @@
+﻿namespace CS511_Project_QLNS
+{
+    partial class Uct_Emp_Book
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_price = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_name = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ptb_cart = new System.Windows.Forms.PictureBox();
+            this.ptb_img = new System.Windows.Forms.PictureBox();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_cart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.lbl_price);
+            this.panel2.Location = new System.Drawing.Point(104, 112);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(160, 32);
+            this.panel2.TabIndex = 11;
+            // 
+            // lbl_price
+            // 
+            this.lbl_price.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_price.ForeColor = System.Drawing.Color.Red;
+            this.lbl_price.Location = new System.Drawing.Point(0, 0);
+            this.lbl_price.Name = "lbl_price";
+            this.lbl_price.Size = new System.Drawing.Size(160, 32);
+            this.lbl_price.TabIndex = 1;
+            this.lbl_price.Text = "label2";
+            this.lbl_price.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lbl_name);
+            this.panel1.Location = new System.Drawing.Point(104, 52);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(160, 53);
+            this.panel1.TabIndex = 10;
+            // 
+            // lbl_name
+            // 
+            this.lbl_name.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.Location = new System.Drawing.Point(0, 0);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(160, 53);
+            this.lbl_name.TabIndex = 0;
+            this.lbl_name.Text = "label1";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_pencil;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(214, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // ptb_cart
+            // 
+            this.ptb_cart.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_bin__2_;
+            this.ptb_cart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_cart.Location = new System.Drawing.Point(248, 7);
+            this.ptb_cart.Name = "ptb_cart";
+            this.ptb_cart.Size = new System.Drawing.Size(25, 25);
+            this.ptb_cart.TabIndex = 12;
+            this.ptb_cart.TabStop = false;
+            // 
+            // ptb_img
+            // 
+            this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_img.Location = new System.Drawing.Point(8, 49);
+            this.ptb_img.Name = "ptb_img";
+            this.ptb_img.Size = new System.Drawing.Size(80, 95);
+            this.ptb_img.TabIndex = 9;
+            this.ptb_img.TabStop = false;
+            // 
+            // Uct_Emp_Book
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(234)))));
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.ptb_cart);
+            this.Controls.Add(this.ptb_img);
+            this.Margin = new System.Windows.Forms.Padding(0, 10, 35, 5);
+            this.Name = "Uct_Emp_Book";
+            this.Size = new System.Drawing.Size(280, 150);
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_cart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lbl_price;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbl_name;
+        private System.Windows.Forms.PictureBox ptb_cart;
+        private System.Windows.Forms.PictureBox ptb_img;
+        private System.Windows.Forms.PictureBox pictureBox1;
+    }
+}

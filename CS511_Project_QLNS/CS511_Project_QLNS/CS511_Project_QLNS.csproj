@@ -132,6 +132,12 @@
     <Compile Include="Uct_Employee_Home.Designer.cs">
       <DependentUpon>Uct_Employee_Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uct_Emp_Book.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Emp_Book.Designer.cs">
+      <DependentUpon>Uct_Emp_Book.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uct_textbox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_Employee_Home.resx">
       <DependentUpon>Uct_Employee_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Emp_Book.resx">
+      <DependentUpon>Uct_Emp_Book.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_textbox.resx">
       <DependentUpon>Uct_textbox.cs</DependentUpon>
@@ -271,6 +280,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_pencil.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

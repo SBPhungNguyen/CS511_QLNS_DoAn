@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace CS511_Project_QLNS
 {
-    public partial class Uct_Employee_Home : UserControl
+    public partial class Uct_Emp_Book : UserControl
     {
-        public Uct_Employee_Home()
+        public Uct_Emp_Book()
         {
             InitializeComponent();
-            fpnl_books.WrapContents = true;
-            fpnl_books.AutoScroll = true;
         }
     }
 }
