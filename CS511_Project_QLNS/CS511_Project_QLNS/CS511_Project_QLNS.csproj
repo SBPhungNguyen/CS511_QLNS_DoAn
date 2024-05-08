@@ -126,6 +126,12 @@
     <Compile Include="Uct_Cus_Receipt.Designer.cs">
       <DependentUpon>Uct_Cus_Receipt.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uct_Employee_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Employee_Home.Designer.cs">
+      <DependentUpon>Uct_Employee_Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uct_textbox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_Cus_Receipt.resx">
       <DependentUpon>Uct_Cus_Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Employee_Home.resx">
+      <DependentUpon>Uct_Employee_Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_textbox.resx">
       <DependentUpon>Uct_textbox.cs</DependentUpon>

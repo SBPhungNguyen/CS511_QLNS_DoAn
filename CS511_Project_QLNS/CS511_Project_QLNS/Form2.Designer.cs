@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_title = new System.Windows.Forms.Label();
             this.btn_exit = new System.Windows.Forms.PictureBox();
+            this.lbl_title = new System.Windows.Forms.Label();
             this.ptb_em_pic = new CS511_Project_QLNS.View.CustomPictureBox();
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
             this.button4 = new System.Windows.Forms.Button();
@@ -58,6 +58,16 @@
             this.panel1.Size = new System.Drawing.Size(1300, 40);
             this.panel1.TabIndex = 9;
             // 
+            // btn_exit
+            // 
+            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_exit.Location = new System.Drawing.Point(1263, 5);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.TabIndex = 18;
+            this.btn_exit.TabStop = false;
+            // 
             // lbl_title
             // 
             this.lbl_title.AutoSize = true;
@@ -68,16 +78,6 @@
             this.lbl_title.Size = new System.Drawing.Size(116, 40);
             this.lbl_title.TabIndex = 12;
             this.lbl_title.Text = "HOME";
-            // 
-            // btn_exit
-            // 
-            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
-            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_exit.Location = new System.Drawing.Point(1263, 5);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(30, 30);
-            this.btn_exit.TabIndex = 18;
-            this.btn_exit.TabStop = false;
             // 
             // ptb_em_pic
             // 
@@ -158,7 +158,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(8, 170);
+            this.button1.Location = new System.Drawing.Point(7, 170);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(260, 63);
             this.button1.TabIndex = 11;
