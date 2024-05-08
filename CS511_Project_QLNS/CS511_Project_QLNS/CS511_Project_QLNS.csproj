@@ -150,11 +150,23 @@
     <Compile Include="Uct_Employee_Home.Designer.cs">
       <DependentUpon>Uct_Employee_Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uct_Employee_Import.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Employee_Import.Designer.cs">
+      <DependentUpon>Uct_Employee_Import.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uct_Emp_Book.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Uct_Emp_Book.Designer.cs">
       <DependentUpon>Uct_Emp_Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uct_Emp_Import.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Emp_Import.Designer.cs">
+      <DependentUpon>Uct_Emp_Import.cs</DependentUpon>
     </Compile>
     <Compile Include="Uct_textbox.cs">
       <SubType>UserControl</SubType>
@@ -232,8 +244,14 @@
     <EmbeddedResource Include="Uct_Employee_Home.resx">
       <DependentUpon>Uct_Employee_Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Employee_Import.resx">
+      <DependentUpon>Uct_Employee_Import.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Uct_Emp_Book.resx">
       <DependentUpon>Uct_Emp_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Emp_Import.resx">
+      <DependentUpon>Uct_Emp_Import.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_textbox.resx">
       <DependentUpon>Uct_textbox.cs</DependentUpon>

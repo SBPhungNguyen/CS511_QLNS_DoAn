@@ -16,7 +16,7 @@ namespace CS511_Project_QLNS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Emp_BookAdd());
+            Application.Run(new Form2());
         }
     }
 }
