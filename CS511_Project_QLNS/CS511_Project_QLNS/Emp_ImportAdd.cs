@@ -15,6 +15,8 @@ namespace CS511_Project_QLNS
         public Emp_ImportAdd()
         {
             InitializeComponent();
+            fpnl_detail.AutoScroll = true;
+            fpnl_detail.WrapContents = true;
         }
     }
 }
