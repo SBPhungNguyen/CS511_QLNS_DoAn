@@ -70,6 +70,12 @@
     <Compile Include="Emp_BookInfo.Designer.cs">
       <DependentUpon>Emp_BookInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Emp_ImportAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emp_ImportAdd.Designer.cs">
+      <DependentUpon>Emp_ImportAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Emp_BookInfo.resx">
       <DependentUpon>Emp_BookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emp_ImportAdd.resx">
+      <DependentUpon>Emp_ImportAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

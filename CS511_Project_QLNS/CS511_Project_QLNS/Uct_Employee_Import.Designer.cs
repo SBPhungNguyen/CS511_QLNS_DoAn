@@ -37,7 +37,6 @@
             this.customButton1 = new CS511_Project_QLNS.View.CustomButton();
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
             this.txt_search = new CS511_Project_QLNS.Uct_textbox();
-            this.cbb_type = new System.Windows.Forms.ComboBox();
             this.ptb_Search = new System.Windows.Forms.PictureBox();
             this.customPanel2.SuspendLayout();
             this.customPanel1.SuspendLayout();
@@ -132,7 +131,6 @@
             this.customPanel1.BackColor = System.Drawing.Color.White;
             this.customPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(101)))), ((int)(((byte)(69)))));
             this.customPanel1.Controls.Add(this.txt_search);
-            this.customPanel1.Controls.Add(this.cbb_type);
             this.customPanel1.Controls.Add(this.ptb_Search);
             this.customPanel1.Location = new System.Drawing.Point(1, 1);
             this.customPanel1.Name = "customPanel1";
@@ -149,26 +147,16 @@
             this.txt_search.BorderSize = 2;
             this.txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_search.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_search.Location = new System.Drawing.Point(141, 4);
+            this.txt_search.Location = new System.Drawing.Point(18, 4);
             this.txt_search.Margin = new System.Windows.Forms.Padding(4);
             this.txt_search.Multiline = false;
             this.txt_search.Name = "txt_search";
             this.txt_search.Padding = new System.Windows.Forms.Padding(7);
             this.txt_search.PasswordChar = false;
-            this.txt_search.Size = new System.Drawing.Size(229, 35);
+            this.txt_search.Size = new System.Drawing.Size(352, 35);
             this.txt_search.TabIndex = 7;
             this.txt_search.Texts = "";
             this.txt_search.UnderlineStyle = true;
-            // 
-            // cbb_type
-            // 
-            this.cbb_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbb_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbb_type.FormattingEnabled = true;
-            this.cbb_type.Location = new System.Drawing.Point(12, 9);
-            this.cbb_type.Name = "cbb_type";
-            this.cbb_type.Size = new System.Drawing.Size(121, 26);
-            this.cbb_type.TabIndex = 6;
             // 
             // ptb_Search
             // 
@@ -204,7 +192,6 @@
         private View.CustomButton customButton1;
         private View.CustomPanel customPanel1;
         private Uct_textbox txt_search;
-        private System.Windows.Forms.ComboBox cbb_type;
         private System.Windows.Forms.PictureBox ptb_Search;
         private View.CustomPanel customPanel2;
         private System.Windows.Forms.Label label5;
