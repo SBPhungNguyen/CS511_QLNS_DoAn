@@ -39,8 +39,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btn_exit = new System.Windows.Forms.PictureBox();
-            this.ptb_img = new System.Windows.Forms.PictureBox();
             this.txt_des = new CS511_Project_QLNS.Uct_textbox();
             this.txt_author = new CS511_Project_QLNS.Uct_textbox();
             this.txt_im_price = new CS511_Project_QLNS.Uct_textbox();
@@ -49,6 +47,8 @@
             this.btn_update = new CS511_Project_QLNS.View.CustomButton();
             this.btn_cancel = new CS511_Project_QLNS.View.CustomButton();
             this.cbb_type = new System.Windows.Forms.ComboBox();
+            this.btn_exit = new System.Windows.Forms.PictureBox();
+            this.ptb_img = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
@@ -153,24 +153,6 @@
             this.label5.Size = new System.Drawing.Size(71, 22);
             this.label5.TabIndex = 43;
             this.label5.Text = "Genre:";
-            // 
-            // btn_exit
-            // 
-            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
-            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_exit.Location = new System.Drawing.Point(566, 5);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(30, 30);
-            this.btn_exit.TabIndex = 18;
-            this.btn_exit.TabStop = false;
-            // 
-            // ptb_img
-            // 
-            this.ptb_img.Location = new System.Drawing.Point(208, 103);
-            this.ptb_img.Name = "ptb_img";
-            this.ptb_img.Size = new System.Drawing.Size(188, 241);
-            this.ptb_img.TabIndex = 39;
-            this.ptb_img.TabStop = false;
             // 
             // txt_des
             // 
@@ -314,6 +296,25 @@
             this.cbb_type.Name = "cbb_type";
             this.cbb_type.Size = new System.Drawing.Size(282, 28);
             this.cbb_type.TabIndex = 63;
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_exit.Location = new System.Drawing.Point(566, 5);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.TabIndex = 18;
+            this.btn_exit.TabStop = false;
+            // 
+            // ptb_img
+            // 
+            this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_img.Location = new System.Drawing.Point(208, 103);
+            this.ptb_img.Name = "ptb_img";
+            this.ptb_img.Size = new System.Drawing.Size(188, 241);
+            this.ptb_img.TabIndex = 39;
+            this.ptb_img.TabStop = false;
             // 
             // Emp_BookEdit
             // 

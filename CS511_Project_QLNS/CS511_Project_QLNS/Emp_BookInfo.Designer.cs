@@ -205,6 +205,7 @@
             // 
             // ptb_img
             // 
+            this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_img.Location = new System.Drawing.Point(208, 103);
             this.ptb_img.Name = "ptb_img";
             this.ptb_img.Size = new System.Drawing.Size(188, 241);
