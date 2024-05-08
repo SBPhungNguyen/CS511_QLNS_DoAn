@@ -122,7 +122,7 @@
             this.btn_buy.BackColor = System.Drawing.Color.Green;
             this.btn_buy.BackgroundColor = System.Drawing.Color.Green;
             this.btn_buy.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_buy.BorderRadius = 40;
+            this.btn_buy.BorderRadius = 20;
             this.btn_buy.BorderSize = 0;
             this.btn_buy.FlatAppearance.BorderSize = 0;
             this.btn_buy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

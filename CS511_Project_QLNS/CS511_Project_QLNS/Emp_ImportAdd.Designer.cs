@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Emp_ImportAdd));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_exit = new System.Windows.Forms.PictureBox();
             this.lbl_title = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -54,24 +53,31 @@
             this.customPanel2 = new CS511_Project_QLNS.View.CustomPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.customPanel4 = new CS511_Project_QLNS.View.CustomPanel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.fpnl_detail = new System.Windows.Forms.FlowLayoutPanel();
             this.customPanel3 = new CS511_Project_QLNS.View.CustomPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_buy = new CS511_Project_QLNS.View.CustomButton();
             this.lbl_sumprice = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.btn_exit = new System.Windows.Forms.PictureBox();
+            this.uct_Emp_ImportAdd1 = new CS511_Project_QLNS.Uct_Emp_ImportAdd();
+            this.uct_Emp_ImportAdd2 = new CS511_Project_QLNS.Uct_Emp_ImportAdd();
+            this.uct_Emp_ImportAdd3 = new CS511_Project_QLNS.Uct_Emp_ImportAdd();
+            this.uct_Emp_ImportAdd4 = new CS511_Project_QLNS.Uct_Emp_ImportAdd();
+            this.uct_Emp_ImportAdd5 = new CS511_Project_QLNS.Uct_Emp_ImportAdd();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.customPanel1.SuspendLayout();
             this.customPanel2.SuspendLayout();
             this.customPanel4.SuspendLayout();
+            this.fpnl_detail.SuspendLayout();
             this.customPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -82,16 +88,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1300, 40);
             this.panel1.TabIndex = 2;
-            // 
-            // btn_exit
-            // 
-            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
-            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_exit.Location = new System.Drawing.Point(1263, 5);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(30, 30);
-            this.btn_exit.TabIndex = 18;
-            this.btn_exit.TabStop = false;
             // 
             // lbl_title
             // 
@@ -300,7 +296,7 @@
             this.customButton1.BackColor = System.Drawing.Color.Green;
             this.customButton1.BackgroundColor = System.Drawing.Color.Green;
             this.customButton1.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.customButton1.BorderRadius = 40;
+            this.customButton1.BorderRadius = 20;
             this.customButton1.BorderSize = 0;
             this.customButton1.FlatAppearance.BorderSize = 0;
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -319,7 +315,7 @@
             this.btn_guest.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btn_guest.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.btn_guest.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_guest.BorderRadius = 40;
+            this.btn_guest.BorderRadius = 20;
             this.btn_guest.BorderSize = 1;
             this.btn_guest.FlatAppearance.BorderSize = 0;
             this.btn_guest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -380,35 +376,15 @@
             this.customPanel4.TabIndex = 54;
             this.customPanel4.Thickness = 2F;
             // 
-            // label14
+            // label16
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(807, 11);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(91, 22);
-            this.label14.TabIndex = 6;
-            this.label14.Text = "Quantity:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(59, 11);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(80, 22);
-            this.label13.TabIndex = 4;
-            this.label13.Text = "Book ID";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(1077, 11);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(49, 22);
-            this.label12.TabIndex = 7;
-            this.label12.Text = "Sum";
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(567, 11);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(56, 22);
+            this.label16.TabIndex = 9;
+            this.label16.Text = "Price";
             // 
             // label5
             // 
@@ -420,8 +396,43 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Book Title";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(969, 11);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(49, 22);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "Sum";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(56, 11);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(80, 22);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "Book ID";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(755, 11);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(91, 22);
+            this.label14.TabIndex = 6;
+            this.label14.Text = "Quantity:";
+            // 
             // fpnl_detail
             // 
+            this.fpnl_detail.Controls.Add(this.uct_Emp_ImportAdd1);
+            this.fpnl_detail.Controls.Add(this.uct_Emp_ImportAdd2);
+            this.fpnl_detail.Controls.Add(this.uct_Emp_ImportAdd3);
+            this.fpnl_detail.Controls.Add(this.uct_Emp_ImportAdd4);
+            this.fpnl_detail.Controls.Add(this.uct_Emp_ImportAdd5);
             this.fpnl_detail.Location = new System.Drawing.Point(23, 101);
             this.fpnl_detail.Name = "fpnl_detail";
             this.fpnl_detail.Size = new System.Drawing.Size(1214, 247);
@@ -456,7 +467,7 @@
             this.btn_buy.BackColor = System.Drawing.Color.Green;
             this.btn_buy.BackgroundColor = System.Drawing.Color.Green;
             this.btn_buy.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_buy.BorderRadius = 40;
+            this.btn_buy.BorderRadius = 20;
             this.btn_buy.BorderSize = 0;
             this.btn_buy.FlatAppearance.BorderSize = 0;
             this.btn_buy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -491,15 +502,50 @@
             this.label15.TabIndex = 3;
             this.label15.Text = "Total:";
             // 
-            // label16
+            // btn_exit
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(587, 11);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(56, 22);
-            this.label16.TabIndex = 9;
-            this.label16.Text = "Price";
+            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_exit.Location = new System.Drawing.Point(1263, 5);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.TabIndex = 18;
+            this.btn_exit.TabStop = false;
+            // 
+            // uct_Emp_ImportAdd1
+            // 
+            this.uct_Emp_ImportAdd1.Location = new System.Drawing.Point(3, 3);
+            this.uct_Emp_ImportAdd1.Name = "uct_Emp_ImportAdd1";
+            this.uct_Emp_ImportAdd1.Size = new System.Drawing.Size(1177, 80);
+            this.uct_Emp_ImportAdd1.TabIndex = 0;
+            // 
+            // uct_Emp_ImportAdd2
+            // 
+            this.uct_Emp_ImportAdd2.Location = new System.Drawing.Point(3, 89);
+            this.uct_Emp_ImportAdd2.Name = "uct_Emp_ImportAdd2";
+            this.uct_Emp_ImportAdd2.Size = new System.Drawing.Size(1177, 80);
+            this.uct_Emp_ImportAdd2.TabIndex = 1;
+            // 
+            // uct_Emp_ImportAdd3
+            // 
+            this.uct_Emp_ImportAdd3.Location = new System.Drawing.Point(3, 175);
+            this.uct_Emp_ImportAdd3.Name = "uct_Emp_ImportAdd3";
+            this.uct_Emp_ImportAdd3.Size = new System.Drawing.Size(1177, 80);
+            this.uct_Emp_ImportAdd3.TabIndex = 2;
+            // 
+            // uct_Emp_ImportAdd4
+            // 
+            this.uct_Emp_ImportAdd4.Location = new System.Drawing.Point(3, 261);
+            this.uct_Emp_ImportAdd4.Name = "uct_Emp_ImportAdd4";
+            this.uct_Emp_ImportAdd4.Size = new System.Drawing.Size(1177, 80);
+            this.uct_Emp_ImportAdd4.TabIndex = 3;
+            // 
+            // uct_Emp_ImportAdd5
+            // 
+            this.uct_Emp_ImportAdd5.Location = new System.Drawing.Point(3, 347);
+            this.uct_Emp_ImportAdd5.Name = "uct_Emp_ImportAdd5";
+            this.uct_Emp_ImportAdd5.Size = new System.Drawing.Size(1177, 80);
+            this.uct_Emp_ImportAdd5.TabIndex = 4;
             // 
             // Emp_ImportAdd
             // 
@@ -518,17 +564,18 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Emp_ImportAdd";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             this.customPanel1.ResumeLayout(false);
             this.customPanel1.PerformLayout();
             this.customPanel2.ResumeLayout(false);
             this.customPanel2.PerformLayout();
             this.customPanel4.ResumeLayout(false);
             this.customPanel4.PerformLayout();
+            this.fpnl_detail.ResumeLayout(false);
             this.customPanel3.ResumeLayout(false);
             this.customPanel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -572,5 +619,10 @@
         private System.Windows.Forms.Label lbl_sumprice;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private Uct_Emp_ImportAdd uct_Emp_ImportAdd1;
+        private Uct_Emp_ImportAdd uct_Emp_ImportAdd2;
+        private Uct_Emp_ImportAdd uct_Emp_ImportAdd3;
+        private Uct_Emp_ImportAdd uct_Emp_ImportAdd4;
+        private Uct_Emp_ImportAdd uct_Emp_ImportAdd5;
     }
 }
