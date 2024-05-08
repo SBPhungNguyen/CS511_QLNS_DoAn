@@ -79,6 +79,7 @@
             // 
             // cbb_type
             // 
+            this.cbb_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbb_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_type.FormattingEnabled = true;
             this.cbb_type.Location = new System.Drawing.Point(12, 9);
