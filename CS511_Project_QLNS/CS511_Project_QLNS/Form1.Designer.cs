@@ -31,22 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_exit = new System.Windows.Forms.PictureBox();
-            this.customPictureBox1 = new CS511_Project_QLNS.View.CustomPictureBox();
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
             this.pnl_UserName = new System.Windows.Forms.Panel();
             this.lbl_UserName = new System.Windows.Forms.Label();
-            this.customButton5 = new CS511_Project_QLNS.View.CustomButton();
-            this.customButton4 = new CS511_Project_QLNS.View.CustomButton();
-            this.customButton3 = new CS511_Project_QLNS.View.CustomButton();
-            this.customButton2 = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_logout = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_chat = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_receipt = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_cart = new CS511_Project_QLNS.View.CustomButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.customButton1 = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_home = new CS511_Project_QLNS.View.CustomButton();
             this.lbl_title = new System.Windows.Forms.Label();
+            this.customPictureBox1 = new CS511_Project_QLNS.View.CustomPictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customPictureBox1)).BeginInit();
             this.customPanel1.SuspendLayout();
             this.pnl_UserName.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,33 +68,17 @@
             this.btn_exit.TabIndex = 18;
             this.btn_exit.TabStop = false;
             // 
-            // customPictureBox1
-            // 
-            this.customPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.customPictureBox1.Border = 1;
-            this.customPictureBox1.BorderCap = System.Drawing.Drawing2D.DashCap.Flat;
-            this.customPictureBox1.BorderStyle1 = System.Drawing.Drawing2D.DashStyle.DashDotDot;
-            this.customPictureBox1.ColorBorder = System.Drawing.Color.RoyalBlue;
-            this.customPictureBox1.ColorBorder2 = System.Drawing.Color.HotPink;
-            this.customPictureBox1.Gradiant = 50F;
-            this.customPictureBox1.Location = new System.Drawing.Point(70, 136);
-            this.customPictureBox1.Name = "customPictureBox1";
-            this.customPictureBox1.Size = new System.Drawing.Size(125, 115);
-            this.customPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.customPictureBox1.TabIndex = 2;
-            this.customPictureBox1.TabStop = false;
-            // 
             // customPanel1
             // 
             this.customPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.customPanel1.BorderColor = System.Drawing.Color.Lime;
             this.customPanel1.Controls.Add(this.pnl_UserName);
-            this.customPanel1.Controls.Add(this.customButton5);
-            this.customPanel1.Controls.Add(this.customButton4);
-            this.customPanel1.Controls.Add(this.customButton3);
-            this.customPanel1.Controls.Add(this.customButton2);
+            this.customPanel1.Controls.Add(this.btn_logout);
+            this.customPanel1.Controls.Add(this.btn_chat);
+            this.customPanel1.Controls.Add(this.btn_receipt);
+            this.customPanel1.Controls.Add(this.btn_cart);
             this.customPanel1.Controls.Add(this.panel2);
-            this.customPanel1.Controls.Add(this.customButton1);
+            this.customPanel1.Controls.Add(this.btn_home);
             this.customPanel1.Location = new System.Drawing.Point(-9, 191);
             this.customPanel1.Name = "customPanel1";
             this.customPanel1.Radius = 20;
@@ -119,85 +103,85 @@
             this.lbl_UserName.Name = "lbl_UserName";
             this.lbl_UserName.Size = new System.Drawing.Size(243, 45);
             this.lbl_UserName.TabIndex = 11;
-            this.lbl_UserName.Text = "Mr/Ms";
+            this.lbl_UserName.Text = "Guest";
             this.lbl_UserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // customButton5
+            // btn_logout
             // 
-            this.customButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
-            this.customButton5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
-            this.customButton5.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.customButton5.BorderRadius = 0;
-            this.customButton5.BorderSize = 0;
-            this.customButton5.FlatAppearance.BorderSize = 0;
-            this.customButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton5.ForeColor = System.Drawing.Color.White;
-            this.customButton5.Location = new System.Drawing.Point(8, 548);
-            this.customButton5.Name = "customButton5";
-            this.customButton5.Size = new System.Drawing.Size(259, 63);
-            this.customButton5.TabIndex = 9;
-            this.customButton5.Text = "Log Out";
-            this.customButton5.TextColor = System.Drawing.Color.White;
-            this.customButton5.UseVisualStyleBackColor = false;
+            this.btn_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
+            this.btn_logout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
+            this.btn_logout.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_logout.BorderRadius = 0;
+            this.btn_logout.BorderSize = 0;
+            this.btn_logout.FlatAppearance.BorderSize = 0;
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout.ForeColor = System.Drawing.Color.White;
+            this.btn_logout.Location = new System.Drawing.Point(8, 548);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(259, 63);
+            this.btn_logout.TabIndex = 9;
+            this.btn_logout.Text = "Log Out";
+            this.btn_logout.TextColor = System.Drawing.Color.White;
+            this.btn_logout.UseVisualStyleBackColor = false;
             // 
-            // customButton4
+            // btn_chat
             // 
-            this.customButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
-            this.customButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
-            this.customButton4.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.customButton4.BorderRadius = 0;
-            this.customButton4.BorderSize = 0;
-            this.customButton4.FlatAppearance.BorderSize = 0;
-            this.customButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton4.ForeColor = System.Drawing.Color.White;
-            this.customButton4.Location = new System.Drawing.Point(4, 374);
-            this.customButton4.Name = "customButton4";
-            this.customButton4.Size = new System.Drawing.Size(263, 63);
-            this.customButton4.TabIndex = 8;
-            this.customButton4.Text = "Chatting";
-            this.customButton4.TextColor = System.Drawing.Color.White;
-            this.customButton4.UseVisualStyleBackColor = false;
+            this.btn_chat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
+            this.btn_chat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
+            this.btn_chat.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_chat.BorderRadius = 0;
+            this.btn_chat.BorderSize = 0;
+            this.btn_chat.FlatAppearance.BorderSize = 0;
+            this.btn_chat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_chat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_chat.ForeColor = System.Drawing.Color.White;
+            this.btn_chat.Location = new System.Drawing.Point(4, 374);
+            this.btn_chat.Name = "btn_chat";
+            this.btn_chat.Size = new System.Drawing.Size(263, 63);
+            this.btn_chat.TabIndex = 8;
+            this.btn_chat.Text = "Chat";
+            this.btn_chat.TextColor = System.Drawing.Color.White;
+            this.btn_chat.UseVisualStyleBackColor = false;
             // 
-            // customButton3
+            // btn_receipt
             // 
-            this.customButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
-            this.customButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
-            this.customButton3.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.customButton3.BorderRadius = 0;
-            this.customButton3.BorderSize = 0;
-            this.customButton3.FlatAppearance.BorderSize = 0;
-            this.customButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton3.ForeColor = System.Drawing.Color.White;
-            this.customButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.customButton3.Location = new System.Drawing.Point(4, 306);
-            this.customButton3.Name = "customButton3";
-            this.customButton3.Size = new System.Drawing.Size(263, 63);
-            this.customButton3.TabIndex = 7;
-            this.customButton3.Text = "Receipt Search";
-            this.customButton3.TextColor = System.Drawing.Color.White;
-            this.customButton3.UseVisualStyleBackColor = false;
+            this.btn_receipt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
+            this.btn_receipt.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
+            this.btn_receipt.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_receipt.BorderRadius = 0;
+            this.btn_receipt.BorderSize = 0;
+            this.btn_receipt.FlatAppearance.BorderSize = 0;
+            this.btn_receipt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_receipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_receipt.ForeColor = System.Drawing.Color.White;
+            this.btn_receipt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_receipt.Location = new System.Drawing.Point(4, 306);
+            this.btn_receipt.Name = "btn_receipt";
+            this.btn_receipt.Size = new System.Drawing.Size(263, 63);
+            this.btn_receipt.TabIndex = 7;
+            this.btn_receipt.Text = "Receipt Search";
+            this.btn_receipt.TextColor = System.Drawing.Color.White;
+            this.btn_receipt.UseVisualStyleBackColor = false;
             // 
-            // customButton2
+            // btn_cart
             // 
-            this.customButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
-            this.customButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
-            this.customButton2.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.customButton2.BorderRadius = 0;
-            this.customButton2.BorderSize = 0;
-            this.customButton2.FlatAppearance.BorderSize = 0;
-            this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton2.ForeColor = System.Drawing.Color.White;
-            this.customButton2.Location = new System.Drawing.Point(4, 238);
-            this.customButton2.Name = "customButton2";
-            this.customButton2.Size = new System.Drawing.Size(263, 63);
-            this.customButton2.TabIndex = 6;
-            this.customButton2.Text = "Cart";
-            this.customButton2.TextColor = System.Drawing.Color.White;
-            this.customButton2.UseVisualStyleBackColor = false;
+            this.btn_cart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
+            this.btn_cart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
+            this.btn_cart.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_cart.BorderRadius = 0;
+            this.btn_cart.BorderSize = 0;
+            this.btn_cart.FlatAppearance.BorderSize = 0;
+            this.btn_cart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cart.ForeColor = System.Drawing.Color.White;
+            this.btn_cart.Location = new System.Drawing.Point(4, 238);
+            this.btn_cart.Name = "btn_cart";
+            this.btn_cart.Size = new System.Drawing.Size(263, 63);
+            this.btn_cart.TabIndex = 6;
+            this.btn_cart.Text = "Cart";
+            this.btn_cart.TextColor = System.Drawing.Color.White;
+            this.btn_cart.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -207,24 +191,24 @@
             this.panel2.Size = new System.Drawing.Size(272, 2);
             this.panel2.TabIndex = 5;
             // 
-            // customButton1
+            // btn_home
             // 
-            this.customButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
-            this.customButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
-            this.customButton1.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.customButton1.BorderRadius = 0;
-            this.customButton1.BorderSize = 0;
-            this.customButton1.FlatAppearance.BorderSize = 0;
-            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(7, 170);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(260, 63);
-            this.customButton1.TabIndex = 4;
-            this.customButton1.Text = "Home";
-            this.customButton1.TextColor = System.Drawing.Color.White;
-            this.customButton1.UseVisualStyleBackColor = false;
+            this.btn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
+            this.btn_home.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
+            this.btn_home.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_home.BorderRadius = 0;
+            this.btn_home.BorderSize = 0;
+            this.btn_home.FlatAppearance.BorderSize = 0;
+            this.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_home.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_home.ForeColor = System.Drawing.Color.White;
+            this.btn_home.Location = new System.Drawing.Point(7, 170);
+            this.btn_home.Name = "btn_home";
+            this.btn_home.Size = new System.Drawing.Size(260, 63);
+            this.btn_home.TabIndex = 4;
+            this.btn_home.Text = "Home";
+            this.btn_home.TextColor = System.Drawing.Color.White;
+            this.btn_home.UseVisualStyleBackColor = false;
             // 
             // lbl_title
             // 
@@ -236,6 +220,23 @@
             this.lbl_title.Size = new System.Drawing.Size(116, 40);
             this.lbl_title.TabIndex = 8;
             this.lbl_title.Text = "HOME";
+            // 
+            // customPictureBox1
+            // 
+            this.customPictureBox1.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_user2;
+            this.customPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.customPictureBox1.Border = 1;
+            this.customPictureBox1.BorderCap = System.Drawing.Drawing2D.DashCap.Flat;
+            this.customPictureBox1.BorderStyle1 = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            this.customPictureBox1.ColorBorder = System.Drawing.Color.RoyalBlue;
+            this.customPictureBox1.ColorBorder2 = System.Drawing.Color.HotPink;
+            this.customPictureBox1.Gradiant = 50F;
+            this.customPictureBox1.Location = new System.Drawing.Point(70, 136);
+            this.customPictureBox1.Name = "customPictureBox1";
+            this.customPictureBox1.Size = new System.Drawing.Size(125, 115);
+            this.customPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.customPictureBox1.TabIndex = 2;
+            this.customPictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -253,9 +254,9 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customPictureBox1)).EndInit();
             this.customPanel1.ResumeLayout(false);
             this.pnl_UserName.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.customPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,12 +268,12 @@
         private System.Windows.Forms.PictureBox btn_exit;
         private View.CustomPictureBox customPictureBox1;
         private View.CustomPanel customPanel1;
-        private View.CustomButton customButton1;
+        private View.CustomButton btn_home;
         private System.Windows.Forms.Panel panel2;
-        private View.CustomButton customButton2;
-        private View.CustomButton customButton4;
-        private View.CustomButton customButton3;
-        private View.CustomButton customButton5;
+        private View.CustomButton btn_cart;
+        private View.CustomButton btn_chat;
+        private View.CustomButton btn_receipt;
+        private View.CustomButton btn_logout;
         private System.Windows.Forms.Panel pnl_UserName;
         private System.Windows.Forms.Label lbl_UserName;
         private System.Windows.Forms.Label lbl_title;

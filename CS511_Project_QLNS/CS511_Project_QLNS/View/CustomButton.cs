@@ -159,7 +159,14 @@ namespace CS511_Project_QLNS.View
         protected override void OnHandleCreated(EventArgs e)
         {
             base.OnHandleCreated(e);
-            this.Parent.BackColorChanged += new EventHandler(Container_BackColorChanged);
+            try
+            {
+                this.Parent.BackColorChanged += new EventHandler(Container_BackColorChanged);
+            }
+            catch
+            {
+
+            }
         }
 
         private void Container_BackColorChanged(object sender, EventArgs e)
