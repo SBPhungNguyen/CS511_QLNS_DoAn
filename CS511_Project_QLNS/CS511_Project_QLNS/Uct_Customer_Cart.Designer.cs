@@ -35,9 +35,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.fpnl_cart = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_buy = new CS511_Project_QLNS.View.CustomButton();
             this.lbl_sumprice = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_buy = new CS511_Project_QLNS.View.CustomButton();
             this.customPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -61,7 +61,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(799, 11);
+            this.label5.Location = new System.Drawing.Point(754, 11);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 22);
             this.label5.TabIndex = 7;
@@ -71,7 +71,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(136, 11);
+            this.label2.Location = new System.Drawing.Point(130, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 22);
             this.label2.TabIndex = 4;
@@ -81,7 +81,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(583, 11);
+            this.label4.Location = new System.Drawing.Point(544, 11);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 22);
             this.label4.TabIndex = 6;
@@ -91,7 +91,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(392, 11);
+            this.label3.Location = new System.Drawing.Point(371, 11);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 22);
             this.label3.TabIndex = 5;
@@ -114,8 +114,27 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 573);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(940, 97);
+            this.panel1.Size = new System.Drawing.Size(940, 102);
             this.panel1.TabIndex = 33;
+            // 
+            // btn_buy
+            // 
+            this.btn_buy.BackColor = System.Drawing.Color.Green;
+            this.btn_buy.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_buy.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_buy.BorderRadius = 40;
+            this.btn_buy.BorderSize = 0;
+            this.btn_buy.FlatAppearance.BorderSize = 0;
+            this.btn_buy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buy.ForeColor = System.Drawing.Color.White;
+            this.btn_buy.Location = new System.Drawing.Point(605, 33);
+            this.btn_buy.Name = "btn_buy";
+            this.btn_buy.Size = new System.Drawing.Size(271, 45);
+            this.btn_buy.TabIndex = 2;
+            this.btn_buy.Text = "Purchase";
+            this.btn_buy.TextColor = System.Drawing.Color.White;
+            this.btn_buy.UseVisualStyleBackColor = false;
             // 
             // lbl_sumprice
             // 
@@ -138,25 +157,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Total:";
             // 
-            // btn_buy
-            // 
-            this.btn_buy.BackColor = System.Drawing.Color.Green;
-            this.btn_buy.BackgroundColor = System.Drawing.Color.Green;
-            this.btn_buy.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_buy.BorderRadius = 40;
-            this.btn_buy.BorderSize = 0;
-            this.btn_buy.FlatAppearance.BorderSize = 0;
-            this.btn_buy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_buy.ForeColor = System.Drawing.Color.White;
-            this.btn_buy.Location = new System.Drawing.Point(605, 33);
-            this.btn_buy.Name = "btn_buy";
-            this.btn_buy.Size = new System.Drawing.Size(271, 45);
-            this.btn_buy.TabIndex = 2;
-            this.btn_buy.Text = "Purchase";
-            this.btn_buy.TextColor = System.Drawing.Color.White;
-            this.btn_buy.UseVisualStyleBackColor = false;
-            // 
             // Uct_Customer_Cart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -165,7 +165,7 @@
             this.Controls.Add(this.fpnl_cart);
             this.Controls.Add(this.customPanel1);
             this.Name = "Uct_Customer_Cart";
-            this.Size = new System.Drawing.Size(980, 670);
+            this.Size = new System.Drawing.Size(980, 675);
             this.customPanel1.ResumeLayout(false);
             this.customPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
