@@ -18,3 +18,5 @@ D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_
 D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_Project_QLNS.Uct_Cus_Receipt.resources
 D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_Project_QLNS.Uct_Customer_Chat.resources
 D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_Project_QLNS.Uct_Cus_Chat.resources
+D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_Project_QLNS.BookInfo.resources
+D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_Project_QLNS.MakePurchase.resources
