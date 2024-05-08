@@ -48,6 +48,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lbl_name = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -131,6 +132,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.lbl_name);
             this.panel2.Controls.Add(this.lbl_sumprice);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.panel3);
@@ -211,9 +213,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(133, 54);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 22);
+            this.label6.Size = new System.Drawing.Size(67, 22);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Products:";
+            this.label6.Text = "Name:";
             // 
             // label1
             // 
@@ -287,6 +289,16 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Price";
             // 
+            // lbl_name
+            // 
+            this.lbl_name.AutoSize = true;
+            this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.Location = new System.Drawing.Point(255, 54);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(63, 22);
+            this.lbl_name.TabIndex = 15;
+            this.lbl_name.Text = "Code:";
+            // 
             // Uct_Customer_ReceiptSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -327,5 +339,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lbl_sumprice;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbl_name;
     }
 }
