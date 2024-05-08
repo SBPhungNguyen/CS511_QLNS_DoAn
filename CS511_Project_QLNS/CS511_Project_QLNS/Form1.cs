@@ -20,7 +20,15 @@ namespace CS511_Project_QLNS
             //uct.Location = new System.Drawing.Point(235, 105);
             //this.Controls.Add(uct);
 
-            Uct_Customer_Cart uct = new Uct_Customer_Cart(); 
+            //Uct_Customer_Cart uct = new Uct_Customer_Cart(); 
+            //uct.Location = new System.Drawing.Point(235, 105);
+            //this.Controls.Add(uct);
+
+            //Uct_Customer_ReceiptSearch uct = new Uct_Customer_ReceiptSearch();
+            //uct.Location = new System.Drawing.Point(235, 105);
+            //this.Controls.Add(uct);
+
+            Uct_Customer_Chat uct = new Uct_Customer_Chat();
             uct.Location = new System.Drawing.Point(235, 105);
             this.Controls.Add(uct);
         }

@@ -66,11 +66,23 @@
     <Compile Include="Uct_Customer_Cart.Designer.cs">
       <DependentUpon>Uct_Customer_Cart.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uct_Customer_Chat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Customer_Chat.Designer.cs">
+      <DependentUpon>Uct_Customer_Chat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uct_Customer_Home.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Uct_Customer_Home.Designer.cs">
       <DependentUpon>Uct_Customer_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uct_Customer_ReceiptSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Customer_ReceiptSearch.Designer.cs">
+      <DependentUpon>Uct_Customer_ReceiptSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="Uct_Cus_Book.cs">
       <SubType>UserControl</SubType>
@@ -78,11 +90,23 @@
     <Compile Include="Uct_Cus_Book.Designer.cs">
       <DependentUpon>Uct_Cus_Book.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uct_Cus_Chat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Cus_Chat.Designer.cs">
+      <DependentUpon>Uct_Cus_Chat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uct_Cus_Product.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Uct_Cus_Product.Designer.cs">
       <DependentUpon>Uct_Cus_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uct_Cus_Receipt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Cus_Receipt.Designer.cs">
+      <DependentUpon>Uct_Cus_Receipt.cs</DependentUpon>
     </Compile>
     <Compile Include="Uct_textbox.cs">
       <SubType>UserControl</SubType>
@@ -118,14 +142,26 @@
     <EmbeddedResource Include="Uct_Customer_Cart.resx">
       <DependentUpon>Uct_Customer_Cart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Customer_Chat.resx">
+      <DependentUpon>Uct_Customer_Chat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Uct_Customer_Home.resx">
       <DependentUpon>Uct_Customer_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Customer_ReceiptSearch.resx">
+      <DependentUpon>Uct_Customer_ReceiptSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_Cus_Book.resx">
       <DependentUpon>Uct_Cus_Book.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Cus_Chat.resx">
+      <DependentUpon>Uct_Cus_Chat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Uct_Cus_Product.resx">
       <DependentUpon>Uct_Cus_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Cus_Receipt.resx">
+      <DependentUpon>Uct_Cus_Receipt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_textbox.resx">
       <DependentUpon>Uct_textbox.cs</DependentUpon>
@@ -184,6 +220,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_picture.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

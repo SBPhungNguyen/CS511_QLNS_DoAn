@@ -246,7 +246,7 @@
             this.Controls.Add(this.fpnl_books);
             this.Controls.Add(this.customPanel1);
             this.Name = "Uct_Customer_Home";
-            this.Size = new System.Drawing.Size(980, 670);
+            this.Size = new System.Drawing.Size(980, 675);
             this.customPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_Search)).EndInit();
             this.ResumeLayout(false);
