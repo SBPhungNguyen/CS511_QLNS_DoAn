@@ -23,3 +23,4 @@ D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_
 D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_Project_QLNS.Form2.resources
 D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_Project_QLNS.Uct_Employee_Home.resources
 D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_Project_QLNS.Uct_Emp_Book.resources
+D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_Project_QLNS.Emp_BookInfo.resources

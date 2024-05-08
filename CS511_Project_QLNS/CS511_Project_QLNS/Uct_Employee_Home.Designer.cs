@@ -225,7 +225,7 @@
             // 
             // fpnl_books
             // 
-            this.fpnl_books.BackColor = System.Drawing.SystemColors.Window;
+            this.fpnl_books.BackColor = System.Drawing.Color.White;
             this.fpnl_books.Location = new System.Drawing.Point(0, 97);
             this.fpnl_books.Name = "fpnl_books";
             this.fpnl_books.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
