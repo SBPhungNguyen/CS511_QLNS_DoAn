@@ -71,6 +71,24 @@
     <Compile Include="Emp_BookInfo.Designer.cs">
       <DependentUpon>Emp_BookInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Emp_CashierAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emp_CashierAdd.Designer.cs">
+      <DependentUpon>Emp_CashierAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_CashierEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emp_CashierEdit.Designer.cs">
+      <DependentUpon>Emp_CashierEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_CashierInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emp_CashierInfo.Designer.cs">
+      <DependentUpon>Emp_CashierInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Emp_ImportAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +169,12 @@
     <Compile Include="Uct_Cus_Receipt.Designer.cs">
       <DependentUpon>Uct_Cus_Receipt.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uct_Employee_Cashier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Employee_Cashier.Designer.cs">
+      <DependentUpon>Uct_Employee_Cashier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uct_Employee_Chat.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -180,6 +204,12 @@
     </Compile>
     <Compile Include="Uct_Emp_Book.Designer.cs">
       <DependentUpon>Uct_Emp_Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uct_Emp_Cashier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Emp_Cashier.Designer.cs">
+      <DependentUpon>Uct_Emp_Cashier.cs</DependentUpon>
     </Compile>
     <Compile Include="Uct_Emp_Import.cs">
       <SubType>UserControl</SubType>
@@ -219,6 +249,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Emp_BookInfo.resx">
       <DependentUpon>Emp_BookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emp_CashierAdd.resx">
+      <DependentUpon>Emp_CashierAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emp_CashierEdit.resx">
+      <DependentUpon>Emp_CashierEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emp_CashierInfo.resx">
+      <DependentUpon>Emp_CashierInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Emp_ImportAdd.resx">
       <DependentUpon>Emp_ImportAdd.cs</DependentUpon>
@@ -269,6 +308,9 @@
     <EmbeddedResource Include="Uct_Cus_Receipt.resx">
       <DependentUpon>Uct_Cus_Receipt.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Employee_Cashier.resx">
+      <DependentUpon>Uct_Employee_Cashier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Uct_Employee_Chat.resx">
       <DependentUpon>Uct_Employee_Chat.cs</DependentUpon>
     </EmbeddedResource>
@@ -283,6 +325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_Emp_Book.resx">
       <DependentUpon>Uct_Emp_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Emp_Cashier.resx">
+      <DependentUpon>Uct_Emp_Cashier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_Emp_Import.resx">
       <DependentUpon>Uct_Emp_Import.cs</DependentUpon>

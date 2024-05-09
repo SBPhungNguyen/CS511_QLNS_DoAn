@@ -43,6 +43,7 @@
             // 
             // ptb_send
             // 
+            this.ptb_send.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_send.Location = new System.Drawing.Point(929, 619);
             this.ptb_send.Name = "ptb_send";
             this.ptb_send.Size = new System.Drawing.Size(35, 35);

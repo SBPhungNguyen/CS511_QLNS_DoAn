@@ -22,9 +22,16 @@ namespace CS511_Project_QLNS
             //uct.Location = new System.Drawing.Point(235, 105);
             //this.Controls.Add(uct);
 
-            Uct_Employee_Report uct = new Uct_Employee_Report();
+            //Uct_Employee_Report uct = new Uct_Employee_Report();
+            //uct.Location = new System.Drawing.Point(235, 105);
+            //this.Controls.Add(uct);
+
+            Uct_Employee_Cashier uct = new Uct_Employee_Cashier();
             uct.Location = new System.Drawing.Point(235, 105);
             this.Controls.Add(uct);
+
+            //if manager -> show employee, not -> don't show
+
         }
     }
 }

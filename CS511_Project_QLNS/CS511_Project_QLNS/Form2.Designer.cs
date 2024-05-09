@@ -34,10 +34,11 @@
             this.lbl_title = new System.Windows.Forms.Label();
             this.ptb_em_pic = new CS511_Project_QLNS.View.CustomPictureBox();
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btn_chat = new System.Windows.Forms.Button();
+            this.btn_report = new System.Windows.Forms.Button();
+            this.btn_import = new System.Windows.Forms.Button();
+            this.btn_home = new System.Windows.Forms.Button();
             this.pnl_UserName = new System.Windows.Forms.Panel();
             this.lbl_em_name = new System.Windows.Forms.Label();
             this.btn_logout = new CS511_Project_QLNS.View.CustomButton();
@@ -99,10 +100,11 @@
             // 
             this.customPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.customPanel1.BorderColor = System.Drawing.Color.Lime;
-            this.customPanel1.Controls.Add(this.button4);
-            this.customPanel1.Controls.Add(this.button3);
-            this.customPanel1.Controls.Add(this.button2);
             this.customPanel1.Controls.Add(this.button1);
+            this.customPanel1.Controls.Add(this.btn_chat);
+            this.customPanel1.Controls.Add(this.btn_report);
+            this.customPanel1.Controls.Add(this.btn_import);
+            this.customPanel1.Controls.Add(this.btn_home);
             this.customPanel1.Controls.Add(this.pnl_UserName);
             this.customPanel1.Controls.Add(this.btn_logout);
             this.customPanel1.Controls.Add(this.panel2);
@@ -113,57 +115,70 @@
             this.customPanel1.TabIndex = 11;
             this.customPanel1.Thickness = 1F;
             // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(7, 374);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(260, 63);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Chat";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(7, 306);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(260, 63);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Report";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(7, 237);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(260, 63);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Import";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(7, 170);
+            this.button1.Location = new System.Drawing.Point(7, 442);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(260, 63);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Home";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Employee";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btn_chat
+            // 
+            this.btn_chat.FlatAppearance.BorderSize = 0;
+            this.btn_chat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_chat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_chat.ForeColor = System.Drawing.Color.White;
+            this.btn_chat.Location = new System.Drawing.Point(7, 374);
+            this.btn_chat.Name = "btn_chat";
+            this.btn_chat.Size = new System.Drawing.Size(260, 63);
+            this.btn_chat.TabIndex = 14;
+            this.btn_chat.Text = "Chat";
+            this.btn_chat.UseVisualStyleBackColor = true;
+            // 
+            // btn_report
+            // 
+            this.btn_report.FlatAppearance.BorderSize = 0;
+            this.btn_report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_report.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_report.ForeColor = System.Drawing.Color.White;
+            this.btn_report.Location = new System.Drawing.Point(7, 306);
+            this.btn_report.Name = "btn_report";
+            this.btn_report.Size = new System.Drawing.Size(260, 63);
+            this.btn_report.TabIndex = 13;
+            this.btn_report.Text = "Report";
+            this.btn_report.UseVisualStyleBackColor = true;
+            // 
+            // btn_import
+            // 
+            this.btn_import.FlatAppearance.BorderSize = 0;
+            this.btn_import.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_import.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_import.ForeColor = System.Drawing.Color.White;
+            this.btn_import.Location = new System.Drawing.Point(7, 237);
+            this.btn_import.Name = "btn_import";
+            this.btn_import.Size = new System.Drawing.Size(260, 63);
+            this.btn_import.TabIndex = 12;
+            this.btn_import.Text = "Import";
+            this.btn_import.UseVisualStyleBackColor = true;
+            // 
+            // btn_home
+            // 
+            this.btn_home.FlatAppearance.BorderSize = 0;
+            this.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_home.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_home.ForeColor = System.Drawing.Color.White;
+            this.btn_home.Location = new System.Drawing.Point(7, 170);
+            this.btn_home.Name = "btn_home";
+            this.btn_home.Size = new System.Drawing.Size(260, 63);
+            this.btn_home.TabIndex = 11;
+            this.btn_home.Text = "Home";
+            this.btn_home.UseVisualStyleBackColor = false;
             // 
             // pnl_UserName
             // 
@@ -247,9 +262,10 @@
         private System.Windows.Forms.Label lbl_em_name;
         private View.CustomButton btn_logout;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btn_home;
+        private System.Windows.Forms.Button btn_chat;
+        private System.Windows.Forms.Button btn_report;
+        private System.Windows.Forms.Button btn_import;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
     }
 }
