@@ -37,17 +37,24 @@
             this.lbl_sum = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_name = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.customPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // customPanel1
             // 
             this.customPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(234)))));
             this.customPanel1.BorderColor = System.Drawing.Color.White;
+            this.customPanel1.Controls.Add(this.pictureBox1);
+            this.customPanel1.Controls.Add(this.panel5);
             this.customPanel1.Controls.Add(this.panel2);
             this.customPanel1.Controls.Add(this.panel3);
             this.customPanel1.Controls.Add(this.panel4);
@@ -62,9 +69,9 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.lbl_id);
-            this.panel2.Location = new System.Drawing.Point(40, 18);
+            this.panel2.Location = new System.Drawing.Point(21, 18);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(148, 39);
+            this.panel2.Size = new System.Drawing.Size(125, 39);
             this.panel2.TabIndex = 12;
             // 
             // lbl_id
@@ -73,7 +80,7 @@
             this.lbl_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_id.Location = new System.Drawing.Point(0, 0);
             this.lbl_id.Name = "lbl_id";
-            this.lbl_id.Size = new System.Drawing.Size(148, 39);
+            this.lbl_id.Size = new System.Drawing.Size(125, 39);
             this.lbl_id.TabIndex = 6;
             this.lbl_id.Text = "id";
             this.lbl_id.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -81,7 +88,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.lbl_date);
-            this.panel3.Location = new System.Drawing.Point(521, 18);
+            this.panel3.Location = new System.Drawing.Point(510, 18);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(148, 39);
             this.panel3.TabIndex = 11;
@@ -100,7 +107,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.lbl_sum);
-            this.panel4.Location = new System.Drawing.Point(719, 18);
+            this.panel4.Location = new System.Drawing.Point(709, 18);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(148, 39);
             this.panel4.TabIndex = 10;
@@ -119,7 +126,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.lbl_name);
-            this.panel1.Location = new System.Drawing.Point(236, 11);
+            this.panel1.Location = new System.Drawing.Point(225, 11);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(233, 53);
             this.panel1.TabIndex = 5;
@@ -135,6 +142,35 @@
             this.lbl_name.Text = "Name";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Location = new System.Drawing.Point(892, 18);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(148, 39);
+            this.panel5.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(148, 39);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Sum";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_bin__2_;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(1113, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
             // Uct_Emp_ImportAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -147,6 +183,8 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -162,5 +200,8 @@
         private System.Windows.Forms.Label lbl_sum;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_name;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label1;
     }
 }
