@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Emp_CashierAdd));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_exit = new System.Windows.Forms.PictureBox();
             this.lbl_title = new System.Windows.Forms.Label();
             this.lbl_id = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -39,7 +40,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_exit = new System.Windows.Forms.PictureBox();
             this.ptb_img = new System.Windows.Forms.PictureBox();
             this.txt_pass = new CS511_Project_QLNS.Uct_textbox();
             this.uct_textbox1 = new CS511_Project_QLNS.Uct_textbox();
@@ -57,6 +57,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(603, 40);
             this.panel1.TabIndex = 51;
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_exit.Location = new System.Drawing.Point(566, 5);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.TabIndex = 18;
+            this.btn_exit.TabStop = false;
             // 
             // lbl_title
             // 
@@ -95,10 +105,10 @@
             this.radio_manager.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_manager.Location = new System.Drawing.Point(246, 693);
             this.radio_manager.Name = "radio_manager";
-            this.radio_manager.Size = new System.Drawing.Size(145, 26);
+            this.radio_manager.Size = new System.Drawing.Size(108, 26);
             this.radio_manager.TabIndex = 63;
             this.radio_manager.TabStop = true;
-            this.radio_manager.Text = "radioButton2";
+            this.radio_manager.Text = "Manager";
             this.radio_manager.UseVisualStyleBackColor = true;
             // 
             // radio_cashier
@@ -107,10 +117,10 @@
             this.radio_cashier.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_cashier.Location = new System.Drawing.Point(246, 650);
             this.radio_cashier.Name = "radio_cashier";
-            this.radio_cashier.Size = new System.Drawing.Size(145, 26);
+            this.radio_cashier.Size = new System.Drawing.Size(118, 26);
             this.radio_cashier.TabIndex = 62;
             this.radio_cashier.TabStop = true;
-            this.radio_cashier.Text = "radioButton1";
+            this.radio_cashier.Text = "Employee";
             this.radio_cashier.UseVisualStyleBackColor = true;
             // 
             // label2
@@ -152,16 +162,6 @@
             this.label1.Size = new System.Drawing.Size(67, 22);
             this.label1.TabIndex = 53;
             this.label1.Text = "Name:";
-            // 
-            // btn_exit
-            // 
-            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
-            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_exit.Location = new System.Drawing.Point(566, 5);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(30, 30);
-            this.btn_exit.TabIndex = 18;
-            this.btn_exit.TabStop = false;
             // 
             // ptb_img
             // 

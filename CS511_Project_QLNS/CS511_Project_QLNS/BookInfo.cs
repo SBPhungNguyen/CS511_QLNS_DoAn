@@ -15,6 +15,8 @@ namespace CS511_Project_QLNS
         public BookInfo()
         {
             InitializeComponent();
+
+            rad_male.Checked = true;
         }
     }
 }
