@@ -32,5 +32,20 @@ namespace CS511_Project_QLNS
             //uct.Location = new System.Drawing.Point(235, 105);
             //this.Controls.Add(uct);
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_exit_MouseEnter(object sender, EventArgs e)
+        {
+            btn_exit.BackgroundImage = Properties.Resources.Cross3_Img;
+        }
+
+        private void btn_exit_MouseLeave(object sender, EventArgs e)
+        {
+            btn_exit.BackgroundImage = Properties.Resources.Cross2_image;
+        }
     }
 }

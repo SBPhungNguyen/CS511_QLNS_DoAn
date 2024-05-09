@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookInfo));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_exit = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_author = new System.Windows.Forms.Label();
@@ -45,14 +46,34 @@
             this.lbl_name = new System.Windows.Forms.Label();
             this.lbl_title = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.ptb_img = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_exit = new System.Windows.Forms.PictureBox();
+            this.ptb_star1 = new System.Windows.Forms.PictureBox();
+            this.ptb_star2 = new System.Windows.Forms.PictureBox();
+            this.ptb_star3 = new System.Windows.Forms.PictureBox();
+            this.ptb_star5 = new System.Windows.Forms.PictureBox();
+            this.ptb_star4 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.rad_male = new System.Windows.Forms.RadioButton();
+            this.rad_female = new System.Windows.Forms.RadioButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_cmtname = new CS511_Project_QLNS.Uct_textbox();
+            this.ptb_cmtpic = new System.Windows.Forms.PictureBox();
+            this.rtb_cmttext = new System.Windows.Forms.RichTextBox();
+            this.fpnl_cmt = new System.Windows.Forms.FlowLayoutPanel();
+            this.customButton1 = new CS511_Project_QLNS.View.CustomButton();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_star1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_star2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_star3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_star5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_star4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_cmtpic)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,6 +84,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1300, 40);
             this.panel1.TabIndex = 2;
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_exit.Location = new System.Drawing.Point(1263, 5);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.TabIndex = 18;
+            this.btn_exit.TabStop = false;
             // 
             // panel2
             // 
@@ -158,7 +189,7 @@
             this.panel3.Controls.Add(this.lbl_description);
             this.panel3.Location = new System.Drawing.Point(261, 635);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(275, 119);
+            this.panel3.Size = new System.Drawing.Size(275, 144);
             this.panel3.TabIndex = 19;
             // 
             // lbl_description
@@ -167,7 +198,7 @@
             this.lbl_description.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_description.Location = new System.Drawing.Point(0, 0);
             this.lbl_description.Name = "lbl_description";
-            this.lbl_description.Size = new System.Drawing.Size(275, 119);
+            this.lbl_description.Size = new System.Drawing.Size(275, 144);
             this.lbl_description.TabIndex = 20;
             this.lbl_description.Text = "Code:";
             // 
@@ -205,46 +236,219 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Green;
-            this.label2.Location = new System.Drawing.Point(843, 53);
+            this.label2.Location = new System.Drawing.Point(851, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(187, 40);
             this.label2.TabIndex = 22;
             this.label2.Text = "COMMENT";
             // 
+            // ptb_img
+            // 
+            this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_img.Location = new System.Drawing.Point(178, 122);
+            this.ptb_img.Name = "ptb_img";
+            this.ptb_img.Size = new System.Drawing.Size(188, 241);
+            this.ptb_img.TabIndex = 3;
+            this.ptb_img.TabStop = false;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(743, 326);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(695, 118);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(415, 16);
+            this.label4.Size = new System.Drawing.Size(63, 22);
             this.label4.TabIndex = 23;
-            this.label4.Text = "Shush, go copy from the one that has been done, I\'m so done with this";
+            this.label4.Text = "Stars:";
             // 
-            // pictureBox1
+            // ptb_star1
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(178, 122);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(188, 241);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.ptb_star1.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_star_black;
+            this.ptb_star1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_star1.Location = new System.Drawing.Point(824, 107);
+            this.ptb_star1.Name = "ptb_star1";
+            this.ptb_star1.Size = new System.Drawing.Size(33, 33);
+            this.ptb_star1.TabIndex = 24;
+            this.ptb_star1.TabStop = false;
             // 
-            // btn_exit
+            // ptb_star2
             // 
-            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
-            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_exit.Location = new System.Drawing.Point(1263, 5);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(30, 30);
-            this.btn_exit.TabIndex = 18;
-            this.btn_exit.TabStop = false;
+            this.ptb_star2.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_star_black;
+            this.ptb_star2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_star2.Location = new System.Drawing.Point(874, 107);
+            this.ptb_star2.Name = "ptb_star2";
+            this.ptb_star2.Size = new System.Drawing.Size(33, 33);
+            this.ptb_star2.TabIndex = 25;
+            this.ptb_star2.TabStop = false;
+            // 
+            // ptb_star3
+            // 
+            this.ptb_star3.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_star_black;
+            this.ptb_star3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_star3.Location = new System.Drawing.Point(923, 107);
+            this.ptb_star3.Name = "ptb_star3";
+            this.ptb_star3.Size = new System.Drawing.Size(33, 33);
+            this.ptb_star3.TabIndex = 26;
+            this.ptb_star3.TabStop = false;
+            // 
+            // ptb_star5
+            // 
+            this.ptb_star5.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_star_black;
+            this.ptb_star5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_star5.Location = new System.Drawing.Point(1021, 107);
+            this.ptb_star5.Name = "ptb_star5";
+            this.ptb_star5.Size = new System.Drawing.Size(33, 33);
+            this.ptb_star5.TabIndex = 28;
+            this.ptb_star5.TabStop = false;
+            // 
+            // ptb_star4
+            // 
+            this.ptb_star4.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_star_black;
+            this.ptb_star4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_star4.Location = new System.Drawing.Point(972, 107);
+            this.ptb_star4.Name = "ptb_star4";
+            this.ptb_star4.Size = new System.Drawing.Size(33, 33);
+            this.ptb_star4.TabIndex = 27;
+            this.ptb_star4.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(695, 156);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(82, 22);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Gender:";
+            // 
+            // rad_male
+            // 
+            this.rad_male.AutoSize = true;
+            this.rad_male.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rad_male.Location = new System.Drawing.Point(824, 153);
+            this.rad_male.Name = "rad_male";
+            this.rad_male.Size = new System.Drawing.Size(73, 26);
+            this.rad_male.TabIndex = 30;
+            this.rad_male.TabStop = true;
+            this.rad_male.Text = "Male";
+            this.rad_male.UseVisualStyleBackColor = true;
+            // 
+            // rad_female
+            // 
+            this.rad_female.AutoSize = true;
+            this.rad_female.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rad_female.Location = new System.Drawing.Point(972, 152);
+            this.rad_female.Name = "rad_female";
+            this.rad_female.Size = new System.Drawing.Size(96, 26);
+            this.rad_female.TabIndex = 31;
+            this.rad_female.TabStop = true;
+            this.rad_female.Text = "Female";
+            this.rad_female.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(695, 192);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(67, 22);
+            this.label8.TabIndex = 32;
+            this.label8.Text = "Name:";
+            // 
+            // txt_cmtname
+            // 
+            this.txt_cmtname.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_cmtname.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_cmtname.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_cmtname.BorderSize = 2;
+            this.txt_cmtname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cmtname.ForeColor = System.Drawing.Color.Black;
+            this.txt_cmtname.Location = new System.Drawing.Point(824, 184);
+            this.txt_cmtname.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_cmtname.Multiline = false;
+            this.txt_cmtname.Name = "txt_cmtname";
+            this.txt_cmtname.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_cmtname.PasswordChar = false;
+            this.txt_cmtname.Size = new System.Drawing.Size(342, 35);
+            this.txt_cmtname.TabIndex = 33;
+            this.txt_cmtname.Texts = "";
+            this.txt_cmtname.UnderlineStyle = true;
+            // 
+            // ptb_cmtpic
+            // 
+            this.ptb_cmtpic.Location = new System.Drawing.Point(699, 233);
+            this.ptb_cmtpic.Name = "ptb_cmtpic";
+            this.ptb_cmtpic.Size = new System.Drawing.Size(75, 75);
+            this.ptb_cmtpic.TabIndex = 34;
+            this.ptb_cmtpic.TabStop = false;
+            // 
+            // rtb_cmttext
+            // 
+            this.rtb_cmttext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtb_cmttext.Location = new System.Drawing.Point(824, 233);
+            this.rtb_cmttext.Name = "rtb_cmttext";
+            this.rtb_cmttext.Size = new System.Drawing.Size(342, 75);
+            this.rtb_cmttext.TabIndex = 35;
+            this.rtb_cmttext.Text = "";
+            // 
+            // fpnl_cmt
+            // 
+            this.fpnl_cmt.Location = new System.Drawing.Point(583, 403);
+            this.fpnl_cmt.Name = "fpnl_cmt";
+            this.fpnl_cmt.Size = new System.Drawing.Size(705, 385);
+            this.fpnl_cmt.TabIndex = 36;
+            // 
+            // customButton1
+            // 
+            this.customButton1.BackColor = System.Drawing.Color.Green;
+            this.customButton1.BackgroundColor = System.Drawing.Color.Green;
+            this.customButton1.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.customButton1.BorderRadius = 20;
+            this.customButton1.BorderSize = 0;
+            this.customButton1.FlatAppearance.BorderSize = 0;
+            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton1.ForeColor = System.Drawing.Color.White;
+            this.customButton1.Location = new System.Drawing.Point(824, 319);
+            this.customButton1.Name = "customButton1";
+            this.customButton1.Size = new System.Drawing.Size(230, 40);
+            this.customButton1.TabIndex = 37;
+            this.customButton1.Text = "Post comment";
+            this.customButton1.TextColor = System.Drawing.Color.White;
+            this.customButton1.UseVisualStyleBackColor = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Green;
+            this.label10.Location = new System.Drawing.Point(584, 372);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(210, 28);
+            this.label10.TabIndex = 38;
+            this.label10.Text = "Other Comments";
             // 
             // BookInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1300, 800);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.customButton1);
+            this.Controls.Add(this.fpnl_cmt);
+            this.Controls.Add(this.rtb_cmttext);
+            this.Controls.Add(this.ptb_cmtpic);
+            this.Controls.Add(this.txt_cmtname);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.rad_female);
+            this.Controls.Add(this.rad_male);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.ptb_star5);
+            this.Controls.Add(this.ptb_star4);
+            this.Controls.Add(this.ptb_star3);
+            this.Controls.Add(this.ptb_star2);
+            this.Controls.Add(this.ptb_star1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_title);
@@ -259,17 +463,23 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.ptb_img);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BookInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BookInfo";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_star1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_star2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_star3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_star5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_star4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_cmtpic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,7 +489,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox btn_exit;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ptb_img;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_author;
@@ -296,5 +506,20 @@
         private System.Windows.Forms.Label lbl_title;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox ptb_star1;
+        private System.Windows.Forms.PictureBox ptb_star2;
+        private System.Windows.Forms.PictureBox ptb_star3;
+        private System.Windows.Forms.PictureBox ptb_star5;
+        private System.Windows.Forms.PictureBox ptb_star4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.RadioButton rad_male;
+        private System.Windows.Forms.RadioButton rad_female;
+        private System.Windows.Forms.Label label8;
+        private Uct_textbox txt_cmtname;
+        private System.Windows.Forms.PictureBox ptb_cmtpic;
+        private System.Windows.Forms.RichTextBox rtb_cmttext;
+        private System.Windows.Forms.FlowLayoutPanel fpnl_cmt;
+        private View.CustomButton customButton1;
+        private System.Windows.Forms.Label label10;
     }
 }

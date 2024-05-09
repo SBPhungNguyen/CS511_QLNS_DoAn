@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_exit = new System.Windows.Forms.PictureBox();
+            this.lbl_title = new System.Windows.Forms.Label();
+            this.customPictureBox1 = new CS511_Project_QLNS.View.CustomPictureBox();
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
             this.pnl_UserName = new System.Windows.Forms.Panel();
             this.lbl_UserName = new System.Windows.Forms.Label();
@@ -40,13 +42,11 @@
             this.btn_cart = new CS511_Project_QLNS.View.CustomButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_home = new CS511_Project_QLNS.View.CustomButton();
-            this.lbl_title = new System.Windows.Forms.Label();
-            this.customPictureBox1 = new CS511_Project_QLNS.View.CustomPictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customPictureBox1)).BeginInit();
             this.customPanel1.SuspendLayout();
             this.pnl_UserName.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,6 +67,37 @@
             this.btn_exit.Size = new System.Drawing.Size(30, 30);
             this.btn_exit.TabIndex = 18;
             this.btn_exit.TabStop = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.btn_exit.MouseEnter += new System.EventHandler(this.btn_exit_MouseEnter);
+            this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.ForeColor = System.Drawing.Color.Green;
+            this.lbl_title.Location = new System.Drawing.Point(308, 75);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(116, 40);
+            this.lbl_title.TabIndex = 8;
+            this.lbl_title.Text = "HOME";
+            // 
+            // customPictureBox1
+            // 
+            this.customPictureBox1.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_user2;
+            this.customPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.customPictureBox1.Border = 1;
+            this.customPictureBox1.BorderCap = System.Drawing.Drawing2D.DashCap.Flat;
+            this.customPictureBox1.BorderStyle1 = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            this.customPictureBox1.ColorBorder = System.Drawing.Color.RoyalBlue;
+            this.customPictureBox1.ColorBorder2 = System.Drawing.Color.HotPink;
+            this.customPictureBox1.Gradiant = 50F;
+            this.customPictureBox1.Location = new System.Drawing.Point(70, 136);
+            this.customPictureBox1.Name = "customPictureBox1";
+            this.customPictureBox1.Size = new System.Drawing.Size(125, 115);
+            this.customPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.customPictureBox1.TabIndex = 2;
+            this.customPictureBox1.TabStop = false;
             // 
             // customPanel1
             // 
@@ -210,34 +241,6 @@
             this.btn_home.TextColor = System.Drawing.Color.White;
             this.btn_home.UseVisualStyleBackColor = false;
             // 
-            // lbl_title
-            // 
-            this.lbl_title.AutoSize = true;
-            this.lbl_title.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_title.ForeColor = System.Drawing.Color.Green;
-            this.lbl_title.Location = new System.Drawing.Point(308, 75);
-            this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(116, 40);
-            this.lbl_title.TabIndex = 8;
-            this.lbl_title.Text = "HOME";
-            // 
-            // customPictureBox1
-            // 
-            this.customPictureBox1.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_user2;
-            this.customPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.customPictureBox1.Border = 1;
-            this.customPictureBox1.BorderCap = System.Drawing.Drawing2D.DashCap.Flat;
-            this.customPictureBox1.BorderStyle1 = System.Drawing.Drawing2D.DashStyle.DashDotDot;
-            this.customPictureBox1.ColorBorder = System.Drawing.Color.RoyalBlue;
-            this.customPictureBox1.ColorBorder2 = System.Drawing.Color.HotPink;
-            this.customPictureBox1.Gradiant = 50F;
-            this.customPictureBox1.Location = new System.Drawing.Point(70, 136);
-            this.customPictureBox1.Name = "customPictureBox1";
-            this.customPictureBox1.Size = new System.Drawing.Size(125, 115);
-            this.customPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.customPictureBox1.TabIndex = 2;
-            this.customPictureBox1.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -254,9 +257,9 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customPictureBox1)).EndInit();
             this.customPanel1.ResumeLayout(false);
             this.pnl_UserName.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.customPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
