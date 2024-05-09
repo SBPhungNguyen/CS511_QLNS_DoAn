@@ -37,8 +37,6 @@
             this.lbl_code = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lbl_date = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lbl_em_id = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.lbl_em_name = new System.Windows.Forms.Label();
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
@@ -139,7 +137,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(85, 96);
+            this.label6.Location = new System.Drawing.Point(85, 98);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 22);
             this.label6.TabIndex = 55;
@@ -149,37 +147,17 @@
             // 
             this.lbl_date.AutoSize = true;
             this.lbl_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_date.Location = new System.Drawing.Point(291, 96);
+            this.lbl_date.Location = new System.Drawing.Point(291, 98);
             this.lbl_date.Name = "lbl_date";
             this.lbl_date.Size = new System.Drawing.Size(63, 22);
             this.lbl_date.TabIndex = 56;
             this.lbl_date.Text = "Code:";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(85, 142);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(128, 22);
-            this.label8.TabIndex = 57;
-            this.label8.Text = "Employee ID:";
-            // 
-            // lbl_em_id
-            // 
-            this.lbl_em_id.AutoSize = true;
-            this.lbl_em_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_em_id.Location = new System.Drawing.Point(291, 142);
-            this.lbl_em_id.Name = "lbl_em_id";
-            this.lbl_em_id.Size = new System.Drawing.Size(63, 22);
-            this.lbl_em_id.TabIndex = 58;
-            this.lbl_em_id.Text = "Code:";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(85, 188);
+            this.label10.Location = new System.Drawing.Point(85, 146);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(160, 22);
             this.label10.TabIndex = 59;
@@ -189,7 +167,7 @@
             // 
             this.lbl_em_name.AutoSize = true;
             this.lbl_em_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_em_name.Location = new System.Drawing.Point(291, 188);
+            this.lbl_em_name.Location = new System.Drawing.Point(291, 146);
             this.lbl_em_name.Name = "lbl_em_name";
             this.lbl_em_name.Size = new System.Drawing.Size(73, 22);
             this.lbl_em_name.TabIndex = 60;
@@ -201,8 +179,6 @@
             this.customPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.customPanel1.Controls.Add(this.lbl_em_name);
             this.customPanel1.Controls.Add(this.label10);
-            this.customPanel1.Controls.Add(this.lbl_em_id);
-            this.customPanel1.Controls.Add(this.label8);
             this.customPanel1.Controls.Add(this.lbl_date);
             this.customPanel1.Controls.Add(this.label6);
             this.customPanel1.Controls.Add(this.lbl_code);
@@ -544,8 +520,6 @@
         private System.Windows.Forms.Label lbl_code;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lbl_date;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lbl_em_id;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lbl_em_name;
         private View.CustomPanel customPanel1;

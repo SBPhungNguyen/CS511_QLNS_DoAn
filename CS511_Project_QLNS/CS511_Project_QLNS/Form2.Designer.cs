@@ -30,11 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_exit = new System.Windows.Forms.PictureBox();
             this.lbl_title = new System.Windows.Forms.Label();
-            this.ptb_em_pic = new CS511_Project_QLNS.View.CustomPictureBox();
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_employee = new System.Windows.Forms.Button();
             this.btn_chat = new System.Windows.Forms.Button();
             this.btn_report = new System.Windows.Forms.Button();
             this.btn_import = new System.Windows.Forms.Button();
@@ -43,11 +41,13 @@
             this.lbl_em_name = new System.Windows.Forms.Label();
             this.btn_logout = new CS511_Project_QLNS.View.CustomButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_exit = new System.Windows.Forms.PictureBox();
+            this.ptb_em_pic = new CS511_Project_QLNS.View.CustomPictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_em_pic)).BeginInit();
             this.customPanel1.SuspendLayout();
             this.pnl_UserName.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_em_pic)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -58,16 +58,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1300, 40);
             this.panel1.TabIndex = 9;
-            // 
-            // btn_exit
-            // 
-            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
-            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_exit.Location = new System.Drawing.Point(1263, 5);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(30, 30);
-            this.btn_exit.TabIndex = 18;
-            this.btn_exit.TabStop = false;
             // 
             // lbl_title
             // 
@@ -80,27 +70,11 @@
             this.lbl_title.TabIndex = 12;
             this.lbl_title.Text = "HOME";
             // 
-            // ptb_em_pic
-            // 
-            this.ptb_em_pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_em_pic.Border = 1;
-            this.ptb_em_pic.BorderCap = System.Drawing.Drawing2D.DashCap.Flat;
-            this.ptb_em_pic.BorderStyle1 = System.Drawing.Drawing2D.DashStyle.DashDotDot;
-            this.ptb_em_pic.ColorBorder = System.Drawing.Color.RoyalBlue;
-            this.ptb_em_pic.ColorBorder2 = System.Drawing.Color.HotPink;
-            this.ptb_em_pic.Gradiant = 50F;
-            this.ptb_em_pic.Location = new System.Drawing.Point(70, 135);
-            this.ptb_em_pic.Name = "ptb_em_pic";
-            this.ptb_em_pic.Size = new System.Drawing.Size(125, 115);
-            this.ptb_em_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptb_em_pic.TabIndex = 10;
-            this.ptb_em_pic.TabStop = false;
-            // 
             // customPanel1
             // 
             this.customPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.customPanel1.BorderColor = System.Drawing.Color.Lime;
-            this.customPanel1.Controls.Add(this.button1);
+            this.customPanel1.Controls.Add(this.btn_employee);
             this.customPanel1.Controls.Add(this.btn_chat);
             this.customPanel1.Controls.Add(this.btn_report);
             this.customPanel1.Controls.Add(this.btn_import);
@@ -115,18 +89,18 @@
             this.customPanel1.TabIndex = 11;
             this.customPanel1.Thickness = 1F;
             // 
-            // button1
+            // btn_employee
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(7, 442);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(260, 63);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Employee";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_employee.FlatAppearance.BorderSize = 0;
+            this.btn_employee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_employee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_employee.ForeColor = System.Drawing.Color.White;
+            this.btn_employee.Location = new System.Drawing.Point(7, 442);
+            this.btn_employee.Name = "btn_employee";
+            this.btn_employee.Size = new System.Drawing.Size(260, 63);
+            this.btn_employee.TabIndex = 15;
+            this.btn_employee.Text = "Employee";
+            this.btn_employee.UseVisualStyleBackColor = true;
             // 
             // btn_chat
             // 
@@ -227,6 +201,32 @@
             this.panel2.Size = new System.Drawing.Size(272, 2);
             this.panel2.TabIndex = 5;
             // 
+            // btn_exit
+            // 
+            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_exit.Location = new System.Drawing.Point(1263, 5);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.TabIndex = 18;
+            this.btn_exit.TabStop = false;
+            // 
+            // ptb_em_pic
+            // 
+            this.ptb_em_pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_em_pic.Border = 1;
+            this.ptb_em_pic.BorderCap = System.Drawing.Drawing2D.DashCap.Flat;
+            this.ptb_em_pic.BorderStyle1 = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            this.ptb_em_pic.ColorBorder = System.Drawing.Color.RoyalBlue;
+            this.ptb_em_pic.ColorBorder2 = System.Drawing.Color.HotPink;
+            this.ptb_em_pic.Gradiant = 50F;
+            this.ptb_em_pic.Location = new System.Drawing.Point(70, 135);
+            this.ptb_em_pic.Name = "ptb_em_pic";
+            this.ptb_em_pic.Size = new System.Drawing.Size(125, 115);
+            this.ptb_em_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_em_pic.TabIndex = 10;
+            this.ptb_em_pic.TabStop = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -242,10 +242,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_em_pic)).EndInit();
             this.customPanel1.ResumeLayout(false);
             this.pnl_UserName.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_em_pic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,6 +266,6 @@
         private System.Windows.Forms.Button btn_chat;
         private System.Windows.Forms.Button btn_report;
         private System.Windows.Forms.Button btn_import;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_employee;
     }
 }

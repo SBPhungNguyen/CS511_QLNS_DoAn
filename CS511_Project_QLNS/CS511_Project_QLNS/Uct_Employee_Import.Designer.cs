@@ -83,9 +83,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(765, 11);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 22);
+            this.label5.Size = new System.Drawing.Size(56, 22);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Sum";
+            this.label5.Text = "Total";
             // 
             // label2
             // 
