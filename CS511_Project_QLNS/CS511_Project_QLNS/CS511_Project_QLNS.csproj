@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -150,6 +151,12 @@
     <Compile Include="Uct_Cus_Receipt.Designer.cs">
       <DependentUpon>Uct_Cus_Receipt.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uct_Employee_Chat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Employee_Chat.Designer.cs">
+      <DependentUpon>Uct_Employee_Chat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uct_Employee_Home.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -161,6 +168,12 @@
     </Compile>
     <Compile Include="Uct_Employee_Import.Designer.cs">
       <DependentUpon>Uct_Employee_Import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uct_Employee_Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Employee_Report.Designer.cs">
+      <DependentUpon>Uct_Employee_Report.cs</DependentUpon>
     </Compile>
     <Compile Include="Uct_Emp_Book.cs">
       <SubType>UserControl</SubType>
@@ -256,11 +269,17 @@
     <EmbeddedResource Include="Uct_Cus_Receipt.resx">
       <DependentUpon>Uct_Cus_Receipt.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Employee_Chat.resx">
+      <DependentUpon>Uct_Employee_Chat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Uct_Employee_Home.resx">
       <DependentUpon>Uct_Employee_Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_Employee_Import.resx">
       <DependentUpon>Uct_Employee_Import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Employee_Report.resx">
+      <DependentUpon>Uct_Employee_Report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_Emp_Book.resx">
       <DependentUpon>Uct_Emp_Book.cs</DependentUpon>

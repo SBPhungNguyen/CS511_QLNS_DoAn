@@ -18,7 +18,11 @@ namespace CS511_Project_QLNS
             //Uct_Employee_Home uct = new Uct_Employee_Home();
             //uct.Location = new System.Drawing.Point(235, 105);
             //this.Controls.Add(uct);
-            Uct_Employee_Import uct = new Uct_Employee_Import();
+            //Uct_Employee_Import uct = new Uct_Employee_Import();
+            //uct.Location = new System.Drawing.Point(235, 105);
+            //this.Controls.Add(uct);
+
+            Uct_Employee_Report uct = new Uct_Employee_Report();
             uct.Location = new System.Drawing.Point(235, 105);
             this.Controls.Add(uct);
         }
