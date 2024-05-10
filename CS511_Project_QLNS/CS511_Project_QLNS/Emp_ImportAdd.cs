@@ -17,6 +17,8 @@ namespace CS511_Project_QLNS
             InitializeComponent();
             fpnl_detail.AutoScroll = true;
             fpnl_detail.WrapContents = true;
+
+            lbl_date.Text = DateTime.Now.Date.ToString("yyyy-MM-dd");
         }
     }
 }
