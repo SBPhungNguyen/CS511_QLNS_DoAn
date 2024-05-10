@@ -53,6 +53,7 @@
     <Compile Include="BookInfo.Designer.cs">
       <DependentUpon>BookInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="connection.cs" />
     <Compile Include="Emp_BookAdd.cs">
       <SubType>Form</SubType>
     </Compile>

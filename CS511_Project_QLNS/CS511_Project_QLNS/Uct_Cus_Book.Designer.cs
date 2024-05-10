@@ -43,7 +43,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.lbl_price);
-            this.panel2.Location = new System.Drawing.Point(104, 112);
+            this.panel2.Location = new System.Drawing.Point(104, 97);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(160, 32);
             this.panel2.TabIndex = 7;
@@ -51,7 +51,7 @@
             // lbl_price
             // 
             this.lbl_price.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_price.ForeColor = System.Drawing.Color.Red;
             this.lbl_price.Location = new System.Drawing.Point(0, 0);
             this.lbl_price.Name = "lbl_price";
@@ -63,9 +63,9 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.lbl_name);
-            this.panel1.Location = new System.Drawing.Point(104, 52);
+            this.panel1.Location = new System.Drawing.Point(104, 39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(160, 53);
+            this.panel1.Size = new System.Drawing.Size(160, 69);
             this.panel1.TabIndex = 6;
             // 
             // lbl_name
@@ -74,9 +74,10 @@
             this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_name.Location = new System.Drawing.Point(0, 0);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(160, 53);
+            this.lbl_name.Size = new System.Drawing.Size(160, 69);
             this.lbl_name.TabIndex = 0;
             this.lbl_name.Text = "label1";
+            this.lbl_name.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ptb_cart
             // 
@@ -91,7 +92,7 @@
             // ptb_img
             // 
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(8, 49);
+            this.ptb_img.Location = new System.Drawing.Point(11, 38);
             this.ptb_img.Name = "ptb_img";
             this.ptb_img.Size = new System.Drawing.Size(80, 95);
             this.ptb_img.TabIndex = 5;

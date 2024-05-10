@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,13 +13,32 @@ namespace CS511_Project_QLNS
 {
     public partial class Form1 : Form
     {
+        connection co = new connection();
+        string constr;
+
+        string dir = @"D:\\CS511_PIC";
+
+        string local_dir = "Pic";
         public Form1()
         {
             InitializeComponent();
 
-            Uct_Customer_Home uct = new Uct_Customer_Home();
-            uct.Location = new System.Drawing.Point(235, 105);
-            this.Controls.Add(uct);
+            //this is to set the connect string
+            constr = co.connect;
+
+            //this is to create an transfer the info from the dir to the D: absolute link
+            if (!Directory.Exists(local_dir))
+            {
+                MessageBox.Show("Yeah");
+            }
+
+            //this is to get the uct_home show up
+            Uct_Customer_Home uct_Customer_Home = new Uct_Customer_Home();
+            uct_Customer_Home.Location = new System.Drawing.Point(235, 105);
+            uct_Customer_Home.Name = "uct_Customer_Home";
+            this.Controls.Add(uct_Customer_Home);
+
+
 
             //Uct_Customer_Cart uct = new Uct_Customer_Cart(); 
             //uct.Location = new System.Drawing.Point(235, 105);

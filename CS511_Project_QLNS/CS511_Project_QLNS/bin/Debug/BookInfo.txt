@@ -1,0 +1,43 @@
+1. Pride and Prejudice *Jane Austen
+2. To Kill a Mockingbird *Harper Lee
+3. The Lord of the Rings *J.R.R. Tolkien
+4. Frankenstein *Mary Shelley
+5. Moby Dick *Herman Melville
+6. Jane Eyre *Charlotte Brontë
+7. The Harry Potter *J.K. Rowling
+8. Jonathan Strange & Mr Norrell *Susanna Clarke
+9. The Ocean at the End of the Lane *Neil Gaiman
+10. The Night Circus *Erin Morgenstern
+11. Circe *Madeline Miller
+12. The Ten Thousand Doors of January *Alix E. Harrow
+13. Tigana *Guy Gavriel Kay
+14. Atomic Habits* James Clear
+15. The Happiness Hypothesis *Jonathan Haidt
+16. Thinking, Fast and Slow *Daniel Kahneman
+17. Daring Greatly *Brené Brown
+18. Man's Search for Meaning *Viktor E. Frankl
+19. The 7 Habits of Highly Effective People *Stephen R. Covey
+20. How to Win Friends and Influence People *Dale Carnegie
+21. Sapiens *Yuval Noah Harari
+22. Stiff* Mary Roach
+23. Hooked *Nir Eyal
+24. Quiet *Susan Cain
+25. QED *Richard Feynman
+26. Gödel, Escher, Bach *Douglas Hofstadter
+27. Fuzz *Mary Roach
+28. Boomerang *Michael Lewis
+29. Factfulness *Hans Rosling
+30. And Then There Were None *Agatha Christie
+31. Rebecca *Daphne du Maurier
+32. The Murder of Roger Ackroyd * Agatha Christie
+33. Rear Window * Cornell Woolrich
+34. The Maltese Falcon *Dashiell Hammett
+35. In Cold Blood *Truman Capote
+36. The Alienist *Caleb Carr
+37. Mystic River *Dennis Lehane
+38. The Silk Roads *Peter Frankopan
+39. Lenin *Victor Sebestyen
+40. Stalin's war Sean McMeekin
+41. Winston S. Churchill *Randolph S. Churchill
+41. Washington *Ron Chernow
+42. Cleopatra *Stacy Schiff

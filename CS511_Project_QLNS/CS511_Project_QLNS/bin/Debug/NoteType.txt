@@ -1,0 +1,7 @@
+BookType
+1. Classics (1-6)
+2. Fantasy (7-13)
+3. Self Help (14-20)
+4. Nonfiction (21-29)
+5. Mystery (30 - 37)
+6. History (38 - 43)
