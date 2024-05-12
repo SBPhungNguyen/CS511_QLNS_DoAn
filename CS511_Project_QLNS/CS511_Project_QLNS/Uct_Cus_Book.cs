@@ -14,7 +14,7 @@ namespace CS511_Project_QLNS
 {
     public partial class Uct_Cus_Book : UserControl
     {
-        int id;
+        public int id;
         public Image img
         {
             get {  return ptb_img.BackgroundImage; }
@@ -42,6 +42,42 @@ namespace CS511_Project_QLNS
 
             string formattedNumber = string.Format("{0:#,###}", int.Parse(price));
             this.price = formattedNumber;
+        }
+
+        private void Uct_Cus_Book_Click(object sender, EventArgs e)
+        {
+            Form form = this.GetParentForm();
+            BookInfo bi = new BookInfo(this);
+            form.Hide();
+            bi.ShowDialog();
+
+            form.Show();
+        }
+
+        //this is to find the parent form of this 
+        public Form GetParentForm()
+        {
+            Control control = this;
+            while (control != null && !(control is Form))
+            {
+                control = control.Parent;
+            }
+            return control as Form;
+        }
+
+        private void lbl_name_Click(object sender, EventArgs e)
+        {
+            this.OnClick(null);
+        }
+
+        private void lbl_price_Click(object sender, EventArgs e)
+        {
+            this.OnClick(null);
+        }
+
+        private void ptb_img_Click(object sender, EventArgs e)
+        {
+            this.OnClick(null);
         }
     }
 }

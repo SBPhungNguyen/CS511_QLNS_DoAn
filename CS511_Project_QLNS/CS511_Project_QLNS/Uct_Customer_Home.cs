@@ -17,7 +17,7 @@ namespace CS511_Project_QLNS
         string connect;
 
         public SqlConnection sqlCon;
-        public string local_dir = "Pic/";
+        public string local_dir;
 
         public Color color_btn_cate_normal = Color.Green;
         public Color color_btn_cate_chosen = Color.FromArgb(0, 181, 0);
@@ -32,6 +32,7 @@ namespace CS511_Project_QLNS
 
             cbb_type.SelectedIndex = 0;
 
+            local_dir = con.local_dir;
 
             //establish the sqlCon for db
             connect = con.connect;

@@ -59,6 +59,7 @@
             this.lbl_price.TabIndex = 1;
             this.lbl_price.Text = "label2";
             this.lbl_price.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_price.Click += new System.EventHandler(this.lbl_price_Click);
             // 
             // panel1
             // 
@@ -78,6 +79,7 @@
             this.lbl_name.TabIndex = 0;
             this.lbl_name.Text = "label1";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbl_name.Click += new System.EventHandler(this.lbl_name_Click);
             // 
             // ptb_cart
             // 
@@ -92,11 +94,12 @@
             // ptb_img
             // 
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(11, 38);
+            this.ptb_img.Location = new System.Drawing.Point(14, 38);
             this.ptb_img.Name = "ptb_img";
             this.ptb_img.Size = new System.Drawing.Size(80, 95);
             this.ptb_img.TabIndex = 5;
             this.ptb_img.TabStop = false;
+            this.ptb_img.Click += new System.EventHandler(this.ptb_img_Click);
             // 
             // Uct_Cus_Book
             // 
@@ -110,6 +113,7 @@
             this.Margin = new System.Windows.Forms.Padding(0, 10, 35, 5);
             this.Name = "Uct_Cus_Book";
             this.Size = new System.Drawing.Size(280, 150);
+            this.Click += new System.EventHandler(this.Uct_Cus_Book_Click);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_cart)).EndInit();

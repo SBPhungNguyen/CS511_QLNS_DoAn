@@ -18,7 +18,7 @@ namespace CS511_Project_QLNS
         string constr;
 
         string dir = @"D:\\CS511_PIC";
-        public static string local_dir = "Pic";
+        public static string local_dir;
 
         public Color color_btn_normal = Color.FromArgb(24, 138, 93);
         public Color color_btn_chosen = Color.FromArgb(31, 181, 122);
@@ -32,8 +32,9 @@ namespace CS511_Project_QLNS
         {
             InitializeComponent();
 
-            //this is to set the connect string
+            //this is to set the connect string and get the local directory
             constr = co.connect;
+            local_dir = co.local_dir;
 
             //this is to create an transfer the info from the dir to the D: absolute link
             if (!Directory.Exists(local_dir))

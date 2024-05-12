@@ -424,5 +424,11 @@
   <ItemGroup>
     <None Include="Resources\icon_send.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_female.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_male.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

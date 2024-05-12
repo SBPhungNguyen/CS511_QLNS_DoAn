@@ -57,12 +57,12 @@
             this.rad_male = new System.Windows.Forms.RadioButton();
             this.rad_female = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
-            this.txt_cmtname = new CS511_Project_QLNS.Uct_textbox();
             this.ptb_cmtpic = new System.Windows.Forms.PictureBox();
             this.rtb_cmttext = new System.Windows.Forms.RichTextBox();
             this.fpnl_cmt = new System.Windows.Forms.FlowLayoutPanel();
-            this.customButton1 = new CS511_Project_QLNS.View.CustomButton();
             this.label10 = new System.Windows.Forms.Label();
+            this.customButton1 = new CS511_Project_QLNS.View.CustomButton();
+            this.txt_cmtname = new CS511_Project_QLNS.Uct_textbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.panel3.SuspendLayout();
@@ -94,6 +94,9 @@
             this.btn_exit.Size = new System.Drawing.Size(30, 30);
             this.btn_exit.TabIndex = 18;
             this.btn_exit.TabStop = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.btn_exit.MouseEnter += new System.EventHandler(this.btn_exit_MouseEnter);
+            this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
             // 
             // panel2
             // 
@@ -207,7 +210,7 @@
             this.panel4.Controls.Add(this.lbl_name);
             this.panel4.Location = new System.Drawing.Point(259, 403);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(275, 51);
+            this.panel4.Size = new System.Drawing.Size(301, 51);
             this.panel4.TabIndex = 20;
             // 
             // lbl_name
@@ -216,7 +219,7 @@
             this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_name.Location = new System.Drawing.Point(0, 0);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(275, 51);
+            this.lbl_name.Size = new System.Drawing.Size(301, 51);
             this.lbl_name.TabIndex = 21;
             this.lbl_name.Text = "asdasd asd safjkhga ufau fduer";
             // 
@@ -225,7 +228,7 @@
             this.lbl_title.AutoSize = true;
             this.lbl_title.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_title.ForeColor = System.Drawing.Color.Green;
-            this.lbl_title.Location = new System.Drawing.Point(167, 53);
+            this.lbl_title.Location = new System.Drawing.Point(159, 53);
             this.lbl_title.Name = "lbl_title";
             this.lbl_title.Size = new System.Drawing.Size(208, 40);
             this.lbl_title.TabIndex = 21;
@@ -236,7 +239,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Green;
-            this.label2.Location = new System.Drawing.Point(851, 53);
+            this.label2.Location = new System.Drawing.Point(865, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(187, 40);
             this.label2.TabIndex = 22;
@@ -332,6 +335,7 @@
             this.rad_male.TabStop = true;
             this.rad_male.Text = "Male";
             this.rad_male.UseVisualStyleBackColor = true;
+            this.rad_male.CheckedChanged += new System.EventHandler(this.rad_male_CheckedChanged);
             // 
             // rad_female
             // 
@@ -344,6 +348,7 @@
             this.rad_female.TabStop = true;
             this.rad_female.Text = "Female";
             this.rad_female.UseVisualStyleBackColor = true;
+            this.rad_female.CheckedChanged += new System.EventHandler(this.rad_female_CheckedChanged);
             // 
             // label8
             // 
@@ -355,27 +360,9 @@
             this.label8.TabIndex = 32;
             this.label8.Text = "Name:";
             // 
-            // txt_cmtname
-            // 
-            this.txt_cmtname.BackColor = System.Drawing.SystemColors.Window;
-            this.txt_cmtname.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.txt_cmtname.BorderFocusColor = System.Drawing.Color.Green;
-            this.txt_cmtname.BorderSize = 2;
-            this.txt_cmtname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cmtname.ForeColor = System.Drawing.Color.Black;
-            this.txt_cmtname.Location = new System.Drawing.Point(824, 184);
-            this.txt_cmtname.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_cmtname.Multiline = false;
-            this.txt_cmtname.Name = "txt_cmtname";
-            this.txt_cmtname.Padding = new System.Windows.Forms.Padding(7);
-            this.txt_cmtname.PasswordChar = false;
-            this.txt_cmtname.Size = new System.Drawing.Size(342, 35);
-            this.txt_cmtname.TabIndex = 33;
-            this.txt_cmtname.Texts = "";
-            this.txt_cmtname.UnderlineStyle = true;
-            // 
             // ptb_cmtpic
             // 
+            this.ptb_cmtpic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_cmtpic.Location = new System.Drawing.Point(699, 233);
             this.ptb_cmtpic.Name = "ptb_cmtpic";
             this.ptb_cmtpic.Size = new System.Drawing.Size(75, 75);
@@ -398,6 +385,17 @@
             this.fpnl_cmt.Size = new System.Drawing.Size(705, 385);
             this.fpnl_cmt.TabIndex = 36;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Green;
+            this.label10.Location = new System.Drawing.Point(584, 372);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(210, 28);
+            this.label10.TabIndex = 38;
+            this.label10.Text = "Other Comments";
+            // 
             // customButton1
             // 
             this.customButton1.BackColor = System.Drawing.Color.Green;
@@ -417,16 +415,24 @@
             this.customButton1.TextColor = System.Drawing.Color.White;
             this.customButton1.UseVisualStyleBackColor = false;
             // 
-            // label10
+            // txt_cmtname
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Green;
-            this.label10.Location = new System.Drawing.Point(584, 372);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(210, 28);
-            this.label10.TabIndex = 38;
-            this.label10.Text = "Other Comments";
+            this.txt_cmtname.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_cmtname.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_cmtname.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_cmtname.BorderSize = 2;
+            this.txt_cmtname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cmtname.ForeColor = System.Drawing.Color.Black;
+            this.txt_cmtname.Location = new System.Drawing.Point(824, 184);
+            this.txt_cmtname.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_cmtname.Multiline = false;
+            this.txt_cmtname.Name = "txt_cmtname";
+            this.txt_cmtname.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_cmtname.PasswordChar = false;
+            this.txt_cmtname.Size = new System.Drawing.Size(342, 35);
+            this.txt_cmtname.TabIndex = 33;
+            this.txt_cmtname.Texts = "";
+            this.txt_cmtname.UnderlineStyle = true;
             // 
             // BookInfo
             // 
