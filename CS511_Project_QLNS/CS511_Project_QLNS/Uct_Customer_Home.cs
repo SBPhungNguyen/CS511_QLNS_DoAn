@@ -16,18 +16,23 @@ namespace CS511_Project_QLNS
         connection con = new connection();
         string connect;
 
-        SqlConnection sqlCon;
+        public SqlConnection sqlCon;
+        public string local_dir = "Pic/";
 
-        string local_dir = "Pic/";
-        
+        public Color btn_cate_normal = Color.Green;
+        public Color btn_cate_chosen = Color.FromArgb(0, 181, 0);
+
         public Uct_Customer_Home()
         {
             InitializeComponent();
             fpnl_books.WrapContents = true; 
             fpnl_books.AutoScroll = true;
 
-            connect = con.connect;
+            cbb_type.SelectedIndex = 0;
 
+
+            //establish the sqlCon for db
+            connect = con.connect;
             sqlCon = new SqlConnection(connect);
 
             LoadData();

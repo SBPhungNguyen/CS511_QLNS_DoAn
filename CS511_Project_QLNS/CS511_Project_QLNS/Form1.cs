@@ -11,14 +11,18 @@ using System.Windows.Forms;
 
 namespace CS511_Project_QLNS
 {
+
     public partial class Form1 : Form
     {
         connection co = new connection();
         string constr;
 
         string dir = @"D:\\CS511_PIC";
+        public static string local_dir = "Pic";
 
-        string local_dir = "Pic";
+        public Color btn_normal = Color.FromArgb(24, 138, 93);
+        public Color btn_chosen = Color.FromArgb(31, 181, 122);
+
         public Form1()
         {
             InitializeComponent();

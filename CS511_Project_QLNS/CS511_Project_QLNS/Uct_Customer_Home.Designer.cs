@@ -28,78 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.fpnl_books = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_cat6 = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_cat5 = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_cat4 = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_cat3 = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_cat2 = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_cat1 = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_all = new CS511_Project_QLNS.View.CustomButton();
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
             this.txt_search = new CS511_Project_QLNS.Uct_textbox();
             this.cbb_type = new System.Windows.Forms.ComboBox();
             this.ptb_Search = new System.Windows.Forms.PictureBox();
-            this.fpnl_books = new System.Windows.Forms.FlowLayoutPanel();
-            this.btn_all = new CS511_Project_QLNS.View.CustomButton();
-            this.btn_cat1 = new CS511_Project_QLNS.View.CustomButton();
-            this.btn_cat3 = new CS511_Project_QLNS.View.CustomButton();
-            this.btn_cat2 = new CS511_Project_QLNS.View.CustomButton();
-            this.btn_cat6 = new CS511_Project_QLNS.View.CustomButton();
-            this.btn_cat5 = new CS511_Project_QLNS.View.CustomButton();
-            this.btn_cat4 = new CS511_Project_QLNS.View.CustomButton();
             this.customPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_Search)).BeginInit();
             this.SuspendLayout();
-            // 
-            // customPanel1
-            // 
-            this.customPanel1.BackColor = System.Drawing.Color.White;
-            this.customPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(101)))), ((int)(((byte)(69)))));
-            this.customPanel1.Controls.Add(this.txt_search);
-            this.customPanel1.Controls.Add(this.cbb_type);
-            this.customPanel1.Controls.Add(this.ptb_Search);
-            this.customPanel1.Location = new System.Drawing.Point(2, 1);
-            this.customPanel1.Name = "customPanel1";
-            this.customPanel1.Radius = 5;
-            this.customPanel1.Size = new System.Drawing.Size(425, 45);
-            this.customPanel1.TabIndex = 0;
-            this.customPanel1.Thickness = 2F;
-            // 
-            // txt_search
-            // 
-            this.txt_search.BackColor = System.Drawing.SystemColors.Window;
-            this.txt_search.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.txt_search.BorderFocusColor = System.Drawing.Color.Green;
-            this.txt_search.BorderSize = 2;
-            this.txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_search.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_search.Location = new System.Drawing.Point(141, 4);
-            this.txt_search.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_search.Multiline = false;
-            this.txt_search.Name = "txt_search";
-            this.txt_search.Padding = new System.Windows.Forms.Padding(7);
-            this.txt_search.PasswordChar = false;
-            this.txt_search.Size = new System.Drawing.Size(229, 35);
-            this.txt_search.TabIndex = 7;
-            this.txt_search.Texts = "";
-            this.txt_search.UnderlineStyle = true;
-            // 
-            // cbb_type
-            // 
-            this.cbb_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbb_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbb_type.FormattingEnabled = true;
-            this.cbb_type.Items.AddRange(new object[] {
-            "All",
-            "Title",
-            "Author"});
-            this.cbb_type.Location = new System.Drawing.Point(12, 9);
-            this.cbb_type.Name = "cbb_type";
-            this.cbb_type.Size = new System.Drawing.Size(121, 26);
-            this.cbb_type.TabIndex = 6;
-            // 
-            // ptb_Search
-            // 
-            this.ptb_Search.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_search;
-            this.ptb_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_Search.Location = new System.Drawing.Point(379, 5);
-            this.ptb_Search.Name = "ptb_Search";
-            this.ptb_Search.Size = new System.Drawing.Size(35, 35);
-            this.ptb_Search.TabIndex = 5;
-            this.ptb_Search.TabStop = false;
             // 
             // fpnl_books
             // 
@@ -109,82 +52,6 @@
             this.fpnl_books.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.fpnl_books.Size = new System.Drawing.Size(980, 561);
             this.fpnl_books.TabIndex = 31;
-            // 
-            // btn_all
-            // 
-            this.btn_all.BackColor = System.Drawing.Color.Green;
-            this.btn_all.BackgroundColor = System.Drawing.Color.Green;
-            this.btn_all.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_all.BorderRadius = 0;
-            this.btn_all.BorderSize = 0;
-            this.btn_all.FlatAppearance.BorderSize = 0;
-            this.btn_all.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_all.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_all.ForeColor = System.Drawing.Color.White;
-            this.btn_all.Location = new System.Drawing.Point(0, 58);
-            this.btn_all.Name = "btn_all";
-            this.btn_all.Size = new System.Drawing.Size(140, 40);
-            this.btn_all.TabIndex = 32;
-            this.btn_all.Text = "All";
-            this.btn_all.TextColor = System.Drawing.Color.White;
-            this.btn_all.UseVisualStyleBackColor = false;
-            // 
-            // btn_cat1
-            // 
-            this.btn_cat1.BackColor = System.Drawing.Color.Green;
-            this.btn_cat1.BackgroundColor = System.Drawing.Color.Green;
-            this.btn_cat1.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_cat1.BorderRadius = 0;
-            this.btn_cat1.BorderSize = 0;
-            this.btn_cat1.FlatAppearance.BorderSize = 0;
-            this.btn_cat1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cat1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cat1.ForeColor = System.Drawing.Color.White;
-            this.btn_cat1.Location = new System.Drawing.Point(140, 58);
-            this.btn_cat1.Name = "btn_cat1";
-            this.btn_cat1.Size = new System.Drawing.Size(140, 40);
-            this.btn_cat1.TabIndex = 33;
-            this.btn_cat1.Text = "Classics";
-            this.btn_cat1.TextColor = System.Drawing.Color.White;
-            this.btn_cat1.UseVisualStyleBackColor = false;
-            // 
-            // btn_cat3
-            // 
-            this.btn_cat3.BackColor = System.Drawing.Color.Green;
-            this.btn_cat3.BackgroundColor = System.Drawing.Color.Green;
-            this.btn_cat3.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_cat3.BorderRadius = 0;
-            this.btn_cat3.BorderSize = 0;
-            this.btn_cat3.FlatAppearance.BorderSize = 0;
-            this.btn_cat3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cat3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cat3.ForeColor = System.Drawing.Color.White;
-            this.btn_cat3.Location = new System.Drawing.Point(420, 58);
-            this.btn_cat3.Name = "btn_cat3";
-            this.btn_cat3.Size = new System.Drawing.Size(140, 40);
-            this.btn_cat3.TabIndex = 35;
-            this.btn_cat3.Text = "Self Help";
-            this.btn_cat3.TextColor = System.Drawing.Color.White;
-            this.btn_cat3.UseVisualStyleBackColor = false;
-            // 
-            // btn_cat2
-            // 
-            this.btn_cat2.BackColor = System.Drawing.Color.Green;
-            this.btn_cat2.BackgroundColor = System.Drawing.Color.Green;
-            this.btn_cat2.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_cat2.BorderRadius = 0;
-            this.btn_cat2.BorderSize = 0;
-            this.btn_cat2.FlatAppearance.BorderSize = 0;
-            this.btn_cat2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cat2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cat2.ForeColor = System.Drawing.Color.White;
-            this.btn_cat2.Location = new System.Drawing.Point(280, 58);
-            this.btn_cat2.Name = "btn_cat2";
-            this.btn_cat2.Size = new System.Drawing.Size(140, 40);
-            this.btn_cat2.TabIndex = 34;
-            this.btn_cat2.Text = "Fantasy";
-            this.btn_cat2.TextColor = System.Drawing.Color.White;
-            this.btn_cat2.UseVisualStyleBackColor = false;
             // 
             // btn_cat6
             // 
@@ -242,6 +109,139 @@
             this.btn_cat4.Text = "Non-Fiction";
             this.btn_cat4.TextColor = System.Drawing.Color.White;
             this.btn_cat4.UseVisualStyleBackColor = false;
+            // 
+            // btn_cat3
+            // 
+            this.btn_cat3.BackColor = System.Drawing.Color.Green;
+            this.btn_cat3.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_cat3.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_cat3.BorderRadius = 0;
+            this.btn_cat3.BorderSize = 0;
+            this.btn_cat3.FlatAppearance.BorderSize = 0;
+            this.btn_cat3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cat3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cat3.ForeColor = System.Drawing.Color.White;
+            this.btn_cat3.Location = new System.Drawing.Point(420, 58);
+            this.btn_cat3.Name = "btn_cat3";
+            this.btn_cat3.Size = new System.Drawing.Size(140, 40);
+            this.btn_cat3.TabIndex = 35;
+            this.btn_cat3.Text = "Self Help";
+            this.btn_cat3.TextColor = System.Drawing.Color.White;
+            this.btn_cat3.UseVisualStyleBackColor = false;
+            // 
+            // btn_cat2
+            // 
+            this.btn_cat2.BackColor = System.Drawing.Color.Green;
+            this.btn_cat2.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_cat2.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_cat2.BorderRadius = 0;
+            this.btn_cat2.BorderSize = 0;
+            this.btn_cat2.FlatAppearance.BorderSize = 0;
+            this.btn_cat2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cat2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cat2.ForeColor = System.Drawing.Color.White;
+            this.btn_cat2.Location = new System.Drawing.Point(280, 58);
+            this.btn_cat2.Name = "btn_cat2";
+            this.btn_cat2.Size = new System.Drawing.Size(140, 40);
+            this.btn_cat2.TabIndex = 34;
+            this.btn_cat2.Text = "Fantasy";
+            this.btn_cat2.TextColor = System.Drawing.Color.White;
+            this.btn_cat2.UseVisualStyleBackColor = false;
+            // 
+            // btn_cat1
+            // 
+            this.btn_cat1.BackColor = System.Drawing.Color.Green;
+            this.btn_cat1.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_cat1.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_cat1.BorderRadius = 0;
+            this.btn_cat1.BorderSize = 0;
+            this.btn_cat1.FlatAppearance.BorderSize = 0;
+            this.btn_cat1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cat1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cat1.ForeColor = System.Drawing.Color.White;
+            this.btn_cat1.Location = new System.Drawing.Point(140, 58);
+            this.btn_cat1.Name = "btn_cat1";
+            this.btn_cat1.Size = new System.Drawing.Size(140, 40);
+            this.btn_cat1.TabIndex = 33;
+            this.btn_cat1.Text = "Classics";
+            this.btn_cat1.TextColor = System.Drawing.Color.White;
+            this.btn_cat1.UseVisualStyleBackColor = false;
+            // 
+            // btn_all
+            // 
+            this.btn_all.BackColor = System.Drawing.Color.Green;
+            this.btn_all.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_all.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_all.BorderRadius = 0;
+            this.btn_all.BorderSize = 0;
+            this.btn_all.FlatAppearance.BorderSize = 0;
+            this.btn_all.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_all.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_all.ForeColor = System.Drawing.Color.White;
+            this.btn_all.Location = new System.Drawing.Point(0, 58);
+            this.btn_all.Name = "btn_all";
+            this.btn_all.Size = new System.Drawing.Size(140, 40);
+            this.btn_all.TabIndex = 32;
+            this.btn_all.Text = "All";
+            this.btn_all.TextColor = System.Drawing.Color.White;
+            this.btn_all.UseVisualStyleBackColor = false;
+            // 
+            // customPanel1
+            // 
+            this.customPanel1.BackColor = System.Drawing.Color.White;
+            this.customPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(101)))), ((int)(((byte)(69)))));
+            this.customPanel1.Controls.Add(this.txt_search);
+            this.customPanel1.Controls.Add(this.cbb_type);
+            this.customPanel1.Controls.Add(this.ptb_Search);
+            this.customPanel1.Location = new System.Drawing.Point(2, 1);
+            this.customPanel1.Name = "customPanel1";
+            this.customPanel1.Radius = 5;
+            this.customPanel1.Size = new System.Drawing.Size(425, 45);
+            this.customPanel1.TabIndex = 0;
+            this.customPanel1.Thickness = 2F;
+            // 
+            // txt_search
+            // 
+            this.txt_search.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_search.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_search.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_search.BorderSize = 2;
+            this.txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_search.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_search.Location = new System.Drawing.Point(141, 4);
+            this.txt_search.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_search.Multiline = false;
+            this.txt_search.Name = "txt_search";
+            this.txt_search.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_search.PasswordChar = false;
+            this.txt_search.Size = new System.Drawing.Size(229, 35);
+            this.txt_search.TabIndex = 7;
+            this.txt_search.Texts = "";
+            this.txt_search.UnderlineStyle = true;
+            // 
+            // cbb_type
+            // 
+            this.cbb_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb_type.FormattingEnabled = true;
+            this.cbb_type.Items.AddRange(new object[] {
+            "All",
+            "Title",
+            "Author"});
+            this.cbb_type.Location = new System.Drawing.Point(12, 9);
+            this.cbb_type.Name = "cbb_type";
+            this.cbb_type.Size = new System.Drawing.Size(121, 26);
+            this.cbb_type.TabIndex = 6;
+            // 
+            // ptb_Search
+            // 
+            this.ptb_Search.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_search;
+            this.ptb_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_Search.Location = new System.Drawing.Point(379, 5);
+            this.ptb_Search.Name = "ptb_Search";
+            this.ptb_Search.Size = new System.Drawing.Size(35, 35);
+            this.ptb_Search.TabIndex = 5;
+            this.ptb_Search.TabStop = false;
             // 
             // Uct_Customer_Home
             // 
