@@ -203,6 +203,16 @@ namespace CS511_Project_QLNS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_send {
+            get {
+                object obj = ResourceManager.GetObject("icon_send", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_star_black {
             get {
                 object obj = ResourceManager.GetObject("icon_star_black", resourceCulture);

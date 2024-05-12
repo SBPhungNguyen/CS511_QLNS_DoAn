@@ -71,6 +71,7 @@
             this.btn_cat6.Text = "History";
             this.btn_cat6.TextColor = System.Drawing.Color.White;
             this.btn_cat6.UseVisualStyleBackColor = false;
+            this.btn_cat6.Click += new System.EventHandler(this.btn_cat6_Click);
             // 
             // btn_cat5
             // 
@@ -90,6 +91,7 @@
             this.btn_cat5.Text = "Mystery";
             this.btn_cat5.TextColor = System.Drawing.Color.White;
             this.btn_cat5.UseVisualStyleBackColor = false;
+            this.btn_cat5.Click += new System.EventHandler(this.btn_cat5_Click);
             // 
             // btn_cat4
             // 
@@ -109,6 +111,7 @@
             this.btn_cat4.Text = "Non-Fiction";
             this.btn_cat4.TextColor = System.Drawing.Color.White;
             this.btn_cat4.UseVisualStyleBackColor = false;
+            this.btn_cat4.Click += new System.EventHandler(this.btn_cat4_Click);
             // 
             // btn_cat3
             // 
@@ -128,6 +131,7 @@
             this.btn_cat3.Text = "Self Help";
             this.btn_cat3.TextColor = System.Drawing.Color.White;
             this.btn_cat3.UseVisualStyleBackColor = false;
+            this.btn_cat3.Click += new System.EventHandler(this.btn_cat3_Click);
             // 
             // btn_cat2
             // 
@@ -147,6 +151,7 @@
             this.btn_cat2.Text = "Fantasy";
             this.btn_cat2.TextColor = System.Drawing.Color.White;
             this.btn_cat2.UseVisualStyleBackColor = false;
+            this.btn_cat2.Click += new System.EventHandler(this.btn_cat2_Click);
             // 
             // btn_cat1
             // 
@@ -166,6 +171,7 @@
             this.btn_cat1.Text = "Classics";
             this.btn_cat1.TextColor = System.Drawing.Color.White;
             this.btn_cat1.UseVisualStyleBackColor = false;
+            this.btn_cat1.Click += new System.EventHandler(this.btn_cat1_Click);
             // 
             // btn_all
             // 
@@ -185,6 +191,7 @@
             this.btn_all.Text = "All";
             this.btn_all.TextColor = System.Drawing.Color.White;
             this.btn_all.UseVisualStyleBackColor = false;
+            this.btn_all.Click += new System.EventHandler(this.btn_all_Click);
             // 
             // customPanel1
             // 

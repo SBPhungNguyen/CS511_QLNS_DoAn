@@ -34,6 +34,7 @@
             this.customButton1 = new CS511_Project_QLNS.View.CustomButton();
             this.customButton2 = new CS511_Project_QLNS.View.CustomButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_name = new System.Windows.Forms.Label();
             this.lbl_sumprice = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -48,7 +49,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lbl_name = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -148,12 +148,22 @@
             this.panel2.Size = new System.Drawing.Size(977, 436);
             this.panel2.TabIndex = 5;
             // 
+            // lbl_name
+            // 
+            this.lbl_name.AutoSize = true;
+            this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.Location = new System.Drawing.Point(255, 54);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(63, 22);
+            this.lbl_name.TabIndex = 15;
+            this.lbl_name.Text = "Code:";
+            // 
             // lbl_sumprice
             // 
             this.lbl_sumprice.AutoSize = true;
             this.lbl_sumprice.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_sumprice.ForeColor = System.Drawing.Color.Red;
-            this.lbl_sumprice.Location = new System.Drawing.Point(659, 397);
+            this.lbl_sumprice.Location = new System.Drawing.Point(659, 396);
             this.lbl_sumprice.Name = "lbl_sumprice";
             this.lbl_sumprice.Size = new System.Drawing.Size(27, 28);
             this.lbl_sumprice.TabIndex = 14;
@@ -163,7 +173,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(551, 397);
+            this.label7.Location = new System.Drawing.Point(551, 396);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 28);
             this.label7.TabIndex = 13;
@@ -229,7 +239,7 @@
             // 
             // fpnl_receipt
             // 
-            this.fpnl_receipt.Location = new System.Drawing.Point(4, 146);
+            this.fpnl_receipt.Location = new System.Drawing.Point(4, 142);
             this.fpnl_receipt.Name = "fpnl_receipt";
             this.fpnl_receipt.Size = new System.Drawing.Size(973, 243);
             this.fpnl_receipt.TabIndex = 3;
@@ -242,7 +252,7 @@
             this.customPanel1.Controls.Add(this.label2);
             this.customPanel1.Controls.Add(this.label4);
             this.customPanel1.Controls.Add(this.label3);
-            this.customPanel1.Location = new System.Drawing.Point(7, 94);
+            this.customPanel1.Location = new System.Drawing.Point(7, 91);
             this.customPanel1.Name = "customPanel1";
             this.customPanel1.Radius = 5;
             this.customPanel1.Size = new System.Drawing.Size(936, 45);
@@ -288,16 +298,6 @@
             this.label3.Size = new System.Drawing.Size(56, 22);
             this.label3.TabIndex = 5;
             this.label3.Text = "Price";
-            // 
-            // lbl_name
-            // 
-            this.lbl_name.AutoSize = true;
-            this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.Location = new System.Drawing.Point(255, 54);
-            this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(63, 22);
-            this.lbl_name.TabIndex = 15;
-            this.lbl_name.Text = "Code:";
             // 
             // Uct_Customer_ReceiptSearch
             // 

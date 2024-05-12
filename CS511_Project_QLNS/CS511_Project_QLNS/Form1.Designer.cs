@@ -167,13 +167,14 @@
             this.btn_chat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_chat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_chat.ForeColor = System.Drawing.Color.White;
-            this.btn_chat.Location = new System.Drawing.Point(4, 374);
+            this.btn_chat.Location = new System.Drawing.Point(4, 358);
             this.btn_chat.Name = "btn_chat";
             this.btn_chat.Size = new System.Drawing.Size(263, 63);
             this.btn_chat.TabIndex = 8;
             this.btn_chat.Text = "Chat";
             this.btn_chat.TextColor = System.Drawing.Color.White;
             this.btn_chat.UseVisualStyleBackColor = false;
+            this.btn_chat.Click += new System.EventHandler(this.btn_chat_Click);
             // 
             // btn_receipt
             // 
@@ -187,13 +188,14 @@
             this.btn_receipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_receipt.ForeColor = System.Drawing.Color.White;
             this.btn_receipt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_receipt.Location = new System.Drawing.Point(4, 306);
+            this.btn_receipt.Location = new System.Drawing.Point(4, 296);
             this.btn_receipt.Name = "btn_receipt";
             this.btn_receipt.Size = new System.Drawing.Size(263, 63);
             this.btn_receipt.TabIndex = 7;
             this.btn_receipt.Text = "Receipt Search";
             this.btn_receipt.TextColor = System.Drawing.Color.White;
             this.btn_receipt.UseVisualStyleBackColor = false;
+            this.btn_receipt.Click += new System.EventHandler(this.btn_receipt_Click);
             // 
             // btn_cart
             // 
@@ -206,13 +208,14 @@
             this.btn_cart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cart.ForeColor = System.Drawing.Color.White;
-            this.btn_cart.Location = new System.Drawing.Point(4, 238);
+            this.btn_cart.Location = new System.Drawing.Point(4, 233);
             this.btn_cart.Name = "btn_cart";
             this.btn_cart.Size = new System.Drawing.Size(263, 63);
             this.btn_cart.TabIndex = 6;
             this.btn_cart.Text = "Cart";
             this.btn_cart.TextColor = System.Drawing.Color.White;
             this.btn_cart.UseVisualStyleBackColor = false;
+            this.btn_cart.Click += new System.EventHandler(this.btn_cart_Click);
             // 
             // panel2
             // 
@@ -240,6 +243,7 @@
             this.btn_home.Text = "Home";
             this.btn_home.TextColor = System.Drawing.Color.White;
             this.btn_home.UseVisualStyleBackColor = false;
+            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
             // Form1
             // 

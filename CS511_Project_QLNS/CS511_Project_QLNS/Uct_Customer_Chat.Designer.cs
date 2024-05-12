@@ -43,8 +43,9 @@
             // 
             // ptb_send
             // 
+            this.ptb_send.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_send;
             this.ptb_send.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_send.Location = new System.Drawing.Point(929, 619);
+            this.ptb_send.Location = new System.Drawing.Point(929, 615);
             this.ptb_send.Name = "ptb_send";
             this.ptb_send.Size = new System.Drawing.Size(35, 35);
             this.ptb_send.TabIndex = 11;
@@ -58,13 +59,13 @@
             this.txt_text.BorderSize = 2;
             this.txt_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_text.ForeColor = System.Drawing.Color.Black;
-            this.txt_text.Location = new System.Drawing.Point(0, 619);
+            this.txt_text.Location = new System.Drawing.Point(0, 615);
             this.txt_text.Margin = new System.Windows.Forms.Padding(4);
             this.txt_text.Multiline = false;
             this.txt_text.Name = "txt_text";
             this.txt_text.Padding = new System.Windows.Forms.Padding(7);
             this.txt_text.PasswordChar = false;
-            this.txt_text.Size = new System.Drawing.Size(922, 35);
+            this.txt_text.Size = new System.Drawing.Size(911, 35);
             this.txt_text.TabIndex = 9;
             this.txt_text.Texts = "";
             this.txt_text.UnderlineStyle = false;

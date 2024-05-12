@@ -20,8 +20,13 @@ namespace CS511_Project_QLNS
         string dir = @"D:\\CS511_PIC";
         public static string local_dir = "Pic";
 
-        public Color btn_normal = Color.FromArgb(24, 138, 93);
-        public Color btn_chosen = Color.FromArgb(31, 181, 122);
+        public Color color_btn_normal = Color.FromArgb(24, 138, 93);
+        public Color color_btn_chosen = Color.FromArgb(31, 181, 122);
+
+        Uct_Customer_Home uct_Customer_Home;
+        Uct_Customer_Cart uct_Customer_Cart = new Uct_Customer_Cart();
+        Uct_Customer_ReceiptSearch uct_Customer_ReceiptSearch = new Uct_Customer_ReceiptSearch();
+        Uct_Customer_Chat uct_Customer_Chat = new Uct_Customer_Chat();
 
         public Form1()
         {
@@ -37,11 +42,11 @@ namespace CS511_Project_QLNS
             }
 
             //this is to get the uct_home show up
+            btn_home.BackColor = color_btn_chosen;
             Uct_Customer_Home uct_Customer_Home = new Uct_Customer_Home();
             uct_Customer_Home.Location = new System.Drawing.Point(235, 105);
             uct_Customer_Home.Name = "uct_Customer_Home";
             this.Controls.Add(uct_Customer_Home);
-
 
 
             //Uct_Customer_Cart uct = new Uct_Customer_Cart(); 
@@ -70,6 +75,63 @@ namespace CS511_Project_QLNS
         private void btn_exit_MouseLeave(object sender, EventArgs e)
         {
             btn_exit.BackgroundImage = Properties.Resources.Cross2_image;
+        }
+
+        private void btn_home_Click(object sender, EventArgs e)
+        {
+            btn_home.BackColor = color_btn_chosen;
+            btn_receipt.BackColor = color_btn_normal;
+            btn_cart.BackColor = color_btn_normal;
+            btn_chat.BackColor = color_btn_normal;
+
+            uct_Customer_Home = new Uct_Customer_Home();
+            uct_Customer_Home.Location = new System.Drawing.Point(235, 105);
+            uct_Customer_Home.Name = "uct_Customer_Home";
+            this.Controls.Add(uct_Customer_Home);
+            uct_Customer_Home.BringToFront();
+
+        }
+
+        private void btn_cart_Click(object sender, EventArgs e)
+        {
+            btn_home.BackColor = color_btn_normal;
+            btn_cart.BackColor = color_btn_chosen;
+            btn_receipt.BackColor = color_btn_normal;
+            btn_chat.BackColor = color_btn_normal;
+
+            uct_Customer_Cart = new Uct_Customer_Cart();
+            uct_Customer_Cart.Location = new System.Drawing.Point(235, 105);
+            uct_Customer_Cart.Name = "uct_Customer_Cart";
+            this.Controls.Add(uct_Customer_Cart);
+            uct_Customer_Cart.BringToFront();
+        }
+
+        private void btn_receipt_Click(object sender, EventArgs e)
+        {
+            btn_home.BackColor = color_btn_normal;
+            btn_cart.BackColor = color_btn_normal;
+            btn_receipt.BackColor = color_btn_chosen;
+            btn_chat.BackColor = color_btn_normal;
+
+            uct_Customer_ReceiptSearch = new Uct_Customer_ReceiptSearch();
+            uct_Customer_ReceiptSearch.Location = new System.Drawing.Point(235, 105);
+            uct_Customer_ReceiptSearch.Name = "uct_Customer_ReceiptSearch";
+            this.Controls.Add(uct_Customer_ReceiptSearch);
+            uct_Customer_ReceiptSearch.BringToFront();
+        }
+
+        private void btn_chat_Click(object sender, EventArgs e)
+        {
+            btn_home.BackColor = color_btn_normal;
+            btn_cart.BackColor = color_btn_normal;
+            btn_receipt.BackColor = color_btn_normal;
+            btn_chat.BackColor = color_btn_chosen;
+
+            uct_Customer_Chat = new Uct_Customer_Chat();
+            uct_Customer_Chat.Location = new System.Drawing.Point(235, 105);
+            uct_Customer_Chat.Name = "uct_Customer_Chat";
+            this.Controls.Add(uct_Customer_Chat);
+            uct_Customer_Chat.BringToFront();
         }
     }
 }
