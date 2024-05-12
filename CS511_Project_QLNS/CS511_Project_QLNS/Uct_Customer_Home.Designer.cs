@@ -249,6 +249,7 @@
             this.ptb_Search.Size = new System.Drawing.Size(35, 35);
             this.ptb_Search.TabIndex = 5;
             this.ptb_Search.TabStop = false;
+            this.ptb_Search.Click += new System.EventHandler(this.ptb_Search_Click);
             // 
             // Uct_Customer_Home
             // 
