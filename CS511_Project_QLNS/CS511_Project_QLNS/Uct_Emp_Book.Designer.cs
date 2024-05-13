@@ -79,6 +79,7 @@
             this.lbl_name.Size = new System.Drawing.Size(160, 53);
             this.lbl_name.TabIndex = 0;
             this.lbl_name.Text = "label1";
+            this.lbl_name.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ptb_edit
             // 

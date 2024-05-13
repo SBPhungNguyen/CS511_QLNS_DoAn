@@ -37,17 +37,20 @@
             this.lbl_sum = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_name = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.customPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // customPanel1
             // 
             this.customPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(234)))));
             this.customPanel1.BorderColor = System.Drawing.Color.White;
+            this.customPanel1.Controls.Add(this.pictureBox1);
             this.customPanel1.Controls.Add(this.panel2);
             this.customPanel1.Controls.Add(this.panel3);
             this.customPanel1.Controls.Add(this.panel4);
@@ -100,7 +103,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.lbl_sum);
-            this.panel4.Location = new System.Drawing.Point(719, 18);
+            this.panel4.Location = new System.Drawing.Point(715, 18);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(148, 39);
             this.panel4.TabIndex = 10;
@@ -135,6 +138,16 @@
             this.lbl_name.Text = "Name";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_bin__2_;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(884, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
             // Uct_Emp_Import
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -147,6 +160,7 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -162,5 +176,6 @@
         private System.Windows.Forms.Label lbl_name;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lbl_id;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -26,6 +26,9 @@ namespace CS511_Project_QLNS
         {
             InitializeComponent();
 
+            fpnl_cmt.AutoScroll = true;
+            fpnl_cmt.WrapContents = true;
+
             rad_male.Checked = true;
             ptb_cmtpic.BackgroundImage = Properties.Resources.icon_male;
 
