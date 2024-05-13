@@ -61,7 +61,7 @@ namespace CS511_Project_QLNS
                 Uct_Cus_Book uct_Cus_Book = new Uct_Cus_Book();
                 Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
 
-                uct_Cus_Book.LoadData(rd.GetInt32(0),img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"));
+                uct_Cus_Book.LoadData(rd.GetInt32(0),img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"), rd.GetInt32(8));
                 fpnl_books.Controls.Add(uct_Cus_Book);
             }
 
@@ -85,7 +85,7 @@ namespace CS511_Project_QLNS
                 Uct_Cus_Book uct_Cus_Book = new Uct_Cus_Book();
                 Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
 
-                uct_Cus_Book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"));
+                uct_Cus_Book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"), rd.GetInt32(8));
                 fpnl_books.Controls.Add(uct_Cus_Book);
             }
 
@@ -253,7 +253,7 @@ namespace CS511_Project_QLNS
                         Uct_Cus_Book uct_Cus_Book = new Uct_Cus_Book();
                         Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
 
-                        uct_Cus_Book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"));
+                        uct_Cus_Book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"), rd.GetInt32(8));
                         fpnl_books.Controls.Add(uct_Cus_Book);
                     }
                 }
@@ -279,7 +279,7 @@ namespace CS511_Project_QLNS
                         Uct_Cus_Book uct_Cus_Book = new Uct_Cus_Book();
                         Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
 
-                        uct_Cus_Book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"));
+                        uct_Cus_Book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"), rd.GetInt32(8));
                         fpnl_books.Controls.Add(uct_Cus_Book);
                     }
                 }
@@ -305,7 +305,7 @@ namespace CS511_Project_QLNS
                         Uct_Cus_Book uct_Cus_Book = new Uct_Cus_Book();
                         Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
 
-                        uct_Cus_Book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"));
+                        uct_Cus_Book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"), rd.GetInt32(8));
                         fpnl_books.Controls.Add(uct_Cus_Book);
                     }
                 }
@@ -341,7 +341,7 @@ namespace CS511_Project_QLNS
                         Uct_Cus_Book uct_Cus_Book = new Uct_Cus_Book();
                         Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
 
-                        uct_Cus_Book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"));
+                        uct_Cus_Book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"), rd.GetInt32(8));
                         fpnl_books.Controls.Add(uct_Cus_Book);
                     }
                 }
@@ -367,7 +367,7 @@ namespace CS511_Project_QLNS
                         Uct_Cus_Book uct_Cus_Book = new Uct_Cus_Book();
                         Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
 
-                        uct_Cus_Book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"));
+                        uct_Cus_Book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"), rd.GetInt32(8));
                         fpnl_books.Controls.Add(uct_Cus_Book);
                     }
                 }
@@ -393,7 +393,7 @@ namespace CS511_Project_QLNS
                         Uct_Cus_Book uct_Cus_Book = new Uct_Cus_Book();
                         Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
 
-                        uct_Cus_Book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"));
+                        uct_Cus_Book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"), rd.GetInt32(8));
                         fpnl_books.Controls.Add(uct_Cus_Book);
                     }
                 }

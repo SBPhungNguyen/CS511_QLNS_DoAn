@@ -20,6 +20,10 @@ namespace CS511_Project_QLNS
         string dir = @"D:\\CS511_PIC";
         public static string local_dir;
 
+        //this is to get the info of the cart
+        public string[] cart_info = new string[200];
+        public int cart_count;
+
         public Color color_btn_normal = Color.FromArgb(24, 138, 93);
         public Color color_btn_chosen = Color.FromArgb(31, 181, 122);
 
@@ -49,6 +53,7 @@ namespace CS511_Project_QLNS
             uct_Customer_Home.Name = "uct_Customer_Home";
             this.Controls.Add(uct_Customer_Home);
 
+            cart_count = 0;
 
             //Uct_Customer_Cart uct = new Uct_Customer_Cart(); 
             //uct.Location = new System.Drawing.Point(235, 105);

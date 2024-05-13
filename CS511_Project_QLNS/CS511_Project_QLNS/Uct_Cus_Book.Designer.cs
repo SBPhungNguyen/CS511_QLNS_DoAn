@@ -90,6 +90,7 @@
             this.ptb_cart.Size = new System.Drawing.Size(25, 25);
             this.ptb_cart.TabIndex = 8;
             this.ptb_cart.TabStop = false;
+            this.ptb_cart.Click += new System.EventHandler(this.ptb_cart_Click);
             // 
             // ptb_img
             // 

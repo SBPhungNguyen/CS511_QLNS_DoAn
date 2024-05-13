@@ -15,6 +15,7 @@ namespace CS511_Project_QLNS
     public partial class Uct_Cus_Book : UserControl
     {
         public int id;
+        public Form1 parent_form;
         public Image img
         {
             get {  return ptb_img.BackgroundImage; }
@@ -30,15 +31,20 @@ namespace CS511_Project_QLNS
             get { return lbl_price.Text; }
             set { lbl_price.Text = value; }
         }
+        public int quantity;
+
+
         public Uct_Cus_Book()
         {
             InitializeComponent();
+
         }
-        public void LoadData(int id, Image pic, string title, string price)
+        public void LoadData(int id, Image pic, string title, string price, int quantity)
         {
             this.id = id;
             ptb_img.BackgroundImage = pic;
             this.title = title;
+            this.quantity = quantity;
 
             string formattedNumber = string.Format("{0:#,###}", int.Parse(price));
             this.price = formattedNumber;
@@ -46,8 +52,9 @@ namespace CS511_Project_QLNS
 
         private void Uct_Cus_Book_Click(object sender, EventArgs e)
         {
-            Form form = this.GetParentForm();
             BookInfo bi = new BookInfo(this);
+
+            Form form = GetParentForm();       
             form.Hide();
             bi.ShowDialog();
 
@@ -78,6 +85,34 @@ namespace CS511_Project_QLNS
         private void ptb_img_Click(object sender, EventArgs e)
         {
             this.OnClick(null);
+        }
+
+        private void ptb_cart_Click(object sender, EventArgs e)
+        {
+            if (quantity==0)
+            {
+                MessageBox.Show("Sorry, this product has been run out");
+            }
+            else
+            {
+                parent_form = (Form1) GetParentForm();
+
+                int flag_found = 0;
+
+                for (int i=0;i<parent_form.cart_count;i++)
+                {
+                    if (parent_form.cart_info[i]==id.ToString())
+                    {
+                        flag_found = 1;
+                        break;
+                    }
+                }
+                if (flag_found == 0)
+                {
+                    parent_form.cart_info[parent_form.cart_count]=id.ToString();
+                    parent_form.cart_count++;
+                }
+            }
         }
     }
 }
