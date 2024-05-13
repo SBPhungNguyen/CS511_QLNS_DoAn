@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Uct_Cus_Comment));
             this.lbl_name = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtb_txt = new System.Windows.Forms.RichTextBox();
             this.ptb_star5 = new System.Windows.Forms.PictureBox();
             this.ptb_star4 = new System.Windows.Forms.PictureBox();
             this.ptb_star3 = new System.Windows.Forms.PictureBox();
@@ -54,16 +55,18 @@
             this.lbl_name.TabIndex = 6;
             this.lbl_name.Text = "label1";
             // 
-            // richTextBox1
+            // rtb_txt
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(80, 60);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(568, 50);
-            this.richTextBox1.TabIndex = 7;
-            this.richTextBox1.Text = "";
+            this.rtb_txt.Location = new System.Drawing.Point(80, 60);
+            this.rtb_txt.Name = "rtb_txt";
+            this.rtb_txt.Size = new System.Drawing.Size(568, 50);
+            this.rtb_txt.TabIndex = 7;
+            this.rtb_txt.Text = "";
             // 
             // ptb_star5
             // 
+            this.ptb_star5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptb_star5.BackgroundImage")));
+            this.ptb_star5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_star5.Location = new System.Drawing.Point(205, 8);
             this.ptb_star5.Name = "ptb_star5";
             this.ptb_star5.Size = new System.Drawing.Size(25, 25);
@@ -72,6 +75,8 @@
             // 
             // ptb_star4
             // 
+            this.ptb_star4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptb_star4.BackgroundImage")));
+            this.ptb_star4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_star4.Location = new System.Drawing.Point(174, 8);
             this.ptb_star4.Name = "ptb_star4";
             this.ptb_star4.Size = new System.Drawing.Size(25, 25);
@@ -80,6 +85,8 @@
             // 
             // ptb_star3
             // 
+            this.ptb_star3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptb_star3.BackgroundImage")));
+            this.ptb_star3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_star3.Location = new System.Drawing.Point(142, 8);
             this.ptb_star3.Name = "ptb_star3";
             this.ptb_star3.Size = new System.Drawing.Size(25, 25);
@@ -88,6 +95,8 @@
             // 
             // ptb_star2
             // 
+            this.ptb_star2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptb_star2.BackgroundImage")));
+            this.ptb_star2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_star2.Location = new System.Drawing.Point(111, 8);
             this.ptb_star2.Name = "ptb_star2";
             this.ptb_star2.Size = new System.Drawing.Size(25, 25);
@@ -96,6 +105,8 @@
             // 
             // ptb_star1
             // 
+            this.ptb_star1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptb_star1.BackgroundImage")));
+            this.ptb_star1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_star1.Location = new System.Drawing.Point(80, 8);
             this.ptb_star1.Name = "ptb_star1";
             this.ptb_star1.Size = new System.Drawing.Size(25, 25);
@@ -104,6 +115,7 @@
             // 
             // ptb_img
             // 
+            this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_img.Location = new System.Drawing.Point(19, 8);
             this.ptb_img.Name = "ptb_img";
             this.ptb_img.Size = new System.Drawing.Size(47, 47);
@@ -114,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtb_txt);
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.ptb_star5);
             this.Controls.Add(this.ptb_star4);
@@ -145,6 +157,6 @@
         private System.Windows.Forms.PictureBox ptb_star4;
         private System.Windows.Forms.PictureBox ptb_star5;
         private System.Windows.Forms.Label lbl_name;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtb_txt;
     }
 }

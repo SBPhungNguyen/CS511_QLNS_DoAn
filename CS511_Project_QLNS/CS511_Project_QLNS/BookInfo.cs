@@ -16,6 +16,8 @@ namespace CS511_Project_QLNS
     {
         public int id;
         public int star_chosen;
+        public int is_female;
+        public int star_count;
 
         connection con = new connection();
         string connect;
@@ -30,6 +32,7 @@ namespace CS511_Project_QLNS
             fpnl_cmt.WrapContents = true;
 
             rad_male.Checked = true;
+            is_female = 0;
             ptb_cmtpic.BackgroundImage = Properties.Resources.icon_male;
 
             this.id = uct.id;
@@ -41,6 +44,7 @@ namespace CS511_Project_QLNS
 
             LoadData();
 
+            LoadComment();
         }
         public void LoadData()
         {
@@ -82,6 +86,28 @@ namespace CS511_Project_QLNS
             sqlCon.Close();
         }
 
+        public void LoadComment()
+        {
+            sqlCon = new SqlConnection(connect);
+            if (sqlCon.State == ConnectionState.Closed)
+            {
+                sqlCon.Open();
+            }
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM TBL_BOOK_COMMENT WHERE ID_BOOK = " + id;
+
+            SqlDataReader rd = cmd.ExecuteReader();
+
+            while (rd.Read())
+            {
+                Uct_Cus_Comment uct = new Uct_Cus_Comment();
+                uct.LoadData(rd.GetString(3), rd.GetInt32(2), rd.GetInt32(1), rd.GetString(4));
+                fpnl_cmt.Controls.Add(uct);
+            }
+        }
+
         private void btn_exit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -101,11 +127,13 @@ namespace CS511_Project_QLNS
         private void rad_male_CheckedChanged(object sender, EventArgs e)
         {
             ptb_cmtpic.BackgroundImage = Properties.Resources.icon_male;
+            is_female = 0;
         }
 
         private void rad_female_CheckedChanged(object sender, EventArgs e)
         {
             ptb_cmtpic.BackgroundImage = Properties.Resources.icon_female;
+            is_female = 1;
 
         }
 
@@ -141,6 +169,7 @@ namespace CS511_Project_QLNS
             ptb_star4.BackgroundImage = Properties.Resources.icon_star_black;
             ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
             star_chosen = 1;
+            star_count = 1;
         }
         private void ptb_star2_MouseEnter(object sender, EventArgs e)
         {
@@ -173,6 +202,7 @@ namespace CS511_Project_QLNS
             ptb_star4.BackgroundImage = Properties.Resources.icon_star_black;
             ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
             star_chosen = 1;
+            star_count = 2;
         }
 
         private void ptb_star3_MouseEnter(object sender, EventArgs e)
@@ -207,6 +237,7 @@ namespace CS511_Project_QLNS
             ptb_star4.BackgroundImage = Properties.Resources.icon_star_black;
             ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
             star_chosen = 1;
+            star_count = 3;
         }
 
         private void ptb_star4_MouseEnter(object sender, EventArgs e)
@@ -241,6 +272,7 @@ namespace CS511_Project_QLNS
             ptb_star4.BackgroundImage = Properties.Resources.icon_star_yellow;
             ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
             star_chosen = 1;
+            star_count = 4;
         }
 
         private void ptb_star5_MouseEnter(object sender, EventArgs e)
@@ -275,6 +307,20 @@ namespace CS511_Project_QLNS
             ptb_star4.BackgroundImage = Properties.Resources.icon_star_yellow;
             ptb_star5.BackgroundImage = Properties.Resources.icon_star_yellow;
             star_chosen = 1;
+            star_count = 5;
+        }
+
+        private void btn_postcomment_Click(object sender, EventArgs e)
+        {
+            if (txt_cmtname.Texts == "" || rtb_cmttext.Text == "" || star_chosen == 0)
+            {
+                MessageBox.Show("Please feel in all the blanks", "Opps");
+                return;
+            }
+            else
+            {
+                //write the code to show on fpnl_comment and save to db
+            }
         }
     }
 }

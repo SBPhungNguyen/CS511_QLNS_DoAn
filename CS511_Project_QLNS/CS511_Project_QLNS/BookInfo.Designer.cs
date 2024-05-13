@@ -61,7 +61,7 @@
             this.rtb_cmttext = new System.Windows.Forms.RichTextBox();
             this.fpnl_cmt = new System.Windows.Forms.FlowLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
-            this.customButton1 = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_postcomment = new CS511_Project_QLNS.View.CustomButton();
             this.txt_cmtname = new CS511_Project_QLNS.Uct_textbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
@@ -411,24 +411,25 @@
             this.label10.TabIndex = 38;
             this.label10.Text = "Other Comments";
             // 
-            // customButton1
+            // btn_postcomment
             // 
-            this.customButton1.BackColor = System.Drawing.Color.Green;
-            this.customButton1.BackgroundColor = System.Drawing.Color.Green;
-            this.customButton1.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.customButton1.BorderRadius = 20;
-            this.customButton1.BorderSize = 0;
-            this.customButton1.FlatAppearance.BorderSize = 0;
-            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(824, 319);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(230, 40);
-            this.customButton1.TabIndex = 37;
-            this.customButton1.Text = "Post comment";
-            this.customButton1.TextColor = System.Drawing.Color.White;
-            this.customButton1.UseVisualStyleBackColor = false;
+            this.btn_postcomment.BackColor = System.Drawing.Color.Green;
+            this.btn_postcomment.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_postcomment.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_postcomment.BorderRadius = 20;
+            this.btn_postcomment.BorderSize = 0;
+            this.btn_postcomment.FlatAppearance.BorderSize = 0;
+            this.btn_postcomment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_postcomment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_postcomment.ForeColor = System.Drawing.Color.White;
+            this.btn_postcomment.Location = new System.Drawing.Point(824, 319);
+            this.btn_postcomment.Name = "btn_postcomment";
+            this.btn_postcomment.Size = new System.Drawing.Size(230, 40);
+            this.btn_postcomment.TabIndex = 37;
+            this.btn_postcomment.Text = "Post comment";
+            this.btn_postcomment.TextColor = System.Drawing.Color.White;
+            this.btn_postcomment.UseVisualStyleBackColor = false;
+            this.btn_postcomment.Click += new System.EventHandler(this.btn_postcomment_Click);
             // 
             // txt_cmtname
             // 
@@ -447,7 +448,7 @@
             this.txt_cmtname.Size = new System.Drawing.Size(342, 35);
             this.txt_cmtname.TabIndex = 33;
             this.txt_cmtname.Texts = "";
-            this.txt_cmtname.UnderlineStyle = true;
+            this.txt_cmtname.UnderlineStyle = false;
             // 
             // BookInfo
             // 
@@ -456,7 +457,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1300, 800);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.customButton1);
+            this.Controls.Add(this.btn_postcomment);
             this.Controls.Add(this.fpnl_cmt);
             this.Controls.Add(this.rtb_cmttext);
             this.Controls.Add(this.ptb_cmtpic);
@@ -540,7 +541,7 @@
         private System.Windows.Forms.PictureBox ptb_cmtpic;
         private System.Windows.Forms.RichTextBox rtb_cmttext;
         private System.Windows.Forms.FlowLayoutPanel fpnl_cmt;
-        private View.CustomButton customButton1;
+        private View.CustomButton btn_postcomment;
         private System.Windows.Forms.Label label10;
     }
 }
