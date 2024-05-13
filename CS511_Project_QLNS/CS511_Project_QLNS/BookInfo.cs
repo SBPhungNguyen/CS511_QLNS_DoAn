@@ -15,6 +15,7 @@ namespace CS511_Project_QLNS
     public partial class BookInfo : Form
     {
         public int id;
+        public int star_chosen;
 
         connection con = new connection();
         string connect;
@@ -32,6 +33,7 @@ namespace CS511_Project_QLNS
 
 
             connect = con.connect;
+            star_chosen = 0;
 
 
             LoadData();
@@ -92,6 +94,7 @@ namespace CS511_Project_QLNS
             btn_exit.BackgroundImage = Properties.Resources.Cross2_image;
         }
 
+        //these codes is for changing pic in comment
         private void rad_male_CheckedChanged(object sender, EventArgs e)
         {
             ptb_cmtpic.BackgroundImage = Properties.Resources.icon_male;
@@ -101,6 +104,174 @@ namespace CS511_Project_QLNS
         {
             ptb_cmtpic.BackgroundImage = Properties.Resources.icon_female;
 
+        }
+
+        //these codes below is for the stars in the comments
+        private void ptb_star1_MouseEnter(object sender, EventArgs e)
+        {
+            if (star_chosen==0)
+            {
+                ptb_star1.BackgroundImage = Properties.Resources.icon_star_yellow;
+                ptb_star2.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star3.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star4.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
+            }
+        }
+
+        private void ptb_star1_MouseLeave(object sender, EventArgs e)
+        {
+            if (star_chosen==0)
+            {
+                ptb_star1.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star2.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star3.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star4.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
+            }
+        }
+        private void ptb_star1_Click(object sender, EventArgs e)
+        {
+            ptb_star1.BackgroundImage = Properties.Resources.icon_star_yellow;
+            ptb_star2.BackgroundImage = Properties.Resources.icon_star_black;
+            ptb_star3.BackgroundImage = Properties.Resources.icon_star_black;
+            ptb_star4.BackgroundImage = Properties.Resources.icon_star_black;
+            ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
+            star_chosen = 1;
+        }
+        private void ptb_star2_MouseEnter(object sender, EventArgs e)
+        {
+            if (star_chosen == 0)
+            {
+                ptb_star1.BackgroundImage = Properties.Resources.icon_star_yellow;
+                ptb_star2.BackgroundImage = Properties.Resources.icon_star_yellow;
+                ptb_star3.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star4.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
+            }
+        }
+        private void ptb_star2_MouseLeave(object sender, EventArgs e)
+        {
+            if (star_chosen == 0)
+            {
+                ptb_star1.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star2.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star3.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star4.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
+            }
+        }
+
+        private void ptb_star2_Click(object sender, EventArgs e)
+        {
+            ptb_star1.BackgroundImage = Properties.Resources.icon_star_yellow;
+            ptb_star2.BackgroundImage = Properties.Resources.icon_star_yellow;
+            ptb_star3.BackgroundImage = Properties.Resources.icon_star_black;
+            ptb_star4.BackgroundImage = Properties.Resources.icon_star_black;
+            ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
+            star_chosen = 1;
+        }
+
+        private void ptb_star3_MouseEnter(object sender, EventArgs e)
+        {
+            if (star_chosen == 0)
+            {
+                ptb_star1.BackgroundImage = Properties.Resources.icon_star_yellow;
+                ptb_star2.BackgroundImage = Properties.Resources.icon_star_yellow;
+                ptb_star3.BackgroundImage = Properties.Resources.icon_star_yellow;
+                ptb_star4.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
+            }
+        }
+
+        private void ptb_star3_MouseLeave(object sender, EventArgs e)
+        {
+            if (star_chosen == 0)
+            {
+                ptb_star1.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star2.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star3.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star4.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
+            }
+        }
+
+        private void ptb_star3_Click(object sender, EventArgs e)
+        {
+            ptb_star1.BackgroundImage = Properties.Resources.icon_star_yellow;
+            ptb_star2.BackgroundImage = Properties.Resources.icon_star_yellow;
+            ptb_star3.BackgroundImage = Properties.Resources.icon_star_yellow;
+            ptb_star4.BackgroundImage = Properties.Resources.icon_star_black;
+            ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
+            star_chosen = 1;
+        }
+
+        private void ptb_star4_MouseEnter(object sender, EventArgs e)
+        {
+            if (star_chosen == 0)
+            {
+                ptb_star1.BackgroundImage = Properties.Resources.icon_star_yellow;
+                ptb_star2.BackgroundImage = Properties.Resources.icon_star_yellow;
+                ptb_star3.BackgroundImage = Properties.Resources.icon_star_yellow;
+                ptb_star4.BackgroundImage = Properties.Resources.icon_star_yellow;
+                ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
+            }
+        }
+
+        private void ptb_star4_MouseLeave(object sender, EventArgs e)
+        {
+            if (star_chosen == 0)
+            {
+                ptb_star1.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star2.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star3.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star4.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
+            }
+        }
+
+        private void ptb_star4_Click(object sender, EventArgs e)
+        {
+            ptb_star1.BackgroundImage = Properties.Resources.icon_star_yellow;
+            ptb_star2.BackgroundImage = Properties.Resources.icon_star_yellow;
+            ptb_star3.BackgroundImage = Properties.Resources.icon_star_yellow;
+            ptb_star4.BackgroundImage = Properties.Resources.icon_star_yellow;
+            ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
+            star_chosen = 1;
+        }
+
+        private void ptb_star5_MouseEnter(object sender, EventArgs e)
+        {
+            if (star_chosen == 0)
+            {
+                ptb_star1.BackgroundImage = Properties.Resources.icon_star_yellow;
+                ptb_star2.BackgroundImage = Properties.Resources.icon_star_yellow;
+                ptb_star3.BackgroundImage = Properties.Resources.icon_star_yellow;
+                ptb_star4.BackgroundImage = Properties.Resources.icon_star_yellow;
+                ptb_star5.BackgroundImage = Properties.Resources.icon_star_yellow;
+            }
+        }
+
+        private void ptb_star5_MouseLeave(object sender, EventArgs e)
+        {
+            if (star_chosen == 0)
+            {
+                ptb_star1.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star2.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star3.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star4.BackgroundImage = Properties.Resources.icon_star_black;
+                ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
+            }
+        }
+
+        private void ptb_star5_Click(object sender, EventArgs e)
+        {
+            ptb_star1.BackgroundImage = Properties.Resources.icon_star_yellow;
+            ptb_star2.BackgroundImage = Properties.Resources.icon_star_yellow;
+            ptb_star3.BackgroundImage = Properties.Resources.icon_star_yellow;
+            ptb_star4.BackgroundImage = Properties.Resources.icon_star_yellow;
+            ptb_star5.BackgroundImage = Properties.Resources.icon_star_yellow;
+            star_chosen = 1;
         }
     }
 }

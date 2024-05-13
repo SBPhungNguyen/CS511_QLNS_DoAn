@@ -273,6 +273,9 @@
             this.ptb_star1.Size = new System.Drawing.Size(33, 33);
             this.ptb_star1.TabIndex = 24;
             this.ptb_star1.TabStop = false;
+            this.ptb_star1.Click += new System.EventHandler(this.ptb_star1_Click);
+            this.ptb_star1.MouseEnter += new System.EventHandler(this.ptb_star1_MouseEnter);
+            this.ptb_star1.MouseLeave += new System.EventHandler(this.ptb_star1_MouseLeave);
             // 
             // ptb_star2
             // 
@@ -283,6 +286,9 @@
             this.ptb_star2.Size = new System.Drawing.Size(33, 33);
             this.ptb_star2.TabIndex = 25;
             this.ptb_star2.TabStop = false;
+            this.ptb_star2.Click += new System.EventHandler(this.ptb_star2_Click);
+            this.ptb_star2.MouseEnter += new System.EventHandler(this.ptb_star2_MouseEnter);
+            this.ptb_star2.MouseLeave += new System.EventHandler(this.ptb_star2_MouseLeave);
             // 
             // ptb_star3
             // 
@@ -293,6 +299,9 @@
             this.ptb_star3.Size = new System.Drawing.Size(33, 33);
             this.ptb_star3.TabIndex = 26;
             this.ptb_star3.TabStop = false;
+            this.ptb_star3.Click += new System.EventHandler(this.ptb_star3_Click);
+            this.ptb_star3.MouseEnter += new System.EventHandler(this.ptb_star3_MouseEnter);
+            this.ptb_star3.MouseLeave += new System.EventHandler(this.ptb_star3_MouseLeave);
             // 
             // ptb_star5
             // 
@@ -303,6 +312,9 @@
             this.ptb_star5.Size = new System.Drawing.Size(33, 33);
             this.ptb_star5.TabIndex = 28;
             this.ptb_star5.TabStop = false;
+            this.ptb_star5.Click += new System.EventHandler(this.ptb_star5_Click);
+            this.ptb_star5.MouseEnter += new System.EventHandler(this.ptb_star5_MouseEnter);
+            this.ptb_star5.MouseLeave += new System.EventHandler(this.ptb_star5_MouseLeave);
             // 
             // ptb_star4
             // 
@@ -313,6 +325,9 @@
             this.ptb_star4.Size = new System.Drawing.Size(33, 33);
             this.ptb_star4.TabIndex = 27;
             this.ptb_star4.TabStop = false;
+            this.ptb_star4.Click += new System.EventHandler(this.ptb_star4_Click);
+            this.ptb_star4.MouseEnter += new System.EventHandler(this.ptb_star4_MouseEnter);
+            this.ptb_star4.MouseLeave += new System.EventHandler(this.ptb_star4_MouseLeave);
             // 
             // label6
             // 
