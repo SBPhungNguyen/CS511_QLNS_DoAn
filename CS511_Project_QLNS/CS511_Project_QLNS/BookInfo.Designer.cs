@@ -61,6 +61,8 @@
             this.rtb_cmttext = new System.Windows.Forms.RichTextBox();
             this.fpnl_cmt = new System.Windows.Forms.FlowLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
+            this.lbl_quantity = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.btn_postcomment = new CS511_Project_QLNS.View.CustomButton();
             this.txt_cmtname = new CS511_Project_QLNS.Uct_textbox();
             this.panel1.SuspendLayout();
@@ -110,7 +112,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(94, 403);
+            this.label1.Location = new System.Drawing.Point(62, 403);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 22);
             this.label1.TabIndex = 10;
@@ -130,7 +132,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(94, 466);
+            this.label3.Location = new System.Drawing.Point(62, 466);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 22);
             this.label3.TabIndex = 12;
@@ -140,7 +142,7 @@
             // 
             this.lbl_genre.AutoSize = true;
             this.lbl_genre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_genre.Location = new System.Drawing.Point(258, 524);
+            this.lbl_genre.Location = new System.Drawing.Point(258, 509);
             this.lbl_genre.Name = "lbl_genre";
             this.lbl_genre.Size = new System.Drawing.Size(63, 22);
             this.lbl_genre.TabIndex = 15;
@@ -150,7 +152,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(94, 524);
+            this.label5.Location = new System.Drawing.Point(62, 509);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 22);
             this.label5.TabIndex = 14;
@@ -161,7 +163,7 @@
             this.lbl_price.AutoSize = true;
             this.lbl_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_price.ForeColor = System.Drawing.Color.Red;
-            this.lbl_price.Location = new System.Drawing.Point(258, 579);
+            this.lbl_price.Location = new System.Drawing.Point(258, 555);
             this.lbl_price.Name = "lbl_price";
             this.lbl_price.Size = new System.Drawing.Size(63, 22);
             this.lbl_price.TabIndex = 17;
@@ -171,7 +173,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(94, 579);
+            this.label7.Location = new System.Drawing.Point(62, 555);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 22);
             this.label7.TabIndex = 16;
@@ -181,7 +183,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(94, 635);
+            this.label9.Location = new System.Drawing.Point(62, 645);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(117, 22);
             this.label9.TabIndex = 18;
@@ -190,9 +192,9 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.lbl_description);
-            this.panel3.Location = new System.Drawing.Point(261, 635);
+            this.panel3.Location = new System.Drawing.Point(261, 645);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(275, 144);
+            this.panel3.Size = new System.Drawing.Size(275, 116);
             this.panel3.TabIndex = 19;
             // 
             // lbl_description
@@ -201,7 +203,7 @@
             this.lbl_description.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_description.Location = new System.Drawing.Point(0, 0);
             this.lbl_description.Name = "lbl_description";
-            this.lbl_description.Size = new System.Drawing.Size(275, 144);
+            this.lbl_description.Size = new System.Drawing.Size(275, 116);
             this.lbl_description.TabIndex = 20;
             this.lbl_description.Text = "Code:";
             // 
@@ -411,6 +413,26 @@
             this.label10.TabIndex = 38;
             this.label10.Text = "Other Comments";
             // 
+            // lbl_quantity
+            // 
+            this.lbl_quantity.AutoSize = true;
+            this.lbl_quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_quantity.Location = new System.Drawing.Point(257, 601);
+            this.lbl_quantity.Name = "lbl_quantity";
+            this.lbl_quantity.Size = new System.Drawing.Size(63, 22);
+            this.lbl_quantity.TabIndex = 40;
+            this.lbl_quantity.Text = "Code:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(61, 601);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(175, 22);
+            this.label12.TabIndex = 39;
+            this.label12.Text = "Available quantity:";
+            // 
             // btn_postcomment
             // 
             this.btn_postcomment.BackColor = System.Drawing.Color.Green;
@@ -456,6 +478,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1300, 800);
+            this.Controls.Add(this.lbl_quantity);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btn_postcomment);
             this.Controls.Add(this.fpnl_cmt);
@@ -543,5 +567,7 @@
         private System.Windows.Forms.FlowLayoutPanel fpnl_cmt;
         private View.CustomButton btn_postcomment;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbl_quantity;
+        private System.Windows.Forms.Label label12;
     }
 }

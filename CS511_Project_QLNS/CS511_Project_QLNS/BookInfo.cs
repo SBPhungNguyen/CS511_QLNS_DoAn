@@ -81,6 +81,7 @@ namespace CS511_Project_QLNS
 
                 lbl_price.Text = formattedNumber;
                 lbl_description.Text = rd.GetString(7);
+                lbl_quantity.Text = rd.GetInt32(8).ToString();
             }
 
             sqlCon.Close();
@@ -319,7 +320,26 @@ namespace CS511_Project_QLNS
             }
             else
             {
-                //write the code to show on fpnl_comment and save to db
+                Uct_Cus_Comment uct = new Uct_Cus_Comment();
+                uct.LoadData(txt_cmtname.Texts, is_female, star_count, rtb_cmttext.Text);
+                fpnl_cmt.Controls.Add(uct);
+
+                sqlCon = new SqlConnection(con.connect);
+                if (sqlCon.State == ConnectionState.Closed)
+                {
+                    sqlCon.Open();
+                }
+                cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "INSERT INTO TBL_BOOK_COMMENT VALUES (@ID, @STAR, @GENDER, @NAME, @TXT)";
+                cmd.Parameters.AddWithValue("@ID", id);
+                cmd.Parameters.AddWithValue("@STAR", star_count);
+                cmd.Parameters.AddWithValue("@GENDER", is_female);
+                cmd.Parameters.AddWithValue("@NAME", txt_cmtname.Text);
+                cmd.Parameters.AddWithValue("@TXT", rtb_cmttext.Text);
+
+                cmd.ExecuteNonQuery();
             }
         }
     }
