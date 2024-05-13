@@ -332,11 +332,11 @@ namespace CS511_Project_QLNS
                 cmd = new SqlCommand();
                 cmd.Connection = sqlCon;
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "INSERT INTO TBL_BOOK_COMMENT VALUES (@ID, @STAR, @GENDER, @NAME, @TXT)";
+                cmd.CommandText = "INSERT INTO TBL_BOOK_COMMENT VALUES (@ID, @STAR, @GENDER, @U_NAME, @TXT)";
                 cmd.Parameters.AddWithValue("@ID", id);
                 cmd.Parameters.AddWithValue("@STAR", star_count);
                 cmd.Parameters.AddWithValue("@GENDER", is_female);
-                cmd.Parameters.AddWithValue("@NAME", txt_cmtname.Text);
+                cmd.Parameters.AddWithValue("@U_NAME", txt_cmtname.Texts);
                 cmd.Parameters.AddWithValue("@TXT", rtb_cmttext.Text);
 
                 cmd.ExecuteNonQuery();
