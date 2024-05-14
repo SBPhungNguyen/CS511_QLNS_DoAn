@@ -277,6 +277,7 @@
             this.btn_purchase.Text = "Purchase";
             this.btn_purchase.TextColor = System.Drawing.Color.White;
             this.btn_purchase.UseVisualStyleBackColor = false;
+            this.btn_purchase.Click += new System.EventHandler(this.btn_purchase_Click);
             // 
             // MakePurchase
             // 

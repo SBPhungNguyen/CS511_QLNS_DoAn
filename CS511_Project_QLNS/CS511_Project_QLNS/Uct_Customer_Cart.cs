@@ -23,6 +23,10 @@ namespace CS511_Project_QLNS
         SqlConnection sqlCon;
         SqlCommand cmd;
 
+        public FlowLayoutPanel fpnl
+        {
+            get { return fpnl_cart; }
+        }
         public string sumprice
         {
             get { return lbl_sumprice.Text; }
