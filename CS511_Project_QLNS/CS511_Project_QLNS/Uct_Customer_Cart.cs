@@ -75,8 +75,21 @@ namespace CS511_Project_QLNS
             {
                 sum_price = parent_form.cart_price[i] + sum_price;
             }
-            
-            lbl_sumprice.Text = string.Format("{0:#,###}", sum_price);
+            if (sum_price == 0)
+                lbl_sumprice.Text = "0";
+            else
+                lbl_sumprice.Text = string.Format("{0:#,###}", sum_price);
+        }
+
+        private void btn_buy_Click(object sender, EventArgs e)
+        {
+            if (lbl_sumprice.Text == "0")
+            {
+                MessageBox.Show("Your cart is empty, please add some products", "Opps");
+                return;
+            }
+            MakePurchase mp = new MakePurchase(parent_form, this);
+            mp.ShowDialog();
         }
     }
 }

@@ -65,7 +65,7 @@
             this.txt_text.Name = "txt_text";
             this.txt_text.Padding = new System.Windows.Forms.Padding(7);
             this.txt_text.PasswordChar = false;
-            this.txt_text.Size = new System.Drawing.Size(911, 35);
+            this.txt_text.Size = new System.Drawing.Size(922, 35);
             this.txt_text.TabIndex = 9;
             this.txt_text.Texts = "";
             this.txt_text.UnderlineStyle = false;

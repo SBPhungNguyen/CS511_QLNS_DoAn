@@ -44,8 +44,8 @@
             this.lbl_LogIn = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_total = new System.Windows.Forms.Label();
-            this.btn_purchase = new CS511_Project_QLNS.View.CustomButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_purchase = new CS511_Project_QLNS.View.CustomButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.panel2.SuspendLayout();
@@ -69,6 +69,9 @@
             this.btn_exit.Size = new System.Drawing.Size(30, 30);
             this.btn_exit.TabIndex = 18;
             this.btn_exit.TabStop = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.btn_exit.MouseEnter += new System.EventHandler(this.btn_exit_MouseEnter);
+            this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
             // 
             // label1
             // 
@@ -122,7 +125,7 @@
             // 
             // txt_name
             // 
-            this.txt_name.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.txt_name.BorderColor = System.Drawing.Color.MediumSeaGreen;
             this.txt_name.BorderFocusColor = System.Drawing.Color.Green;
             this.txt_name.BorderSize = 2;
@@ -141,7 +144,7 @@
             // 
             // txt_address
             // 
-            this.txt_address.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_address.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.txt_address.BorderColor = System.Drawing.Color.MediumSeaGreen;
             this.txt_address.BorderFocusColor = System.Drawing.Color.Green;
             this.txt_address.BorderSize = 2;
@@ -160,7 +163,7 @@
             // 
             // txt_email
             // 
-            this.txt_email.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.txt_email.BorderColor = System.Drawing.Color.MediumSeaGreen;
             this.txt_email.BorderFocusColor = System.Drawing.Color.Green;
             this.txt_email.BorderSize = 2;
@@ -179,7 +182,7 @@
             // 
             // txt_visa
             // 
-            this.txt_visa.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_visa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.txt_visa.BorderColor = System.Drawing.Color.MediumSeaGreen;
             this.txt_visa.BorderFocusColor = System.Drawing.Color.Green;
             this.txt_visa.BorderSize = 2;
@@ -198,7 +201,7 @@
             // 
             // txt_secure
             // 
-            this.txt_secure.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_secure.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.txt_secure.BorderColor = System.Drawing.Color.MediumSeaGreen;
             this.txt_secure.BorderFocusColor = System.Drawing.Color.Green;
             this.txt_secure.BorderSize = 2;
@@ -248,6 +251,14 @@
             this.lbl_total.Text = "12312931 ";
             this.lbl_total.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.lbl_total);
+            this.panel2.Location = new System.Drawing.Point(472, 324);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(156, 35);
+            this.panel2.TabIndex = 28;
+            // 
             // btn_purchase
             // 
             this.btn_purchase.BackColor = System.Drawing.Color.Green;
@@ -267,19 +278,11 @@
             this.btn_purchase.TextColor = System.Drawing.Color.White;
             this.btn_purchase.UseVisualStyleBackColor = false;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lbl_total);
-            this.panel2.Location = new System.Drawing.Point(472, 324);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(156, 35);
-            this.panel2.TabIndex = 28;
-            // 
             // MakePurchase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(900, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btn_purchase);

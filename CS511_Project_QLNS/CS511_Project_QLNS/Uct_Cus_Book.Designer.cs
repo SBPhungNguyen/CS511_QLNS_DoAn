@@ -85,7 +85,7 @@
             // 
             this.ptb_cart.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_cart;
             this.ptb_cart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_cart.Location = new System.Drawing.Point(247, 4);
+            this.ptb_cart.Location = new System.Drawing.Point(244, 4);
             this.ptb_cart.Name = "ptb_cart";
             this.ptb_cart.Size = new System.Drawing.Size(30, 30);
             this.ptb_cart.TabIndex = 8;

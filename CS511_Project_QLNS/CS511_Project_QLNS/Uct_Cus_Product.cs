@@ -67,7 +67,7 @@ namespace CS511_Project_QLNS
                 int sum = int.Parse(lbl_quantity.Text) * price;
                 lbl_sum.Text = string.Format("{0:#,###}", sum);
 
-                //adjust the saved string in parent_form
+                //adjust the saved string in parent_form (cart_info and cart_price)(cart_info and cart_price)
                 for (int i = 0; i < parent_form.cart_count; i++)
                 {
                     string[] split_line = parent_form.cart_info[i].Split('*');
@@ -104,7 +104,7 @@ namespace CS511_Project_QLNS
                 int sum = int.Parse(lbl_quantity.Text) * price;
                 lbl_sum.Text = string.Format("{0:#,###}", sum);
 
-                //adjust the saved string in parent_form
+                //adjust the saved string in parent_form (cart_info and cart_price)
                 for (int i = 0; i < parent_form.cart_count; i++)
                 {
                     string[] split_line = parent_form.cart_info[i].Split('*');
@@ -141,7 +141,7 @@ namespace CS511_Project_QLNS
                 parent.Controls.Remove(parent_direct);
             }
 
-            //adjust the saved string in parent_form
+            //adjust the saved string in parent_form (cart_info and cart_price)
             for (int i = 0; i < parent_form.cart_count; i++)
             {
                 string[] split_line = parent_form.cart_info[i].Split('*');
@@ -159,7 +159,10 @@ namespace CS511_Project_QLNS
             }
             var parent1 = parent.Parent;
             Uct_Customer_Cart uct_parent = (Uct_Customer_Cart)parent1;
-            uct_parent.sumprice = string.Format("{0:#,###}", sum_price);
+            if (sum_price == 0)
+                uct_parent.sumprice = "0";
+            else
+                uct_parent.sumprice = string.Format("{0:#,###}", sum_price);
         }
         private void DeleteItemInString(int index)
         {
