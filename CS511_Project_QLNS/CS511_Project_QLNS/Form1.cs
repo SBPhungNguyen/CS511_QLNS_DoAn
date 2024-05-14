@@ -22,6 +22,7 @@ namespace CS511_Project_QLNS
 
         //this is to get the info of the cart
         public string[] cart_info = new string[200];
+        public int[] cart_price = new int[200];
         public int cart_count;
 
         public Color color_btn_normal = Color.FromArgb(24, 138, 93);

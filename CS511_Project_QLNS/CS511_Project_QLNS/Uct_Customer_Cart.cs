@@ -22,6 +22,12 @@ namespace CS511_Project_QLNS
 
         SqlConnection sqlCon;
         SqlCommand cmd;
+
+        public string sumprice
+        {
+            get { return lbl_sumprice.Text; }
+            set { lbl_sumprice.Text = value; }
+        }
         public Uct_Customer_Cart(Form1 parent)
         {
             InitializeComponent();
@@ -55,16 +61,22 @@ namespace CS511_Project_QLNS
                 SqlDataReader reader = cmd.ExecuteReader ();
                 if (reader.Read())
                 {
-                    Uct_Cus_Product uct = new Uct_Cus_Product();
+                    Uct_Cus_Product uct = new Uct_Cus_Product(parent_form);
 
                     Image img = System.Drawing.Image.FromFile(dir + reader.GetString(1) + ".png");
 
-                    uct.LoadData(img,reader.GetString(2), reader.GetDecimal(6).ToString("0.##"), split_line[1], reader.GetInt32(8));
+                    uct.LoadData(split_line[0], img,reader.GetString(2), reader.GetDecimal(6).ToString("0.##"), split_line[1], reader.GetInt32(8));
                     fpnl_cart.Controls.Add(uct);
                 }
                 sqlCon.Close();
-
             }
+            int sum_price=0;
+            for (int i = 0; i < parent_form.cart_count; i++)
+            {
+                sum_price = parent_form.cart_price[i] + sum_price;
+            }
+            
+            lbl_sumprice.Text = string.Format("{0:#,###}", sum_price);
         }
     }
 }

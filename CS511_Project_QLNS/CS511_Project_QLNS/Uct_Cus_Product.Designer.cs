@@ -89,6 +89,7 @@
             this.ptb_delete.Size = new System.Drawing.Size(30, 30);
             this.ptb_delete.TabIndex = 11;
             this.ptb_delete.TabStop = false;
+            this.ptb_delete.Click += new System.EventHandler(this.ptb_delete_Click);
             // 
             // panel4
             // 
