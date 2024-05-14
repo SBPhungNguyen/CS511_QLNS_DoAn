@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Management.Instrumentation;
+using System.Net.Mail;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -60,6 +61,13 @@ namespace CS511_Project_QLNS
         {
             if (txt_name.Texts != "" && txt_address.Texts!="" && txt_email.Texts!="" && txt_visa.Texts !="" && txt_secure.Texts!="")
             {
+                //This is to check if the txt_email.Texts is a real email
+                if (!IsValid(txt_email.Texts))
+                {
+                    MessageBox.Show("Please enter the correct email");
+                    return;
+                }
+
                 string date = DateTime.Now.Date.ToString("yyyy-MM-dd");
                 string name = txt_name.Texts;
                 int money = int.Parse(lbl_total.Text.Replace(",",""));
@@ -202,6 +210,21 @@ namespace CS511_Project_QLNS
                 GC.Collect();
             }
             parent_uct.fpnl.ResumeLayout();
+        }
+
+        //check if a text is an email
+        public bool IsValid(string emailaddress)
+        {
+            try
+            {
+                MailAddress m = new MailAddress(emailaddress);
+
+                return true;
+            }
+            catch (FormatException)
+            {
+                return false;
+            }
         }
     }
 }
