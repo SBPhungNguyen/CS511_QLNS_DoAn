@@ -5,3 +5,7 @@ BookType
 4. Nonfiction (21-29)
 5. Mystery (30 - 37)
 6. History (38 - 43)
+
+cart_info
+1. id
+2. quantity

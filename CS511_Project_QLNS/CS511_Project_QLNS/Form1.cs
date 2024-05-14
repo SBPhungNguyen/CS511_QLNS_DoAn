@@ -28,7 +28,7 @@ namespace CS511_Project_QLNS
         public Color color_btn_chosen = Color.FromArgb(31, 181, 122);
 
         Uct_Customer_Home uct_Customer_Home;
-        Uct_Customer_Cart uct_Customer_Cart = new Uct_Customer_Cart();
+        Uct_Customer_Cart uct_Customer_Cart;
         Uct_Customer_ReceiptSearch uct_Customer_ReceiptSearch = new Uct_Customer_ReceiptSearch();
         Uct_Customer_Chat uct_Customer_Chat = new Uct_Customer_Chat();
 
@@ -105,7 +105,8 @@ namespace CS511_Project_QLNS
             btn_receipt.BackColor = color_btn_normal;
             btn_chat.BackColor = color_btn_normal;
 
-            uct_Customer_Cart = new Uct_Customer_Cart();
+            uct_Customer_Cart = new Uct_Customer_Cart(this);
+
             uct_Customer_Cart.Location = new System.Drawing.Point(235, 105);
             uct_Customer_Cart.Name = "uct_Customer_Cart";
             this.Controls.Add(uct_Customer_Cart);

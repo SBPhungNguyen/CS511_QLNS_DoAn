@@ -101,7 +101,8 @@ namespace CS511_Project_QLNS
 
                 for (int i=0;i<parent_form.cart_count;i++)
                 {
-                    if (parent_form.cart_info[i]==id.ToString())
+                    string[] split_line = parent_form.cart_info[i].Split('*');
+                    if (split_line[0] ==id.ToString())
                     {
                         flag_found = 1;
                         break;
@@ -109,7 +110,7 @@ namespace CS511_Project_QLNS
                 }
                 if (flag_found == 0)
                 {
-                    parent_form.cart_info[parent_form.cart_count]=id.ToString();
+                    parent_form.cart_info[parent_form.cart_count]=id.ToString() + "*1";
                     parent_form.cart_count++;
                 }
             }
