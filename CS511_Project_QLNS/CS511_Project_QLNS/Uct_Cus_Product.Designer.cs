@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
+            this.ptb_img = new System.Windows.Forms.PictureBox();
             this.ptb_delete = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lbl_sum = new System.Windows.Forms.Label();
@@ -41,8 +42,8 @@
             this.lbl_price = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_name = new System.Windows.Forms.Label();
-            this.ptb_img = new System.Windows.Forms.PictureBox();
             this.customPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_delete)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -51,7 +52,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptb_plus)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
             this.SuspendLayout();
             // 
             // customPanel1
@@ -70,6 +70,15 @@
             this.customPanel1.Size = new System.Drawing.Size(940, 74);
             this.customPanel1.TabIndex = 0;
             this.customPanel1.Thickness = 0F;
+            // 
+            // ptb_img
+            // 
+            this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_img.Location = new System.Drawing.Point(23, 12);
+            this.ptb_img.Name = "ptb_img";
+            this.ptb_img.Size = new System.Drawing.Size(40, 50);
+            this.ptb_img.TabIndex = 12;
+            this.ptb_img.TabStop = false;
             // 
             // ptb_delete
             // 
@@ -139,6 +148,7 @@
             this.ptb_minus.Size = new System.Drawing.Size(30, 30);
             this.ptb_minus.TabIndex = 2;
             this.ptb_minus.TabStop = false;
+            this.ptb_minus.Click += new System.EventHandler(this.ptb_minus_Click);
             // 
             // ptb_plus
             // 
@@ -149,6 +159,7 @@
             this.ptb_plus.Size = new System.Drawing.Size(30, 30);
             this.ptb_plus.TabIndex = 1;
             this.ptb_plus.TabStop = false;
+            this.ptb_plus.Click += new System.EventHandler(this.ptb_plus_Click);
             // 
             // panel2
             // 
@@ -188,15 +199,6 @@
             this.lbl_name.Text = "Name";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ptb_img
-            // 
-            this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(23, 12);
-            this.ptb_img.Name = "ptb_img";
-            this.ptb_img.Size = new System.Drawing.Size(40, 50);
-            this.ptb_img.TabIndex = 12;
-            this.ptb_img.TabStop = false;
-            // 
             // Uct_Cus_Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -205,6 +207,7 @@
             this.Name = "Uct_Cus_Product";
             this.Size = new System.Drawing.Size(940, 80);
             this.customPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_delete)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -213,7 +216,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptb_plus)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).EndInit();
             this.ResumeLayout(false);
 
         }

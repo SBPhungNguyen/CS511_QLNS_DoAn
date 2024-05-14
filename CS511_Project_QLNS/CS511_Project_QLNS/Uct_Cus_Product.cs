@@ -39,5 +39,26 @@ namespace CS511_Project_QLNS
             //format the sum to the more money look-alike way
             lbl_sum.Text = string.Format("{0:#,###}", sum);
         }
+
+        private void ptb_minus_Click(object sender, EventArgs e)
+        {
+            int quantity = int.Parse(lbl_quantity.Text);
+            if (quantity > 1)
+            {
+                lbl_quantity.Text = (quantity-1).ToString();
+                lbl_sum.Text = string.Format("{0:#,###}", int.Parse(lbl_quantity.Text) * price);
+            }
+        }
+
+        private void ptb_plus_Click(object sender, EventArgs e)
+        {
+            int quantity = int.Parse(lbl_quantity.Text);
+            if (quantity < maximum)
+            {
+                lbl_quantity.Text = (quantity+1).ToString();
+                lbl_sum.Text = string.Format("{0:#,###}", int.Parse(lbl_quantity.Text) * price);
+
+            }
+        }
     }
 }
