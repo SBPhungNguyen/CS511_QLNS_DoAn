@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22D14924-2344-4814-8EB4-A2AF1138FF2C}|CS511_Project_QLNS\\CS511_Project_QLNS.csproj|D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\cs511_project_qlns\\uct_customer_receiptsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{22D14924-2344-4814-8EB4-A2AF1138FF2C}|CS511_Project_QLNS\\CS511_Project_QLNS.csproj|d:\\github\\cs511_qlns_doan\\cs511_project_qlns\\cs511_project_qlns\\uct_customer_receiptsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22D14924-2344-4814-8EB4-A2AF1138FF2C}|CS511_Project_QLNS\\CS511_Project_QLNS.csproj|solutionrelative:cs511_project_qlns\\uct_customer_receiptsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22D14924-2344-4814-8EB4-A2AF1138FF2C}|CS511_Project_QLNS\\CS511_Project_QLNS.csproj|d:\\github\\cs511_qlns_doan\\cs511_project_qlns\\cs511_project_qlns\\uct_customer_receiptsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{22D14924-2344-4814-8EB4-A2AF1138FF2C}|CS511_Project_QLNS\\CS511_Project_QLNS.csproj|D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\cs511_project_qlns\\uct_customer_receiptsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{22D14924-2344-4814-8EB4-A2AF1138FF2C}|CS511_Project_QLNS\\CS511_Project_QLNS.csproj|solutionrelative:cs511_project_qlns\\uct_customer_receiptsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -277,11 +277,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Uct_Customer_ReceiptSearch.cs",
+              "DocumentMoniker": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Customer_ReceiptSearch.cs",
+              "RelativeDocumentMoniker": "CS511_Project_QLNS\\Uct_Customer_ReceiptSearch.cs",
+              "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Customer_ReceiptSearch.cs",
+              "RelativeToolTip": "CS511_Project_QLNS\\Uct_Customer_ReceiptSearch.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAhwDAAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T03:29:32.394Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -292,21 +305,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Customer_ReceiptSearch.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Customer_ReceiptSearch.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T03:04:29.673Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Uct_Customer_ReceiptSearch.cs",
-              "DocumentMoniker": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Customer_ReceiptSearch.cs",
-              "RelativeDocumentMoniker": "CS511_Project_QLNS\\Uct_Customer_ReceiptSearch.cs",
-              "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Customer_ReceiptSearch.cs",
-              "RelativeToolTip": "CS511_Project_QLNS\\Uct_Customer_ReceiptSearch.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwCQAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T03:29:32.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T03:04:29.673Z"
             },
             {
               "$type": "Document",
@@ -317,8 +316,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\MakePurchase.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\MakePurchase.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T04:15:11.097Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T04:15:11.097Z"
             },
             {
               "$type": "Document",
@@ -329,8 +327,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Customer_Home.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Customer_Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T12:59:00.789Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-10T12:59:00.789Z"
             },
             {
               "$type": "Document",
@@ -341,8 +338,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Emp_Book.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Emp_Book.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T06:40:13.046Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T06:40:13.046Z"
             },
             {
               "$type": "Document",
@@ -365,8 +361,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\MakePurchase.cs",
               "ViewState": "AQIAANQAAAAAAAAAAAAAAOYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T05:23:49.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T05:23:49.691Z"
             },
             {
               "$type": "Document",
@@ -378,8 +373,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Program.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T06:36:56.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T06:36:56.787Z"
             },
             {
               "$type": "Document",
@@ -391,8 +385,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Customer_Cart.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAvwBwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T08:02:46.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T08:02:46.575Z"
             },
             {
               "$type": "Document",
@@ -403,8 +396,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Customer_Cart.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Customer_Cart.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T07:48:19.017Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-07T07:48:19.017Z"
             },
             {
               "$type": "Document",
@@ -416,8 +408,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Customer_Home.cs",
               "ViewState": "AQIAAFQAAAAAAAAAAAAhwF8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T14:25:20.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T14:25:20.045Z"
             },
             {
               "$type": "Document",
@@ -428,8 +419,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\BookInfo.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\BookInfo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T10:32:49.976Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-09T10:32:49.976Z"
             },
             {
               "$type": "Document",
@@ -441,8 +431,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Emp_ImportAdd.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAhwBQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T12:42:08.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T12:42:08.171Z"
             },
             {
               "$type": "Document",
@@ -453,8 +442,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Emp_ImportAdd.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Emp_ImportAdd.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T12:58:36.536Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T12:58:36.536Z"
             },
             {
               "$type": "Document",
@@ -466,8 +454,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Emp_ImportInfo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T12:11:18.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T12:11:18.738Z"
             },
             {
               "$type": "Bookmark",
@@ -483,8 +470,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\MakePurchase.Designer.cs",
               "ViewState": "AQIAADYAAAAAAAAAAAAhwEoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T05:27:17.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T05:27:17.961Z"
             },
             {
               "$type": "Document",
@@ -495,8 +481,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Customer_Chat.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Customer_Chat.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T03:33:31.24Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T03:33:31.24Z"
             },
             {
               "$type": "Document",
@@ -507,8 +492,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Emp_ImportInfo.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Emp_ImportInfo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T11:17:25.674Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-09T11:17:25.674Z"
             },
             {
               "$type": "Document",
@@ -520,8 +504,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Cus_Product.cs",
               "ViewState": "AQIAAJQAAAAAAAAAAAAQwKIAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T06:04:28.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T06:04:28.522Z"
             },
             {
               "$type": "Document",
@@ -532,8 +515,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Cus_Product.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Cus_Product.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T08:00:32.665Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-07T08:00:32.665Z"
             },
             {
               "$type": "Document",
@@ -544,8 +526,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Cus_Receipt.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Cus_Receipt.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T03:26:51.548Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T03:26:51.548Z"
             },
             {
               "$type": "Document",
@@ -556,8 +537,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Cus_Chat.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Cus_Chat.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T03:43:15.975Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T03:43:15.975Z"
             },
             {
               "$type": "Document",
@@ -568,8 +548,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Cus_Book.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Cus_Book.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T07:39:34.08Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-07T07:39:34.08Z"
             },
             {
               "$type": "Document",
@@ -580,8 +559,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Form1.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T06:01:43.445Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-07T06:01:43.445Z"
             },
             {
               "$type": "Document",
@@ -593,8 +571,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Form1.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAABgAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T07:19:31.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T07:19:31.057Z"
             },
             {
               "$type": "Document",
@@ -606,8 +583,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\BookInfo.cs",
               "ViewState": "AQIAADcAAAAAAAAAAAAAAE8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T04:05:50.804Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T04:05:50.804Z"
             },
             {
               "$type": "Document",
@@ -618,8 +594,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Cus_Comment.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Cus_Comment.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T01:37:12.422Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-13T01:37:12.422Z"
             },
             {
               "$type": "Document",
@@ -631,8 +606,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Cus_Book.cs",
               "ViewState": "AQIAAFkAAAAAAAAAAIA3wHEAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T07:36:53.178Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T07:36:53.178Z"
             },
             {
               "$type": "Document",
@@ -644,8 +618,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\connection.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T06:54:46.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T06:54:46.482Z"
             },
             {
               "$type": "Document",
@@ -656,8 +629,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Emp_BookEdit.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Emp_BookEdit.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T07:35:32.604Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T07:35:32.604Z"
             },
             {
               "$type": "Document",
@@ -668,8 +640,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Emp_BookAdd.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Emp_BookAdd.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T09:09:48.319Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T09:09:48.319Z"
             },
             {
               "$type": "Document",
@@ -681,8 +652,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-08T03:57:06.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T03:57:06.291Z"
             },
             {
               "$type": "Document",
@@ -693,8 +663,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\LogIn.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\LogIn.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T12:53:04.971Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T12:53:04.971Z"
             },
             {
               "$type": "Document",
@@ -705,8 +674,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Form2.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Form2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T05:47:09.899Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T05:47:09.899Z"
             },
             {
               "$type": "Document",
@@ -718,8 +686,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Cus_Comment.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAqwCYAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T03:17:00.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T03:17:00.537Z"
             },
             {
               "$type": "Document",
@@ -731,8 +698,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\BookInfo.Designer.cs",
               "ViewState": "AQIAAJ4BAAAAAAAAAAAhwLABAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T04:05:59.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T04:05:59.041Z"
             },
             {
               "$type": "Document",
@@ -744,8 +710,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Emp_Book.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T01:34:46.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T01:34:46.235Z"
             },
             {
               "$type": "Document",
@@ -756,8 +721,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Emp_Import.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Emp_Import.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T08:40:57.118Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T08:40:57.118Z"
             },
             {
               "$type": "Document",
@@ -768,8 +732,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Emp_ImportAdd.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Emp_ImportAdd.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T13:11:36.457Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T13:11:36.457Z"
             },
             {
               "$type": "Document",
@@ -780,8 +743,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Employee_Cashier.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Employee_Cashier.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T07:32:57.919Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-09T07:32:57.919Z"
             },
             {
               "$type": "Document",
@@ -792,8 +754,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Employee_Import.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Employee_Import.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T08:19:39.319Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T08:19:39.319Z"
             },
             {
               "$type": "Document",
@@ -804,8 +765,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Emp_Cashier.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Emp_Cashier.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T07:35:40.762Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-09T07:35:40.762Z"
             },
             {
               "$type": "Document",
@@ -816,8 +776,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Employee_Chat.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Employee_Chat.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T07:19:58.321Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-09T07:19:58.321Z"
             },
             {
               "$type": "Document",
@@ -828,8 +787,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Employee_Home.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Employee_Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T06:33:29.141Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T06:33:29.141Z"
             },
             {
               "$type": "Document",
@@ -840,8 +798,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Emp_CashierInfo.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Emp_CashierInfo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T08:01:18.071Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-09T08:01:18.071Z"
             },
             {
               "$type": "Document",
@@ -852,8 +809,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Emp_CashierEdit.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Emp_CashierEdit.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T08:23:11.609Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-09T08:23:11.609Z"
             },
             {
               "$type": "Document",
@@ -864,8 +820,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Emp_CashierAdd.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Emp_CashierAdd.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T08:11:47.685Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-09T08:11:47.685Z"
             },
             {
               "$type": "Document",
@@ -876,8 +831,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Emp_BookInfo.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Emp_BookInfo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T06:54:02.893Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T06:54:02.893Z"
             },
             {
               "$type": "Document",
@@ -888,8 +842,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Employee_Report.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Employee_Report.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T07:13:02.105Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-09T07:13:02.105Z"
             },
             {
               "$type": "Document",
@@ -900,8 +853,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_textbox.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_textbox.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T06:05:15.186Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-07T06:05:15.186Z"
             },
             {
               "$type": "Document",
@@ -913,8 +865,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\LogIn.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAASwB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T07:27:51.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T07:27:51.678Z"
             },
             {
               "$type": "Document",
@@ -926,8 +877,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Emp_Cashier.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T08:27:03.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T08:27:03.412Z"
             },
             {
               "$type": "Document",
@@ -939,8 +889,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Emp_CashierInfo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T08:16:22.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T08:16:22.124Z"
             },
             {
               "$type": "Document",
@@ -952,8 +901,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Form2.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T06:02:52.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T06:02:52.047Z"
             },
             {
               "$type": "Document",
@@ -965,8 +913,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Emp_ImportAdd.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T13:12:15.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T13:12:15.995Z"
             },
             {
               "$type": "Document",
@@ -978,8 +925,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Emp_ImportAdd.Designer.cs",
               "ViewState": "AQIAAAIBAAAAAAAAAAAhwGsBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T12:42:16.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T12:42:16.388Z"
             },
             {
               "$type": "Document",
@@ -991,8 +937,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Employee_Import.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T08:39:24.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T08:39:24.04Z"
             },
             {
               "$type": "Document",
@@ -1003,8 +948,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Emp_BookAdd.resx",
               "RelativeToolTip": "CS511_Project_QLNS\\Emp_BookAdd.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-05-08T08:13:05.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T08:13:05.686Z"
             },
             {
               "$type": "Document",
@@ -1016,8 +960,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Emp_BookEdit.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T08:06:13.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T08:06:13.59Z"
             },
             {
               "$type": "Document",
@@ -1029,8 +972,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Employee_Home.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T06:44:18.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T06:44:18.361Z"
             },
             {
               "$type": "Document",
@@ -1042,8 +984,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\View\\CustomButton.cs",
               "ViewState": "AQIAAJkAAAAAAAAAAAAAALIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T06:21:29.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T06:21:29.263Z"
             },
             {
               "$type": "Document",
@@ -1054,8 +995,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\View\\CustomButton.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\View\\CustomButton.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T03:07:34.68Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T03:07:34.68Z"
             },
             {
               "$type": "Document",
@@ -1067,8 +1007,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Customer_Chat.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T03:46:30.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T03:46:30.63Z"
             },
             {
               "$type": "Document",
@@ -1080,8 +1019,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Cus_Product.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T08:06:02.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T08:06:02.916Z"
             },
             {
               "$type": "Document",
@@ -1093,8 +1031,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_textbox.cs",
               "ViewState": "AQIAAMAAAAAAAAAAAAAuwPAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T06:16:21.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T06:16:21.397Z"
             },
             {
               "$type": "Document",
@@ -1106,8 +1043,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\View\\CustomPanel.cs",
               "ViewState": "AQIAACoAAAAAAAAAAAA0wDgAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T06:23:53.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T06:23:53.71Z"
             },
             {
               "$type": "Document",
@@ -1119,8 +1055,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\View\\CustomPictureBox.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAABQAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T06:25:28.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T06:25:28.285Z"
             }
           ]
         }
