@@ -16,5 +16,12 @@ namespace CS511_Project_QLNS
         {
             InitializeComponent();
         }
+        public void LoadData(string name, string price, string quantity, string sum)
+        {
+            lbl_name.Text = name;
+            lbl_price.Text = price;
+            lbl_quantity.Text = quantity;
+            lbl_sum.Text = sum;
+        }
     }
 }

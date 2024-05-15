@@ -30,6 +30,12 @@
         {
             this.ptb_img = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btn_camera = new CS511_Project_QLNS.View.CustomButton();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btn_choosepic = new CS511_Project_QLNS.View.CustomButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_name = new System.Windows.Forms.Label();
             this.lbl_sumprice = new System.Windows.Forms.Label();
@@ -41,22 +47,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.fpnl_receipt = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btn_camera = new CS511_Project_QLNS.View.CustomButton();
-            this.btn_choosepic = new CS511_Project_QLNS.View.CustomButton();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.customPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +64,7 @@
             // 
             this.ptb_img.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_picture;
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(183, 5);
+            this.ptb_img.Location = new System.Drawing.Point(141, 5);
             this.ptb_img.Name = "ptb_img";
             this.ptb_img.Size = new System.Drawing.Size(160, 160);
             this.ptb_img.TabIndex = 0;
@@ -79,6 +79,83 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(974, 175);
             this.panel1.TabIndex = 4;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label10);
+            this.panel5.Controls.Add(this.btn_camera);
+            this.panel5.Location = new System.Drawing.Point(459, 85);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(399, 50);
+            this.panel5.TabIndex = 5;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(13, 12);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(90, 22);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Scan QR";
+            // 
+            // btn_camera
+            // 
+            this.btn_camera.BackColor = System.Drawing.Color.Green;
+            this.btn_camera.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_camera.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_camera.BorderRadius = 20;
+            this.btn_camera.BorderSize = 0;
+            this.btn_camera.FlatAppearance.BorderSize = 0;
+            this.btn_camera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_camera.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_camera.ForeColor = System.Drawing.Color.White;
+            this.btn_camera.Location = new System.Drawing.Point(202, 5);
+            this.btn_camera.Name = "btn_camera";
+            this.btn_camera.Size = new System.Drawing.Size(189, 40);
+            this.btn_camera.TabIndex = 3;
+            this.btn_camera.Text = "Turn on Camera";
+            this.btn_camera.TextColor = System.Drawing.Color.White;
+            this.btn_camera.UseVisualStyleBackColor = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.Controls.Add(this.btn_choosepic);
+            this.panel4.Location = new System.Drawing.Point(459, 28);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(399, 51);
+            this.panel4.TabIndex = 4;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(13, 12);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(108, 22);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Upload QR";
+            // 
+            // btn_choosepic
+            // 
+            this.btn_choosepic.BackColor = System.Drawing.Color.Green;
+            this.btn_choosepic.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_choosepic.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_choosepic.BorderRadius = 20;
+            this.btn_choosepic.BorderSize = 0;
+            this.btn_choosepic.FlatAppearance.BorderSize = 0;
+            this.btn_choosepic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_choosepic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_choosepic.ForeColor = System.Drawing.Color.White;
+            this.btn_choosepic.Location = new System.Drawing.Point(202, 4);
+            this.btn_choosepic.Name = "btn_choosepic";
+            this.btn_choosepic.Size = new System.Drawing.Size(189, 40);
+            this.btn_choosepic.TabIndex = 1;
+            this.btn_choosepic.Text = "Choose Picture";
+            this.btn_choosepic.TextColor = System.Drawing.Color.White;
+            this.btn_choosepic.UseVisualStyleBackColor = false;
+            this.btn_choosepic.Click += new System.EventHandler(this.btn_choosepic_Click);
             // 
             // panel2
             // 
@@ -194,44 +271,6 @@
             this.fpnl_receipt.Size = new System.Drawing.Size(973, 243);
             this.fpnl_receipt.TabIndex = 3;
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label9);
-            this.panel4.Controls.Add(this.btn_choosepic);
-            this.panel4.Location = new System.Drawing.Point(427, 28);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(399, 51);
-            this.panel4.TabIndex = 4;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label10);
-            this.panel5.Controls.Add(this.btn_camera);
-            this.panel5.Location = new System.Drawing.Point(427, 85);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(399, 50);
-            this.panel5.TabIndex = 5;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(13, 12);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(108, 22);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Upload QR";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(13, 12);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(90, 22);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "Scan QR";
-            // 
             // customPanel1
             // 
             this.customPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(171)))), ((int)(((byte)(116)))));
@@ -287,45 +326,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Price";
             // 
-            // btn_camera
-            // 
-            this.btn_camera.BackColor = System.Drawing.Color.Green;
-            this.btn_camera.BackgroundColor = System.Drawing.Color.Green;
-            this.btn_camera.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_camera.BorderRadius = 20;
-            this.btn_camera.BorderSize = 0;
-            this.btn_camera.FlatAppearance.BorderSize = 0;
-            this.btn_camera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_camera.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_camera.ForeColor = System.Drawing.Color.White;
-            this.btn_camera.Location = new System.Drawing.Point(202, 5);
-            this.btn_camera.Name = "btn_camera";
-            this.btn_camera.Size = new System.Drawing.Size(189, 40);
-            this.btn_camera.TabIndex = 3;
-            this.btn_camera.Text = "Turn on Camera";
-            this.btn_camera.TextColor = System.Drawing.Color.White;
-            this.btn_camera.UseVisualStyleBackColor = false;
-            // 
-            // btn_choosepic
-            // 
-            this.btn_choosepic.BackColor = System.Drawing.Color.Green;
-            this.btn_choosepic.BackgroundColor = System.Drawing.Color.Green;
-            this.btn_choosepic.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_choosepic.BorderRadius = 20;
-            this.btn_choosepic.BorderSize = 0;
-            this.btn_choosepic.FlatAppearance.BorderSize = 0;
-            this.btn_choosepic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_choosepic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_choosepic.ForeColor = System.Drawing.Color.White;
-            this.btn_choosepic.Location = new System.Drawing.Point(202, 4);
-            this.btn_choosepic.Name = "btn_choosepic";
-            this.btn_choosepic.Size = new System.Drawing.Size(189, 40);
-            this.btn_choosepic.TabIndex = 1;
-            this.btn_choosepic.Text = "Choose Picture";
-            this.btn_choosepic.TextColor = System.Drawing.Color.White;
-            this.btn_choosepic.UseVisualStyleBackColor = false;
-            this.btn_choosepic.Click += new System.EventHandler(this.btn_choosepic_Click);
-            // 
             // Uct_Customer_ReceiptSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -336,12 +336,12 @@
             this.Size = new System.Drawing.Size(980, 675);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.customPanel1.ResumeLayout(false);
             this.customPanel1.PerformLayout();
             this.ResumeLayout(false);
