@@ -30,9 +30,6 @@
         {
             this.ptb_img = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.customButton3 = new CS511_Project_QLNS.View.CustomButton();
-            this.customButton1 = new CS511_Project_QLNS.View.CustomButton();
-            this.customButton2 = new CS511_Project_QLNS.View.CustomButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_name = new System.Windows.Forms.Label();
             this.lbl_sumprice = new System.Windows.Forms.Label();
@@ -44,14 +41,22 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.fpnl_receipt = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btn_camera = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_choosepic = new CS511_Project_QLNS.View.CustomButton();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.customPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +64,7 @@
             // 
             this.ptb_img.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_picture;
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(183, 2);
+            this.ptb_img.Location = new System.Drawing.Point(183, 5);
             this.ptb_img.Name = "ptb_img";
             this.ptb_img.Size = new System.Drawing.Size(160, 160);
             this.ptb_img.TabIndex = 0;
@@ -67,68 +72,13 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.ptb_img);
-            this.panel1.Controls.Add(this.customButton3);
-            this.panel1.Controls.Add(this.customButton1);
-            this.panel1.Controls.Add(this.customButton2);
             this.panel1.Location = new System.Drawing.Point(3, 60);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(974, 175);
             this.panel1.TabIndex = 4;
-            // 
-            // customButton3
-            // 
-            this.customButton3.BackColor = System.Drawing.Color.Green;
-            this.customButton3.BackgroundColor = System.Drawing.Color.Green;
-            this.customButton3.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.customButton3.BorderRadius = 20;
-            this.customButton3.BorderSize = 0;
-            this.customButton3.FlatAppearance.BorderSize = 0;
-            this.customButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton3.ForeColor = System.Drawing.Color.White;
-            this.customButton3.Location = new System.Drawing.Point(532, 124);
-            this.customButton3.Name = "customButton3";
-            this.customButton3.Size = new System.Drawing.Size(189, 40);
-            this.customButton3.TabIndex = 3;
-            this.customButton3.Text = "customButton3";
-            this.customButton3.TextColor = System.Drawing.Color.White;
-            this.customButton3.UseVisualStyleBackColor = false;
-            // 
-            // customButton1
-            // 
-            this.customButton1.BackColor = System.Drawing.Color.Green;
-            this.customButton1.BackgroundColor = System.Drawing.Color.Green;
-            this.customButton1.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.customButton1.BorderRadius = 20;
-            this.customButton1.BorderSize = 0;
-            this.customButton1.FlatAppearance.BorderSize = 0;
-            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(532, 1);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(189, 40);
-            this.customButton1.TabIndex = 1;
-            this.customButton1.Text = "customButton1";
-            this.customButton1.TextColor = System.Drawing.Color.White;
-            this.customButton1.UseVisualStyleBackColor = false;
-            // 
-            // customButton2
-            // 
-            this.customButton2.BackColor = System.Drawing.Color.Green;
-            this.customButton2.BackgroundColor = System.Drawing.Color.Green;
-            this.customButton2.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.customButton2.BorderRadius = 20;
-            this.customButton2.BorderSize = 0;
-            this.customButton2.FlatAppearance.BorderSize = 0;
-            this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton2.ForeColor = System.Drawing.Color.White;
-            this.customButton2.Location = new System.Drawing.Point(532, 51);
-            this.customButton2.Name = "customButton2";
-            this.customButton2.Size = new System.Drawing.Size(189, 40);
-            this.customButton2.TabIndex = 2;
-            this.customButton2.Text = "customButton2";
-            this.customButton2.TextColor = System.Drawing.Color.White;
-            this.customButton2.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -211,7 +161,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(547, 18);
+            this.label8.Location = new System.Drawing.Point(556, 18);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(58, 22);
             this.label8.TabIndex = 8;
@@ -243,6 +193,44 @@
             this.fpnl_receipt.Name = "fpnl_receipt";
             this.fpnl_receipt.Size = new System.Drawing.Size(973, 243);
             this.fpnl_receipt.TabIndex = 3;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.Controls.Add(this.btn_choosepic);
+            this.panel4.Location = new System.Drawing.Point(427, 28);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(399, 51);
+            this.panel4.TabIndex = 4;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label10);
+            this.panel5.Controls.Add(this.btn_camera);
+            this.panel5.Location = new System.Drawing.Point(427, 85);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(399, 50);
+            this.panel5.TabIndex = 5;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(13, 12);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(108, 22);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Upload QR";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(13, 12);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(90, 22);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Scan QR";
             // 
             // customPanel1
             // 
@@ -299,6 +287,45 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Price";
             // 
+            // btn_camera
+            // 
+            this.btn_camera.BackColor = System.Drawing.Color.Green;
+            this.btn_camera.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_camera.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_camera.BorderRadius = 20;
+            this.btn_camera.BorderSize = 0;
+            this.btn_camera.FlatAppearance.BorderSize = 0;
+            this.btn_camera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_camera.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_camera.ForeColor = System.Drawing.Color.White;
+            this.btn_camera.Location = new System.Drawing.Point(202, 5);
+            this.btn_camera.Name = "btn_camera";
+            this.btn_camera.Size = new System.Drawing.Size(189, 40);
+            this.btn_camera.TabIndex = 3;
+            this.btn_camera.Text = "Turn on Camera";
+            this.btn_camera.TextColor = System.Drawing.Color.White;
+            this.btn_camera.UseVisualStyleBackColor = false;
+            // 
+            // btn_choosepic
+            // 
+            this.btn_choosepic.BackColor = System.Drawing.Color.Green;
+            this.btn_choosepic.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_choosepic.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_choosepic.BorderRadius = 20;
+            this.btn_choosepic.BorderSize = 0;
+            this.btn_choosepic.FlatAppearance.BorderSize = 0;
+            this.btn_choosepic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_choosepic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_choosepic.ForeColor = System.Drawing.Color.White;
+            this.btn_choosepic.Location = new System.Drawing.Point(202, 4);
+            this.btn_choosepic.Name = "btn_choosepic";
+            this.btn_choosepic.Size = new System.Drawing.Size(189, 40);
+            this.btn_choosepic.TabIndex = 1;
+            this.btn_choosepic.Text = "Choose Picture";
+            this.btn_choosepic.TextColor = System.Drawing.Color.White;
+            this.btn_choosepic.UseVisualStyleBackColor = false;
+            this.btn_choosepic.Click += new System.EventHandler(this.btn_choosepic_Click);
+            // 
             // Uct_Customer_ReceiptSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -311,6 +338,10 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.customPanel1.ResumeLayout(false);
             this.customPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -320,9 +351,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox ptb_img;
-        private View.CustomButton customButton1;
-        private View.CustomButton customButton2;
-        private View.CustomButton customButton3;
+        private View.CustomButton btn_choosepic;
+        private View.CustomButton btn_camera;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel fpnl_receipt;
@@ -340,5 +370,9 @@
         private System.Windows.Forms.Label lbl_sumprice;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbl_name;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
     }
 }
