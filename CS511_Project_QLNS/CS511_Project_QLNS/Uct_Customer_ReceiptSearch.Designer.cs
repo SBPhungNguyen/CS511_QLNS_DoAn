@@ -95,9 +95,9 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(13, 12);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(90, 22);
+            this.label10.Size = new System.Drawing.Size(96, 22);
             this.label10.TabIndex = 10;
-            this.label10.Text = "Scan QR";
+            this.label10.Text = "Scan QR:";
             // 
             // btn_camera
             // 
@@ -133,9 +133,9 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(13, 12);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(108, 22);
+            this.label9.Size = new System.Drawing.Size(114, 22);
             this.label9.TabIndex = 9;
-            this.label9.Text = "Upload QR";
+            this.label9.Text = "Upload QR:";
             // 
             // btn_choosepic
             // 
@@ -181,9 +181,8 @@
             this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_name.Location = new System.Drawing.Point(255, 54);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(63, 22);
+            this.lbl_name.Size = new System.Drawing.Size(0, 22);
             this.lbl_name.TabIndex = 15;
-            this.lbl_name.Text = "Code:";
             // 
             // lbl_sumprice
             // 
@@ -220,9 +219,8 @@
             this.lbl_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_date.Location = new System.Drawing.Point(669, 18);
             this.lbl_date.Name = "lbl_date";
-            this.lbl_date.Size = new System.Drawing.Size(58, 22);
+            this.lbl_date.Size = new System.Drawing.Size(0, 22);
             this.lbl_date.TabIndex = 11;
-            this.lbl_date.Text = "Date:";
             // 
             // lbl_code
             // 
@@ -230,9 +228,8 @@
             this.lbl_code.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_code.Location = new System.Drawing.Point(255, 18);
             this.lbl_code.Name = "lbl_code";
-            this.lbl_code.Size = new System.Drawing.Size(63, 22);
+            this.lbl_code.Size = new System.Drawing.Size(0, 22);
             this.lbl_code.TabIndex = 9;
-            this.lbl_code.Text = "Code:";
             // 
             // label8
             // 
@@ -248,7 +245,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(133, 54);
+            this.label6.Location = new System.Drawing.Point(131, 54);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 22);
             this.label6.TabIndex = 7;
@@ -258,7 +255,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(133, 18);
+            this.label1.Location = new System.Drawing.Point(131, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 22);
             this.label1.TabIndex = 6;

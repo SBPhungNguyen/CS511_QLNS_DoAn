@@ -86,6 +86,8 @@ namespace CS511_Project_QLNS
 
         private void btn_home_Click(object sender, EventArgs e)
         {
+            lbl_title.Text = "HOME";
+
             btn_home.BackColor = color_btn_chosen;
             btn_receipt.BackColor = color_btn_normal;
             btn_cart.BackColor = color_btn_normal;
@@ -101,6 +103,8 @@ namespace CS511_Project_QLNS
 
         private void btn_cart_Click(object sender, EventArgs e)
         {
+            lbl_title.Text = "CART";
+
             btn_home.BackColor = color_btn_normal;
             btn_cart.BackColor = color_btn_chosen;
             btn_receipt.BackColor = color_btn_normal;
@@ -116,6 +120,8 @@ namespace CS511_Project_QLNS
 
         private void btn_receipt_Click(object sender, EventArgs e)
         {
+            lbl_title.Text = "RECEIPT SEARCH";
+
             btn_home.BackColor = color_btn_normal;
             btn_cart.BackColor = color_btn_normal;
             btn_receipt.BackColor = color_btn_chosen;
@@ -130,6 +136,8 @@ namespace CS511_Project_QLNS
 
         private void btn_chat_Click(object sender, EventArgs e)
         {
+            lbl_title.Text = "CHAT";
+
             btn_home.BackColor = color_btn_normal;
             btn_cart.BackColor = color_btn_normal;
             btn_receipt.BackColor = color_btn_normal;
