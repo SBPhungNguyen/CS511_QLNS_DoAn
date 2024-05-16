@@ -11,6 +11,10 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
+using ZXing.QrCode.Internal;
+using QRCoder;
+using System.Net;
 
 namespace CS511_Project_QLNS
 {
@@ -68,6 +72,7 @@ namespace CS511_Project_QLNS
                     return;
                 }
 
+                //this is to get the info on the screen
                 string date = DateTime.Now.Date.ToString("yyyy-MM-dd");
                 string name = txt_name.Texts;
                 int money = int.Parse(lbl_total.Text.Replace(",",""));
@@ -99,9 +104,13 @@ namespace CS511_Project_QLNS
                     cmd.CommandType = CommandType.Text;
                 }
 
+                //get info of the chosen books
                 GetBookInfo();
+
+                //minus the quantity of the chosen books based on the choose quantity
                 MinusBookQuantity();
 
+                //save the receipt_details
                 if (sqlCon.State != ConnectionState.Open) { sqlCon.Open(); }
                 for (int i=0;i<parent_form.cart_count;i++)
                 {
@@ -130,6 +139,35 @@ namespace CS511_Project_QLNS
 
                 ClearFlowPanel();
                 parent_form.cart_count = 0;
+
+                //create the qr code containing the id of the rececipt
+                QRCodeGenerator qrGenerator = new QRCodeGenerator();
+                QRCoder.QRCode qrCode = new QRCoder.QRCode(qrGenerator.CreateQrCode(id_rec.ToString(), QRCodeGenerator.ECCLevel.H));
+                System.Drawing.Image img = qrCode.GetGraphic(10, Color.Black, Color.White, false);
+
+                qrGenerator.Dispose();
+                qrCode.Dispose();
+
+                img.Save("img.png");
+
+                //mail the notif to the given email of the customer
+                MailMessage mail = new MailMessage();
+                mail.From = new System.Net.Mail.MailAddress("22521148@gm.uit.edu.vn");
+                SmtpClient smtp = new SmtpClient();
+                smtp.Port = 587;
+                smtp.EnableSsl = true;
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtp.UseDefaultCredentials = false;
+                smtp.Credentials = new NetworkCredential(mail.From.Address, "julp pcoj nkjs hryh\r\n");
+                smtp.Host = "smtp.gmail.com";
+
+                //recipient
+                mail.To.Add(new MailAddress(txt_email.Texts));
+                mail.IsBodyHtml = true;
+                mail.Subject = "Your Receipt";
+                mail.Body = "Thank you for your purchase. \nThe total amount of your purchase was "+lbl_total.Text+"\n.You can view more details by searching this QR in our application.";
+                mail.Attachments.Add(new Attachment("img.png"));
+                smtp.Send(mail);
 
                 MessageBox.Show("Thank you for your purchase","Congratulation");
 
