@@ -34,6 +34,9 @@
             this.cbb_type = new System.Windows.Forms.ComboBox();
             this.ptb_Search = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_cat2 = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_cat1 = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_all = new CS511_Project_QLNS.View.CustomButton();
             this.customPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_Search)).BeginInit();
             this.SuspendLayout();
@@ -112,16 +115,76 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 52);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 103);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(976, 607);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(976, 556);
             this.flowLayoutPanel1.TabIndex = 51;
+            // 
+            // btn_cat2
+            // 
+            this.btn_cat2.BackColor = System.Drawing.Color.Green;
+            this.btn_cat2.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_cat2.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_cat2.BorderRadius = 0;
+            this.btn_cat2.BorderSize = 0;
+            this.btn_cat2.FlatAppearance.BorderSize = 0;
+            this.btn_cat2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cat2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cat2.ForeColor = System.Drawing.Color.White;
+            this.btn_cat2.Location = new System.Drawing.Point(652, 58);
+            this.btn_cat2.Name = "btn_cat2";
+            this.btn_cat2.Size = new System.Drawing.Size(327, 40);
+            this.btn_cat2.TabIndex = 54;
+            this.btn_cat2.Text = "Fantasy";
+            this.btn_cat2.TextColor = System.Drawing.Color.White;
+            this.btn_cat2.UseVisualStyleBackColor = false;
+            // 
+            // btn_cat1
+            // 
+            this.btn_cat1.BackColor = System.Drawing.Color.Green;
+            this.btn_cat1.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_cat1.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_cat1.BorderRadius = 0;
+            this.btn_cat1.BorderSize = 0;
+            this.btn_cat1.FlatAppearance.BorderSize = 0;
+            this.btn_cat1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cat1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cat1.ForeColor = System.Drawing.Color.White;
+            this.btn_cat1.Location = new System.Drawing.Point(326, 58);
+            this.btn_cat1.Name = "btn_cat1";
+            this.btn_cat1.Size = new System.Drawing.Size(327, 40);
+            this.btn_cat1.TabIndex = 53;
+            this.btn_cat1.Text = "Classics";
+            this.btn_cat1.TextColor = System.Drawing.Color.White;
+            this.btn_cat1.UseVisualStyleBackColor = false;
+            // 
+            // btn_all
+            // 
+            this.btn_all.BackColor = System.Drawing.Color.Green;
+            this.btn_all.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_all.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_all.BorderRadius = 0;
+            this.btn_all.BorderSize = 0;
+            this.btn_all.FlatAppearance.BorderSize = 0;
+            this.btn_all.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_all.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_all.ForeColor = System.Drawing.Color.White;
+            this.btn_all.Location = new System.Drawing.Point(0, 58);
+            this.btn_all.Name = "btn_all";
+            this.btn_all.Size = new System.Drawing.Size(326, 40);
+            this.btn_all.TabIndex = 52;
+            this.btn_all.Text = "All";
+            this.btn_all.TextColor = System.Drawing.Color.White;
+            this.btn_all.UseVisualStyleBackColor = false;
             // 
             // Uct_Employee_Cashier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn_cat2);
+            this.Controls.Add(this.btn_cat1);
+            this.Controls.Add(this.btn_all);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.customButton1);
             this.Controls.Add(this.customPanel1);
@@ -141,5 +204,8 @@
         private System.Windows.Forms.ComboBox cbb_type;
         private System.Windows.Forms.PictureBox ptb_Search;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private View.CustomButton btn_cat2;
+        private View.CustomButton btn_cat1;
+        private View.CustomButton btn_all;
     }
 }
