@@ -40,7 +40,7 @@
             this.btn_cat1 = new CS511_Project_QLNS.View.CustomButton();
             this.btn_all = new CS511_Project_QLNS.View.CustomButton();
             this.fpnl_books = new System.Windows.Forms.FlowLayoutPanel();
-            this.customButton1 = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_add = new CS511_Project_QLNS.View.CustomButton();
             this.customPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_Search)).BeginInit();
             this.SuspendLayout();
@@ -240,31 +240,31 @@
             this.fpnl_books.Size = new System.Drawing.Size(980, 561);
             this.fpnl_books.TabIndex = 40;
             // 
-            // customButton1
+            // btn_add
             // 
-            this.customButton1.BackColor = System.Drawing.Color.Green;
-            this.customButton1.BackgroundColor = System.Drawing.Color.Green;
-            this.customButton1.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.customButton1.BorderRadius = 20;
-            this.customButton1.BorderSize = 0;
-            this.customButton1.FlatAppearance.BorderSize = 0;
-            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(692, 0);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(150, 40);
-            this.customButton1.TabIndex = 48;
-            this.customButton1.Text = "Add";
-            this.customButton1.TextColor = System.Drawing.Color.White;
-            this.customButton1.UseVisualStyleBackColor = false;
+            this.btn_add.BackColor = System.Drawing.Color.Green;
+            this.btn_add.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_add.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_add.BorderRadius = 20;
+            this.btn_add.BorderSize = 0;
+            this.btn_add.FlatAppearance.BorderSize = 0;
+            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.ForeColor = System.Drawing.Color.White;
+            this.btn_add.Location = new System.Drawing.Point(692, 0);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(150, 40);
+            this.btn_add.TabIndex = 48;
+            this.btn_add.Text = "Add";
+            this.btn_add.TextColor = System.Drawing.Color.White;
+            this.btn_add.UseVisualStyleBackColor = false;
             // 
             // Uct_Employee_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.Controls.Add(this.customButton1);
+            this.Controls.Add(this.btn_add);
             this.Controls.Add(this.customPanel1);
             this.Controls.Add(this.btn_cat6);
             this.Controls.Add(this.btn_cat5);
@@ -296,6 +296,6 @@
         private View.CustomButton btn_cat1;
         private View.CustomButton btn_all;
         private System.Windows.Forms.FlowLayoutPanel fpnl_books;
-        private View.CustomButton customButton1;
+        private View.CustomButton btn_add;
     }
 }

@@ -136,7 +136,7 @@
             this.btn_cat2.Name = "btn_cat2";
             this.btn_cat2.Size = new System.Drawing.Size(327, 40);
             this.btn_cat2.TabIndex = 54;
-            this.btn_cat2.Text = "Fantasy";
+            this.btn_cat2.Text = "Cashier";
             this.btn_cat2.TextColor = System.Drawing.Color.White;
             this.btn_cat2.UseVisualStyleBackColor = false;
             // 
@@ -155,7 +155,7 @@
             this.btn_cat1.Name = "btn_cat1";
             this.btn_cat1.Size = new System.Drawing.Size(327, 40);
             this.btn_cat1.TabIndex = 53;
-            this.btn_cat1.Text = "Classics";
+            this.btn_cat1.Text = "Manager";
             this.btn_cat1.TextColor = System.Drawing.Color.White;
             this.btn_cat1.UseVisualStyleBackColor = false;
             // 
