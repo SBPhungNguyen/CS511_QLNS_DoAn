@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ptb_img = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -52,6 +53,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -64,7 +66,7 @@
             // 
             this.ptb_img.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_picture;
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(141, 5);
+            this.ptb_img.Location = new System.Drawing.Point(141, 1);
             this.ptb_img.Name = "ptb_img";
             this.ptb_img.Size = new System.Drawing.Size(160, 160);
             this.ptb_img.TabIndex = 0;
@@ -75,9 +77,9 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.ptb_img);
-            this.panel1.Location = new System.Drawing.Point(3, 60);
+            this.panel1.Location = new System.Drawing.Point(3, 59);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(974, 175);
+            this.panel1.Size = new System.Drawing.Size(974, 167);
             this.panel1.TabIndex = 4;
             // 
             // panel5
@@ -117,6 +119,7 @@
             this.btn_camera.Text = "Turn on Camera";
             this.btn_camera.TextColor = System.Drawing.Color.White;
             this.btn_camera.UseVisualStyleBackColor = false;
+            this.btn_camera.Click += new System.EventHandler(this.btn_camera_Click);
             // 
             // panel4
             // 
@@ -170,9 +173,9 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.fpnl_receipt);
             this.panel2.Controls.Add(this.customPanel1);
-            this.panel2.Location = new System.Drawing.Point(3, 234);
+            this.panel2.Location = new System.Drawing.Point(3, 226);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(977, 436);
+            this.panel2.Size = new System.Drawing.Size(977, 449);
             this.panel2.TabIndex = 5;
             // 
             // lbl_name
@@ -323,6 +326,10 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Price";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Uct_Customer_ReceiptSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -371,5 +378,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Timer timer1;
     }
 }

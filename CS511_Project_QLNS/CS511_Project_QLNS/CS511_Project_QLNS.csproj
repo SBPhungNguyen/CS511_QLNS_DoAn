@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\..\..\DH\CamLibCSharp\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\..\..\DH\CamLibCSharp\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="BarcodeLib">
       <HintPath>..\..\..\..\New folder\Buổi 10-20240507T003558Z-001\Buổi 10\BarcodeLib.dll</HintPath>
     </Reference>
