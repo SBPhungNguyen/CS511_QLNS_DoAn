@@ -31,5 +31,14 @@ namespace CS511_Project_QLNS
         {
             btn_exit.BackgroundImage = Properties.Resources.Cross2_image;
         }
+
+        private void btn_guest_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            this.Hide();
+            form.ShowDialog();
+
+            this.Show();
+        }
     }
 }

@@ -149,5 +149,10 @@ namespace CS511_Project_QLNS
             this.Controls.Add(uct_Customer_Chat);
             uct_Customer_Chat.BringToFront();
         }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

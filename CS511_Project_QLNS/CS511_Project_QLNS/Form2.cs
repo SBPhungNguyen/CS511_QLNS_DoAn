@@ -33,5 +33,10 @@ namespace CS511_Project_QLNS
             //if manager -> show employee, not -> don't show
 
         }
+
+        private void btn_report_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
