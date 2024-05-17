@@ -107,12 +107,13 @@
             this.btn_cat6.BorderSize = 0;
             this.btn_cat6.FlatAppearance.BorderSize = 0;
             this.btn_cat6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cat6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat6.ForeColor = System.Drawing.Color.White;
             this.btn_cat6.Location = new System.Drawing.Point(840, 58);
             this.btn_cat6.Name = "btn_cat6";
             this.btn_cat6.Size = new System.Drawing.Size(140, 40);
             this.btn_cat6.TabIndex = 47;
-            this.btn_cat6.Text = "customButton5";
+            this.btn_cat6.Text = "History";
             this.btn_cat6.TextColor = System.Drawing.Color.White;
             this.btn_cat6.UseVisualStyleBackColor = false;
             // 
@@ -125,12 +126,13 @@
             this.btn_cat5.BorderSize = 0;
             this.btn_cat5.FlatAppearance.BorderSize = 0;
             this.btn_cat5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cat5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat5.ForeColor = System.Drawing.Color.White;
             this.btn_cat5.Location = new System.Drawing.Point(700, 58);
             this.btn_cat5.Name = "btn_cat5";
             this.btn_cat5.Size = new System.Drawing.Size(140, 40);
             this.btn_cat5.TabIndex = 46;
-            this.btn_cat5.Text = "customButton6";
+            this.btn_cat5.Text = "Mystery";
             this.btn_cat5.TextColor = System.Drawing.Color.White;
             this.btn_cat5.UseVisualStyleBackColor = false;
             // 
@@ -143,12 +145,13 @@
             this.btn_cat4.BorderSize = 0;
             this.btn_cat4.FlatAppearance.BorderSize = 0;
             this.btn_cat4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cat4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat4.ForeColor = System.Drawing.Color.White;
             this.btn_cat4.Location = new System.Drawing.Point(560, 58);
             this.btn_cat4.Name = "btn_cat4";
             this.btn_cat4.Size = new System.Drawing.Size(140, 40);
             this.btn_cat4.TabIndex = 45;
-            this.btn_cat4.Text = "customButton7";
+            this.btn_cat4.Text = "Non-Fiction";
             this.btn_cat4.TextColor = System.Drawing.Color.White;
             this.btn_cat4.UseVisualStyleBackColor = false;
             // 
@@ -161,12 +164,13 @@
             this.btn_cat3.BorderSize = 0;
             this.btn_cat3.FlatAppearance.BorderSize = 0;
             this.btn_cat3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cat3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat3.ForeColor = System.Drawing.Color.White;
             this.btn_cat3.Location = new System.Drawing.Point(420, 58);
             this.btn_cat3.Name = "btn_cat3";
             this.btn_cat3.Size = new System.Drawing.Size(140, 40);
             this.btn_cat3.TabIndex = 44;
-            this.btn_cat3.Text = "customButton3";
+            this.btn_cat3.Text = "Self Help";
             this.btn_cat3.TextColor = System.Drawing.Color.White;
             this.btn_cat3.UseVisualStyleBackColor = false;
             // 
@@ -179,12 +183,13 @@
             this.btn_cat2.BorderSize = 0;
             this.btn_cat2.FlatAppearance.BorderSize = 0;
             this.btn_cat2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cat2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat2.ForeColor = System.Drawing.Color.White;
             this.btn_cat2.Location = new System.Drawing.Point(280, 58);
             this.btn_cat2.Name = "btn_cat2";
             this.btn_cat2.Size = new System.Drawing.Size(140, 40);
             this.btn_cat2.TabIndex = 43;
-            this.btn_cat2.Text = "customButton4";
+            this.btn_cat2.Text = "Fantasy";
             this.btn_cat2.TextColor = System.Drawing.Color.White;
             this.btn_cat2.UseVisualStyleBackColor = false;
             // 
@@ -197,12 +202,13 @@
             this.btn_cat1.BorderSize = 0;
             this.btn_cat1.FlatAppearance.BorderSize = 0;
             this.btn_cat1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cat1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat1.ForeColor = System.Drawing.Color.White;
             this.btn_cat1.Location = new System.Drawing.Point(140, 58);
             this.btn_cat1.Name = "btn_cat1";
             this.btn_cat1.Size = new System.Drawing.Size(140, 40);
             this.btn_cat1.TabIndex = 42;
-            this.btn_cat1.Text = "customButton2";
+            this.btn_cat1.Text = "Classics";
             this.btn_cat1.TextColor = System.Drawing.Color.White;
             this.btn_cat1.UseVisualStyleBackColor = false;
             // 
@@ -215,12 +221,13 @@
             this.btn_all.BorderSize = 0;
             this.btn_all.FlatAppearance.BorderSize = 0;
             this.btn_all.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_all.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_all.ForeColor = System.Drawing.Color.White;
             this.btn_all.Location = new System.Drawing.Point(0, 58);
             this.btn_all.Name = "btn_all";
             this.btn_all.Size = new System.Drawing.Size(140, 40);
             this.btn_all.TabIndex = 41;
-            this.btn_all.Text = "customButton1";
+            this.btn_all.Text = "All";
             this.btn_all.TextColor = System.Drawing.Color.White;
             this.btn_all.UseVisualStyleBackColor = false;
             // 
@@ -244,7 +251,7 @@
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(693, 0);
+            this.customButton1.Location = new System.Drawing.Point(692, 0);
             this.customButton1.Name = "customButton1";
             this.customButton1.Size = new System.Drawing.Size(150, 40);
             this.customButton1.TabIndex = 48;

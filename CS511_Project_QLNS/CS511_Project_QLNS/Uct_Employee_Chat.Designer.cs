@@ -36,6 +36,7 @@
             // 
             // ptb_send
             // 
+            this.ptb_send.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_send;
             this.ptb_send.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_send.Location = new System.Drawing.Point(930, 616);
             this.ptb_send.Name = "ptb_send";

@@ -68,6 +68,9 @@
             this.btn_exit.Size = new System.Drawing.Size(30, 30);
             this.btn_exit.TabIndex = 18;
             this.btn_exit.TabStop = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.btn_exit.MouseEnter += new System.EventHandler(this.btn_exit_MouseEnter);
+            this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
             // 
             // lbl_title
             // 
@@ -105,55 +108,62 @@
             this.btn_employee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_employee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_employee.ForeColor = System.Drawing.Color.White;
-            this.btn_employee.Location = new System.Drawing.Point(7, 442);
+            this.btn_employee.Location = new System.Drawing.Point(7, 421);
             this.btn_employee.Name = "btn_employee";
             this.btn_employee.Size = new System.Drawing.Size(260, 63);
             this.btn_employee.TabIndex = 15;
             this.btn_employee.Text = "Employee";
             this.btn_employee.UseVisualStyleBackColor = true;
+            this.btn_employee.Click += new System.EventHandler(this.btn_employee_Click);
             // 
             // btn_chat
             // 
+            this.btn_chat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.btn_chat.FlatAppearance.BorderSize = 0;
             this.btn_chat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_chat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_chat.ForeColor = System.Drawing.Color.White;
-            this.btn_chat.Location = new System.Drawing.Point(7, 374);
+            this.btn_chat.Location = new System.Drawing.Point(7, 358);
             this.btn_chat.Name = "btn_chat";
             this.btn_chat.Size = new System.Drawing.Size(260, 63);
             this.btn_chat.TabIndex = 14;
             this.btn_chat.Text = "Chat";
-            this.btn_chat.UseVisualStyleBackColor = true;
+            this.btn_chat.UseVisualStyleBackColor = false;
+            this.btn_chat.Click += new System.EventHandler(this.btn_chat_Click);
             // 
             // btn_report
             // 
+            this.btn_report.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.btn_report.FlatAppearance.BorderSize = 0;
             this.btn_report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_report.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_report.ForeColor = System.Drawing.Color.White;
-            this.btn_report.Location = new System.Drawing.Point(7, 306);
+            this.btn_report.Location = new System.Drawing.Point(7, 296);
             this.btn_report.Name = "btn_report";
             this.btn_report.Size = new System.Drawing.Size(260, 63);
             this.btn_report.TabIndex = 13;
             this.btn_report.Text = "Report";
-            this.btn_report.UseVisualStyleBackColor = true;
+            this.btn_report.UseVisualStyleBackColor = false;
             this.btn_report.Click += new System.EventHandler(this.btn_report_Click);
             // 
             // btn_import
             // 
+            this.btn_import.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.btn_import.FlatAppearance.BorderSize = 0;
             this.btn_import.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_import.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_import.ForeColor = System.Drawing.Color.White;
-            this.btn_import.Location = new System.Drawing.Point(7, 237);
+            this.btn_import.Location = new System.Drawing.Point(7, 233);
             this.btn_import.Name = "btn_import";
             this.btn_import.Size = new System.Drawing.Size(260, 63);
             this.btn_import.TabIndex = 12;
             this.btn_import.Text = "Import";
-            this.btn_import.UseVisualStyleBackColor = true;
+            this.btn_import.UseVisualStyleBackColor = false;
+            this.btn_import.Click += new System.EventHandler(this.btn_import_Click);
             // 
             // btn_home
             // 
+            this.btn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(181)))), ((int)(((byte)(122)))));
             this.btn_home.FlatAppearance.BorderSize = 0;
             this.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_home.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -164,6 +174,7 @@
             this.btn_home.TabIndex = 11;
             this.btn_home.Text = "Home";
             this.btn_home.UseVisualStyleBackColor = false;
+            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
             // pnl_UserName
             // 
