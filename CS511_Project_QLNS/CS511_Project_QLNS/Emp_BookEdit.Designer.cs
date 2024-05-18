@@ -314,7 +314,7 @@
             "Non-Fiction",
             "Mystery",
             "History"});
-            this.cbb_type.Location = new System.Drawing.Point(255, 483);
+            this.cbb_type.Location = new System.Drawing.Point(254, 482);
             this.cbb_type.Name = "cbb_type";
             this.cbb_type.Size = new System.Drawing.Size(275, 28);
             this.cbb_type.TabIndex = 63;

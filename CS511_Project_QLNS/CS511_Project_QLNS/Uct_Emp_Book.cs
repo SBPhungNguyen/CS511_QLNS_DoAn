@@ -102,7 +102,25 @@ namespace CS511_Project_QLNS
             var pa_pa = pa.Parent;
             parent_form = (Form2)pa_pa;
 
-            Emp_BookEdit book_edit = new Emp_BookEdit();
+            SqlConnection sqlCon = new SqlConnection(parent_uct.connect);
+            sqlCon.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM TBL_BOOK WHERE ID = " + id;
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                Emp_BookEdit book_edit = new Emp_BookEdit();
+                System.Drawing.Image img = System.Drawing.Image.FromFile(parent_uct.local_dir + dr.GetString(1) + ".png");
+                book_edit.LoadData(dr.GetInt32(0), img, dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetDecimal(5).ToString("0.##"), dr.GetDecimal(6).ToString("0.##"), dr.GetString(7), dr.GetInt32(8).ToString());
+
+                parent_form.Hide();
+                book_edit.ShowDialog();
+
+                parent_form.Show();
+            }
 
         }
     }

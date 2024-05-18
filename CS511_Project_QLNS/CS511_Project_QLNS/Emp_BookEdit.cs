@@ -18,16 +18,20 @@ namespace CS511_Project_QLNS
             
         }
 
-        public void LoadData(int id, string title, string author, string genre, string im_price, string ex_price, string quantity, string des)
+        public void LoadData(int id, Image img, string title, string author, string genre, string im_price, string ex_price, string des, string quantity)
         {
             lbl_id.Text = id.ToString();
-            txt_title.Text = title.ToString();
-            txt_author.Text = author.ToString();
-            txt_des.Text = des.ToString();
-            txt_quantity.Text = quantity.ToString();
+            ptb_img.BackgroundImage = img;
+            txt_title.Texts = title;
+            txt_author.Texts = author;
+            txt_des.Texts = des.ToString();
+            txt_quantity.Texts = quantity.ToString();
             //adjust to have the correct format of money 
-            txt_im_price.Text = im_price.ToString();
-            txt_sell_price.Text = ex_price.ToString();
+            cbb_type.SelectedIndex = int.Parse(genre) - 1;
+            txt_im_price.Texts = im_price;
+            txt_sell_price.Texts = ex_price;
+
+            
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
