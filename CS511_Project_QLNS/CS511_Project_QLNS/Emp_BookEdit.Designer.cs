@@ -301,6 +301,7 @@
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.TextColor = System.Drawing.Color.Black;
             this.btn_cancel.UseVisualStyleBackColor = false;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // cbb_type
             // 

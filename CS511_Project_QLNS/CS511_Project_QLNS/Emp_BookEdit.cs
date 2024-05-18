@@ -48,5 +48,10 @@ namespace CS511_Project_QLNS
         {
             btn_exit.BackgroundImage = Properties.Resources.Cross2_image;
         }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
