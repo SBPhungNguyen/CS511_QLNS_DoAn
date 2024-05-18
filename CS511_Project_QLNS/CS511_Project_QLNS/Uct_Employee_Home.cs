@@ -15,8 +15,8 @@ namespace CS511_Project_QLNS
     public partial class Uct_Employee_Home : UserControl
     {
         connection co = new connection();
-        string connect;
-        string local_dir;
+        public string connect;
+        public string local_dir;
         SqlConnection sqlCon;
         SqlCommand cmd;
 
@@ -95,11 +95,10 @@ namespace CS511_Project_QLNS
 
             while (rd.Read())
             {
-                Uct_Cus_Book uct_Cus_Book = new Uct_Cus_Book();
+                Uct_Emp_Book book = new Uct_Emp_Book();
                 Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
-
-                uct_Cus_Book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetDecimal(6).ToString("0.##"), rd.GetInt32(8));
-                fpnl_books.Controls.Add(uct_Cus_Book);
+                book.LoadData(rd.GetInt32(0), img, rd.GetString(2),rd.GetString(3));
+                fpnl_books.Controls.Add(book);
             }
 
             sqlCon.Close();

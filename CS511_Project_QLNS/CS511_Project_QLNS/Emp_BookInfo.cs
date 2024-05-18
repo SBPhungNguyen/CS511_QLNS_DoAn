@@ -16,5 +16,31 @@ namespace CS511_Project_QLNS
         {
             InitializeComponent();
         }
+        public void LoadData(int id, Image pic, string title, string author, string genre, string im_price, string ex_price, string txt, string quantity)
+        {
+            lbl_id.Text = id.ToString();
+            ptb_img.BackgroundImage = pic;
+            lbl_name.Text = title;
+            lbl_author.Text = author;
+            switch(genre)
+            {
+                case "1": lbl_genre.Text = "Classics"; break;
+                case "2": lbl_genre.Text = "Fantasy"; break;
+                case "3": lbl_genre.Text = "Self Help"; break;
+                case "4": lbl_genre.Text = "Non-Fiction"; break;
+                case "5": lbl_genre.Text = "Mystery"; break;
+                case "6": lbl_genre.Text = "History"; break;
+            }
+
+            lbl_im_price.Text = string.Format("{0:#,###}", int.Parse(im_price));
+            lbl_sell_price.Text = string.Format("{0:#,###}", int.Parse(ex_price));
+            lbl_description.Text = txt;
+            lbl_quantity.Text = quantity;
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

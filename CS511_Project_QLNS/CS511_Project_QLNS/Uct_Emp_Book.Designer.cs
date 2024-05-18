@@ -61,6 +61,7 @@
             this.lbl_author.TabIndex = 1;
             this.lbl_author.Text = "label2";
             this.lbl_author.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_author.Click += new System.EventHandler(this.lbl_author_Click);
             // 
             // panel1
             // 
@@ -80,6 +81,7 @@
             this.lbl_name.TabIndex = 0;
             this.lbl_name.Text = "label1";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbl_name.Click += new System.EventHandler(this.lbl_name_Click);
             // 
             // ptb_edit
             // 
@@ -109,6 +111,7 @@
             this.ptb_img.Size = new System.Drawing.Size(80, 95);
             this.ptb_img.TabIndex = 9;
             this.ptb_img.TabStop = false;
+            this.ptb_img.Click += new System.EventHandler(this.ptb_img_Click);
             // 
             // Uct_Emp_Book
             // 
@@ -123,6 +126,7 @@
             this.Margin = new System.Windows.Forms.Padding(0, 10, 35, 5);
             this.Name = "Uct_Emp_Book";
             this.Size = new System.Drawing.Size(280, 150);
+            this.Click += new System.EventHandler(this.Uct_Emp_Book_Click);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_edit)).EndInit();
