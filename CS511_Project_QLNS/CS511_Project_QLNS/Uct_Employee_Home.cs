@@ -208,5 +208,188 @@ namespace CS511_Project_QLNS
             is_displayed_button = 6;
             LoadDataWithCate("6");
         }
-    }
+
+        private void ptb_Search_Click(object sender, EventArgs e)
+        {
+            if (is_displayed_button == 0)
+                SearchWithAll();
+            else
+                SearchWithCate(is_displayed_button);
+        }
+
+        public void SearchWithAll()
+        {
+            int type = cbb_type.SelectedIndex;
+            if (txt_search.Texts == "")
+            {
+                MessageBox.Show("Please enter the string you want to search", "No string found");
+                return;
+            }
+            if (type == 0)
+            {
+                ClearFlowPanel();
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * from TBL_BOOK";
+
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    if (rd.GetString(2).Contains(txt_search.Texts) || rd.GetString(3).Contains(txt_search.Texts))
+                    {
+                        Uct_Emp_Book book = new Uct_Emp_Book();
+                        Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
+
+                        book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetString(3));
+                        fpnl_books.Controls.Add(book);
+                    }
+                }
+                sqlCon.Close();
+            }
+            else if (type == 1)
+            {
+                ClearFlowPanel();
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+                
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * from TBL_BOOK";
+
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    if (rd.GetString(2).Contains(txt_search.Texts))
+                    {
+                        Uct_Emp_Book book = new Uct_Emp_Book();
+                        Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
+
+                        book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetString(3));
+                        fpnl_books.Controls.Add(book);
+                    }
+                }
+                sqlCon.Close();
+            }
+            else
+            {
+                ClearFlowPanel();
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * from TBL_BOOK";
+
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    if (rd.GetString(3).Contains(txt_search.Texts))
+                    {
+                        Uct_Emp_Book book = new Uct_Emp_Book();
+                        Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
+
+                        book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetString(3));
+                        fpnl_books.Controls.Add(book);
+                    }
+                }
+                sqlCon.Close();
+            }
+        }
+        public void SearchWithCate(int cate)
+        {
+            int type = cbb_type.SelectedIndex;
+            if (txt_search.Texts == "")
+            {
+                MessageBox.Show("Please enter the string you want to search", "No string found");
+                return;
+            }
+            if (type == 0)
+            {
+                ClearFlowPanel();
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * from TBL_BOOK WHERE GENRE = " + cate;
+
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    if (rd.GetString(2).Contains(txt_search.Texts) || rd.GetString(3).Contains(txt_search.Texts))
+                    {
+                        Uct_Emp_Book book = new Uct_Emp_Book();
+                        Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
+
+                        book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetString(3));
+                        fpnl_books.Controls.Add(book);
+                    }
+                }
+                sqlCon.Close();
+            }
+            else if (type == 1)
+            {
+                ClearFlowPanel();
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * from TBL_BOOK WHERE GENRE = " + cate;
+
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    if (rd.GetString(2).Contains(txt_search.Texts))
+                    {
+                        Uct_Emp_Book book = new Uct_Emp_Book();
+                        Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
+
+                        book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetString(3));
+                        fpnl_books.Controls.Add(book);
+                    }
+                }
+                sqlCon.Close();
+            }
+            else
+            {
+                ClearFlowPanel();
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * from TBL_BOOK WHERE GENRE = " + cate;
+
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    if (rd.GetString(3).Contains(txt_search.Texts))
+                    {
+                        Uct_Emp_Book book = new Uct_Emp_Book();
+                        Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
+
+                        book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetString(3));
+                        fpnl_books.Controls.Add(book);
+                    }
+                }
+                sqlCon.Close();
+            }
+        }
+        }
 }
