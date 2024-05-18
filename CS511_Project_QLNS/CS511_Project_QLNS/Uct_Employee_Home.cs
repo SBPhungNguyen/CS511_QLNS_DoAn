@@ -38,12 +38,29 @@ namespace CS511_Project_QLNS
             is_displayed_button = 0;
             btn_all.BackColor = color_btn_cate_chosen;
 
-            
+            LoadData(); 
         }
 
         public void LoadData()
         {
+            if (sqlCon.State != ConnectionState.Open)
+            {
+                sqlCon.Open();
+            }
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM TBL_BOOK";
 
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                System.Drawing.Image img = System.Drawing.Image.FromFile(local_dir + dr.GetString(1) + ".png");
+                Uct_Emp_Book book = new Uct_Emp_Book();
+                book.LoadData(dr.GetInt32(0),img,dr.GetString(2), dr.GetString(3));
+                fpnl_books.Controls.Add(book);
+            }
+            sqlCon.Close();
         }
     }
 }

@@ -45,7 +45,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.lbl_author);
-            this.panel2.Location = new System.Drawing.Point(104, 112);
+            this.panel2.Location = new System.Drawing.Point(104, 99);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(160, 32);
             this.panel2.TabIndex = 11;
@@ -65,9 +65,9 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.lbl_name);
-            this.panel1.Location = new System.Drawing.Point(104, 52);
+            this.panel1.Location = new System.Drawing.Point(104, 43);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(160, 53);
+            this.panel1.Size = new System.Drawing.Size(160, 64);
             this.panel1.TabIndex = 10;
             // 
             // lbl_name
@@ -76,7 +76,7 @@
             this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_name.Location = new System.Drawing.Point(0, 0);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(160, 53);
+            this.lbl_name.Size = new System.Drawing.Size(160, 64);
             this.lbl_name.TabIndex = 0;
             this.lbl_name.Text = "label1";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -85,7 +85,7 @@
             // 
             this.ptb_edit.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_pencil;
             this.ptb_edit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_edit.Location = new System.Drawing.Point(214, 7);
+            this.ptb_edit.Location = new System.Drawing.Point(217, 6);
             this.ptb_edit.Name = "ptb_edit";
             this.ptb_edit.Size = new System.Drawing.Size(25, 25);
             this.ptb_edit.TabIndex = 13;
@@ -95,7 +95,7 @@
             // 
             this.ptb_delete.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_bin__2_;
             this.ptb_delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_delete.Location = new System.Drawing.Point(248, 7);
+            this.ptb_delete.Location = new System.Drawing.Point(250, 5);
             this.ptb_delete.Name = "ptb_delete";
             this.ptb_delete.Size = new System.Drawing.Size(25, 25);
             this.ptb_delete.TabIndex = 12;
@@ -104,7 +104,7 @@
             // ptb_img
             // 
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(8, 49);
+            this.ptb_img.Location = new System.Drawing.Point(14, 41);
             this.ptb_img.Name = "ptb_img";
             this.ptb_img.Size = new System.Drawing.Size(80, 95);
             this.ptb_img.TabIndex = 9;
