@@ -49,8 +49,8 @@
             this.btn_cancel = new CS511_Project_QLNS.View.CustomButton();
             this.cbb_type = new System.Windows.Forms.ComboBox();
             this.ptb_img = new System.Windows.Forms.PictureBox();
-            this.txt_quantity = new CS511_Project_QLNS.Uct_textbox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txt_quantity = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
@@ -328,25 +328,6 @@
             this.ptb_img.TabIndex = 39;
             this.ptb_img.TabStop = false;
             // 
-            // txt_quantity
-            // 
-            this.txt_quantity.BackColor = System.Drawing.SystemColors.Window;
-            this.txt_quantity.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.txt_quantity.BorderFocusColor = System.Drawing.Color.Green;
-            this.txt_quantity.BorderSize = 2;
-            this.txt_quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_quantity.ForeColor = System.Drawing.Color.Black;
-            this.txt_quantity.Location = new System.Drawing.Point(252, 622);
-            this.txt_quantity.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_quantity.Multiline = false;
-            this.txt_quantity.Name = "txt_quantity";
-            this.txt_quantity.Padding = new System.Windows.Forms.Padding(7);
-            this.txt_quantity.PasswordChar = false;
-            this.txt_quantity.Size = new System.Drawing.Size(281, 35);
-            this.txt_quantity.TabIndex = 65;
-            this.txt_quantity.Texts = "";
-            this.txt_quantity.UnderlineStyle = true;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -356,6 +337,16 @@
             this.label2.Size = new System.Drawing.Size(91, 22);
             this.label2.TabIndex = 64;
             this.label2.Text = "Quantity:";
+            // 
+            // txt_quantity
+            // 
+            this.txt_quantity.AutoSize = true;
+            this.txt_quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_quantity.Location = new System.Drawing.Point(251, 631);
+            this.txt_quantity.Name = "txt_quantity";
+            this.txt_quantity.Size = new System.Drawing.Size(63, 22);
+            this.txt_quantity.TabIndex = 65;
+            this.txt_quantity.Text = "Code:";
             // 
             // Emp_BookEdit
             // 
@@ -418,7 +409,7 @@
         private View.CustomButton btn_update;
         private View.CustomButton btn_cancel;
         private System.Windows.Forms.ComboBox cbb_type;
-        private Uct_textbox txt_quantity;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label txt_quantity;
     }
 }

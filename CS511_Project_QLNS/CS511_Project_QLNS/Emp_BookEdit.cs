@@ -25,7 +25,7 @@ namespace CS511_Project_QLNS
             txt_title.Texts = title;
             txt_author.Texts = author;
             txt_des.Texts = des.ToString();
-            txt_quantity.Texts = quantity.ToString();
+            txt_quantity.Text = quantity.ToString();
             //adjust to have the correct format of money 
             cbb_type.SelectedIndex = int.Parse(genre) - 1;
             txt_im_price.Texts = im_price;
