@@ -205,6 +205,8 @@
             this.btn_exit.TabIndex = 18;
             this.btn_exit.TabStop = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.btn_exit.MouseEnter += new System.EventHandler(this.btn_exit_MouseEnter);
+            this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
             // 
             // ptb_img
             // 
@@ -240,7 +242,7 @@
             // 
             this.lbl_id.AutoSize = true;
             this.lbl_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_id.Location = new System.Drawing.Point(248, 365);
+            this.lbl_id.Location = new System.Drawing.Point(249, 365);
             this.lbl_id.Name = "lbl_id";
             this.lbl_id.Size = new System.Drawing.Size(63, 22);
             this.lbl_id.TabIndex = 38;
