@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.fpnl_books = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_add = new CS511_Project_QLNS.View.CustomButton();
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
             this.txt_search = new CS511_Project_QLNS.Uct_textbox();
             this.cbb_type = new System.Windows.Forms.ComboBox();
@@ -39,11 +41,37 @@
             this.btn_cat2 = new CS511_Project_QLNS.View.CustomButton();
             this.btn_cat1 = new CS511_Project_QLNS.View.CustomButton();
             this.btn_all = new CS511_Project_QLNS.View.CustomButton();
-            this.fpnl_books = new System.Windows.Forms.FlowLayoutPanel();
-            this.btn_add = new CS511_Project_QLNS.View.CustomButton();
             this.customPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_Search)).BeginInit();
             this.SuspendLayout();
+            // 
+            // fpnl_books
+            // 
+            this.fpnl_books.BackColor = System.Drawing.Color.White;
+            this.fpnl_books.Location = new System.Drawing.Point(0, 97);
+            this.fpnl_books.Name = "fpnl_books";
+            this.fpnl_books.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.fpnl_books.Size = new System.Drawing.Size(980, 561);
+            this.fpnl_books.TabIndex = 40;
+            // 
+            // btn_add
+            // 
+            this.btn_add.BackColor = System.Drawing.Color.Green;
+            this.btn_add.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_add.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_add.BorderRadius = 20;
+            this.btn_add.BorderSize = 0;
+            this.btn_add.FlatAppearance.BorderSize = 0;
+            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.ForeColor = System.Drawing.Color.White;
+            this.btn_add.Location = new System.Drawing.Point(692, 0);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(150, 40);
+            this.btn_add.TabIndex = 48;
+            this.btn_add.Text = "Add";
+            this.btn_add.TextColor = System.Drawing.Color.White;
+            this.btn_add.UseVisualStyleBackColor = false;
             // 
             // customPanel1
             // 
@@ -83,6 +111,10 @@
             this.cbb_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbb_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_type.FormattingEnabled = true;
+            this.cbb_type.Items.AddRange(new object[] {
+            "All",
+            "Title",
+            "Author"});
             this.cbb_type.Location = new System.Drawing.Point(12, 9);
             this.cbb_type.Name = "cbb_type";
             this.cbb_type.Size = new System.Drawing.Size(121, 26);
@@ -116,6 +148,7 @@
             this.btn_cat6.Text = "History";
             this.btn_cat6.TextColor = System.Drawing.Color.White;
             this.btn_cat6.UseVisualStyleBackColor = false;
+            this.btn_cat6.Click += new System.EventHandler(this.btn_cat6_Click);
             // 
             // btn_cat5
             // 
@@ -135,6 +168,7 @@
             this.btn_cat5.Text = "Mystery";
             this.btn_cat5.TextColor = System.Drawing.Color.White;
             this.btn_cat5.UseVisualStyleBackColor = false;
+            this.btn_cat5.Click += new System.EventHandler(this.btn_cat5_Click);
             // 
             // btn_cat4
             // 
@@ -154,6 +188,7 @@
             this.btn_cat4.Text = "Non-Fiction";
             this.btn_cat4.TextColor = System.Drawing.Color.White;
             this.btn_cat4.UseVisualStyleBackColor = false;
+            this.btn_cat4.Click += new System.EventHandler(this.btn_cat4_Click);
             // 
             // btn_cat3
             // 
@@ -173,6 +208,7 @@
             this.btn_cat3.Text = "Self Help";
             this.btn_cat3.TextColor = System.Drawing.Color.White;
             this.btn_cat3.UseVisualStyleBackColor = false;
+            this.btn_cat3.Click += new System.EventHandler(this.btn_cat3_Click);
             // 
             // btn_cat2
             // 
@@ -192,6 +228,7 @@
             this.btn_cat2.Text = "Fantasy";
             this.btn_cat2.TextColor = System.Drawing.Color.White;
             this.btn_cat2.UseVisualStyleBackColor = false;
+            this.btn_cat2.Click += new System.EventHandler(this.btn_cat2_Click);
             // 
             // btn_cat1
             // 
@@ -211,6 +248,7 @@
             this.btn_cat1.Text = "Classics";
             this.btn_cat1.TextColor = System.Drawing.Color.White;
             this.btn_cat1.UseVisualStyleBackColor = false;
+            this.btn_cat1.Click += new System.EventHandler(this.btn_cat1_Click);
             // 
             // btn_all
             // 
@@ -230,34 +268,7 @@
             this.btn_all.Text = "All";
             this.btn_all.TextColor = System.Drawing.Color.White;
             this.btn_all.UseVisualStyleBackColor = false;
-            // 
-            // fpnl_books
-            // 
-            this.fpnl_books.BackColor = System.Drawing.Color.White;
-            this.fpnl_books.Location = new System.Drawing.Point(0, 97);
-            this.fpnl_books.Name = "fpnl_books";
-            this.fpnl_books.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.fpnl_books.Size = new System.Drawing.Size(980, 561);
-            this.fpnl_books.TabIndex = 40;
-            // 
-            // btn_add
-            // 
-            this.btn_add.BackColor = System.Drawing.Color.Green;
-            this.btn_add.BackgroundColor = System.Drawing.Color.Green;
-            this.btn_add.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_add.BorderRadius = 20;
-            this.btn_add.BorderSize = 0;
-            this.btn_add.FlatAppearance.BorderSize = 0;
-            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.Location = new System.Drawing.Point(692, 0);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(150, 40);
-            this.btn_add.TabIndex = 48;
-            this.btn_add.Text = "Add";
-            this.btn_add.TextColor = System.Drawing.Color.White;
-            this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_all.Click += new System.EventHandler(this.btn_all_Click);
             // 
             // Uct_Employee_Home
             // 

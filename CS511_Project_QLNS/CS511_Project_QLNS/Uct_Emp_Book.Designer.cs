@@ -85,7 +85,7 @@
             // 
             this.ptb_edit.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_pencil;
             this.ptb_edit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_edit.Location = new System.Drawing.Point(217, 6);
+            this.ptb_edit.Location = new System.Drawing.Point(214, 6);
             this.ptb_edit.Name = "ptb_edit";
             this.ptb_edit.Size = new System.Drawing.Size(25, 25);
             this.ptb_edit.TabIndex = 13;
@@ -95,7 +95,7 @@
             // 
             this.ptb_delete.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_bin__2_;
             this.ptb_delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_delete.Location = new System.Drawing.Point(250, 5);
+            this.ptb_delete.Location = new System.Drawing.Point(247, 5);
             this.ptb_delete.Name = "ptb_delete";
             this.ptb_delete.Size = new System.Drawing.Size(25, 25);
             this.ptb_delete.TabIndex = 12;
