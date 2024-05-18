@@ -119,6 +119,7 @@ namespace CS511_Project_QLNS
                 parent_form.Hide();
                 book_edit.ShowDialog();
 
+                parent_uct.ClearFlowPanel();
                 if (parent_uct.is_displayed_button == 0)
                     parent_uct.LoadData();
                 else

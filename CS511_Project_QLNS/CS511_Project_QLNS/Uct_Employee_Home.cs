@@ -66,7 +66,7 @@ namespace CS511_Project_QLNS
         }
 
         //Clear the flow panel before loading new ele
-        private void ClearFlowPanel()
+        public void ClearFlowPanel()
         {
             fpnl_books.SuspendLayout();
 
