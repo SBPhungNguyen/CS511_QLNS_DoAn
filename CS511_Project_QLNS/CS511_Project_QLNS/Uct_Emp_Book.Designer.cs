@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lbl_price = new System.Windows.Forms.Label();
+            this.lbl_author = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_name = new System.Windows.Forms.Label();
             this.ptb_edit = new System.Windows.Forms.PictureBox();
@@ -44,23 +44,23 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.lbl_price);
+            this.panel2.Controls.Add(this.lbl_author);
             this.panel2.Location = new System.Drawing.Point(104, 112);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(160, 32);
             this.panel2.TabIndex = 11;
             // 
-            // lbl_price
+            // lbl_author
             // 
-            this.lbl_price.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_price.ForeColor = System.Drawing.Color.Red;
-            this.lbl_price.Location = new System.Drawing.Point(0, 0);
-            this.lbl_price.Name = "lbl_price";
-            this.lbl_price.Size = new System.Drawing.Size(160, 32);
-            this.lbl_price.TabIndex = 1;
-            this.lbl_price.Text = "label2";
-            this.lbl_price.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_author.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_author.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_author.ForeColor = System.Drawing.Color.Black;
+            this.lbl_author.Location = new System.Drawing.Point(0, 0);
+            this.lbl_author.Name = "lbl_author";
+            this.lbl_author.Size = new System.Drawing.Size(160, 32);
+            this.lbl_author.TabIndex = 1;
+            this.lbl_author.Text = "label2";
+            this.lbl_author.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -135,7 +135,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lbl_price;
+        private System.Windows.Forms.Label lbl_author;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_name;
         private System.Windows.Forms.PictureBox ptb_delete;

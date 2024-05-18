@@ -9,3 +9,7 @@ BookType
 cart_info
 1. id
 2. quantity
+
+E_ROLE
+0: cashier
+1: manager
