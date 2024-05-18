@@ -92,6 +92,7 @@
             this.ptb_edit.Size = new System.Drawing.Size(25, 25);
             this.ptb_edit.TabIndex = 13;
             this.ptb_edit.TabStop = false;
+            this.ptb_edit.Click += new System.EventHandler(this.ptb_edit_Click);
             // 
             // ptb_delete
             // 

@@ -93,5 +93,17 @@ namespace CS511_Project_QLNS
         {
             this.OnClick(null);
         }
+
+        private void ptb_edit_Click(object sender, EventArgs e)
+        {
+            var pa = this.Parent.Parent;
+            parent_uct = (Uct_Employee_Home) pa;
+
+            var pa_pa = pa.Parent;
+            parent_form = (Form2)pa_pa;
+
+            Emp_BookEdit book_edit = new Emp_BookEdit();
+
+        }
     }
 }
