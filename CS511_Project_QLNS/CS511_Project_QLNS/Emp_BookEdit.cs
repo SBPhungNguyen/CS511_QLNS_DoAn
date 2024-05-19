@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,18 @@ namespace CS511_Project_QLNS
 {
     public partial class Emp_BookEdit : Form
     {
+        connection co = new connection();
+        string connect;
+        string local_dir;
+        SqlConnection sqlCon;
+        SqlCommand cmd;
         public Emp_BookEdit()
         {
             InitializeComponent();
+
+            connect = co.connect; 
+            local_dir = co.local_dir;
+            sqlCon = new SqlConnection(connect);
             
         }
 
@@ -52,6 +62,36 @@ namespace CS511_Project_QLNS
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+            //edit the book detail in TBL_BOOK
+            if (sqlCon.State != ConnectionState.Open)
+                sqlCon.Open();
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon; 
+            cmd.CommandType = CommandType.Text;
+            
+            cmd.Parameters.Clear();
+            Image img = ptb_img.BackgroundImage;
+            
+            //add code here to save the pic to the desired dir
+
+            sqlCon.Close();
+            //cmd.CommandText = "UPDATE TBL_BOOK SET TITLE = @title, AUTHOR = @author,  WHERE ID = " + lbl_id;
+        }
+
+        private void ptb_img_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "Picture (.png) | *.png";
+            dlg.Multiselect = false;
+            DialogResult result = dlg.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                ptb_img.BackgroundImage = System.Drawing.Image.FromFile(dlg.FileName);
+            }
         }
     }
 }

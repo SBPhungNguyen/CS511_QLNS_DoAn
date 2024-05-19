@@ -40,17 +40,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_des = new CS511_Project_QLNS.Uct_textbox();
-            this.txt_author = new CS511_Project_QLNS.Uct_textbox();
-            this.txt_im_price = new CS511_Project_QLNS.Uct_textbox();
-            this.txt_sell_price = new CS511_Project_QLNS.Uct_textbox();
-            this.txt_title = new CS511_Project_QLNS.Uct_textbox();
-            this.btn_update = new CS511_Project_QLNS.View.CustomButton();
-            this.btn_cancel = new CS511_Project_QLNS.View.CustomButton();
             this.cbb_type = new System.Windows.Forms.ComboBox();
             this.ptb_img = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_quantity = new System.Windows.Forms.Label();
+            this.btn_cancel = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_update = new CS511_Project_QLNS.View.CustomButton();
+            this.txt_title = new CS511_Project_QLNS.Uct_textbox();
+            this.txt_sell_price = new CS511_Project_QLNS.Uct_textbox();
+            this.txt_im_price = new CS511_Project_QLNS.Uct_textbox();
+            this.txt_author = new CS511_Project_QLNS.Uct_textbox();
+            this.txt_des = new CS511_Project_QLNS.Uct_textbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
@@ -169,140 +169,6 @@
             this.label5.TabIndex = 43;
             this.label5.Text = "Genre:";
             // 
-            // txt_des
-            // 
-            this.txt_des.BackColor = System.Drawing.SystemColors.Window;
-            this.txt_des.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.txt_des.BorderFocusColor = System.Drawing.Color.Green;
-            this.txt_des.BorderSize = 2;
-            this.txt_des.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_des.ForeColor = System.Drawing.Color.Black;
-            this.txt_des.Location = new System.Drawing.Point(252, 669);
-            this.txt_des.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_des.Multiline = false;
-            this.txt_des.Name = "txt_des";
-            this.txt_des.Padding = new System.Windows.Forms.Padding(7);
-            this.txt_des.PasswordChar = false;
-            this.txt_des.Size = new System.Drawing.Size(281, 35);
-            this.txt_des.TabIndex = 56;
-            this.txt_des.Texts = "";
-            this.txt_des.UnderlineStyle = true;
-            // 
-            // txt_author
-            // 
-            this.txt_author.BackColor = System.Drawing.SystemColors.Window;
-            this.txt_author.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.txt_author.BorderFocusColor = System.Drawing.Color.Green;
-            this.txt_author.BorderSize = 2;
-            this.txt_author.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_author.ForeColor = System.Drawing.Color.Black;
-            this.txt_author.Location = new System.Drawing.Point(252, 427);
-            this.txt_author.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_author.Multiline = false;
-            this.txt_author.Name = "txt_author";
-            this.txt_author.Padding = new System.Windows.Forms.Padding(7);
-            this.txt_author.PasswordChar = false;
-            this.txt_author.Size = new System.Drawing.Size(281, 35);
-            this.txt_author.TabIndex = 57;
-            this.txt_author.Texts = "";
-            this.txt_author.UnderlineStyle = true;
-            // 
-            // txt_im_price
-            // 
-            this.txt_im_price.BackColor = System.Drawing.SystemColors.Window;
-            this.txt_im_price.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.txt_im_price.BorderFocusColor = System.Drawing.Color.Green;
-            this.txt_im_price.BorderSize = 2;
-            this.txt_im_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_im_price.ForeColor = System.Drawing.Color.Black;
-            this.txt_im_price.Location = new System.Drawing.Point(252, 523);
-            this.txt_im_price.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_im_price.Multiline = false;
-            this.txt_im_price.Name = "txt_im_price";
-            this.txt_im_price.Padding = new System.Windows.Forms.Padding(7);
-            this.txt_im_price.PasswordChar = false;
-            this.txt_im_price.Size = new System.Drawing.Size(281, 35);
-            this.txt_im_price.TabIndex = 58;
-            this.txt_im_price.Texts = "";
-            this.txt_im_price.UnderlineStyle = true;
-            // 
-            // txt_sell_price
-            // 
-            this.txt_sell_price.BackColor = System.Drawing.SystemColors.Window;
-            this.txt_sell_price.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.txt_sell_price.BorderFocusColor = System.Drawing.Color.Green;
-            this.txt_sell_price.BorderSize = 2;
-            this.txt_sell_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_sell_price.ForeColor = System.Drawing.Color.Black;
-            this.txt_sell_price.Location = new System.Drawing.Point(252, 576);
-            this.txt_sell_price.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_sell_price.Multiline = false;
-            this.txt_sell_price.Name = "txt_sell_price";
-            this.txt_sell_price.Padding = new System.Windows.Forms.Padding(7);
-            this.txt_sell_price.PasswordChar = false;
-            this.txt_sell_price.Size = new System.Drawing.Size(281, 35);
-            this.txt_sell_price.TabIndex = 59;
-            this.txt_sell_price.Texts = "";
-            this.txt_sell_price.UnderlineStyle = true;
-            // 
-            // txt_title
-            // 
-            this.txt_title.BackColor = System.Drawing.SystemColors.Window;
-            this.txt_title.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.txt_title.BorderFocusColor = System.Drawing.Color.Green;
-            this.txt_title.BorderSize = 2;
-            this.txt_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_title.ForeColor = System.Drawing.Color.Black;
-            this.txt_title.Location = new System.Drawing.Point(252, 383);
-            this.txt_title.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_title.Multiline = false;
-            this.txt_title.Name = "txt_title";
-            this.txt_title.Padding = new System.Windows.Forms.Padding(7);
-            this.txt_title.PasswordChar = false;
-            this.txt_title.Size = new System.Drawing.Size(281, 35);
-            this.txt_title.TabIndex = 60;
-            this.txt_title.Texts = "";
-            this.txt_title.UnderlineStyle = true;
-            // 
-            // btn_update
-            // 
-            this.btn_update.BackColor = System.Drawing.Color.Green;
-            this.btn_update.BackgroundColor = System.Drawing.Color.Green;
-            this.btn_update.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_update.BorderRadius = 20;
-            this.btn_update.BorderSize = 0;
-            this.btn_update.FlatAppearance.BorderSize = 0;
-            this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_update.ForeColor = System.Drawing.Color.White;
-            this.btn_update.Location = new System.Drawing.Point(84, 736);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(170, 40);
-            this.btn_update.TabIndex = 61;
-            this.btn_update.Text = "Update";
-            this.btn_update.TextColor = System.Drawing.Color.White;
-            this.btn_update.UseVisualStyleBackColor = false;
-            // 
-            // btn_cancel
-            // 
-            this.btn_cancel.BackColor = System.Drawing.Color.LightGray;
-            this.btn_cancel.BackgroundColor = System.Drawing.Color.LightGray;
-            this.btn_cancel.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_cancel.BorderRadius = 20;
-            this.btn_cancel.BorderSize = 1;
-            this.btn_cancel.FlatAppearance.BorderSize = 0;
-            this.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancel.ForeColor = System.Drawing.Color.Black;
-            this.btn_cancel.Location = new System.Drawing.Point(360, 736);
-            this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(170, 40);
-            this.btn_cancel.TabIndex = 62;
-            this.btn_cancel.Text = "Cancel";
-            this.btn_cancel.TextColor = System.Drawing.Color.Black;
-            this.btn_cancel.UseVisualStyleBackColor = false;
-            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
-            // 
             // cbb_type
             // 
             this.cbb_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -328,6 +194,7 @@
             this.ptb_img.Size = new System.Drawing.Size(188, 241);
             this.ptb_img.TabIndex = 39;
             this.ptb_img.TabStop = false;
+            this.ptb_img.Click += new System.EventHandler(this.ptb_img_Click);
             // 
             // label2
             // 
@@ -348,6 +215,141 @@
             this.txt_quantity.Size = new System.Drawing.Size(63, 22);
             this.txt_quantity.TabIndex = 65;
             this.txt_quantity.Text = "Code:";
+            // 
+            // btn_cancel
+            // 
+            this.btn_cancel.BackColor = System.Drawing.Color.LightGray;
+            this.btn_cancel.BackgroundColor = System.Drawing.Color.LightGray;
+            this.btn_cancel.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_cancel.BorderRadius = 20;
+            this.btn_cancel.BorderSize = 1;
+            this.btn_cancel.FlatAppearance.BorderSize = 0;
+            this.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancel.ForeColor = System.Drawing.Color.Black;
+            this.btn_cancel.Location = new System.Drawing.Point(360, 736);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(170, 40);
+            this.btn_cancel.TabIndex = 62;
+            this.btn_cancel.Text = "Cancel";
+            this.btn_cancel.TextColor = System.Drawing.Color.Black;
+            this.btn_cancel.UseVisualStyleBackColor = false;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            // 
+            // btn_update
+            // 
+            this.btn_update.BackColor = System.Drawing.Color.Green;
+            this.btn_update.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_update.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_update.BorderRadius = 20;
+            this.btn_update.BorderSize = 0;
+            this.btn_update.FlatAppearance.BorderSize = 0;
+            this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update.ForeColor = System.Drawing.Color.White;
+            this.btn_update.Location = new System.Drawing.Point(84, 736);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(170, 40);
+            this.btn_update.TabIndex = 61;
+            this.btn_update.Text = "Update";
+            this.btn_update.TextColor = System.Drawing.Color.White;
+            this.btn_update.UseVisualStyleBackColor = false;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
+            // 
+            // txt_title
+            // 
+            this.txt_title.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_title.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_title.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_title.BorderSize = 2;
+            this.txt_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_title.ForeColor = System.Drawing.Color.Black;
+            this.txt_title.Location = new System.Drawing.Point(252, 383);
+            this.txt_title.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_title.Multiline = false;
+            this.txt_title.Name = "txt_title";
+            this.txt_title.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_title.PasswordChar = false;
+            this.txt_title.Size = new System.Drawing.Size(281, 35);
+            this.txt_title.TabIndex = 60;
+            this.txt_title.Texts = "";
+            this.txt_title.UnderlineStyle = true;
+            // 
+            // txt_sell_price
+            // 
+            this.txt_sell_price.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_sell_price.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_sell_price.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_sell_price.BorderSize = 2;
+            this.txt_sell_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_sell_price.ForeColor = System.Drawing.Color.Black;
+            this.txt_sell_price.Location = new System.Drawing.Point(252, 576);
+            this.txt_sell_price.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_sell_price.Multiline = false;
+            this.txt_sell_price.Name = "txt_sell_price";
+            this.txt_sell_price.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_sell_price.PasswordChar = false;
+            this.txt_sell_price.Size = new System.Drawing.Size(281, 35);
+            this.txt_sell_price.TabIndex = 59;
+            this.txt_sell_price.Texts = "";
+            this.txt_sell_price.UnderlineStyle = true;
+            // 
+            // txt_im_price
+            // 
+            this.txt_im_price.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_im_price.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_im_price.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_im_price.BorderSize = 2;
+            this.txt_im_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_im_price.ForeColor = System.Drawing.Color.Black;
+            this.txt_im_price.Location = new System.Drawing.Point(252, 523);
+            this.txt_im_price.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_im_price.Multiline = false;
+            this.txt_im_price.Name = "txt_im_price";
+            this.txt_im_price.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_im_price.PasswordChar = false;
+            this.txt_im_price.Size = new System.Drawing.Size(281, 35);
+            this.txt_im_price.TabIndex = 58;
+            this.txt_im_price.Texts = "";
+            this.txt_im_price.UnderlineStyle = true;
+            // 
+            // txt_author
+            // 
+            this.txt_author.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_author.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_author.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_author.BorderSize = 2;
+            this.txt_author.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_author.ForeColor = System.Drawing.Color.Black;
+            this.txt_author.Location = new System.Drawing.Point(252, 427);
+            this.txt_author.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_author.Multiline = false;
+            this.txt_author.Name = "txt_author";
+            this.txt_author.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_author.PasswordChar = false;
+            this.txt_author.Size = new System.Drawing.Size(281, 35);
+            this.txt_author.TabIndex = 57;
+            this.txt_author.Texts = "";
+            this.txt_author.UnderlineStyle = true;
+            // 
+            // txt_des
+            // 
+            this.txt_des.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_des.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_des.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_des.BorderSize = 2;
+            this.txt_des.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_des.ForeColor = System.Drawing.Color.Black;
+            this.txt_des.Location = new System.Drawing.Point(252, 669);
+            this.txt_des.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_des.Multiline = false;
+            this.txt_des.Name = "txt_des";
+            this.txt_des.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_des.PasswordChar = false;
+            this.txt_des.Size = new System.Drawing.Size(281, 35);
+            this.txt_des.TabIndex = 56;
+            this.txt_des.Texts = "";
+            this.txt_des.UnderlineStyle = true;
             // 
             // Emp_BookEdit
             // 
