@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -15,6 +16,7 @@ namespace CS511_Project_QLNS
     {
         Uct_Employee_Home parent_uct;
         Form2 parent_form;
+        
 
         public int id;
         public string title
@@ -71,6 +73,7 @@ namespace CS511_Project_QLNS
                 Emp_BookInfo book = new Emp_BookInfo();
                 System.Drawing.Image img = System.Drawing.Image.FromFile(parent_uct.local_dir + dr.GetString(1) + ".png");
                 book.LoadData(dr.GetInt32(0), img, dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetDecimal(5).ToString("0.##"), dr.GetDecimal(6).ToString("0.##"), dr.GetString(7), dr.GetInt32(8).ToString());
+                sqlCon.Close();
 
                 parent_form.Hide();
                 book.ShowDialog();
@@ -110,14 +113,24 @@ namespace CS511_Project_QLNS
             cmd.CommandText = "SELECT * FROM TBL_BOOK WHERE ID = " + id;
 
             SqlDataReader dr = cmd.ExecuteReader();
+
             if (dr.Read())
             {
+                ptb_img.BackgroundImage.Dispose();
                 Emp_BookEdit book_edit = new Emp_BookEdit();
-                System.Drawing.Image img = System.Drawing.Image.FromFile(parent_uct.local_dir + dr.GetString(1) + ".png");
-                book_edit.LoadData(dr.GetInt32(0), img, dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetDecimal(5).ToString("0.##"), dr.GetDecimal(6).ToString("0.##"), dr.GetString(7), dr.GetInt32(8).ToString());
 
+                FileInfo file = new FileInfo(parent_uct.local_dir + dr.GetString(1) + ".png");
+                file.CopyTo("bpic.png", true);
+                System.Drawing.Image img = System.Drawing.Image.FromFile("bpic.png");
+
+                book_edit.LoadData(dr.GetInt32(0), img, dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetDecimal(5).ToString("0.##"), dr.GetDecimal(6).ToString("0.##"), dr.GetString(7), dr.GetInt32(8).ToString());
                 parent_form.Hide();
+                sqlCon.Close();
+
                 book_edit.ShowDialog();
+                //sqlCon.Close();
+                img.Dispose();
+
 
                 parent_uct.ClearFlowPanel();
                 if (parent_uct.is_displayed_button == 0)
@@ -127,7 +140,6 @@ namespace CS511_Project_QLNS
 
                 parent_form.Show();
             }
-
         }
     }
 }

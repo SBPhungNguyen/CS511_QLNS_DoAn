@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,8 @@ namespace CS511_Project_QLNS
         string local_dir;
         SqlConnection sqlCon;
         SqlCommand cmd;
+
+        string pic_path;
         public Emp_BookEdit()
         {
             InitializeComponent();
@@ -46,6 +49,7 @@ namespace CS511_Project_QLNS
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
+            ptb_img.BackgroundImage.Dispose();
             this.Close();
         }
 
@@ -74,11 +78,16 @@ namespace CS511_Project_QLNS
             cmd.CommandType = CommandType.Text;
             
             cmd.Parameters.Clear();
-            Image img = ptb_img.BackgroundImage;
-            
+            sqlCon.Close();
+
+            if (pic_path != null)
+            {
+                FileInfo file = new FileInfo(pic_path);
+                file.CopyTo(local_dir + lbl_id.Text + ".png", true);
+            }
+
             //add code here to save the pic to the desired dir
 
-            sqlCon.Close();
             //cmd.CommandText = "UPDATE TBL_BOOK SET TITLE = @title, AUTHOR = @author,  WHERE ID = " + lbl_id;
         }
 
@@ -90,7 +99,20 @@ namespace CS511_Project_QLNS
             DialogResult result = dlg.ShowDialog();
             if (result == DialogResult.OK)
             {
+                string[] split_line = local_dir.Split('/');
+                if (dlg.FileName.Contains(lbl_id.Text + ".png") && dlg.FileName.Contains(split_line[0]))
+                {
+                    MessageBox.Show("The picture you choosen was the same one with the previous","Opps");
+                    return;
+                }
+
+                if (sqlCon.State == ConnectionState.Open) sqlCon.Close();
                 ptb_img.BackgroundImage = System.Drawing.Image.FromFile(dlg.FileName);
+
+                FileInfo file = new FileInfo(dlg.FileName);
+                file.CopyTo("new_pic.png", true);
+                pic_path = "new_pic.png";
+
             }
         }
     }
