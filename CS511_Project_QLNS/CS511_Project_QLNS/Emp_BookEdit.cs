@@ -65,6 +65,7 @@ namespace CS511_Project_QLNS
 
         private void btn_cancel_Click(object sender, EventArgs e)
         {
+            ptb_img.BackgroundImage.Dispose();
             this.Close();
         }
 
@@ -78,17 +79,26 @@ namespace CS511_Project_QLNS
             cmd.CommandType = CommandType.Text;
             
             cmd.Parameters.Clear();
-            sqlCon.Close();
 
+            //add code here to save the pic to the desired dir
             if (pic_path != null)
             {
                 FileInfo file = new FileInfo(pic_path);
                 file.CopyTo(local_dir + lbl_id.Text + ".png", true);
             }
 
-            //add code here to save the pic to the desired dir
+            //update book info in table TBL_BOOK
+            cmd.CommandText = "UPDATE TBL_BOOK SET TITLE = @title, AUTHOR = @author, GENRE = @genre, IM_PRICE = @im, EX_PRICE = @ex, TXT = @txt WHERE ID = " + lbl_id.Text;
+            cmd.Parameters.AddWithValue("@title", txt_title.Texts);
+            cmd.Parameters.AddWithValue("@author", txt_author.Texts);
+            cmd.Parameters.AddWithValue("@genre", (cbb_type.SelectedIndex + 1).ToString());
+            cmd.Parameters.AddWithValue("@im", int.Parse(txt_im_price.Texts));
+            cmd.Parameters.AddWithValue("@ex", int.Parse(txt_sell_price.Texts));
+            cmd.Parameters.AddWithValue("@txt", txt_des.Texts);
 
-            //cmd.CommandText = "UPDATE TBL_BOOK SET TITLE = @title, AUTHOR = @author,  WHERE ID = " + lbl_id;
+            cmd.ExecuteNonQuery();
+
+            sqlCon.Close();
         }
 
         private void ptb_img_Click(object sender, EventArgs e)
