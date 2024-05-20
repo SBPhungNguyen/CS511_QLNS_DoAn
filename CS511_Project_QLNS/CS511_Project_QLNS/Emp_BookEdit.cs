@@ -100,9 +100,9 @@ namespace CS511_Project_QLNS
             if (result == DialogResult.OK)
             {
                 string[] split_line = local_dir.Split('/');
-                if (dlg.FileName.Contains(lbl_id.Text + ".png") && dlg.FileName.Contains(split_line[0]))
+                if (dlg.FileName.Contains(lbl_id.Text + ".png") && dlg.FileName.Contains(local_dir))
                 {
-                    MessageBox.Show("The picture you choosen was the same one with the previous","Opps");
+                    MessageBox.Show("The picture you choosen was the same one with the previous", "Opps");
                     return;
                 }
 

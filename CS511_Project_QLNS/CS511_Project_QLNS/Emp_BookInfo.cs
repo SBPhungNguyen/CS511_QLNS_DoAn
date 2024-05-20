@@ -51,6 +51,7 @@ namespace CS511_Project_QLNS
         private void btn_exit_MouseLeave(object sender, EventArgs e)
         {
             btn_exit.BackgroundImage = Properties.Resources.Cross2_image;
+            ptb_img.BackgroundImage.Dispose();
         }
     }
 }
