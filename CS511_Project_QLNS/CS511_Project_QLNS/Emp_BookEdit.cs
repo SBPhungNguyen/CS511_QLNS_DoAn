@@ -98,6 +98,24 @@ namespace CS511_Project_QLNS
 
             cmd.ExecuteNonQuery();
 
+            //Update book info in table TBL_REC_DETAIL
+            cmd = new SqlCommand();
+            cmd.Connection= sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Clear();
+            cmd.CommandText = "UPDATE TBL_REC_DETAIL SET BOOK_NAME = @title WHERE ID_BOOK = " + lbl_id.Text;
+            cmd.Parameters.AddWithValue("@title",txt_title.Texts);
+            cmd.ExecuteNonQuery();
+
+            //Update book info in table TBL_IMP_DETAIL
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Clear();
+            cmd.CommandText = "UPDATE TBL_IMP_DETAIL SET BOOK_NAME = @title WHERE ID_BOOK = " + lbl_id.Text;
+            cmd.Parameters.AddWithValue("@title", txt_title.Texts);
+            cmd.ExecuteNonQuery();
+
             sqlCon.Close();
         }
 

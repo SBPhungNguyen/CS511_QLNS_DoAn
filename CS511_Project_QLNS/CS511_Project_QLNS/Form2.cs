@@ -51,7 +51,7 @@ namespace CS511_Project_QLNS
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btn_exit_MouseEnter(object sender, EventArgs e)

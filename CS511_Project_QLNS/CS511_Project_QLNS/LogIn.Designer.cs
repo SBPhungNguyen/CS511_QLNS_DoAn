@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_guest = new CS511_Project_QLNS.View.CustomButton();
+            this.txt_pass = new CS511_Project_QLNS.Uct_textbox();
+            this.txt_name = new CS511_Project_QLNS.Uct_textbox();
+            this.btn_signin = new CS511_Project_QLNS.View.CustomButton();
             this.btn_exit = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_email = new System.Windows.Forms.Label();
             this.lbl_LogIn = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_guest = new CS511_Project_QLNS.View.CustomButton();
-            this.txt_pass = new CS511_Project_QLNS.Uct_textbox();
-            this.txt_name = new CS511_Project_QLNS.Uct_textbox();
-            this.btn_signin = new CS511_Project_QLNS.View.CustomButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,69 +61,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(389, 332);
             this.panel1.TabIndex = 3;
-            // 
-            // btn_exit
-            // 
-            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
-            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_exit.Location = new System.Drawing.Point(356, 3);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(30, 30);
-            this.btn_exit.TabIndex = 17;
-            this.btn_exit.TabStop = false;
-            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
-            this.btn_exit.MouseEnter += new System.EventHandler(this.btn_exit_MouseEnter);
-            this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(124, 252);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 16);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Or if you are a customer";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 120);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 24);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Password:";
-            // 
-            // lbl_email
-            // 
-            this.lbl_email.AutoSize = true;
-            this.lbl_email.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_email.Location = new System.Drawing.Point(54, 75);
-            this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(70, 24);
-            this.lbl_email.TabIndex = 15;
-            this.lbl_email.Text = "Name:";
-            // 
-            // lbl_LogIn
-            // 
-            this.lbl_LogIn.AutoSize = true;
-            this.lbl_LogIn.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_LogIn.ForeColor = System.Drawing.Color.Green;
-            this.lbl_LogIn.Location = new System.Drawing.Point(122, 19);
-            this.lbl_LogIn.Name = "lbl_LogIn";
-            this.lbl_LogIn.Size = new System.Drawing.Size(155, 40);
-            this.lbl_LogIn.TabIndex = 14;
-            this.lbl_LogIn.Text = "SIGN IN";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.TheGreenBook;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(52, 59);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(308, 332);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // btn_guest
             // 
@@ -201,6 +138,70 @@
             this.btn_signin.Text = "Sign in";
             this.btn_signin.TextColor = System.Drawing.Color.White;
             this.btn_signin.UseVisualStyleBackColor = false;
+            this.btn_signin.Click += new System.EventHandler(this.btn_signin_Click);
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_exit.Location = new System.Drawing.Point(356, 3);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.TabIndex = 17;
+            this.btn_exit.TabStop = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.btn_exit.MouseEnter += new System.EventHandler(this.btn_exit_MouseEnter);
+            this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(124, 252);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(147, 16);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Or if you are a customer";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(23, 120);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 24);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Password:";
+            // 
+            // lbl_email
+            // 
+            this.lbl_email.AutoSize = true;
+            this.lbl_email.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_email.Location = new System.Drawing.Point(54, 75);
+            this.lbl_email.Name = "lbl_email";
+            this.lbl_email.Size = new System.Drawing.Size(70, 24);
+            this.lbl_email.TabIndex = 15;
+            this.lbl_email.Text = "Name:";
+            // 
+            // lbl_LogIn
+            // 
+            this.lbl_LogIn.AutoSize = true;
+            this.lbl_LogIn.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_LogIn.ForeColor = System.Drawing.Color.Green;
+            this.lbl_LogIn.Location = new System.Drawing.Point(122, 19);
+            this.lbl_LogIn.Name = "lbl_LogIn";
+            this.lbl_LogIn.Size = new System.Drawing.Size(155, 40);
+            this.lbl_LogIn.TabIndex = 14;
+            this.lbl_LogIn.Text = "SIGN IN";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.TheGreenBook;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(52, 59);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(308, 332);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // LogIn
             // 
