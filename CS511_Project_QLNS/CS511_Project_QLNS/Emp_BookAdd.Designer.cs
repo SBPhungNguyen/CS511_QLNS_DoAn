@@ -59,6 +59,13 @@
             this.cbb_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbb_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_type.FormattingEnabled = true;
+            this.cbb_type.Items.AddRange(new object[] {
+            "Classics",
+            "Fantasy",
+            "Self Help",
+            "Non-Fiction",
+            "Mystery",
+            "History"});
             this.cbb_type.Location = new System.Drawing.Point(251, 509);
             this.cbb_type.Name = "cbb_type";
             this.cbb_type.Size = new System.Drawing.Size(282, 28);
