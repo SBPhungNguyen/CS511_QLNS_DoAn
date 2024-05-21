@@ -210,6 +210,7 @@
             // 
             // ptb_img
             // 
+            this.ptb_img.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_picture;
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_img.Location = new System.Drawing.Point(208, 103);
             this.ptb_img.Name = "ptb_img";

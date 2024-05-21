@@ -117,6 +117,7 @@ namespace CS511_Project_QLNS
             cmd.ExecuteNonQuery();
 
             sqlCon.Close();
+            MessageBox.Show("This has been updated","Notification");
         }
 
         private void ptb_img_Click(object sender, EventArgs e)
