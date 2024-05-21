@@ -449,6 +449,12 @@ namespace CS511_Project_QLNS
             Emp_BookAdd book_add = new Emp_BookAdd(parent_form);
             parent_form.Hide();
             book_add.ShowDialog();
+            ClearFlowPanel();
+            if (is_displayed_button == 0)
+                LoadData();
+            else
+                LoadDataWithCate(is_displayed_button.ToString());
+
             parent_form.Show();
 
         }
