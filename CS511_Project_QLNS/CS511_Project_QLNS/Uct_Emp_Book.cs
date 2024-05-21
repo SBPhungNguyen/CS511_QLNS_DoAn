@@ -144,12 +144,57 @@ namespace CS511_Project_QLNS
 
         private void ptb_delete_Click(object sender, EventArgs e)
         {
-            var pa = this.Parent.Parent;
-            parent_uct = (Uct_Employee_Home)pa;
+            DialogResult result = MessageBox.Show("Do you want to remove this permanently", "Warning", MessageBoxButtons.YesNo);
 
-            var pa_pa = pa.Parent;
-            parent_form = (Form2)pa_pa;
+            if (result == DialogResult.Yes)
+            {
+                var pa = this.Parent.Parent;
+                parent_uct = (Uct_Employee_Home)pa;
 
+                var pa_pa = pa.Parent;
+                parent_form = (Form2)pa_pa;
+
+                //get the fpnl_books in parent_uct
+                Control fpnl = FindControlByName(parent_uct, "fpnl_books");
+
+                //remove this control out of the fpnl
+                fpnl.Controls.Remove(this);
+
+                //delete this book from db
+                SqlConnection sqlCon = new SqlConnection(parent_uct.connect);
+                if (sqlCon.State == ConnectionState.Closed) sqlCon.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "DELETE FROM TBL_BOOK WHERE ID = @ID";
+                cmd.Parameters.AddWithValue("@ID", id);
+
+                cmd.ExecuteNonQuery();
+            }
+            else if (result == DialogResult.No)
+            {
+                // User clicked No
+                // Perform actions for No click
+                return;
+            }
+        }
+
+        Control FindControlByName(Control control, string controlName)
+        {
+            if (control.Name == controlName)
+            {
+                return control;
+            }
+
+            foreach (Control childControl in control.Controls)
+            {
+                Control foundControl = FindControlByName(childControl, controlName);
+                if (foundControl != null)
+                {
+                    return foundControl;
+                }
+            }
+            return null;
         }
     }
 }
