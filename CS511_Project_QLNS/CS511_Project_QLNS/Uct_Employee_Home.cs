@@ -81,6 +81,32 @@ namespace CS511_Project_QLNS
             }
             fpnl_books.ResumeLayout();
         }
+
+        public void DisposePictureBoxImages()
+        {
+
+            if (fpnl_books.Controls.Count > 0)
+            {
+                for (int i = (fpnl_books.Controls.Count - 1); i >= 0; i--)
+                {
+                    Control c = fpnl_books.Controls[i];
+
+                    if (c is PictureBox pictureBox)
+                    {
+                        // Check if the PictureBox has a background image
+                        if (pictureBox.BackgroundImage != null)
+                        {
+                            // Dispose of the image
+                            pictureBox.BackgroundImage.Dispose();
+                            // Set the BackgroundImage to null to avoid memory leaks
+                            pictureBox.BackgroundImage = null;
+                        }
+                    }
+                }
+                //GC.Collect();
+            }
+        }
+
         public void LoadDataWithCate(string cate)
         {
             if (sqlCon.State == ConnectionState.Closed)
@@ -106,6 +132,7 @@ namespace CS511_Project_QLNS
 
         private void btn_all_Click(object sender, EventArgs e)
         {
+            DisposePictureBoxImages();
             ClearFlowPanel();
             btn_all.BackColor = color_btn_cate_chosen;
             btn_cat1.BackColor = color_btn_cate_normal;
@@ -121,6 +148,7 @@ namespace CS511_Project_QLNS
 
         private void btn_cat1_Click(object sender, EventArgs e)
         {
+            DisposePictureBoxImages();
             ClearFlowPanel();
             btn_all.BackColor = color_btn_cate_normal;
             btn_cat1.BackColor = color_btn_cate_chosen;
@@ -136,6 +164,8 @@ namespace CS511_Project_QLNS
 
         private void btn_cat2_Click(object sender, EventArgs e)
         {
+            DisposePictureBoxImages();
+
             ClearFlowPanel();
             btn_all.BackColor = color_btn_cate_normal;
             btn_cat1.BackColor = color_btn_cate_normal;
@@ -151,6 +181,8 @@ namespace CS511_Project_QLNS
 
         private void btn_cat3_Click(object sender, EventArgs e)
         {
+            DisposePictureBoxImages();
+
             ClearFlowPanel();
             btn_all.BackColor = color_btn_cate_normal;
             btn_cat1.BackColor = color_btn_cate_normal;
@@ -166,6 +198,8 @@ namespace CS511_Project_QLNS
 
         private void btn_cat4_Click(object sender, EventArgs e)
         {
+            DisposePictureBoxImages();
+
             ClearFlowPanel();
             btn_all.BackColor = color_btn_cate_normal;
             btn_cat1.BackColor = color_btn_cate_normal;
@@ -181,6 +215,8 @@ namespace CS511_Project_QLNS
 
         private void btn_cat5_Click(object sender, EventArgs e)
         {
+            DisposePictureBoxImages();
+
             ClearFlowPanel();
             btn_all.BackColor = color_btn_cate_normal;
             btn_cat1.BackColor = color_btn_cate_normal;
@@ -196,6 +232,8 @@ namespace CS511_Project_QLNS
 
         private void btn_cat6_Click(object sender, EventArgs e)
         {
+            DisposePictureBoxImages();
+
             ClearFlowPanel();
             btn_all.BackColor = color_btn_cate_normal;
             btn_cat1.BackColor = color_btn_cate_normal;
@@ -227,6 +265,8 @@ namespace CS511_Project_QLNS
             }
             if (type == 0)
             {
+                DisposePictureBoxImages();
+
                 ClearFlowPanel();
                 if (sqlCon.State == ConnectionState.Closed)
                     sqlCon.Open();
@@ -253,6 +293,8 @@ namespace CS511_Project_QLNS
             }
             else if (type == 1)
             {
+                DisposePictureBoxImages();
+
                 ClearFlowPanel();
                 if (sqlCon.State == ConnectionState.Closed)
                     sqlCon.Open();
@@ -279,6 +321,8 @@ namespace CS511_Project_QLNS
             }
             else
             {
+                DisposePictureBoxImages();
+
                 ClearFlowPanel();
                 if (sqlCon.State == ConnectionState.Closed)
                     sqlCon.Open();
@@ -314,6 +358,8 @@ namespace CS511_Project_QLNS
             }
             if (type == 0)
             {
+                DisposePictureBoxImages();
+
                 ClearFlowPanel();
                 if (sqlCon.State == ConnectionState.Closed)
                     sqlCon.Open();
@@ -340,6 +386,8 @@ namespace CS511_Project_QLNS
             }
             else if (type == 1)
             {
+                DisposePictureBoxImages();
+
                 ClearFlowPanel();
                 if (sqlCon.State == ConnectionState.Closed)
                     sqlCon.Open();
@@ -366,6 +414,8 @@ namespace CS511_Project_QLNS
             }
             else
             {
+                DisposePictureBoxImages();
+
                 ClearFlowPanel();
                 if (sqlCon.State == ConnectionState.Closed)
                     sqlCon.Open();
