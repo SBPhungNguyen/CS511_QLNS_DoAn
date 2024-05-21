@@ -441,5 +441,16 @@ namespace CS511_Project_QLNS
                 sqlCon.Close();
             }
         }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            var parent = this.Parent;
+            Form2 parent_form = parent as Form2;
+            Emp_BookAdd book_add = new Emp_BookAdd(parent_form);
+            parent_form.Hide();
+            book_add.ShowDialog();
+            parent_form.Show();
+
+        }
     }
 }

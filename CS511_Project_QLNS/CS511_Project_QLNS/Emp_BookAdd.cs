@@ -12,9 +12,27 @@ namespace CS511_Project_QLNS
 {
     public partial class Emp_BookAdd : Form
     {
-        public Emp_BookAdd()
+        Form2 parent_form;
+        public Emp_BookAdd(Form2 parent)
         {
             InitializeComponent();
+            parent_form = parent;
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            ptb_img.BackgroundImage.Dispose();
+            this.Close();
+        }
+
+        private void btn_exit_MouseEnter(object sender, EventArgs e)
+        {
+            btn_exit.BackgroundImage = Properties.Resources.Cross3_Img;
+        }
+
+        private void btn_exit_MouseLeave(object sender, EventArgs e)
+        {
+            btn_exit.BackgroundImage = Properties.Resources.Cross2_image;
         }
     }
 }
