@@ -88,13 +88,11 @@ namespace CS511_Project_QLNS
             }
 
             //update book info in table TBL_BOOK
-            cmd.CommandText = "UPDATE TBL_BOOK SET TITLE = @title, AUTHOR = @author, GENRE = @genre, IM_PRICE = @im, EX_PRICE = @ex, TXT = @txt WHERE ID = " + lbl_id.Text;
-            cmd.Parameters.AddWithValue("@title", txt_title.Texts);
-            cmd.Parameters.AddWithValue("@author", txt_author.Texts);
+            cmd.CommandText = "UPDATE TBL_BOOK SET TITLE = N'"+txt_title.Texts+"', AUTHOR = N'"+ txt_author.Texts + "', GENRE = @genre, IM_PRICE = @im, EX_PRICE = @ex, TXT = N'"+ txt_des.Texts + "' WHERE ID = " + lbl_id.Text;
+            
             cmd.Parameters.AddWithValue("@genre", (cbb_type.SelectedIndex + 1).ToString());
             cmd.Parameters.AddWithValue("@im", int.Parse(txt_im_price.Texts));
             cmd.Parameters.AddWithValue("@ex", int.Parse(txt_sell_price.Texts));
-            cmd.Parameters.AddWithValue("@txt", txt_des.Texts);
 
             cmd.ExecuteNonQuery();
 
@@ -103,7 +101,7 @@ namespace CS511_Project_QLNS
             cmd.Connection= sqlCon;
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.Clear();
-            cmd.CommandText = "UPDATE TBL_REC_DETAIL SET BOOK_NAME = @title WHERE ID_BOOK = " + lbl_id.Text;
+            cmd.CommandText = "UPDATE TBL_REC_DETAIL SET BOOK_NAME = N'@title' WHERE ID_BOOK = " + lbl_id.Text;
             cmd.Parameters.AddWithValue("@title",txt_title.Texts);
             cmd.ExecuteNonQuery();
 
@@ -112,7 +110,7 @@ namespace CS511_Project_QLNS
             cmd.Connection = sqlCon;
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.Clear();
-            cmd.CommandText = "UPDATE TBL_IMP_DETAIL SET BOOK_NAME = @title WHERE ID_BOOK = " + lbl_id.Text;
+            cmd.CommandText = "UPDATE TBL_IMP_DETAIL SET BOOK_NAME = N'@title' WHERE ID_BOOK = " + lbl_id.Text;
             cmd.Parameters.AddWithValue("@title", txt_title.Texts);
             cmd.ExecuteNonQuery();
 

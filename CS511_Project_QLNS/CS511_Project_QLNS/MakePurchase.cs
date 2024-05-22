@@ -84,9 +84,9 @@ namespace CS511_Project_QLNS
                 cmd = new SqlCommand();
                 cmd.Connection = sqlCon;
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "INSERT INTO TBL_CUS_RECEIPT (C_DATE, USERNAME, TOTAL) VALUES (@date, N'@name', @money)";
+                cmd.CommandText = "INSERT INTO TBL_CUS_RECEIPT (C_DATE, USERNAME, TOTAL) VALUES (@date, N'"+ name + "', @money)";
                 cmd.Parameters.AddWithValue("@date", date);
-                cmd.Parameters.AddWithValue ("@name", name);
+
                 cmd.Parameters.AddWithValue("@money", money);
                 cmd.ExecuteNonQuery();
 
@@ -119,10 +119,9 @@ namespace CS511_Project_QLNS
                     cmd = new SqlCommand();
                     cmd.Connection = sqlCon;
                     cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "INSERT INTO TBL_REC_DETAIL VALUES (@id_rec, @id_book, N'@name', @price, @quantity, @total)";
+                    cmd.CommandText = "INSERT INTO TBL_REC_DETAIL VALUES (@id_rec, @id_book, N'"+ split_book[0] + "', @price, @quantity, @total)";
                     cmd.Parameters.AddWithValue("@id_rec",id_rec);
                     cmd.Parameters.AddWithValue("@id_book", split_line[0]);
-                    cmd.Parameters.AddWithValue("@name", split_book[0]);
                     cmd.Parameters.AddWithValue("@price", decimal.Parse(split_book[1]));///
                     cmd.Parameters.AddWithValue("@quantity", int.Parse(split_line[1]));
 
