@@ -13,6 +13,6 @@ namespace CS511_Project_QLNS
         //public string local_dir = "Pic/";
         public string local_dir = @"D:\Pic\";
 
-        public string emp_dir = "Emp_Pic/";
+        public string emp_dir = @"D:\Emp_Pic\";
     }
 }

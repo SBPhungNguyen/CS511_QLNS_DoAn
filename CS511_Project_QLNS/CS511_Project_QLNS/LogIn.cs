@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -43,11 +44,28 @@ namespace CS511_Project_QLNS
 
         private void btn_signin_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
-            this.Hide();
-            form.ShowDialog();
+            SqlConnection sqlCon;
+            SqlCommand cmd;
+            connection co = new connection();
+            sqlCon = new SqlConnection(co.connect);
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT ID, E_NAME, PWORD FROM TBL_EMP";
+            SqlDataReader dr = cmd.ExecuteReader();
+            while(dr.Read())
+            {
+                if (dr.GetString(1) == txt_name.Texts && dr.GetString(2) == txt_pass.Texts)
+                {
+                    Form2 form = new Form2(dr.GetInt32(0));
+                    this.Hide();
+                    form.ShowDialog();
 
-            this.Show();
+                    this.Show();
+                }
+            }
+
+
         }
     }
 }

@@ -21,7 +21,9 @@ namespace CS511_Project_QLNS
         Uct_Employee_Report uct_Employee_Report;
         Uct_Employee_Chat uct_Employee_Chat;
         Uct_Employee_Cashier uct_Employee_Cashier;
-        public Form2()
+
+        public int emp_id;
+        public Form2(int id)
         {
             InitializeComponent();
             //Uct_Employee_Home uct = new Uct_Employee_Home();
@@ -40,6 +42,8 @@ namespace CS511_Project_QLNS
             //this.Controls.Add(uct);
 
             //if manager -> show employee, not -> don't show
+
+            emp_id = id;
 
             uct_Employee_Home = new Uct_Employee_Home();
             uct_Employee_Home.Location = new System.Drawing.Point(235, 105);
