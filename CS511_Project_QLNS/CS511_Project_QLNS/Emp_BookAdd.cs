@@ -35,17 +35,17 @@ namespace CS511_Project_QLNS
 
             connect = co.connect;
             sqlCon = new SqlConnection(connect);
-            if (sqlCon.State == ConnectionState.Closed )
-            {
-                sqlCon.Open();
-            }
-            cmd = new SqlCommand();
-            cmd.Connection = sqlCon;
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT MAX(ID) FROM TBL_BOOK";
-            int max = (int)cmd.ExecuteScalar();
-            id = max + 1;
-            lbl_id.Text = id.ToString();
+            //if (sqlCon.State == ConnectionState.Closed )
+            //{
+            //    sqlCon.Open();
+            //}
+            //cmd = new SqlCommand();
+            //cmd.Connection = sqlCon;
+            //cmd.CommandType = CommandType.Text;
+            //cmd.CommandText = "SELECT MAX(ID) FROM TBL_BOOK";
+            //int max = (int)cmd.ExecuteScalar();
+            //id = max + 1;
+            //lbl_id.Text = id.ToString();
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -73,10 +73,6 @@ namespace CS511_Project_QLNS
         {
             if (txt_author.Texts!="" && txt_title.Texts!="" && txt_im_price.Texts!=""&&txt_sell_price.Texts!=""&&txt_des.Texts!="")
             {
-                //copy pic to desired dir
-                file.CopyTo(co.local_dir + lbl_id.Text + ".png", true);
-
-
                 //add new data to sql;
                 if (sqlCon.State == ConnectionState.Closed) sqlCon.Open();
                 cmd = new SqlCommand();
@@ -84,15 +80,33 @@ namespace CS511_Project_QLNS
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.Clear();
 
-                cmd.CommandText = "INSERT INTO TBL_BOOK (PIC, TITLE, AUTHOR, GENRE, IM_PRICE, EX_PRICE, TXT, QUANTITY) VALUES (@pic, @title, @author, @genre, @im, @ex, @txt, 0)";
+                cmd.CommandText = "INSERT INTO TBL_BOOK (TITLE, AUTHOR, GENRE, IM_PRICE, EX_PRICE, TXT, QUANTITY) VALUES (@title, @author, @genre, @im, @ex, @txt, 0)";
 
-                cmd.Parameters.AddWithValue("@pic",lbl_id.Text);
                 cmd.Parameters.AddWithValue("@title", txt_title.Texts);
                 cmd.Parameters.AddWithValue("@author", txt_author.Texts);
                 cmd.Parameters.AddWithValue("@genre", cbb_type.SelectedIndex + 1);
-                cmd.Parameters.AddWithValue("@im", txt_im_price.Texts);
-                cmd.Parameters.AddWithValue("@ex", txt_sell_price.Texts);
+                cmd.Parameters.AddWithValue("@im", int.Parse(txt_im_price.Texts));
+                cmd.Parameters.AddWithValue("@ex", int.Parse(txt_sell_price.Texts));
                 cmd.Parameters.AddWithValue("@txt", txt_des.Texts);
+                cmd.ExecuteNonQuery();
+
+                cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Clear();
+                cmd.CommandText = "SELECT MAX(ID) FROM TBL_BOOK";
+                id = (int)cmd.ExecuteScalar();
+
+                //copy pic to desired dir
+                file.CopyTo(co.local_dir + id + ".png", true);
+
+                cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Clear();
+                cmd.CommandText = "UPDATE TBL_BOOK SET PIC = @pic WHERE ID = @id";
+                cmd.Parameters.AddWithValue("@pic", id);
+                cmd.Parameters.AddWithValue("@id", id);
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Added successfully","Notification");

@@ -37,13 +37,11 @@
             this.txt_im_price = new CS511_Project_QLNS.Uct_textbox();
             this.txt_author = new CS511_Project_QLNS.Uct_textbox();
             this.txt_des = new CS511_Project_QLNS.Uct_textbox();
-            this.label6 = new System.Windows.Forms.Label();
             this.lbl_title = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lbl_id = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_exit = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -66,7 +64,7 @@
             "Non-Fiction",
             "Mystery",
             "History"});
-            this.cbb_type.Location = new System.Drawing.Point(251, 509);
+            this.cbb_type.Location = new System.Drawing.Point(251, 494);
             this.cbb_type.Name = "cbb_type";
             this.cbb_type.Size = new System.Drawing.Size(282, 28);
             this.cbb_type.TabIndex = 82;
@@ -82,7 +80,7 @@
             this.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancel.ForeColor = System.Drawing.Color.Black;
-            this.btn_cancel.Location = new System.Drawing.Point(363, 726);
+            this.btn_cancel.Location = new System.Drawing.Point(363, 725);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(170, 40);
             this.btn_cancel.TabIndex = 81;
@@ -102,7 +100,7 @@
             this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_update.ForeColor = System.Drawing.Color.White;
-            this.btn_update.Location = new System.Drawing.Point(91, 726);
+            this.btn_update.Location = new System.Drawing.Point(91, 725);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(170, 40);
             this.btn_update.TabIndex = 80;
@@ -119,7 +117,7 @@
             this.txt_title.BorderSize = 2;
             this.txt_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_title.ForeColor = System.Drawing.Color.Black;
-            this.txt_title.Location = new System.Drawing.Point(248, 403);
+            this.txt_title.Location = new System.Drawing.Point(248, 388);
             this.txt_title.Margin = new System.Windows.Forms.Padding(4);
             this.txt_title.Multiline = false;
             this.txt_title.Name = "txt_title";
@@ -138,7 +136,7 @@
             this.txt_sell_price.BorderSize = 2;
             this.txt_sell_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_sell_price.ForeColor = System.Drawing.Color.Black;
-            this.txt_sell_price.Location = new System.Drawing.Point(248, 605);
+            this.txt_sell_price.Location = new System.Drawing.Point(248, 590);
             this.txt_sell_price.Margin = new System.Windows.Forms.Padding(4);
             this.txt_sell_price.Multiline = false;
             this.txt_sell_price.Name = "txt_sell_price";
@@ -157,7 +155,7 @@
             this.txt_im_price.BorderSize = 2;
             this.txt_im_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_im_price.ForeColor = System.Drawing.Color.Black;
-            this.txt_im_price.Location = new System.Drawing.Point(248, 552);
+            this.txt_im_price.Location = new System.Drawing.Point(248, 537);
             this.txt_im_price.Margin = new System.Windows.Forms.Padding(4);
             this.txt_im_price.Multiline = false;
             this.txt_im_price.Name = "txt_im_price";
@@ -176,7 +174,7 @@
             this.txt_author.BorderSize = 2;
             this.txt_author.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_author.ForeColor = System.Drawing.Color.Black;
-            this.txt_author.Location = new System.Drawing.Point(248, 452);
+            this.txt_author.Location = new System.Drawing.Point(248, 437);
             this.txt_author.Margin = new System.Windows.Forms.Padding(4);
             this.txt_author.Multiline = false;
             this.txt_author.Name = "txt_author";
@@ -195,7 +193,7 @@
             this.txt_des.BorderSize = 2;
             this.txt_des.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_des.ForeColor = System.Drawing.Color.Black;
-            this.txt_des.Location = new System.Drawing.Point(248, 656);
+            this.txt_des.Location = new System.Drawing.Point(248, 641);
             this.txt_des.Margin = new System.Windows.Forms.Padding(4);
             this.txt_des.Multiline = false;
             this.txt_des.Name = "txt_des";
@@ -205,16 +203,6 @@
             this.txt_des.TabIndex = 75;
             this.txt_des.Texts = "";
             this.txt_des.UnderlineStyle = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(90, 367);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 22);
-            this.label6.TabIndex = 73;
-            this.label6.Text = "ID:";
             // 
             // lbl_title
             // 
@@ -231,7 +219,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(87, 662);
+            this.label9.Location = new System.Drawing.Point(87, 647);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(117, 22);
             this.label9.TabIndex = 69;
@@ -241,7 +229,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(87, 560);
+            this.label7.Location = new System.Drawing.Point(87, 545);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(123, 22);
             this.label7.TabIndex = 68;
@@ -251,7 +239,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(87, 512);
+            this.label5.Location = new System.Drawing.Point(87, 497);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 22);
             this.label5.TabIndex = 67;
@@ -261,21 +249,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(87, 610);
+            this.label4.Location = new System.Drawing.Point(87, 595);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(129, 22);
             this.label4.TabIndex = 72;
             this.label4.Text = "Selling Price:";
-            // 
-            // lbl_id
-            // 
-            this.lbl_id.AutoSize = true;
-            this.lbl_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_id.Location = new System.Drawing.Point(248, 367);
-            this.lbl_id.Name = "lbl_id";
-            this.lbl_id.Size = new System.Drawing.Size(63, 22);
-            this.lbl_id.TabIndex = 74;
-            this.lbl_id.Text = "Code:";
             // 
             // panel1
             // 
@@ -303,7 +281,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(87, 463);
+            this.label3.Location = new System.Drawing.Point(87, 448);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 22);
             this.label3.TabIndex = 66;
@@ -313,7 +291,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(87, 412);
+            this.label1.Location = new System.Drawing.Point(87, 397);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 22);
             this.label1.TabIndex = 65;
@@ -344,14 +322,12 @@
             this.Controls.Add(this.txt_im_price);
             this.Controls.Add(this.txt_author);
             this.Controls.Add(this.txt_des);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.ptb_img);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.lbl_id);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -377,7 +353,6 @@
         private Uct_textbox txt_im_price;
         private Uct_textbox txt_author;
         private Uct_textbox txt_des;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lbl_title;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
@@ -385,7 +360,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox btn_exit;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lbl_id;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
