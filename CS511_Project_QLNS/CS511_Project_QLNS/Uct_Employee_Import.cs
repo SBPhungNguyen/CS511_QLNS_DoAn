@@ -26,7 +26,7 @@ namespace CS511_Project_QLNS
             var pa = this.ParentForm;
             parent_form = pa as Form2;
 
-            Emp_ImportAdd emp_ImportAdd = new Emp_ImportAdd();
+            Emp_ImportAdd emp_ImportAdd = new Emp_ImportAdd(parent_form);
             parent_form.Hide();
 
             emp_ImportAdd.ShowDialog();
