@@ -24,6 +24,9 @@ namespace CS511_Project_QLNS
             fpnl_detail.AutoScroll = true;
             fpnl_detail.WrapContents = true;
 
+            parent_form = form;
+
+
             lbl_date.Text = DateTime.Now.Date.ToString("yyyy-MM-dd");
             
             //get emp info
@@ -32,10 +35,47 @@ namespace CS511_Project_QLNS
             cmd = new SqlCommand();
             cmd.Connection = sqlCon;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT * FROM TBL_EMP";
+            cmd.CommandText = "SELECT * FROM TBL_EMP WHERE ID = "+parent_form.emp_id;
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                lbl_em_name.Text = dr.GetString(2);
+                lbl_code.Text = dr.GetInt32(0).ToString();
+            }
+            sqlCon.Close();
 
-            parent_form = form;
-
+            LoadBookIdCBB();
+            LoadBookNameCBB();
+        }
+        public void LoadBookIdCBB()
+        {
+            cbb_bookid.Items.Clear();
+            if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT ID FROM TBL_BOOK";
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                cbb_bookid.Items.Add(dr.GetInt32(0));
+            }
+            sqlCon.Close();
+        }
+        public void LoadBookNameCBB()
+        {
+            cbb_bookname.Items.Clear();
+            if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT TITLE FROM TBL_BOOK";
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                cbb_bookname.Items.Add(dr.GetString(0));
+            }
+            sqlCon.Close();
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -52,6 +92,16 @@ namespace CS511_Project_QLNS
         private void btn_exit_MouseLeave(object sender, EventArgs e)
         {
             btn_exit.BackgroundImage = Properties.Resources.Cross2_image;
+        }
+
+        private void cbb_bookid_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbb_bookname.SelectedIndex = cbb_bookid.SelectedIndex;
+        }
+
+        private void cbb_bookname_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbb_bookid.SelectedIndex = cbb_bookname.SelectedIndex;
         }
     }
 }

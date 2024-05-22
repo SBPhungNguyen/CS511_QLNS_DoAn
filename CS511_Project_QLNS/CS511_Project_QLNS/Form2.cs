@@ -47,6 +47,7 @@ namespace CS511_Project_QLNS
             //if manager -> show employee, not -> don't show
 
             emp_id = id;
+
             LoadEmpInfo();
             if (is_manager == 1)
             {
@@ -81,6 +82,7 @@ namespace CS511_Project_QLNS
                 ptb_em_pic.BackgroundImage = System.Drawing.Image.FromFile(co.emp_dir + emp_id + ".png");
                 is_manager = int.Parse(dr.GetString(5));
             }
+            sqlCon.Close();
         }
         private void btn_exit_Click(object sender, EventArgs e)
         {
