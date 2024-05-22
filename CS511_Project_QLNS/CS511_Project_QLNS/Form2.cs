@@ -25,6 +25,7 @@ namespace CS511_Project_QLNS
         Uct_Employee_Cashier uct_Employee_Cashier;
 
         public int emp_id;
+        public int is_manager;
         public Form2(int id)
         {
             InitializeComponent();
@@ -47,6 +48,14 @@ namespace CS511_Project_QLNS
 
             emp_id = id;
             LoadEmpInfo();
+            if (is_manager == 1)
+            {
+                btn_employee.Visible = true;
+            }
+            else
+            {
+                btn_employee.Visible = false;
+            }
 
             uct_Employee_Home = new Uct_Employee_Home();
             uct_Employee_Home.Location = new System.Drawing.Point(235, 105);
@@ -70,6 +79,7 @@ namespace CS511_Project_QLNS
             {
                 lbl_em_name.Text = dr.GetString(2);
                 ptb_em_pic.BackgroundImage = System.Drawing.Image.FromFile(co.emp_dir + emp_id + ".png");
+                is_manager = int.Parse(dr.GetString(5));
             }
         }
         private void btn_exit_Click(object sender, EventArgs e)
