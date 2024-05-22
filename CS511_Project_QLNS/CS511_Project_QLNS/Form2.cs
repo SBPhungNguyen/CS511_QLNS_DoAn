@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.IO;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace CS511_Project_QLNS
 {
@@ -44,6 +46,7 @@ namespace CS511_Project_QLNS
             //if manager -> show employee, not -> don't show
 
             emp_id = id;
+            LoadEmpInfo();
 
             uct_Employee_Home = new Uct_Employee_Home();
             uct_Employee_Home.Location = new System.Drawing.Point(235, 105);
@@ -52,7 +55,23 @@ namespace CS511_Project_QLNS
             uct_Employee_Home.BringToFront();
 
         }
-
+        public void LoadEmpInfo()
+        {
+            SqlConnection sqlCon;
+            SqlCommand cmd;
+            sqlCon = new SqlConnection(co.connect);
+            if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM TBL_EMP";
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                lbl_em_name.Text = dr.GetString(2);
+                ptb_em_pic.BackgroundImage = System.Drawing.Image.FromFile(co.emp_dir + emp_id + ".png");
+            }
+        }
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
