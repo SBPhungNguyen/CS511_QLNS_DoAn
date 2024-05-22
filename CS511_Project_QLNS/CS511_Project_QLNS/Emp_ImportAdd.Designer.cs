@@ -33,9 +33,9 @@
             this.btn_exit = new System.Windows.Forms.PictureBox();
             this.lbl_title = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_buy = new CS511_Project_QLNS.View.CustomButton();
             this.lbl_sumprice = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.btn_buy = new CS511_Project_QLNS.View.CustomButton();
             this.customPanel3 = new CS511_Project_QLNS.View.CustomPanel();
             this.fpnl_detail = new System.Windows.Forms.FlowLayoutPanel();
             this.customPanel4 = new CS511_Project_QLNS.View.CustomPanel();
@@ -115,6 +115,25 @@
             this.panel2.Size = new System.Drawing.Size(1300, 83);
             this.panel2.TabIndex = 52;
             // 
+            // btn_buy
+            // 
+            this.btn_buy.BackColor = System.Drawing.Color.Green;
+            this.btn_buy.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_buy.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_buy.BorderRadius = 20;
+            this.btn_buy.BorderSize = 0;
+            this.btn_buy.FlatAppearance.BorderSize = 0;
+            this.btn_buy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buy.ForeColor = System.Drawing.Color.White;
+            this.btn_buy.Location = new System.Drawing.Point(902, 18);
+            this.btn_buy.Name = "btn_buy";
+            this.btn_buy.Size = new System.Drawing.Size(271, 45);
+            this.btn_buy.TabIndex = 5;
+            this.btn_buy.Text = "Purchase";
+            this.btn_buy.TextColor = System.Drawing.Color.White;
+            this.btn_buy.UseVisualStyleBackColor = false;
+            // 
             // lbl_sumprice
             // 
             this.lbl_sumprice.AutoSize = true;
@@ -135,25 +154,6 @@
             this.label15.Size = new System.Drawing.Size(79, 28);
             this.label15.TabIndex = 3;
             this.label15.Text = "Total:";
-            // 
-            // btn_buy
-            // 
-            this.btn_buy.BackColor = System.Drawing.Color.Green;
-            this.btn_buy.BackgroundColor = System.Drawing.Color.Green;
-            this.btn_buy.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_buy.BorderRadius = 20;
-            this.btn_buy.BorderSize = 0;
-            this.btn_buy.FlatAppearance.BorderSize = 0;
-            this.btn_buy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_buy.ForeColor = System.Drawing.Color.White;
-            this.btn_buy.Location = new System.Drawing.Point(902, 18);
-            this.btn_buy.Name = "btn_buy";
-            this.btn_buy.Size = new System.Drawing.Size(271, 45);
-            this.btn_buy.TabIndex = 5;
-            this.btn_buy.Text = "Purchase";
-            this.btn_buy.TextColor = System.Drawing.Color.White;
-            this.btn_buy.UseVisualStyleBackColor = false;
             // 
             // customPanel3
             // 
@@ -291,6 +291,7 @@
             this.btn_guest.Text = "Clear";
             this.btn_guest.TextColor = System.Drawing.Color.Black;
             this.btn_guest.UseVisualStyleBackColor = false;
+            this.btn_guest.Click += new System.EventHandler(this.btn_guest_Click);
             // 
             // customButton1
             // 

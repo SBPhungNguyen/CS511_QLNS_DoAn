@@ -103,5 +103,11 @@ namespace CS511_Project_QLNS
         {
             cbb_bookid.SelectedIndex = cbb_bookname.SelectedIndex;
         }
+
+        private void btn_guest_Click(object sender, EventArgs e)
+        {
+            txt_quantity.Texts = "";
+            cbb_bookid.SelectedIndex = -1;
+        }
     }
 }
