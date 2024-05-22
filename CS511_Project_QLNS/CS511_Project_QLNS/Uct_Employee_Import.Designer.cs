@@ -125,6 +125,7 @@
             this.customButton1.Text = "Add";
             this.customButton1.TextColor = System.Drawing.Color.White;
             this.customButton1.UseVisualStyleBackColor = false;
+            this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
             // 
             // customPanel1
             // 

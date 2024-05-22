@@ -40,6 +40,7 @@ namespace CS511_Project_QLNS
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
+            this.Dispose();
             this.Close();
         }
 

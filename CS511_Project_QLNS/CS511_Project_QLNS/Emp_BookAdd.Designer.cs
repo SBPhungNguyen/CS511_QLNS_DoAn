@@ -64,7 +64,7 @@
             "Non-Fiction",
             "Mystery",
             "History"});
-            this.cbb_type.Location = new System.Drawing.Point(251, 494);
+            this.cbb_type.Location = new System.Drawing.Point(251, 485);
             this.cbb_type.Name = "cbb_type";
             this.cbb_type.Size = new System.Drawing.Size(282, 28);
             this.cbb_type.TabIndex = 82;
@@ -80,7 +80,7 @@
             this.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancel.ForeColor = System.Drawing.Color.Black;
-            this.btn_cancel.Location = new System.Drawing.Point(363, 725);
+            this.btn_cancel.Location = new System.Drawing.Point(363, 724);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(170, 40);
             this.btn_cancel.TabIndex = 81;
@@ -100,7 +100,7 @@
             this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_update.ForeColor = System.Drawing.Color.White;
-            this.btn_update.Location = new System.Drawing.Point(91, 725);
+            this.btn_update.Location = new System.Drawing.Point(91, 724);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(170, 40);
             this.btn_update.TabIndex = 80;
@@ -117,7 +117,7 @@
             this.txt_title.BorderSize = 2;
             this.txt_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_title.ForeColor = System.Drawing.Color.Black;
-            this.txt_title.Location = new System.Drawing.Point(248, 388);
+            this.txt_title.Location = new System.Drawing.Point(248, 379);
             this.txt_title.Margin = new System.Windows.Forms.Padding(4);
             this.txt_title.Multiline = false;
             this.txt_title.Name = "txt_title";
@@ -136,7 +136,7 @@
             this.txt_sell_price.BorderSize = 2;
             this.txt_sell_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_sell_price.ForeColor = System.Drawing.Color.Black;
-            this.txt_sell_price.Location = new System.Drawing.Point(248, 590);
+            this.txt_sell_price.Location = new System.Drawing.Point(248, 581);
             this.txt_sell_price.Margin = new System.Windows.Forms.Padding(4);
             this.txt_sell_price.Multiline = false;
             this.txt_sell_price.Name = "txt_sell_price";
@@ -155,7 +155,7 @@
             this.txt_im_price.BorderSize = 2;
             this.txt_im_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_im_price.ForeColor = System.Drawing.Color.Black;
-            this.txt_im_price.Location = new System.Drawing.Point(248, 537);
+            this.txt_im_price.Location = new System.Drawing.Point(248, 528);
             this.txt_im_price.Margin = new System.Windows.Forms.Padding(4);
             this.txt_im_price.Multiline = false;
             this.txt_im_price.Name = "txt_im_price";
@@ -174,7 +174,7 @@
             this.txt_author.BorderSize = 2;
             this.txt_author.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_author.ForeColor = System.Drawing.Color.Black;
-            this.txt_author.Location = new System.Drawing.Point(248, 437);
+            this.txt_author.Location = new System.Drawing.Point(248, 428);
             this.txt_author.Margin = new System.Windows.Forms.Padding(4);
             this.txt_author.Multiline = false;
             this.txt_author.Name = "txt_author";
@@ -193,7 +193,7 @@
             this.txt_des.BorderSize = 2;
             this.txt_des.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_des.ForeColor = System.Drawing.Color.Black;
-            this.txt_des.Location = new System.Drawing.Point(248, 641);
+            this.txt_des.Location = new System.Drawing.Point(248, 632);
             this.txt_des.Margin = new System.Windows.Forms.Padding(4);
             this.txt_des.Multiline = false;
             this.txt_des.Name = "txt_des";
@@ -219,7 +219,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(87, 647);
+            this.label9.Location = new System.Drawing.Point(87, 638);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(117, 22);
             this.label9.TabIndex = 69;
@@ -229,7 +229,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(87, 545);
+            this.label7.Location = new System.Drawing.Point(87, 536);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(123, 22);
             this.label7.TabIndex = 68;
@@ -239,7 +239,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(87, 497);
+            this.label5.Location = new System.Drawing.Point(87, 488);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 22);
             this.label5.TabIndex = 67;
@@ -249,7 +249,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(87, 595);
+            this.label4.Location = new System.Drawing.Point(87, 586);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(129, 22);
             this.label4.TabIndex = 72;
@@ -281,7 +281,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(87, 448);
+            this.label3.Location = new System.Drawing.Point(87, 439);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 22);
             this.label3.TabIndex = 66;
@@ -291,7 +291,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(87, 397);
+            this.label1.Location = new System.Drawing.Point(87, 388);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 22);
             this.label1.TabIndex = 65;
@@ -301,7 +301,7 @@
             // 
             this.ptb_img.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_picture;
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(208, 103);
+            this.ptb_img.Location = new System.Drawing.Point(208, 108);
             this.ptb_img.Name = "ptb_img";
             this.ptb_img.Size = new System.Drawing.Size(188, 241);
             this.ptb_img.TabIndex = 64;
