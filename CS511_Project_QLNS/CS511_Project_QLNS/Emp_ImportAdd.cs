@@ -18,6 +18,8 @@ namespace CS511_Project_QLNS
         SqlConnection sqlCon;
         SqlCommand cmd;
 
+        string[] book_info = new string[400];
+        int book_count;
         public Emp_ImportAdd(Form2 form)
         {
             InitializeComponent();
@@ -25,7 +27,7 @@ namespace CS511_Project_QLNS
             fpnl_detail.WrapContents = true;
 
             parent_form = form;
-
+            book_count = 0;
 
             lbl_date.Text = DateTime.Now.Date.ToString("yyyy-MM-dd");
             
@@ -108,6 +110,29 @@ namespace CS511_Project_QLNS
         {
             txt_quantity.Texts = "";
             cbb_bookid.SelectedIndex = -1;
+        }
+
+        private void customButton1_Click(object sender, EventArgs e)
+        {
+            if (cbb_bookid.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please choose the desiring books","Opps");
+                return;
+            }
+            if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Clear();
+            cmd.CommandText = "SELECT * FROM TBL_BOOK WHERE ID = @id";
+            cmd.Parameters.AddWithValue("@id",cbb_bookid.SelectedItem);
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                MessageBox.Show(dr.GetString(2));
+            }
+
+            sqlCon.Close();
         }
     }
 }

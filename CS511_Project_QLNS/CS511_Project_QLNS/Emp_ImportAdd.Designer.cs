@@ -63,12 +63,10 @@
             this.lbl_code = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.uct_Emp_ImportAdd1 = new CS511_Project_QLNS.Uct_Emp_ImportAdd();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.panel2.SuspendLayout();
             this.customPanel3.SuspendLayout();
-            this.fpnl_detail.SuspendLayout();
             this.customPanel4.SuspendLayout();
             this.customPanel2.SuspendLayout();
             this.customPanel1.SuspendLayout();
@@ -173,7 +171,6 @@
             // 
             // fpnl_detail
             // 
-            this.fpnl_detail.Controls.Add(this.uct_Emp_ImportAdd1);
             this.fpnl_detail.Location = new System.Drawing.Point(23, 101);
             this.fpnl_detail.Name = "fpnl_detail";
             this.fpnl_detail.Size = new System.Drawing.Size(1214, 247);
@@ -314,6 +311,7 @@
             this.customButton1.Text = "Add";
             this.customButton1.TextColor = System.Drawing.Color.White;
             this.customButton1.UseVisualStyleBackColor = false;
+            this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
             // 
             // txt_quantity
             // 
@@ -486,13 +484,6 @@
             this.label1.TabIndex = 52;
             this.label1.Text = "Import Info";
             // 
-            // uct_Emp_ImportAdd1
-            // 
-            this.uct_Emp_ImportAdd1.Location = new System.Drawing.Point(3, 3);
-            this.uct_Emp_ImportAdd1.Name = "uct_Emp_ImportAdd1";
-            this.uct_Emp_ImportAdd1.Size = new System.Drawing.Size(1177, 80);
-            this.uct_Emp_ImportAdd1.TabIndex = 0;
-            // 
             // Emp_ImportAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -515,7 +506,6 @@
             this.panel2.PerformLayout();
             this.customPanel3.ResumeLayout(false);
             this.customPanel3.PerformLayout();
-            this.fpnl_detail.ResumeLayout(false);
             this.customPanel4.ResumeLayout(false);
             this.customPanel4.PerformLayout();
             this.customPanel2.ResumeLayout(false);
@@ -563,6 +553,5 @@
         private System.Windows.Forms.Label lbl_sumprice;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private Uct_Emp_ImportAdd uct_Emp_ImportAdd1;
     }
 }
