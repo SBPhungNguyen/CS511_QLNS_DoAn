@@ -18,8 +18,8 @@ namespace CS511_Project_QLNS
         SqlConnection sqlCon;
         SqlCommand cmd;
 
-        string[] book_info = new string[400];
-        int book_count;
+        public string[] book_info = new string[400];
+        public int book_count;
         public Emp_ImportAdd(Form2 form)
         {
             InitializeComponent();
@@ -129,7 +129,10 @@ namespace CS511_Project_QLNS
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                MessageBox.Show(dr.GetString(2));
+                string price = dr.GetDecimal(5).ToString("0.##");
+                string formattedNumber = string.Format("{0:#,###}", int.Parse(price));
+                MessageBox.Show(formattedNumber);
+
             }
 
             sqlCon.Close();
