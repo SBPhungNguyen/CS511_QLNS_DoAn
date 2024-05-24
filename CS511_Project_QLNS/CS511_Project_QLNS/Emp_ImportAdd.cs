@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Numerics;
 using System.Windows.Forms;
 
 namespace CS511_Project_QLNS
@@ -20,6 +21,9 @@ namespace CS511_Project_QLNS
 
         public string[] book_info = new string[400];                 //id*title*price*quantity
         public int book_count;
+        public long sum_total = 0;
+
+        
         public Emp_ImportAdd(Form2 form)
         {
             InitializeComponent();
@@ -28,6 +32,8 @@ namespace CS511_Project_QLNS
 
             parent_form = form;
             book_count = 0;
+
+            sum_total = 0;
 
             lbl_date.Text = DateTime.Now.Date.ToString("yyyy-MM-dd");
             
@@ -148,6 +154,7 @@ namespace CS511_Project_QLNS
             }
             sqlCon.Close();
             CalcualteTotal();
+            Format_Sum();
         }
 
         public void CalcualteTotal()
@@ -160,7 +167,13 @@ namespace CS511_Project_QLNS
                 long quan = long.Parse(splt_line[3]);
                 sum = sum + price*quan;
             }
+            sum_total = sum;
             lbl_sumprice.Text = sum.ToString();
+        }
+
+        public void Format_Sum()
+        {
+            lbl_sumprice.Text = string.Format("{0:#,###}", long.Parse(lbl_sumprice.Text));
         }
     }
 }

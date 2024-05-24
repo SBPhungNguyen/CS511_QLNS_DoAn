@@ -109,6 +109,7 @@ namespace CS511_Project_QLNS
             sqlCon.Close();
             //re-calculate the total amount
             parent.CalcualteTotal();
+            parent.Format_Sum();
         }
 
         public void RemoveItem(int index)
