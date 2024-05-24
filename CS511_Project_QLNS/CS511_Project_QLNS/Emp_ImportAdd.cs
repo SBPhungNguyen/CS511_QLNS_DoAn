@@ -173,6 +173,8 @@ namespace CS511_Project_QLNS
 
         public void Format_Sum()
         {
+            if (lbl_sumprice.Text == "0")
+                return;
             lbl_sumprice.Text = string.Format("{0:#,###}", long.Parse(lbl_sumprice.Text));
         }
     }
