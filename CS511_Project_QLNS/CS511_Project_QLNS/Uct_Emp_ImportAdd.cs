@@ -51,7 +51,7 @@ namespace CS511_Project_QLNS
             this.title = title;
             this.price = string.Format("{0:#,###}", int.Parse(price));
             this.quantity = quantity;
-            int s = int.Parse(quantity) * int.Parse(price);
+            long s = long.Parse(quantity) * long.Parse(price);
             this.sum = string.Format("{0:#,###}", s);
         }
     }

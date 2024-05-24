@@ -18,7 +18,7 @@ namespace CS511_Project_QLNS
         SqlConnection sqlCon;
         SqlCommand cmd;
 
-        public string[] book_info = new string[400];
+        public string[] book_info = new string[400];                 //id,title,price,quantity
         public int book_count;
         public Emp_ImportAdd(Form2 form)
         {
@@ -137,6 +137,7 @@ namespace CS511_Project_QLNS
                 string price = dr.GetDecimal(5).ToString("0.##");
 
                 book_info[book_count] = dr.GetInt32(0)+"*"+dr.GetString(2)+"*"+dr.GetDecimal(5).ToString("0.##")+"*"+txt_quantity.Texts;
+                book_count++;
                 Uct_Emp_ImportAdd uct = new Uct_Emp_ImportAdd(this);
                 uct.LoadData(dr.GetInt32(0).ToString(),dr.GetString(2),dr.GetDecimal(5).ToString("0.##"),txt_quantity.Texts);
                 fpnl_detail.Controls.Add(uct);
@@ -146,6 +147,20 @@ namespace CS511_Project_QLNS
                 txt_quantity.Texts = "";
             }
             sqlCon.Close();
+            CalcualteTotal();
+        }
+
+        public void CalcualteTotal()
+        {
+            long sum = 0;
+            for (int i = 0; i < book_count;i++)
+            {
+                string[] splt_line = book_info[i].Split('*');
+                long price = long.Parse(splt_line[2]);
+                long quan = long.Parse(splt_line[3]);
+                sum = sum + price*quan;
+            }
+            lbl_sumprice.Text = sum.ToString();
         }
     }
 }
