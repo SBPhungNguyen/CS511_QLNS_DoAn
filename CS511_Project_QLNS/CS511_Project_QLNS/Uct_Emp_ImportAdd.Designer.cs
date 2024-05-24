@@ -130,7 +130,7 @@
             this.lbl_price.Name = "lbl_price";
             this.lbl_price.Size = new System.Drawing.Size(148, 39);
             this.lbl_price.TabIndex = 6;
-            this.lbl_price.Text = "Date";
+            this.lbl_price.Text = "Price";
             this.lbl_price.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
@@ -149,7 +149,7 @@
             this.lbl_quantity.Name = "lbl_quantity";
             this.lbl_quantity.Size = new System.Drawing.Size(148, 39);
             this.lbl_quantity.TabIndex = 6;
-            this.lbl_quantity.Text = "Sum";
+            this.lbl_quantity.Text = "Quantity";
             this.lbl_quantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
