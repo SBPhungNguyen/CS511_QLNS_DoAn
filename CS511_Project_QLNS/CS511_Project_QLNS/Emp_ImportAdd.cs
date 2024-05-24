@@ -131,7 +131,8 @@ namespace CS511_Project_QLNS
             {
                 string price = dr.GetDecimal(5).ToString("0.##");
                 string formattedNumber = string.Format("{0:#,###}", int.Parse(price));
-                MessageBox.Show(formattedNumber);
+                
+
 
             }
 

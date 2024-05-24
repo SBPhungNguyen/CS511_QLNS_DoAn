@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -45,9 +46,10 @@ namespace CS511_Project_QLNS
         {
             this.ID = id;
             this.title = title;
-            this.price = price;
+            this.price = string.Format("{0:#,###}", int.Parse(price));
             this.quantity = quantity;
-            this.sum = (int.Parse(quantity)*int.Parse(price)).ToString();
+            int s = int.Parse(quantity) * int.Parse(price);
+            this.sum = string.Format("{0:#,###}", sum);
         }
     }
 }
