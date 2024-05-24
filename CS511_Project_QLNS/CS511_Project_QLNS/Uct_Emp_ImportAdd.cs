@@ -13,6 +13,7 @@ namespace CS511_Project_QLNS
 {
     public partial class Uct_Emp_ImportAdd : UserControl
     {
+        Emp_ImportAdd parent;
         public string ID
         {
             get { return lbl_id.Text; }
@@ -38,9 +39,11 @@ namespace CS511_Project_QLNS
             get { return lbl_sum.Text; }
             set { lbl_sum.Text = value;}    
         }
-        public Uct_Emp_ImportAdd()
+        public Uct_Emp_ImportAdd(Emp_ImportAdd form)
         {
             InitializeComponent();
+            this.parent = form;
+
         }
         public void LoadData(string id, string title, string price, string quantity)
         {
@@ -49,7 +52,7 @@ namespace CS511_Project_QLNS
             this.price = string.Format("{0:#,###}", int.Parse(price));
             this.quantity = quantity;
             int s = int.Parse(quantity) * int.Parse(price);
-            this.sum = string.Format("{0:#,###}", sum);
+            this.sum = string.Format("{0:#,###}", s);
         }
     }
 }

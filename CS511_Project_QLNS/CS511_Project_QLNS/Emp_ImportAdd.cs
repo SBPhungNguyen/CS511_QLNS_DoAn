@@ -119,6 +119,11 @@ namespace CS511_Project_QLNS
                 MessageBox.Show("Please choose the desiring books","Opps");
                 return;
             }
+            if (txt_quantity.Texts == "")
+            {
+                MessageBox.Show("Please enter the amount of books", "Opps");
+                return;
+            }
             if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
             cmd = new SqlCommand();
             cmd.Connection = sqlCon;
@@ -130,12 +135,16 @@ namespace CS511_Project_QLNS
             if (dr.Read())
             {
                 string price = dr.GetDecimal(5).ToString("0.##");
-                string formattedNumber = string.Format("{0:#,###}", int.Parse(price));
-                
 
+                book_info[book_count] = dr.GetInt32(0)+"*"+dr.GetString(2)+"*"+dr.GetDecimal(5).ToString("0.##")+"*"+txt_quantity.Texts;
+                Uct_Emp_ImportAdd uct = new Uct_Emp_ImportAdd(this);
+                uct.LoadData(dr.GetInt32(0).ToString(),dr.GetString(2),dr.GetDecimal(5).ToString("0.##"),txt_quantity.Texts);
+                fpnl_detail.Controls.Add(uct);
 
+                cbb_bookid.Items.RemoveAt(cbb_bookid.SelectedIndex);
+                cbb_bookname.Items.RemoveAt(cbb_bookname.SelectedIndex);
+                txt_quantity.Texts = "";
             }
-
             sqlCon.Close();
         }
     }
