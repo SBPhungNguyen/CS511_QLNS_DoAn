@@ -18,7 +18,7 @@ namespace CS511_Project_QLNS
         SqlConnection sqlCon;
         SqlCommand cmd;
 
-        public string[] book_info = new string[400];                 //id,title,price,quantity
+        public string[] book_info = new string[400];                 //id*title*price*quantity
         public int book_count;
         public Emp_ImportAdd(Form2 form)
         {
