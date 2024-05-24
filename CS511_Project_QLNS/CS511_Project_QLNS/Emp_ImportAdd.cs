@@ -177,5 +177,12 @@ namespace CS511_Project_QLNS
                 return;
             lbl_sumprice.Text = string.Format("{0:#,###}", long.Parse(lbl_sumprice.Text));
         }
+
+        private void btn_buy_Click(object sender, EventArgs e)
+        {
+            // this is to save the receipt
+            // this is to save the receipt details
+            // this is to enhance the books imported
+        }
     }
 }

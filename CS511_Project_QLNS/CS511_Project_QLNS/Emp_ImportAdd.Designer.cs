@@ -133,6 +133,7 @@
             this.btn_buy.Text = "Purchase";
             this.btn_buy.TextColor = System.Drawing.Color.White;
             this.btn_buy.UseVisualStyleBackColor = false;
+            this.btn_buy.Click += new System.EventHandler(this.btn_buy_Click);
             // 
             // lbl_sumprice
             // 
