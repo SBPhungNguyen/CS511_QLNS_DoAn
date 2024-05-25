@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
 using System.Windows.Forms;
+using System.Net.Http.Headers;
 
 namespace CS511_Project_QLNS
 {
@@ -180,9 +181,83 @@ namespace CS511_Project_QLNS
 
         private void btn_buy_Click(object sender, EventArgs e)
         {
+            if (lbl_sumprice.Text == "0")
+            {
+                MessageBox.Show("Please choose some products", "Opps");
+                return;
+            }
             // this is to save the receipt
+            if (sqlCon.State == ConnectionState.Closed) {  sqlCon.Open(); }
+
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Clear();
+            cmd.CommandText = "INSERT INTO TBL_EMP_IMPORT (E_DATE, EMP_ID, EMP_NAME, TOTAL) VALUES (@date, @emp_id, @emp_name, @total)";
+            cmd.Parameters.AddWithValue("@date",lbl_date.Text);
+            cmd.Parameters.AddWithValue("@emp_id",parent_form.emp_id);
+            cmd.Parameters.AddWithValue("@emp_name", lbl_em_name.Text);
+            cmd.Parameters.AddWithValue("@total",decimal.Parse(sum_total.ToString()));
+            //cmd.ExecuteNonQuery();
+
+            //this is to get the current import ID
+            cmd = new SqlCommand();
+            cmd.Connection= sqlCon;
+            cmd.CommandType= CommandType.Text;
+            cmd.CommandText = "SELECT MAX(ID) FROM TBL_EMP_IMPORT";
+            int imp_id = (int)cmd.ExecuteScalar();
+
             // this is to save the receipt details
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "INSERT INTO TBL_IMP_DETAIL (ID_IMP, ID_BOOK, BOOK_NAME, PRICE, QUANTITY, TOTAL) VALUES (@id, @id_book, @bookname, @price, @quan, @total)";
+            for (int i=0;i<book_count;i++)
+            {
+                string[] split_line = book_info[i].Split('*');
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", imp_id);
+                cmd.Parameters.AddWithValue("@id_book", int.Parse(split_line[0]));
+                cmd.Parameters.AddWithValue("@bookname", split_line[1]);
+                cmd.Parameters.AddWithValue("@price", decimal.Parse(split_line[2]));
+                cmd.Parameters.AddWithValue("@quan", int.Parse(split_line[3]));
+                long total = long.Parse(split_line[2]) * long.Parse(split_line[3]);
+                cmd.Parameters.AddWithValue("@total", total);
+                //cmd.ExecuteNonQuery();
+            }
+
             // this is to enhance the books imported
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType= CommandType.Text;
+            cmd.Parameters.Clear();
+            cmd.CommandText = "UPDATE TBL_BOOK SET QUANTITY = @quan WHERE ID = @id";
+            
+            for (int i=0;i<book_count; i++)
+            {
+                string[] split_line = book_info[i].Split('*');
+                cmd.Parameters.Clear();
+
+                SqlCommand cmd2 = new SqlCommand();
+                cmd2.Connection = sqlCon;
+                cmd2.CommandType = CommandType.Text;
+                cmd2.CommandText = "SELECT * FROM TBL_BOOK WHERE ID = @id";
+                cmd2.Parameters.Clear();
+                cmd2.Parameters.AddWithValue("@id", int.Parse(split_line[0]));
+                SqlDataReader dr = cmd2.ExecuteReader();
+                if (dr.Read())
+                {
+                    int current = dr.GetInt32(8);
+                    int more = int.Parse(split_line[3]);
+                    int sum_quan = current + more;
+                    cmd.Parameters.AddWithValue("@quan", sum_quan);
+                    cmd.Parameters.AddWithValue("@id", int.Parse(split_line[0]));
+                    cmd.ExecuteNonQuery();
+                }
+                dr.Close();            
+            }
+
+            sqlCon.Close();
         }
     }
 }
