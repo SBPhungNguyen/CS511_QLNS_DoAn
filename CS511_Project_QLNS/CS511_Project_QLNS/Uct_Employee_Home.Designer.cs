@@ -96,13 +96,13 @@
             this.txt_search.BorderSize = 2;
             this.txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_search.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_search.Location = new System.Drawing.Point(141, 4);
+            this.txt_search.Location = new System.Drawing.Point(124, 4);
             this.txt_search.Margin = new System.Windows.Forms.Padding(4);
             this.txt_search.Multiline = false;
             this.txt_search.Name = "txt_search";
             this.txt_search.Padding = new System.Windows.Forms.Padding(7);
             this.txt_search.PasswordChar = false;
-            this.txt_search.Size = new System.Drawing.Size(229, 35);
+            this.txt_search.Size = new System.Drawing.Size(245, 35);
             this.txt_search.TabIndex = 7;
             this.txt_search.Texts = "";
             this.txt_search.UnderlineStyle = true;
@@ -118,7 +118,7 @@
             "Author"});
             this.cbb_type.Location = new System.Drawing.Point(12, 9);
             this.cbb_type.Name = "cbb_type";
-            this.cbb_type.Size = new System.Drawing.Size(121, 26);
+            this.cbb_type.Size = new System.Drawing.Size(100, 26);
             this.cbb_type.TabIndex = 6;
             // 
             // ptb_Search

@@ -23,6 +23,7 @@ namespace CS511_Project_QLNS
             fpnl_import.AutoScroll = true;
 
             sqlCon = new SqlConnection(co.connect);
+            cbb_type.SelectedIndex = 0;
             LoadData();
         }
 
@@ -76,6 +77,102 @@ namespace CS511_Project_QLNS
                 GC.Collect();
             }
             fpnl_import.ResumeLayout();
+        }
+
+        private void ptb_Search_Click(object sender, EventArgs e)
+        {
+            if (txt_search.Texts == "")
+            {
+                MessageBox.Show("Please enter the value you wish to search", "Opps");
+                return;
+            }
+            ClearFlowPanel();
+            if (cbb_type.SelectedIndex == 0)
+            {
+                if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+                cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT * FROM TBL_EMP_IMPORT";
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    string[] split_line1 = dr.GetDateTime(1).ToString().Split(' ');
+                    if (dr.GetInt32(0).ToString().ToLower().Contains(txt_search.Texts.ToLower()) || dr.GetString(3).ToLower().Contains(txt_search.Texts.ToLower()) || split_line1[0].ToLower().Contains(txt_search.Texts.ToLower()))
+                    {
+                        Uct_Emp_Import imp = new Uct_Emp_Import();
+                        string[] split_line = dr.GetDateTime(1).ToString().Split(' ');
+                        imp.LoadData(dr.GetInt32(0), dr.GetString(3), split_line[0], string.Format("{0:#,###}", int.Parse(dr.GetDecimal(4).ToString("0.##"))));
+                        fpnl_import.Controls.Add(imp);
+                    }
+                }
+                dr.Close();
+                sqlCon.Close();
+            }
+            else if (cbb_type.SelectedIndex == 1)
+            {
+                if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+                cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT * FROM TBL_EMP_IMPORT";
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    if (dr.GetInt32(0).ToString().ToLower().Contains(txt_search.Texts.ToLower()))
+                    {
+                        Uct_Emp_Import imp = new Uct_Emp_Import();
+                        string[] split_line = dr.GetDateTime(1).ToString().Split(' ');
+                        imp.LoadData(dr.GetInt32(0), dr.GetString(3), split_line[0], string.Format("{0:#,###}", int.Parse(dr.GetDecimal(4).ToString("0.##"))));
+                        fpnl_import.Controls.Add(imp);
+                    }
+                }
+                dr.Close();
+                sqlCon.Close();
+            }
+            else if (cbb_type.SelectedIndex == 2)
+            {
+                if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+                cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT * FROM TBL_EMP_IMPORT";
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    if (dr.GetString(3).ToLower().Contains(txt_search.Texts.ToLower()))
+                    {
+                        Uct_Emp_Import imp = new Uct_Emp_Import();
+                        string[] split_line = dr.GetDateTime(1).ToString().Split(' ');
+                        imp.LoadData(dr.GetInt32(0), dr.GetString(3), split_line[0], string.Format("{0:#,###}", int.Parse(dr.GetDecimal(4).ToString("0.##"))));
+                        fpnl_import.Controls.Add(imp);
+                    }
+                }
+                dr.Close();
+                sqlCon.Close();
+            }
+            else
+            {
+                if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+                cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT * FROM TBL_EMP_IMPORT";
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    string[] split_line1 = dr.GetDateTime(1).ToString().Split(' ');
+                    if (split_line1[0].ToLower().Contains(txt_search.Texts.ToLower()))
+                    {
+                        Uct_Emp_Import imp = new Uct_Emp_Import();
+                        string[] split_line = dr.GetDateTime(1).ToString().Split(' ');
+                        imp.LoadData(dr.GetInt32(0), dr.GetString(3), split_line[0], string.Format("{0:#,###}", int.Parse(dr.GetDecimal(4).ToString("0.##"))));
+                        fpnl_import.Controls.Add(imp);
+                    }
+                }
+                dr.Close();
+                sqlCon.Close();
+            }
         }
     }
 }
