@@ -51,6 +51,7 @@ namespace CS511_Project_QLNS
                 lbl_em_name.Text = dr.GetString(2);
                 lbl_code.Text = dr.GetInt32(0).ToString();
             }
+            dr.Close();
             sqlCon.Close();
 
             LoadBookIdCBB();
@@ -69,6 +70,7 @@ namespace CS511_Project_QLNS
             {
                 cbb_bookid.Items.Add(dr.GetInt32(0));
             }
+            dr.Close();
             sqlCon.Close();
         }
         public void LoadBookNameCBB()
@@ -84,6 +86,7 @@ namespace CS511_Project_QLNS
             {
                 cbb_bookname.Items.Add(dr.GetString(0));
             }
+            dr.Close();
             sqlCon.Close();
         }
 
@@ -153,6 +156,7 @@ namespace CS511_Project_QLNS
                 cbb_bookname.Items.RemoveAt(cbb_bookname.SelectedIndex);
                 txt_quantity.Texts = "";
             }
+            dr.Close();
             sqlCon.Close();
             CalcualteTotal();
             Format_Sum();
@@ -186,9 +190,10 @@ namespace CS511_Project_QLNS
                 MessageBox.Show("Please choose some products", "Opps");
                 return;
             }
-            // this is to save the receipt
+
             if (sqlCon.State == ConnectionState.Closed) {  sqlCon.Open(); }
 
+            // this is to save the receipt
             cmd = new SqlCommand();
             cmd.Connection = sqlCon;
             cmd.CommandType = CommandType.Text;
@@ -197,8 +202,8 @@ namespace CS511_Project_QLNS
             cmd.Parameters.AddWithValue("@date",lbl_date.Text);
             cmd.Parameters.AddWithValue("@emp_id",parent_form.emp_id);
             cmd.Parameters.AddWithValue("@emp_name", lbl_em_name.Text);
-            cmd.Parameters.AddWithValue("@total",decimal.Parse(sum_total.ToString()));
-            //cmd.ExecuteNonQuery();
+            cmd.Parameters.AddWithValue("@total", int.Parse(sum_total.ToString()));
+            cmd.ExecuteNonQuery();
 
             //this is to get the current import ID
             cmd = new SqlCommand();
@@ -223,20 +228,15 @@ namespace CS511_Project_QLNS
                 cmd.Parameters.AddWithValue("@quan", int.Parse(split_line[3]));
                 long total = long.Parse(split_line[2]) * long.Parse(split_line[3]);
                 cmd.Parameters.AddWithValue("@total", total);
-                //cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
             }
 
-            // this is to enhance the books imported
-            cmd = new SqlCommand();
-            cmd.Connection = sqlCon;
-            cmd.CommandType= CommandType.Text;
-            cmd.Parameters.Clear();
-            cmd.CommandText = "UPDATE TBL_BOOK SET QUANTITY = @quan WHERE ID = @id";
+            // this is to enhance the number of books imported
+
             
             for (int i=0;i<book_count; i++)
             {
                 string[] split_line = book_info[i].Split('*');
-                cmd.Parameters.Clear();
 
                 SqlCommand cmd2 = new SqlCommand();
                 cmd2.Connection = sqlCon;
@@ -247,8 +247,15 @@ namespace CS511_Project_QLNS
                 SqlDataReader dr = cmd2.ExecuteReader();
                 if (dr.Read())
                 {
+                    cmd = new SqlCommand();
+                    cmd.Connection = sqlCon;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.Clear();
+                    cmd.CommandText = "UPDATE TBL_BOOK SET QUANTITY = @quan WHERE ID = @id";
                     int current = dr.GetInt32(8);
                     int more = int.Parse(split_line[3]);
+                    dr.Close();
+
                     int sum_quan = current + more;
                     cmd.Parameters.AddWithValue("@quan", sum_quan);
                     cmd.Parameters.AddWithValue("@id", int.Parse(split_line[0]));
@@ -258,6 +265,8 @@ namespace CS511_Project_QLNS
             }
 
             sqlCon.Close();
+
+            MessageBox.Show("Import books successfully", "Notification");
         }
     }
 }
