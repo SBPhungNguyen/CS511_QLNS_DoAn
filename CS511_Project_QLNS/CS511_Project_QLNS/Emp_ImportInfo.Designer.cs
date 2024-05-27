@@ -235,7 +235,7 @@
             this.customPanel4.Location = new System.Drawing.Point(40, 46);
             this.customPanel4.Name = "customPanel4";
             this.customPanel4.Radius = 5;
-            this.customPanel4.Size = new System.Drawing.Size(1181, 45);
+            this.customPanel4.Size = new System.Drawing.Size(1175, 45);
             this.customPanel4.TabIndex = 54;
             this.customPanel4.Thickness = 2F;
             // 

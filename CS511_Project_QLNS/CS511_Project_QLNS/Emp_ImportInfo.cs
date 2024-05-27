@@ -53,7 +53,9 @@ namespace CS511_Project_QLNS
             SqlDataReader dr2 = cmd.ExecuteReader();
             while (dr2.Read())
             {
-                //havent done as foor not having UI
+                Uct_Emp_Detail imp_detail = new Uct_Emp_Detail();
+                imp_detail.LoadData(dr2.GetInt32(1), dr2.GetString(2), string.Format("{0:#,###}", int.Parse(dr2.GetDecimal(3).ToString("0.##"))), dr2.GetInt32(4).ToString(), string.Format("{0:#,###}", int.Parse(dr2.GetDecimal(5).ToString("0.##"))));
+                fpnl_detail.Controls.Add(imp_detail);
 
             }
             dr2.Close();
