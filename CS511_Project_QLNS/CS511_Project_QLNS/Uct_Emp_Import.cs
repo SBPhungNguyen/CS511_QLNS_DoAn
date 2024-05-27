@@ -16,5 +16,12 @@ namespace CS511_Project_QLNS
         {
             InitializeComponent();
         }
+        public void LoadData(int id, string name, string date, string money)
+        {
+            lbl_id.Text = id.ToString();
+            lbl_name.Text = name;
+            lbl_date.Text = date;    
+            lbl_sum.Text = money;
+        }
     }
 }

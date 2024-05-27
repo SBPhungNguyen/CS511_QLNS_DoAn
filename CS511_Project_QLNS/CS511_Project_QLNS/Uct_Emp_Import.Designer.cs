@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_id = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -37,13 +38,12 @@
             this.lbl_sum = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_name = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.customPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // customPanel1
@@ -62,12 +62,22 @@
             this.customPanel1.TabIndex = 2;
             this.customPanel1.Thickness = 0F;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_bin__2_;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(884, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.lbl_id);
-            this.panel2.Location = new System.Drawing.Point(40, 18);
+            this.panel2.Location = new System.Drawing.Point(10, 18);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(148, 39);
+            this.panel2.Size = new System.Drawing.Size(133, 39);
             this.panel2.TabIndex = 12;
             // 
             // lbl_id
@@ -76,7 +86,7 @@
             this.lbl_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_id.Location = new System.Drawing.Point(0, 0);
             this.lbl_id.Name = "lbl_id";
-            this.lbl_id.Size = new System.Drawing.Size(148, 39);
+            this.lbl_id.Size = new System.Drawing.Size(133, 39);
             this.lbl_id.TabIndex = 6;
             this.lbl_id.Text = "id";
             this.lbl_id.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -84,7 +94,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.lbl_date);
-            this.panel3.Location = new System.Drawing.Point(521, 18);
+            this.panel3.Location = new System.Drawing.Point(500, 18);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(148, 39);
             this.panel3.TabIndex = 11;
@@ -103,7 +113,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.lbl_sum);
-            this.panel4.Location = new System.Drawing.Point(715, 18);
+            this.panel4.Location = new System.Drawing.Point(705, 18);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(148, 39);
             this.panel4.TabIndex = 10;
@@ -122,7 +132,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.lbl_name);
-            this.panel1.Location = new System.Drawing.Point(236, 11);
+            this.panel1.Location = new System.Drawing.Point(204, 11);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(233, 53);
             this.panel1.TabIndex = 5;
@@ -138,16 +148,6 @@
             this.lbl_name.Text = "Name";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_bin__2_;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(884, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
             // Uct_Emp_Import
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -156,11 +156,11 @@
             this.Name = "Uct_Emp_Import";
             this.Size = new System.Drawing.Size(940, 80);
             this.customPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

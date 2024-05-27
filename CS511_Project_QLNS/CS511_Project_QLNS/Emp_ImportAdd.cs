@@ -267,6 +267,54 @@ namespace CS511_Project_QLNS
             sqlCon.Close();
 
             MessageBox.Show("Import books successfully", "Notification");
+            ClearFlowPanel();
+
+            ReloadAfterPurchase();
+        }
+        //this is the same with load initial
+        public void ReloadAfterPurchase()
+        {
+            book_count = 0;
+
+            sum_total = 0;
+
+            lbl_date.Text = DateTime.Now.Date.ToString("yyyy-MM-dd");
+
+            //get emp info
+            sqlCon = new SqlConnection(co.connect);
+            if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM TBL_EMP WHERE ID = " + parent_form.emp_id;
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                lbl_em_name.Text = dr.GetString(2);
+                lbl_code.Text = dr.GetInt32(0).ToString();
+            }
+            dr.Close();
+            sqlCon.Close();
+
+            LoadBookIdCBB();
+            LoadBookNameCBB();
+        }
+
+        //Clear the flow panel before loading new ele
+        public void ClearFlowPanel()
+        {
+            fpnl_detail.SuspendLayout();
+
+            if (fpnl_detail.Controls.Count > 0)
+            {
+                for (int i = (fpnl_detail.Controls.Count - 1); i >= 0; i--)
+                {
+                    Control c = fpnl_detail.Controls[i];
+                    c.Dispose();
+                }
+                GC.Collect();
+            }
+            fpnl_detail.ResumeLayout();
         }
     }
 }
