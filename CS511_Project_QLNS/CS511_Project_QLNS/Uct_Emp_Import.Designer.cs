@@ -61,6 +61,7 @@
             this.customPanel1.Size = new System.Drawing.Size(940, 74);
             this.customPanel1.TabIndex = 2;
             this.customPanel1.Thickness = 0F;
+            this.customPanel1.Click += new System.EventHandler(this.customPanel1_Click);
             // 
             // pictureBox1
             // 
@@ -90,6 +91,7 @@
             this.lbl_id.TabIndex = 6;
             this.lbl_id.Text = "id";
             this.lbl_id.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_id.Click += new System.EventHandler(this.lbl_id_Click);
             // 
             // panel3
             // 
@@ -109,6 +111,7 @@
             this.lbl_date.TabIndex = 6;
             this.lbl_date.Text = "Date";
             this.lbl_date.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_date.Click += new System.EventHandler(this.lbl_date_Click);
             // 
             // panel4
             // 
@@ -128,6 +131,7 @@
             this.lbl_sum.TabIndex = 6;
             this.lbl_sum.Text = "Sum";
             this.lbl_sum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_sum.Click += new System.EventHandler(this.lbl_sum_Click);
             // 
             // panel1
             // 
@@ -147,6 +151,7 @@
             this.lbl_name.TabIndex = 6;
             this.lbl_name.Text = "Name";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_name.Click += new System.EventHandler(this.lbl_name_Click);
             // 
             // Uct_Emp_Import
             // 
@@ -155,6 +160,7 @@
             this.Controls.Add(this.customPanel1);
             this.Name = "Uct_Emp_Import";
             this.Size = new System.Drawing.Size(940, 80);
+            this.Click += new System.EventHandler(this.Uct_Emp_Import_Click);
             this.customPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);

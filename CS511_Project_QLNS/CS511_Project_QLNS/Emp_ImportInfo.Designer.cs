@@ -74,6 +74,9 @@
             this.btn_exit.Size = new System.Drawing.Size(30, 30);
             this.btn_exit.TabIndex = 18;
             this.btn_exit.TabStop = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.btn_exit.MouseEnter += new System.EventHandler(this.btn_exit_MouseEnter);
+            this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
             // 
             // customPanel1
             // 
@@ -191,7 +194,7 @@
             // 
             // fpnl_detail
             // 
-            this.fpnl_detail.Location = new System.Drawing.Point(23, 101);
+            this.fpnl_detail.Location = new System.Drawing.Point(37, 101);
             this.fpnl_detail.Name = "fpnl_detail";
             this.fpnl_detail.Size = new System.Drawing.Size(1214, 395);
             this.fpnl_detail.TabIndex = 55;
@@ -205,10 +208,10 @@
             this.customPanel4.Controls.Add(this.label12);
             this.customPanel4.Controls.Add(this.label13);
             this.customPanel4.Controls.Add(this.label14);
-            this.customPanel4.Location = new System.Drawing.Point(26, 46);
+            this.customPanel4.Location = new System.Drawing.Point(40, 46);
             this.customPanel4.Name = "customPanel4";
             this.customPanel4.Radius = 5;
-            this.customPanel4.Size = new System.Drawing.Size(1177, 45);
+            this.customPanel4.Size = new System.Drawing.Size(1181, 45);
             this.customPanel4.TabIndex = 54;
             this.customPanel4.Thickness = 2F;
             // 
@@ -285,6 +288,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Emp_ImportInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Emp_ImportInfo";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();

@@ -23,5 +23,35 @@ namespace CS511_Project_QLNS
             lbl_date.Text = date;    
             lbl_sum.Text = money;
         }
+
+        private void Uct_Emp_Import_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("weeeeeeeeeeeee");
+        }
+
+        private void lbl_sum_Click(object sender, EventArgs e)
+        {
+            this.OnClick(null);
+        }
+
+        private void lbl_date_Click(object sender, EventArgs e)
+        {
+            this.OnClick(null);
+        }
+
+        private void lbl_name_Click(object sender, EventArgs e)
+        {
+            this.OnClick(null);
+        }
+
+        private void lbl_id_Click(object sender, EventArgs e)
+        {
+            this.OnClick(null);
+        }
+
+        private void customPanel1_Click(object sender, EventArgs e)
+        {
+            this.OnClick(null);
+        }
     }
 }
