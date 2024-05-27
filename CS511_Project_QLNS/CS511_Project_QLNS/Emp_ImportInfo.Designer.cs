@@ -176,9 +176,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(81, 52);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 22);
+            this.label4.Size = new System.Drawing.Size(96, 22);
             this.label4.TabIndex = 53;
-            this.label4.Text = "ID:";
+            this.label4.Text = "Import ID:";
             // 
             // label1
             // 

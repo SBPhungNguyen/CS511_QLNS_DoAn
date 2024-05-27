@@ -20,6 +20,8 @@ namespace CS511_Project_QLNS
         public Emp_ImportInfo(string id)
         {
             InitializeComponent();
+            fpnl_detail.AutoScroll = true;
+            fpnl_detail.WrapContents = true;
             this.id = id;
             sqlCon = new SqlConnection(co.connect);
 

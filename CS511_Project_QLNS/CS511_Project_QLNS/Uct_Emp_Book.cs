@@ -144,7 +144,7 @@ namespace CS511_Project_QLNS
 
         private void ptb_delete_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to remove this permanently", "Warning", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Do you wish to remove this permanently", "Warning", MessageBoxButtons.YesNo);
 
             if (result == DialogResult.Yes)
             {
