@@ -26,7 +26,8 @@ namespace CS511_Project_QLNS
 
         private void Uct_Emp_Import_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("weeeeeeeeeeeee");
+            Emp_ImportInfo emp_ImportInfo = new Emp_ImportInfo(lbl_id.Text);
+            emp_ImportInfo.ShowDialog();
         }
 
         private void lbl_sum_Click(object sender, EventArgs e)
