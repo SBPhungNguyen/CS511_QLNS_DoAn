@@ -48,3 +48,4 @@ D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\bin\Debug\Barcod
 D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\bin\Debug\QRCoder.dll
 D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\bin\Debug\AForge.Video.DirectShow.dll
 D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\bin\Debug\AForge.Video.dll
+D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_Project_QLNS.Uct_Emp_Detail.resources

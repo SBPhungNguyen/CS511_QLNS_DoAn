@@ -53,7 +53,7 @@ namespace CS511_Project_QLNS
             SqlDataReader dr2 = cmd.ExecuteReader();
             while (dr2.Read())
             {
-                //havent done
+                //havent done as foor not having UI
 
             }
             dr2.Close();
