@@ -134,6 +134,11 @@ namespace CS511_Project_QLNS
                 MessageBox.Show("Please enter the amount of books", "Opps");
                 return;
             }
+            if (txt_quantity.Texts == "0")
+            {
+                MessageBox.Show("The amount of book cannot be 0", "Opps");
+                return;
+            }
             if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
             cmd = new SqlCommand();
             cmd.Connection = sqlCon;
