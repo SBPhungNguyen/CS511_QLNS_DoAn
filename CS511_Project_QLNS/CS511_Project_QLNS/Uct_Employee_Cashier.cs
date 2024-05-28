@@ -56,15 +56,36 @@ namespace CS511_Project_QLNS
             dr.Close();
             sqlCon.Close();
         }
+        public void LoadDataWithCate(string cate)
+        {
+            if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM TBL_EMP WHERE E_ROLE = @cate";
+            cmd.Parameters.AddWithValue("@cate", cate);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                Uct_Emp_Cashier uct = new Uct_Emp_Cashier();
+                Image img = System.Drawing.Image.FromFile(pic_dir + dr.GetString(1) + ".png");
+                uct.LoadData(dr.GetInt32(0), img, dr.GetString(2), dr.GetString(5));
+                fpnl_emp.Controls.Add(uct);
+            }
+            dr.Close();
+            sqlCon.Close();
+        }
 
         private void btn_all_Click(object sender, EventArgs e)
         {
             if (is_displayed_button == 0)
                 return;
             is_displayed_button = 0;
+            ClearFlowPanel();
             btn_all.BackColor = color_btn_cate_chosen;
             btn_cat1.BackColor = color_btn_cate_normal;
             btn_cat2.BackColor = color_btn_cate_normal;
+            LoadData();
         }
 
         private void btn_cat1_Click(object sender, EventArgs e)
@@ -86,6 +107,23 @@ namespace CS511_Project_QLNS
             btn_all.BackColor = color_btn_cate_normal;
             btn_cat1.BackColor = color_btn_cate_normal;
             btn_cat2.BackColor = color_btn_cate_chosen;
+        }
+
+        //Clear the flow panel before loading new ele
+        public void ClearFlowPanel()
+        {
+            fpnl_emp.SuspendLayout();
+
+            if (fpnl_emp.Controls.Count > 0)
+            {
+                for (int i = (fpnl_emp.Controls.Count - 1); i >= 0; i--)
+                {
+                    Control c = fpnl_emp.Controls[i];
+                    c.Dispose();
+                }
+                GC.Collect();
+            }
+            fpnl_emp.ResumeLayout();
         }
     }
 }
