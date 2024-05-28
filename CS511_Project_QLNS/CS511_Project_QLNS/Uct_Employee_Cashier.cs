@@ -34,6 +34,8 @@ namespace CS511_Project_QLNS
             btn_cat1.BackColor = color_btn_cate_normal;
             btn_cat2.BackColor = color_btn_cate_normal;
 
+            cbb_type.SelectedIndex = 0;
+
             LoadData();
         }
         public void LoadData()
