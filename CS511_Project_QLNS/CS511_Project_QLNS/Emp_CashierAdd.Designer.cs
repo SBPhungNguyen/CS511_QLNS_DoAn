@@ -174,9 +174,9 @@
             // 
             this.ptb_img.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptb_img.BackgroundImage")));
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(207, 113);
+            this.ptb_img.Location = new System.Drawing.Point(180, 113);
             this.ptb_img.Name = "ptb_img";
-            this.ptb_img.Size = new System.Drawing.Size(188, 241);
+            this.ptb_img.Size = new System.Drawing.Size(241, 241);
             this.ptb_img.TabIndex = 52;
             this.ptb_img.TabStop = false;
             // 

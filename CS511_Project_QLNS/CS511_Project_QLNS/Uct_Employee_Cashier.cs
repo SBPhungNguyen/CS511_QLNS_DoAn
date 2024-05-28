@@ -129,5 +129,15 @@ namespace CS511_Project_QLNS
             }
             fpnl_emp.ResumeLayout();
         }
+
+        private void customButton1_Click(object sender, EventArgs e)
+        {
+            Form2 parent = this.Parent as Form2;
+            Emp_CashierAdd emp = new Emp_CashierAdd();
+            parent.Hide();
+            emp.ShowDialog();
+
+            parent.Show();
+        }
     }
 }

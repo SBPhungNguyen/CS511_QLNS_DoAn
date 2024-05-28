@@ -174,9 +174,9 @@
             // 
             this.ptb_img.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_picture;
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(207, 113);
+            this.ptb_img.Location = new System.Drawing.Point(183, 113);
             this.ptb_img.Name = "ptb_img";
-            this.ptb_img.Size = new System.Drawing.Size(188, 241);
+            this.ptb_img.Size = new System.Drawing.Size(241, 241);
             this.ptb_img.TabIndex = 69;
             this.ptb_img.TabStop = false;
             // 
