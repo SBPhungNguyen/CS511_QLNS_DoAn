@@ -32,8 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_exit = new System.Windows.Forms.PictureBox();
             this.lbl_title = new System.Windows.Forms.Label();
-            this.lbl_id = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.radio_manager = new System.Windows.Forms.RadioButton();
             this.radio_cashier = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
@@ -86,31 +84,11 @@
             this.lbl_title.TabIndex = 50;
             this.lbl_title.Text = "EMPLOYEE ADD";
             // 
-            // lbl_id
-            // 
-            this.lbl_id.AutoSize = true;
-            this.lbl_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_id.Location = new System.Drawing.Point(242, 383);
-            this.lbl_id.Name = "lbl_id";
-            this.lbl_id.Size = new System.Drawing.Size(63, 22);
-            this.lbl_id.TabIndex = 60;
-            this.lbl_id.Text = "Code:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(79, 383);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 22);
-            this.label6.TabIndex = 59;
-            this.label6.Text = "ID:";
-            // 
             // radio_manager
             // 
             this.radio_manager.AutoSize = true;
             this.radio_manager.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radio_manager.Location = new System.Drawing.Point(246, 622);
+            this.radio_manager.Location = new System.Drawing.Point(246, 582);
             this.radio_manager.Name = "radio_manager";
             this.radio_manager.Size = new System.Drawing.Size(108, 26);
             this.radio_manager.TabIndex = 63;
@@ -122,7 +100,7 @@
             // 
             this.radio_cashier.AutoSize = true;
             this.radio_cashier.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radio_cashier.Location = new System.Drawing.Point(246, 579);
+            this.radio_cashier.Location = new System.Drawing.Point(246, 539);
             this.radio_cashier.Name = "radio_cashier";
             this.radio_cashier.Size = new System.Drawing.Size(118, 26);
             this.radio_cashier.TabIndex = 62;
@@ -134,7 +112,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(79, 579);
+            this.label2.Location = new System.Drawing.Point(79, 539);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 22);
             this.label2.TabIndex = 61;
@@ -144,7 +122,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(79, 528);
+            this.label5.Location = new System.Drawing.Point(79, 488);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(127, 22);
             this.label5.TabIndex = 56;
@@ -154,7 +132,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(79, 477);
+            this.label3.Location = new System.Drawing.Point(79, 437);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 22);
             this.label3.TabIndex = 54;
@@ -164,7 +142,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(79, 425);
+            this.label1.Location = new System.Drawing.Point(79, 385);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 22);
             this.label1.TabIndex = 53;
@@ -179,12 +157,13 @@
             this.ptb_img.Size = new System.Drawing.Size(241, 241);
             this.ptb_img.TabIndex = 52;
             this.ptb_img.TabStop = false;
+            this.ptb_img.Click += new System.EventHandler(this.ptb_img_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(79, 667);
+            this.label4.Location = new System.Drawing.Point(79, 627);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 22);
             this.label4.TabIndex = 67;
@@ -198,7 +177,7 @@
             this.uct_textbox3.BorderSize = 2;
             this.uct_textbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uct_textbox3.ForeColor = System.Drawing.Color.Black;
-            this.uct_textbox3.Location = new System.Drawing.Point(246, 660);
+            this.uct_textbox3.Location = new System.Drawing.Point(246, 620);
             this.uct_textbox3.Margin = new System.Windows.Forms.Padding(4);
             this.uct_textbox3.Multiline = false;
             this.uct_textbox3.Name = "uct_textbox3";
@@ -217,7 +196,7 @@
             this.uct_textbox2.BorderSize = 2;
             this.uct_textbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uct_textbox2.ForeColor = System.Drawing.Color.Black;
-            this.uct_textbox2.Location = new System.Drawing.Point(246, 521);
+            this.uct_textbox2.Location = new System.Drawing.Point(246, 481);
             this.uct_textbox2.Margin = new System.Windows.Forms.Padding(4);
             this.uct_textbox2.Multiline = false;
             this.uct_textbox2.Name = "uct_textbox2";
@@ -236,7 +215,7 @@
             this.uct_textbox1.BorderSize = 2;
             this.uct_textbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uct_textbox1.ForeColor = System.Drawing.Color.Black;
-            this.uct_textbox1.Location = new System.Drawing.Point(246, 469);
+            this.uct_textbox1.Location = new System.Drawing.Point(246, 429);
             this.uct_textbox1.Margin = new System.Windows.Forms.Padding(4);
             this.uct_textbox1.Multiline = false;
             this.uct_textbox1.Name = "uct_textbox1";
@@ -255,7 +234,7 @@
             this.txt_pass.BorderSize = 2;
             this.txt_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_pass.ForeColor = System.Drawing.Color.Black;
-            this.txt_pass.Location = new System.Drawing.Point(246, 416);
+            this.txt_pass.Location = new System.Drawing.Point(246, 376);
             this.txt_pass.Margin = new System.Windows.Forms.Padding(4);
             this.txt_pass.Multiline = false;
             this.txt_pass.Name = "txt_pass";
@@ -277,7 +256,7 @@
             this.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancel.ForeColor = System.Drawing.Color.Black;
-            this.btn_cancel.Location = new System.Drawing.Point(364, 736);
+            this.btn_cancel.Location = new System.Drawing.Point(364, 715);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(170, 40);
             this.btn_cancel.TabIndex = 83;
@@ -296,7 +275,7 @@
             this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_update.ForeColor = System.Drawing.Color.White;
-            this.btn_update.Location = new System.Drawing.Point(83, 736);
+            this.btn_update.Location = new System.Drawing.Point(83, 715);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(170, 40);
             this.btn_update.TabIndex = 82;
@@ -319,8 +298,6 @@
             this.Controls.Add(this.txt_pass);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_title);
-            this.Controls.Add(this.lbl_id);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.ptb_img);
             this.Controls.Add(this.radio_manager);
             this.Controls.Add(this.radio_cashier);
@@ -345,8 +322,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox btn_exit;
         private System.Windows.Forms.Label lbl_title;
-        private System.Windows.Forms.Label lbl_id;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox ptb_img;
         private System.Windows.Forms.RadioButton radio_manager;
         private System.Windows.Forms.RadioButton radio_cashier;
