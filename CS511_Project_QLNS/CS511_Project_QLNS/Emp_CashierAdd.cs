@@ -20,6 +20,11 @@ namespace CS511_Project_QLNS
         SqlCommand cmd;
         string pic_dir;
         int role_index;
+        public string b_date
+        {
+            get { return txt_bday.Texts; }
+            set { txt_bday.Texts = value;}
+        }
         public Emp_CashierAdd()
         {
             InitializeComponent();
@@ -33,6 +38,7 @@ namespace CS511_Project_QLNS
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
+            ptb_img.Dispose();
             this.Dispose();
             this.Close();
         }
@@ -84,6 +90,12 @@ namespace CS511_Project_QLNS
         {
             e.Handled = true;
 
+        }
+
+        private void ptb_hidden_Click(object sender, EventArgs e)
+        {
+            CalendarShow calendar = new CalendarShow();
+            calendar.ShowDialog();
         }
     }
 }

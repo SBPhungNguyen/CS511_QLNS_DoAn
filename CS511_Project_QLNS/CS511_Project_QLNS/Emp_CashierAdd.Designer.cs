@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Emp_CashierAdd));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_exit = new System.Windows.Forms.PictureBox();
             this.lbl_title = new System.Windows.Forms.Label();
             this.radio_manager = new System.Windows.Forms.RadioButton();
             this.radio_cashier = new System.Windows.Forms.RadioButton();
@@ -45,11 +46,10 @@
             this.txt_phone = new CS511_Project_QLNS.Uct_textbox();
             this.txt_name = new CS511_Project_QLNS.Uct_textbox();
             this.ptb_hidden = new System.Windows.Forms.PictureBox();
-            this.btn_exit = new System.Windows.Forms.PictureBox();
             this.ptb_img = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_hidden)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_hidden)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,6 +61,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(603, 40);
             this.panel1.TabIndex = 51;
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_exit.Location = new System.Drawing.Point(566, 5);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.TabIndex = 18;
+            this.btn_exit.TabStop = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.btn_exit.MouseEnter += new System.EventHandler(this.btn_exit_MouseEnter);
+            this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
             // 
             // lbl_title
             // 
@@ -273,19 +286,7 @@
             this.ptb_hidden.Size = new System.Drawing.Size(30, 30);
             this.ptb_hidden.TabIndex = 84;
             this.ptb_hidden.TabStop = false;
-            // 
-            // btn_exit
-            // 
-            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
-            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_exit.Location = new System.Drawing.Point(566, 5);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(30, 30);
-            this.btn_exit.TabIndex = 18;
-            this.btn_exit.TabStop = false;
-            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
-            this.btn_exit.MouseEnter += new System.EventHandler(this.btn_exit_MouseEnter);
-            this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
+            this.ptb_hidden.Click += new System.EventHandler(this.ptb_hidden_Click);
             // 
             // ptb_img
             // 
@@ -326,8 +327,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Emp_CashierAdd";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_hidden)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_hidden)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

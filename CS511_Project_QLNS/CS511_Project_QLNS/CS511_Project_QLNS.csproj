@@ -71,6 +71,12 @@
     <Compile Include="BookInfo.Designer.cs">
       <DependentUpon>BookInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalendarShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarShow.Designer.cs">
+      <DependentUpon>CalendarShow.cs</DependentUpon>
+    </Compile>
     <Compile Include="connection.cs" />
     <Compile Include="Emp_BookAdd.cs">
       <SubType>Form</SubType>
@@ -277,6 +283,9 @@
     </Compile>
     <EmbeddedResource Include="BookInfo.resx">
       <DependentUpon>BookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarShow.resx">
+      <DependentUpon>CalendarShow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Emp_BookAdd.resx">
       <DependentUpon>Emp_BookAdd.cs</DependentUpon>
