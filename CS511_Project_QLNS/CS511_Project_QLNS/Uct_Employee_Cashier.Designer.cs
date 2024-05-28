@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.fpnl_emp = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_cat2 = new CS511_Project_QLNS.View.CustomButton();
             this.btn_cat1 = new CS511_Project_QLNS.View.CustomButton();
             this.btn_all = new CS511_Project_QLNS.View.CustomButton();
@@ -41,13 +41,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptb_Search)).BeginInit();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // fpnl_emp
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 103);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(976, 556);
-            this.flowLayoutPanel1.TabIndex = 51;
+            this.fpnl_emp.Location = new System.Drawing.Point(1, 103);
+            this.fpnl_emp.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.fpnl_emp.Name = "fpnl_emp";
+            this.fpnl_emp.Size = new System.Drawing.Size(976, 556);
+            this.fpnl_emp.TabIndex = 51;
             // 
             // btn_cat2
             // 
@@ -193,7 +193,7 @@
             this.Controls.Add(this.btn_cat2);
             this.Controls.Add(this.btn_cat1);
             this.Controls.Add(this.btn_all);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.fpnl_emp);
             this.Controls.Add(this.customButton1);
             this.Controls.Add(this.customPanel1);
             this.Name = "Uct_Employee_Cashier";
@@ -211,7 +211,7 @@
         private Uct_textbox txt_search;
         private System.Windows.Forms.ComboBox cbb_type;
         private System.Windows.Forms.PictureBox ptb_Search;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel fpnl_emp;
         private View.CustomButton btn_cat2;
         private View.CustomButton btn_cat1;
         private View.CustomButton btn_all;

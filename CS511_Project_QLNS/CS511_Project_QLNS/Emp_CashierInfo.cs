@@ -12,9 +12,11 @@ namespace CS511_Project_QLNS
 {
     public partial class Emp_CashierInfo : Form
     {
-        public Emp_CashierInfo()
+        public int id;
+        public Emp_CashierInfo(int id)
         {
             InitializeComponent();
+            this.id = id;   
         }
 
         private void btn_exit_Click(object sender, EventArgs e)

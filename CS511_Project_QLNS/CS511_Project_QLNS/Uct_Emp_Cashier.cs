@@ -22,7 +22,37 @@ namespace CS511_Project_QLNS
             this.id = id;
             ptb_img.BackgroundImage = pic;
             lbl_name.Text = name;
-            lbl_role.Text = role;
+            if (role == "0")
+            {
+                lbl_role.Text = "Cashier";
+            }
+            else
+                lbl_role.Text = "Manager";
+        }
+
+        private void Uct_Emp_Cashier_Click(object sender, EventArgs e)
+        {
+            Form2 form = this.Parent.Parent.Parent as Form2;
+            Emp_CashierInfo emp = new Emp_CashierInfo(id);
+            form.Hide();
+
+            emp.ShowDialog();
+            form.Show();
+        }
+
+        private void ptb_img_Click(object sender, EventArgs e)
+        {
+            this.OnClick(null);
+        }
+
+        private void lbl_name_Click(object sender, EventArgs e)
+        {
+            this.OnClick(null);
+        }
+
+        private void lbl_role_Click(object sender, EventArgs e)
+        {
+            this.OnClick(null);
         }
     }
 }

@@ -33,6 +33,8 @@ namespace CS511_Project_QLNS
             btn_all.BackColor = color_btn_cate_chosen;
             btn_cat1.BackColor = color_btn_cate_normal;
             btn_cat2.BackColor = color_btn_cate_normal;
+
+            LoadData();
         }
         public void LoadData()
         {
@@ -44,7 +46,10 @@ namespace CS511_Project_QLNS
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-
+                Uct_Emp_Cashier uct = new Uct_Emp_Cashier();
+                Image img = System.Drawing.Image.FromFile( pic_dir + dr.GetString(1)+".png");
+                uct.LoadData(dr.GetInt32(0), img, dr.GetString(2), dr.GetString(5));
+                fpnl_emp.Controls.Add(uct);
             }
             dr.Close();
             sqlCon.Close();

@@ -51,11 +51,13 @@
             this.lbl_name.Size = new System.Drawing.Size(160, 53);
             this.lbl_name.TabIndex = 0;
             this.lbl_name.Text = "label1";
+            this.lbl_name.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbl_name.Click += new System.EventHandler(this.lbl_name_Click);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.lbl_role);
-            this.panel2.Location = new System.Drawing.Point(104, 112);
+            this.panel2.Location = new System.Drawing.Point(104, 101);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(160, 32);
             this.panel2.TabIndex = 16;
@@ -71,6 +73,7 @@
             this.lbl_role.TabIndex = 1;
             this.lbl_role.Text = "label2";
             this.lbl_role.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_role.Click += new System.EventHandler(this.lbl_role_Click);
             // 
             // ptb_update
             // 
@@ -85,7 +88,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.lbl_name);
-            this.panel1.Location = new System.Drawing.Point(104, 52);
+            this.panel1.Location = new System.Drawing.Point(108, 55);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(160, 53);
             this.panel1.TabIndex = 15;
@@ -103,11 +106,12 @@
             // ptb_img
             // 
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(8, 49);
+            this.ptb_img.Location = new System.Drawing.Point(13, 44);
             this.ptb_img.Name = "ptb_img";
             this.ptb_img.Size = new System.Drawing.Size(80, 95);
             this.ptb_img.TabIndex = 14;
             this.ptb_img.TabStop = false;
+            this.ptb_img.Click += new System.EventHandler(this.ptb_img_Click);
             // 
             // Uct_Emp_Cashier
             // 
@@ -122,6 +126,7 @@
             this.Margin = new System.Windows.Forms.Padding(0, 10, 35, 5);
             this.Name = "Uct_Emp_Cashier";
             this.Size = new System.Drawing.Size(280, 150);
+            this.Click += new System.EventHandler(this.Uct_Emp_Cashier_Click);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_update)).EndInit();
             this.panel1.ResumeLayout(false);
