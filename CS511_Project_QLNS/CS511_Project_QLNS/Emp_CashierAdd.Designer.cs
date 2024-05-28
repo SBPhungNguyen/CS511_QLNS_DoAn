@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Emp_CashierAdd));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_exit = new System.Windows.Forms.PictureBox();
             this.lbl_title = new System.Windows.Forms.Label();
             this.radio_manager = new System.Windows.Forms.RadioButton();
             this.radio_cashier = new System.Windows.Forms.RadioButton();
@@ -38,15 +37,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ptb_img = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.uct_textbox3 = new CS511_Project_QLNS.Uct_textbox();
-            this.uct_textbox2 = new CS511_Project_QLNS.Uct_textbox();
-            this.uct_textbox1 = new CS511_Project_QLNS.Uct_textbox();
-            this.txt_pass = new CS511_Project_QLNS.Uct_textbox();
             this.btn_cancel = new CS511_Project_QLNS.View.CustomButton();
-            this.btn_update = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_add = new CS511_Project_QLNS.View.CustomButton();
+            this.txt_pass = new CS511_Project_QLNS.Uct_textbox();
+            this.txt_bday = new CS511_Project_QLNS.Uct_textbox();
+            this.txt_phone = new CS511_Project_QLNS.Uct_textbox();
+            this.txt_name = new CS511_Project_QLNS.Uct_textbox();
+            this.ptb_hidden = new System.Windows.Forms.PictureBox();
+            this.btn_exit = new System.Windows.Forms.PictureBox();
+            this.ptb_img = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_hidden)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
             this.SuspendLayout();
@@ -59,19 +61,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(603, 40);
             this.panel1.TabIndex = 51;
-            // 
-            // btn_exit
-            // 
-            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
-            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_exit.Location = new System.Drawing.Point(566, 5);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(30, 30);
-            this.btn_exit.TabIndex = 18;
-            this.btn_exit.TabStop = false;
-            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
-            this.btn_exit.MouseEnter += new System.EventHandler(this.btn_exit_MouseEnter);
-            this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
             // 
             // lbl_title
             // 
@@ -95,6 +84,7 @@
             this.radio_manager.TabStop = true;
             this.radio_manager.Text = "Manager";
             this.radio_manager.UseVisualStyleBackColor = true;
+            this.radio_manager.CheckedChanged += new System.EventHandler(this.radio_manager_CheckedChanged);
             // 
             // radio_cashier
             // 
@@ -107,6 +97,7 @@
             this.radio_cashier.TabStop = true;
             this.radio_cashier.Text = "Employee";
             this.radio_cashier.UseVisualStyleBackColor = true;
+            this.radio_cashier.CheckedChanged += new System.EventHandler(this.radio_cashier_CheckedChanged);
             // 
             // label2
             // 
@@ -148,17 +139,6 @@
             this.label1.TabIndex = 53;
             this.label1.Text = "Name:";
             // 
-            // ptb_img
-            // 
-            this.ptb_img.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptb_img.BackgroundImage")));
-            this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(180, 113);
-            this.ptb_img.Name = "ptb_img";
-            this.ptb_img.Size = new System.Drawing.Size(241, 241);
-            this.ptb_img.TabIndex = 52;
-            this.ptb_img.TabStop = false;
-            this.ptb_img.Click += new System.EventHandler(this.ptb_img_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -168,82 +148,6 @@
             this.label4.Size = new System.Drawing.Size(103, 22);
             this.label4.TabIndex = 67;
             this.label4.Text = "Password:";
-            // 
-            // uct_textbox3
-            // 
-            this.uct_textbox3.BackColor = System.Drawing.SystemColors.Window;
-            this.uct_textbox3.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.uct_textbox3.BorderFocusColor = System.Drawing.Color.Green;
-            this.uct_textbox3.BorderSize = 2;
-            this.uct_textbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uct_textbox3.ForeColor = System.Drawing.Color.Black;
-            this.uct_textbox3.Location = new System.Drawing.Point(246, 620);
-            this.uct_textbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.uct_textbox3.Multiline = false;
-            this.uct_textbox3.Name = "uct_textbox3";
-            this.uct_textbox3.Padding = new System.Windows.Forms.Padding(7);
-            this.uct_textbox3.PasswordChar = false;
-            this.uct_textbox3.Size = new System.Drawing.Size(288, 35);
-            this.uct_textbox3.TabIndex = 68;
-            this.uct_textbox3.Texts = "";
-            this.uct_textbox3.UnderlineStyle = true;
-            // 
-            // uct_textbox2
-            // 
-            this.uct_textbox2.BackColor = System.Drawing.SystemColors.Window;
-            this.uct_textbox2.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.uct_textbox2.BorderFocusColor = System.Drawing.Color.Green;
-            this.uct_textbox2.BorderSize = 2;
-            this.uct_textbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uct_textbox2.ForeColor = System.Drawing.Color.Black;
-            this.uct_textbox2.Location = new System.Drawing.Point(246, 481);
-            this.uct_textbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.uct_textbox2.Multiline = false;
-            this.uct_textbox2.Name = "uct_textbox2";
-            this.uct_textbox2.Padding = new System.Windows.Forms.Padding(7);
-            this.uct_textbox2.PasswordChar = false;
-            this.uct_textbox2.Size = new System.Drawing.Size(288, 35);
-            this.uct_textbox2.TabIndex = 66;
-            this.uct_textbox2.Texts = "";
-            this.uct_textbox2.UnderlineStyle = true;
-            // 
-            // uct_textbox1
-            // 
-            this.uct_textbox1.BackColor = System.Drawing.SystemColors.Window;
-            this.uct_textbox1.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.uct_textbox1.BorderFocusColor = System.Drawing.Color.Green;
-            this.uct_textbox1.BorderSize = 2;
-            this.uct_textbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uct_textbox1.ForeColor = System.Drawing.Color.Black;
-            this.uct_textbox1.Location = new System.Drawing.Point(246, 429);
-            this.uct_textbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.uct_textbox1.Multiline = false;
-            this.uct_textbox1.Name = "uct_textbox1";
-            this.uct_textbox1.Padding = new System.Windows.Forms.Padding(7);
-            this.uct_textbox1.PasswordChar = false;
-            this.uct_textbox1.Size = new System.Drawing.Size(288, 35);
-            this.uct_textbox1.TabIndex = 65;
-            this.uct_textbox1.Texts = "";
-            this.uct_textbox1.UnderlineStyle = true;
-            // 
-            // txt_pass
-            // 
-            this.txt_pass.BackColor = System.Drawing.SystemColors.Window;
-            this.txt_pass.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.txt_pass.BorderFocusColor = System.Drawing.Color.Green;
-            this.txt_pass.BorderSize = 2;
-            this.txt_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pass.ForeColor = System.Drawing.Color.Black;
-            this.txt_pass.Location = new System.Drawing.Point(246, 376);
-            this.txt_pass.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_pass.Multiline = false;
-            this.txt_pass.Name = "txt_pass";
-            this.txt_pass.Padding = new System.Windows.Forms.Padding(7);
-            this.txt_pass.PasswordChar = false;
-            this.txt_pass.Size = new System.Drawing.Size(288, 35);
-            this.txt_pass.TabIndex = 64;
-            this.txt_pass.Texts = "";
-            this.txt_pass.UnderlineStyle = true;
             // 
             // btn_cancel
             // 
@@ -264,24 +168,135 @@
             this.btn_cancel.TextColor = System.Drawing.Color.Black;
             this.btn_cancel.UseVisualStyleBackColor = false;
             // 
-            // btn_update
+            // btn_add
             // 
-            this.btn_update.BackColor = System.Drawing.Color.Green;
-            this.btn_update.BackgroundColor = System.Drawing.Color.Green;
-            this.btn_update.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_update.BorderRadius = 20;
-            this.btn_update.BorderSize = 0;
-            this.btn_update.FlatAppearance.BorderSize = 0;
-            this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_update.ForeColor = System.Drawing.Color.White;
-            this.btn_update.Location = new System.Drawing.Point(83, 715);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(170, 40);
-            this.btn_update.TabIndex = 82;
-            this.btn_update.Text = "Add";
-            this.btn_update.TextColor = System.Drawing.Color.White;
-            this.btn_update.UseVisualStyleBackColor = false;
+            this.btn_add.BackColor = System.Drawing.Color.Green;
+            this.btn_add.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_add.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_add.BorderRadius = 20;
+            this.btn_add.BorderSize = 0;
+            this.btn_add.FlatAppearance.BorderSize = 0;
+            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.ForeColor = System.Drawing.Color.White;
+            this.btn_add.Location = new System.Drawing.Point(83, 715);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(170, 40);
+            this.btn_add.TabIndex = 82;
+            this.btn_add.Text = "Add";
+            this.btn_add.TextColor = System.Drawing.Color.White;
+            this.btn_add.UseVisualStyleBackColor = false;
+            // 
+            // txt_pass
+            // 
+            this.txt_pass.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_pass.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_pass.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_pass.BorderSize = 2;
+            this.txt_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pass.ForeColor = System.Drawing.Color.Black;
+            this.txt_pass.Location = new System.Drawing.Point(246, 620);
+            this.txt_pass.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_pass.Multiline = false;
+            this.txt_pass.Name = "txt_pass";
+            this.txt_pass.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_pass.PasswordChar = false;
+            this.txt_pass.Size = new System.Drawing.Size(288, 35);
+            this.txt_pass.TabIndex = 68;
+            this.txt_pass.Texts = "";
+            this.txt_pass.UnderlineStyle = true;
+            // 
+            // txt_bday
+            // 
+            this.txt_bday.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_bday.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_bday.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_bday.BorderSize = 2;
+            this.txt_bday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_bday.ForeColor = System.Drawing.Color.Black;
+            this.txt_bday.Location = new System.Drawing.Point(246, 481);
+            this.txt_bday.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_bday.Multiline = false;
+            this.txt_bday.Name = "txt_bday";
+            this.txt_bday.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_bday.PasswordChar = false;
+            this.txt_bday.Size = new System.Drawing.Size(288, 35);
+            this.txt_bday.TabIndex = 66;
+            this.txt_bday.Texts = "";
+            this.txt_bday.UnderlineStyle = true;
+            this.txt_bday.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_bday_KeyPress);
+            // 
+            // txt_phone
+            // 
+            this.txt_phone.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_phone.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_phone.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_phone.BorderSize = 2;
+            this.txt_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_phone.ForeColor = System.Drawing.Color.Black;
+            this.txt_phone.Location = new System.Drawing.Point(246, 429);
+            this.txt_phone.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_phone.Multiline = false;
+            this.txt_phone.Name = "txt_phone";
+            this.txt_phone.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_phone.PasswordChar = false;
+            this.txt_phone.Size = new System.Drawing.Size(288, 35);
+            this.txt_phone.TabIndex = 65;
+            this.txt_phone.Texts = "";
+            this.txt_phone.UnderlineStyle = true;
+            // 
+            // txt_name
+            // 
+            this.txt_name.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_name.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_name.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_name.BorderSize = 2;
+            this.txt_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_name.ForeColor = System.Drawing.Color.Black;
+            this.txt_name.Location = new System.Drawing.Point(246, 376);
+            this.txt_name.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_name.Multiline = false;
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_name.PasswordChar = false;
+            this.txt_name.Size = new System.Drawing.Size(288, 35);
+            this.txt_name.TabIndex = 64;
+            this.txt_name.Texts = "";
+            this.txt_name.UnderlineStyle = true;
+            // 
+            // ptb_hidden
+            // 
+            this.ptb_hidden.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_calendar;
+            this.ptb_hidden.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_hidden.Location = new System.Drawing.Point(504, 483);
+            this.ptb_hidden.Name = "ptb_hidden";
+            this.ptb_hidden.Size = new System.Drawing.Size(30, 30);
+            this.ptb_hidden.TabIndex = 84;
+            this.ptb_hidden.TabStop = false;
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_exit.Location = new System.Drawing.Point(566, 5);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.TabIndex = 18;
+            this.btn_exit.TabStop = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.btn_exit.MouseEnter += new System.EventHandler(this.btn_exit_MouseEnter);
+            this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
+            // 
+            // ptb_img
+            // 
+            this.ptb_img.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptb_img.BackgroundImage")));
+            this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_img.Location = new System.Drawing.Point(180, 113);
+            this.ptb_img.Name = "ptb_img";
+            this.ptb_img.Size = new System.Drawing.Size(241, 241);
+            this.ptb_img.TabIndex = 52;
+            this.ptb_img.TabStop = false;
+            this.ptb_img.Click += new System.EventHandler(this.ptb_img_Click);
             // 
             // Emp_CashierAdd
             // 
@@ -289,13 +304,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(600, 800);
+            this.Controls.Add(this.ptb_hidden);
             this.Controls.Add(this.btn_cancel);
-            this.Controls.Add(this.btn_update);
-            this.Controls.Add(this.uct_textbox3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.uct_textbox2);
-            this.Controls.Add(this.uct_textbox1);
+            this.Controls.Add(this.btn_add);
             this.Controls.Add(this.txt_pass);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txt_bday);
+            this.Controls.Add(this.txt_phone);
+            this.Controls.Add(this.txt_name);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.ptb_img);
@@ -310,6 +326,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Emp_CashierAdd";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_hidden)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).EndInit();
             this.ResumeLayout(false);
@@ -329,12 +346,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private Uct_textbox txt_name;
+        private Uct_textbox txt_phone;
+        private Uct_textbox txt_bday;
         private Uct_textbox txt_pass;
-        private Uct_textbox uct_textbox1;
-        private Uct_textbox uct_textbox2;
-        private Uct_textbox uct_textbox3;
         private System.Windows.Forms.Label label4;
         private View.CustomButton btn_cancel;
-        private View.CustomButton btn_update;
+        private View.CustomButton btn_add;
+        private System.Windows.Forms.PictureBox ptb_hidden;
     }
 }

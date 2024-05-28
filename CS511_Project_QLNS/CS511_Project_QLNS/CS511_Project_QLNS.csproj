@@ -473,5 +473,8 @@
   <ItemGroup>
     <None Include="Resources\icon_eye_close.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_calendar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

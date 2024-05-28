@@ -19,12 +19,16 @@ namespace CS511_Project_QLNS
         SqlConnection sqlCon;
         SqlCommand cmd;
         string pic_dir;
+        int role_index;
         public Emp_CashierAdd()
         {
             InitializeComponent();
             file = new FileInfo("icon_picture.png");
             sqlCon = new SqlConnection(co.connect);
             pic_dir = co.emp_dir;
+
+            role_index = 0;
+            radio_cashier.Checked = true;
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -54,6 +58,32 @@ namespace CS511_Project_QLNS
                 ptb_img.BackgroundImage = System.Drawing.Image.FromFile(dlg.FileName);
                 file = new FileInfo(dlg.FileName);
             }
+        }
+
+        private void radio_cashier_CheckedChanged(object sender, EventArgs e)
+        {
+            if (role_index == 1)
+            {
+                role_index = 0;
+                radio_manager.Checked = false;
+                radio_cashier.Checked = true;
+            }
+        }
+
+        private void radio_manager_CheckedChanged(object sender, EventArgs e)
+        {
+            if (role_index == 0)
+            {
+                role_index = 1;
+                radio_cashier.Checked = false;
+                radio_manager.Checked = true;
+            }
+        }
+
+        private void txt_bday_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+
         }
     }
 }
