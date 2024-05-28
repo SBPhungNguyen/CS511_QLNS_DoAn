@@ -107,7 +107,50 @@ namespace CS511_Project_QLNS
             }
             else
             {
+                //open sqlCon
+                if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
 
+                //add emp info into TBL_EMP (except for the pic)
+                cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Clear();
+                cmd.CommandText = "INSERT INTO TBL_EMP (E_NAME,PHONE,BDAY,E_ROLE,PWORD) VALUES(@name, @phone, @bday, @e_role, @pword)";
+                cmd.Parameters.AddWithValue("@name",txt_name.Texts);
+                cmd.Parameters.AddWithValue("@phone",txt_phone.Texts);
+                cmd.Parameters.AddWithValue("@bday",txt_bday.Texts);
+                cmd.Parameters.AddWithValue("@e_role", role_index);
+                cmd.Parameters.AddWithValue("@pword",txt_pass.Texts);
+                cmd.ExecuteNonQuery();
+
+                int id;
+                //get the nearest ID of the emp int TBL_EMP
+                cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Clear();
+                cmd.CommandText = "SELECT MAX(ID) FROM TBL_EMP";
+                id = (int)cmd.ExecuteScalar();
+
+                //copy pic to desired dir
+                file.CopyTo(pic_dir + id + ".png", true);
+
+                //update pic to TBL_EMP
+                cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Clear();
+                cmd.CommandText = "UPDATE TBL_EMP SET PIC = @pic WHERE ID = @id";
+                cmd.Parameters.AddWithValue("@pic", id);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Added successfully", "Notification");
+
+                //close connection
+                sqlCon.Close();
+
+                btn_exit_Click(sender, e);
             }
         }
     }
