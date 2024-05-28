@@ -199,6 +199,7 @@
             this.btn_add.Text = "Add";
             this.btn_add.TextColor = System.Drawing.Color.White;
             this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // txt_pass
             // 

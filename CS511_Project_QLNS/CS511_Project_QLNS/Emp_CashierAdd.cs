@@ -97,5 +97,18 @@ namespace CS511_Project_QLNS
             CalendarShow calendar = new CalendarShow(this);
             calendar.ShowDialog();
         }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            if (txt_name.Texts =="" || txt_bday.Texts =="" || txt_pass.Texts == ""||txt_phone.Texts =="")
+            {
+                MessageBox.Show("Please fill out all the blanks", "Opps");
+                return;
+            }
+            else
+            {
+
+            }
+        }
     }
 }
