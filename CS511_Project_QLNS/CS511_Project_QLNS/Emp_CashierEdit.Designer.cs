@@ -40,14 +40,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.uct_textbox2 = new CS511_Project_QLNS.Uct_textbox();
-            this.uct_textbox1 = new CS511_Project_QLNS.Uct_textbox();
-            this.txt_pass = new CS511_Project_QLNS.Uct_textbox();
             this.ptb_img = new System.Windows.Forms.PictureBox();
-            this.uct_textbox3 = new CS511_Project_QLNS.Uct_textbox();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_cancel = new CS511_Project_QLNS.View.CustomButton();
             this.btn_update = new CS511_Project_QLNS.View.CustomButton();
+            this.uct_textbox3 = new CS511_Project_QLNS.Uct_textbox();
+            this.uct_textbox2 = new CS511_Project_QLNS.Uct_textbox();
+            this.uct_textbox1 = new CS511_Project_QLNS.Uct_textbox();
+            this.txt_pass = new CS511_Project_QLNS.Uct_textbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
@@ -71,6 +71,9 @@
             this.btn_exit.Size = new System.Drawing.Size(30, 30);
             this.btn_exit.TabIndex = 18;
             this.btn_exit.TabStop = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.btn_exit.MouseEnter += new System.EventHandler(this.btn_exit_MouseEnter);
+            this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
             // 
             // lbl_title
             // 
@@ -167,6 +170,83 @@
             this.label1.TabIndex = 70;
             this.label1.Text = "Name:";
             // 
+            // ptb_img
+            // 
+            this.ptb_img.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_picture;
+            this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_img.Location = new System.Drawing.Point(207, 113);
+            this.ptb_img.Name = "ptb_img";
+            this.ptb_img.Size = new System.Drawing.Size(188, 241);
+            this.ptb_img.TabIndex = 69;
+            this.ptb_img.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(79, 672);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(103, 22);
+            this.label4.TabIndex = 81;
+            this.label4.Text = "Password:";
+            // 
+            // btn_cancel
+            // 
+            this.btn_cancel.BackColor = System.Drawing.Color.LightGray;
+            this.btn_cancel.BackgroundColor = System.Drawing.Color.LightGray;
+            this.btn_cancel.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_cancel.BorderRadius = 20;
+            this.btn_cancel.BorderSize = 1;
+            this.btn_cancel.FlatAppearance.BorderSize = 0;
+            this.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancel.ForeColor = System.Drawing.Color.Black;
+            this.btn_cancel.Location = new System.Drawing.Point(363, 728);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(170, 40);
+            this.btn_cancel.TabIndex = 84;
+            this.btn_cancel.Text = "Cancel";
+            this.btn_cancel.TextColor = System.Drawing.Color.Black;
+            this.btn_cancel.UseVisualStyleBackColor = false;
+            // 
+            // btn_update
+            // 
+            this.btn_update.BackColor = System.Drawing.Color.Green;
+            this.btn_update.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_update.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_update.BorderRadius = 20;
+            this.btn_update.BorderSize = 0;
+            this.btn_update.FlatAppearance.BorderSize = 0;
+            this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update.ForeColor = System.Drawing.Color.White;
+            this.btn_update.Location = new System.Drawing.Point(83, 728);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(170, 40);
+            this.btn_update.TabIndex = 83;
+            this.btn_update.Text = "Update";
+            this.btn_update.TextColor = System.Drawing.Color.White;
+            this.btn_update.UseVisualStyleBackColor = false;
+            // 
+            // uct_textbox3
+            // 
+            this.uct_textbox3.BackColor = System.Drawing.SystemColors.Window;
+            this.uct_textbox3.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.uct_textbox3.BorderFocusColor = System.Drawing.Color.Green;
+            this.uct_textbox3.BorderSize = 2;
+            this.uct_textbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uct_textbox3.ForeColor = System.Drawing.Color.Black;
+            this.uct_textbox3.Location = new System.Drawing.Point(246, 665);
+            this.uct_textbox3.Margin = new System.Windows.Forms.Padding(4);
+            this.uct_textbox3.Multiline = false;
+            this.uct_textbox3.Name = "uct_textbox3";
+            this.uct_textbox3.Padding = new System.Windows.Forms.Padding(7);
+            this.uct_textbox3.PasswordChar = false;
+            this.uct_textbox3.Size = new System.Drawing.Size(288, 35);
+            this.uct_textbox3.TabIndex = 82;
+            this.uct_textbox3.Texts = "";
+            this.uct_textbox3.UnderlineStyle = true;
+            // 
             // uct_textbox2
             // 
             this.uct_textbox2.BackColor = System.Drawing.SystemColors.Window;
@@ -223,83 +303,6 @@
             this.txt_pass.TabIndex = 78;
             this.txt_pass.Texts = "";
             this.txt_pass.UnderlineStyle = true;
-            // 
-            // ptb_img
-            // 
-            this.ptb_img.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_picture;
-            this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(207, 113);
-            this.ptb_img.Name = "ptb_img";
-            this.ptb_img.Size = new System.Drawing.Size(188, 241);
-            this.ptb_img.TabIndex = 69;
-            this.ptb_img.TabStop = false;
-            // 
-            // uct_textbox3
-            // 
-            this.uct_textbox3.BackColor = System.Drawing.SystemColors.Window;
-            this.uct_textbox3.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.uct_textbox3.BorderFocusColor = System.Drawing.Color.Green;
-            this.uct_textbox3.BorderSize = 2;
-            this.uct_textbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uct_textbox3.ForeColor = System.Drawing.Color.Black;
-            this.uct_textbox3.Location = new System.Drawing.Point(246, 665);
-            this.uct_textbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.uct_textbox3.Multiline = false;
-            this.uct_textbox3.Name = "uct_textbox3";
-            this.uct_textbox3.Padding = new System.Windows.Forms.Padding(7);
-            this.uct_textbox3.PasswordChar = false;
-            this.uct_textbox3.Size = new System.Drawing.Size(288, 35);
-            this.uct_textbox3.TabIndex = 82;
-            this.uct_textbox3.Texts = "";
-            this.uct_textbox3.UnderlineStyle = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(79, 672);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 22);
-            this.label4.TabIndex = 81;
-            this.label4.Text = "Password:";
-            // 
-            // btn_cancel
-            // 
-            this.btn_cancel.BackColor = System.Drawing.Color.LightGray;
-            this.btn_cancel.BackgroundColor = System.Drawing.Color.LightGray;
-            this.btn_cancel.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_cancel.BorderRadius = 20;
-            this.btn_cancel.BorderSize = 1;
-            this.btn_cancel.FlatAppearance.BorderSize = 0;
-            this.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancel.ForeColor = System.Drawing.Color.Black;
-            this.btn_cancel.Location = new System.Drawing.Point(363, 728);
-            this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(170, 40);
-            this.btn_cancel.TabIndex = 84;
-            this.btn_cancel.Text = "Cancel";
-            this.btn_cancel.TextColor = System.Drawing.Color.Black;
-            this.btn_cancel.UseVisualStyleBackColor = false;
-            // 
-            // btn_update
-            // 
-            this.btn_update.BackColor = System.Drawing.Color.Green;
-            this.btn_update.BackgroundColor = System.Drawing.Color.Green;
-            this.btn_update.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_update.BorderRadius = 20;
-            this.btn_update.BorderSize = 0;
-            this.btn_update.FlatAppearance.BorderSize = 0;
-            this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_update.ForeColor = System.Drawing.Color.White;
-            this.btn_update.Location = new System.Drawing.Point(83, 728);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(170, 40);
-            this.btn_update.TabIndex = 83;
-            this.btn_update.Text = "Update";
-            this.btn_update.TextColor = System.Drawing.Color.White;
-            this.btn_update.UseVisualStyleBackColor = false;
             // 
             // Emp_CashierEdit
             // 
