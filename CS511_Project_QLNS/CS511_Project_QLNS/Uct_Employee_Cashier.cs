@@ -93,9 +93,11 @@ namespace CS511_Project_QLNS
             if (is_displayed_button == 1)
                 return;
             is_displayed_button = 1;
+            ClearFlowPanel();
             btn_all.BackColor = color_btn_cate_normal;
             btn_cat1.BackColor = color_btn_cate_chosen;
             btn_cat2.BackColor = color_btn_cate_normal;
+            LoadDataWithCate("1");
 
         }
 
@@ -103,10 +105,12 @@ namespace CS511_Project_QLNS
         {
             if (is_displayed_button == 2)
                 return;
+            ClearFlowPanel();
             is_displayed_button = 2;
             btn_all.BackColor = color_btn_cate_normal;
             btn_cat1.BackColor = color_btn_cate_normal;
             btn_cat2.BackColor = color_btn_cate_chosen;
+            LoadDataWithCate("0");
         }
 
         //Clear the flow panel before loading new ele
