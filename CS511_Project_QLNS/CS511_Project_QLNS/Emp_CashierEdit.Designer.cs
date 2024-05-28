@@ -45,7 +45,7 @@
             this.btn_cancel = new CS511_Project_QLNS.View.CustomButton();
             this.btn_update = new CS511_Project_QLNS.View.CustomButton();
             this.uct_textbox3 = new CS511_Project_QLNS.Uct_textbox();
-            this.uct_textbox2 = new CS511_Project_QLNS.Uct_textbox();
+            this.txt_bday = new CS511_Project_QLNS.Uct_textbox();
             this.uct_textbox1 = new CS511_Project_QLNS.Uct_textbox();
             this.txt_pass = new CS511_Project_QLNS.Uct_textbox();
             this.panel1.SuspendLayout();
@@ -247,24 +247,24 @@
             this.uct_textbox3.Texts = "";
             this.uct_textbox3.UnderlineStyle = true;
             // 
-            // uct_textbox2
+            // txt_bday
             // 
-            this.uct_textbox2.BackColor = System.Drawing.SystemColors.Window;
-            this.uct_textbox2.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.uct_textbox2.BorderFocusColor = System.Drawing.Color.Green;
-            this.uct_textbox2.BorderSize = 2;
-            this.uct_textbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uct_textbox2.ForeColor = System.Drawing.Color.Black;
-            this.uct_textbox2.Location = new System.Drawing.Point(246, 519);
-            this.uct_textbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.uct_textbox2.Multiline = false;
-            this.uct_textbox2.Name = "uct_textbox2";
-            this.uct_textbox2.Padding = new System.Windows.Forms.Padding(7);
-            this.uct_textbox2.PasswordChar = false;
-            this.uct_textbox2.Size = new System.Drawing.Size(288, 35);
-            this.uct_textbox2.TabIndex = 80;
-            this.uct_textbox2.Texts = "";
-            this.uct_textbox2.UnderlineStyle = true;
+            this.txt_bday.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_bday.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_bday.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_bday.BorderSize = 2;
+            this.txt_bday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_bday.ForeColor = System.Drawing.Color.Black;
+            this.txt_bday.Location = new System.Drawing.Point(246, 519);
+            this.txt_bday.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_bday.Multiline = false;
+            this.txt_bday.Name = "txt_bday";
+            this.txt_bday.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_bday.PasswordChar = false;
+            this.txt_bday.Size = new System.Drawing.Size(288, 35);
+            this.txt_bday.TabIndex = 80;
+            this.txt_bday.Texts = "";
+            this.txt_bday.UnderlineStyle = true;
             // 
             // uct_textbox1
             // 
@@ -324,7 +324,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.uct_textbox2);
+            this.Controls.Add(this.txt_bday);
             this.Controls.Add(this.uct_textbox1);
             this.Controls.Add(this.txt_pass);
             this.Controls.Add(this.ptb_img);
@@ -353,7 +353,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private Uct_textbox uct_textbox2;
+        private Uct_textbox txt_bday;
         private Uct_textbox uct_textbox1;
         private Uct_textbox txt_pass;
         private System.Windows.Forms.PictureBox ptb_img;

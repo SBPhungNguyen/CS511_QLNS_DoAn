@@ -12,6 +12,11 @@ namespace CS511_Project_QLNS
 {
     public partial class Emp_CashierEdit : Form
     {
+        public string b_date
+        {
+            get { return txt_bday.Texts; }
+            set { txt_bday.Texts = value; }
+        }
         public Emp_CashierEdit()
         {
             InitializeComponent();

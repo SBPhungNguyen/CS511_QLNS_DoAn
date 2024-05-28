@@ -94,7 +94,7 @@ namespace CS511_Project_QLNS
 
         private void ptb_hidden_Click(object sender, EventArgs e)
         {
-            CalendarShow calendar = new CalendarShow();
+            CalendarShow calendar = new CalendarShow(this);
             calendar.ShowDialog();
         }
     }
