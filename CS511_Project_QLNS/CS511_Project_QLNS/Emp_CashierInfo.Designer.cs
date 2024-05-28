@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Emp_CashierInfo));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_title = new System.Windows.Forms.Label();
             this.btn_exit = new System.Windows.Forms.PictureBox();
+            this.lbl_title = new System.Windows.Forms.Label();
             this.ptb_img = new System.Windows.Forms.PictureBox();
             this.lbl_id = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,6 +45,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.radio_cashier = new System.Windows.Forms.RadioButton();
             this.radio_manager = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
@@ -60,6 +62,16 @@
             this.panel1.Size = new System.Drawing.Size(603, 40);
             this.panel1.TabIndex = 36;
             // 
+            // btn_exit
+            // 
+            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_exit.Location = new System.Drawing.Point(566, 5);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.TabIndex = 18;
+            this.btn_exit.TabStop = false;
+            // 
             // lbl_title
             // 
             this.lbl_title.AutoSize = true;
@@ -70,16 +82,6 @@
             this.lbl_title.Size = new System.Drawing.Size(289, 40);
             this.lbl_title.TabIndex = 35;
             this.lbl_title.Text = "EMPLOYEE INFO";
-            // 
-            // btn_exit
-            // 
-            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
-            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_exit.Location = new System.Drawing.Point(566, 5);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(30, 30);
-            this.btn_exit.TabIndex = 18;
-            this.btn_exit.TabStop = false;
             // 
             // ptb_img
             // 
@@ -94,7 +96,7 @@
             // 
             this.lbl_id.AutoSize = true;
             this.lbl_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_id.Location = new System.Drawing.Point(242, 419);
+            this.lbl_id.Location = new System.Drawing.Point(242, 381);
             this.lbl_id.Name = "lbl_id";
             this.lbl_id.Size = new System.Drawing.Size(63, 22);
             this.lbl_id.TabIndex = 46;
@@ -104,7 +106,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(79, 419);
+            this.label6.Location = new System.Drawing.Point(79, 381);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 22);
             this.label6.TabIndex = 45;
@@ -113,7 +115,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.lbl_name);
-            this.panel4.Location = new System.Drawing.Point(243, 470);
+            this.panel4.Location = new System.Drawing.Point(243, 432);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(291, 51);
             this.panel4.TabIndex = 44;
@@ -132,7 +134,7 @@
             // 
             this.lbl_bday.AutoSize = true;
             this.lbl_bday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_bday.Location = new System.Drawing.Point(242, 589);
+            this.lbl_bday.Location = new System.Drawing.Point(242, 547);
             this.lbl_bday.Name = "lbl_bday";
             this.lbl_bday.Size = new System.Drawing.Size(63, 22);
             this.lbl_bday.TabIndex = 43;
@@ -142,7 +144,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(79, 589);
+            this.label5.Location = new System.Drawing.Point(79, 547);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(127, 22);
             this.label5.TabIndex = 42;
@@ -152,7 +154,7 @@
             // 
             this.lbl_phone.AutoSize = true;
             this.lbl_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_phone.Location = new System.Drawing.Point(242, 533);
+            this.lbl_phone.Location = new System.Drawing.Point(242, 495);
             this.lbl_phone.Name = "lbl_phone";
             this.lbl_phone.Size = new System.Drawing.Size(63, 22);
             this.lbl_phone.TabIndex = 41;
@@ -162,7 +164,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(79, 533);
+            this.label3.Location = new System.Drawing.Point(79, 495);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 22);
             this.label3.TabIndex = 40;
@@ -172,7 +174,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(79, 470);
+            this.label1.Location = new System.Drawing.Point(79, 432);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 22);
             this.label1.TabIndex = 39;
@@ -182,7 +184,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(79, 650);
+            this.label2.Location = new System.Drawing.Point(79, 603);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 22);
             this.label2.TabIndex = 47;
@@ -192,25 +194,45 @@
             // 
             this.radio_cashier.AutoSize = true;
             this.radio_cashier.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radio_cashier.Location = new System.Drawing.Point(247, 653);
+            this.radio_cashier.Location = new System.Drawing.Point(247, 606);
             this.radio_cashier.Name = "radio_cashier";
-            this.radio_cashier.Size = new System.Drawing.Size(145, 26);
+            this.radio_cashier.Size = new System.Drawing.Size(118, 26);
             this.radio_cashier.TabIndex = 48;
             this.radio_cashier.TabStop = true;
-            this.radio_cashier.Text = "radioButton1";
+            this.radio_cashier.Text = "Employee";
             this.radio_cashier.UseVisualStyleBackColor = true;
             // 
             // radio_manager
             // 
             this.radio_manager.AutoSize = true;
             this.radio_manager.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radio_manager.Location = new System.Drawing.Point(247, 696);
+            this.radio_manager.Location = new System.Drawing.Point(247, 649);
             this.radio_manager.Name = "radio_manager";
-            this.radio_manager.Size = new System.Drawing.Size(145, 26);
+            this.radio_manager.Size = new System.Drawing.Size(108, 26);
             this.radio_manager.TabIndex = 49;
             this.radio_manager.TabStop = true;
-            this.radio_manager.Text = "radioButton2";
+            this.radio_manager.Text = "Manager";
             this.radio_manager.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(242, 701);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 22);
+            this.label4.TabIndex = 51;
+            this.label4.Text = "Code:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(79, 700);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(103, 22);
+            this.label7.TabIndex = 50;
+            this.label7.Text = "Password:";
             // 
             // Emp_CashierInfo
             // 
@@ -218,6 +240,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(600, 800);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.radio_manager);
             this.Controls.Add(this.radio_cashier);
             this.Controls.Add(this.label2);
@@ -263,5 +287,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton radio_cashier;
         private System.Windows.Forms.RadioButton radio_manager;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label7;
     }
 }

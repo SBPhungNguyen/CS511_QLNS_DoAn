@@ -16,7 +16,8 @@ namespace CS511_Project_QLNS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2(1));
+            Application.Run(new Emp_CashierEdit());
+            //new Form2(1)
         }
     }
 }
