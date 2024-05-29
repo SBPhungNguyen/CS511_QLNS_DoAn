@@ -37,5 +37,10 @@ namespace CS511_Project_QLNS
         {
             btn_exit.BackgroundImage = Properties.Resources.Cross2_image;
         }
+
+        private void txt_bday_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
     }
 }

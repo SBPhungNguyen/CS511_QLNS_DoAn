@@ -48,9 +48,11 @@
             this.txt_bday = new CS511_Project_QLNS.Uct_textbox();
             this.uct_textbox1 = new CS511_Project_QLNS.Uct_textbox();
             this.txt_pass = new CS511_Project_QLNS.Uct_textbox();
+            this.ptb_calendar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_calendar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -265,6 +267,7 @@
             this.txt_bday.TabIndex = 80;
             this.txt_bday.Texts = "";
             this.txt_bday.UnderlineStyle = true;
+            this.txt_bday.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_bday_KeyPress);
             // 
             // uct_textbox1
             // 
@@ -304,12 +307,23 @@
             this.txt_pass.Texts = "";
             this.txt_pass.UnderlineStyle = true;
             // 
+            // ptb_calendar
+            // 
+            this.ptb_calendar.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_calendar;
+            this.ptb_calendar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_calendar.Location = new System.Drawing.Point(503, 518);
+            this.ptb_calendar.Name = "ptb_calendar";
+            this.ptb_calendar.Size = new System.Drawing.Size(30, 30);
+            this.ptb_calendar.TabIndex = 85;
+            this.ptb_calendar.TabStop = false;
+            // 
             // Emp_CashierEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(600, 800);
+            this.Controls.Add(this.ptb_calendar);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.uct_textbox3);
@@ -335,6 +349,7 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_calendar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,5 +376,6 @@
         private System.Windows.Forms.Label label4;
         private View.CustomButton btn_cancel;
         private View.CustomButton btn_update;
+        private System.Windows.Forms.PictureBox ptb_calendar;
     }
 }
