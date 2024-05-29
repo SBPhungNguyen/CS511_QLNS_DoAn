@@ -137,6 +137,11 @@ namespace CS511_Project_QLNS
             parent.Hide();
             emp.ShowDialog();
 
+            ClearFlowPanel();
+            if (is_displayed_button == 0)
+                LoadData();
+            else
+                LoadDataWithCate(is_displayed_button.ToString());
             parent.Show();
         }
     }
