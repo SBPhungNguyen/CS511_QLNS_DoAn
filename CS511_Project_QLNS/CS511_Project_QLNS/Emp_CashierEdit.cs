@@ -116,5 +116,11 @@ namespace CS511_Project_QLNS
             else
                 e.Handled = false;
         }
+
+        private void ptb_calendar_Click(object sender, EventArgs e)
+        {
+            CalendarShow calendar = new CalendarShow(this);
+            calendar.ShowDialog();
+        }
     }
 }

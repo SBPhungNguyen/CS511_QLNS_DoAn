@@ -203,6 +203,7 @@
             this.ptb_calendar.Size = new System.Drawing.Size(30, 30);
             this.ptb_calendar.TabIndex = 85;
             this.ptb_calendar.TabStop = false;
+            this.ptb_calendar.Click += new System.EventHandler(this.ptb_calendar_Click);
             // 
             // ptb_hidden
             // 
