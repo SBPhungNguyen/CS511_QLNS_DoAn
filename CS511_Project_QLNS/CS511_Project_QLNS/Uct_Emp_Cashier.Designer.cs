@@ -84,6 +84,7 @@
             this.ptb_update.Size = new System.Drawing.Size(25, 25);
             this.ptb_update.TabIndex = 18;
             this.ptb_update.TabStop = false;
+            this.ptb_update.Click += new System.EventHandler(this.ptb_update_Click);
             // 
             // panel1
             // 

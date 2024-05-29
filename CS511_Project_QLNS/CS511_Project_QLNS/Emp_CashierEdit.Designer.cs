@@ -42,17 +42,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ptb_img = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.ptb_calendar = new System.Windows.Forms.PictureBox();
+            this.ptb_hidden = new System.Windows.Forms.PictureBox();
             this.btn_cancel = new CS511_Project_QLNS.View.CustomButton();
             this.btn_update = new CS511_Project_QLNS.View.CustomButton();
-            this.uct_textbox3 = new CS511_Project_QLNS.Uct_textbox();
-            this.txt_bday = new CS511_Project_QLNS.Uct_textbox();
-            this.uct_textbox1 = new CS511_Project_QLNS.Uct_textbox();
             this.txt_pass = new CS511_Project_QLNS.Uct_textbox();
-            this.ptb_calendar = new System.Windows.Forms.PictureBox();
+            this.txt_bday = new CS511_Project_QLNS.Uct_textbox();
+            this.txt_phone = new CS511_Project_QLNS.Uct_textbox();
+            this.txt_name = new CS511_Project_QLNS.Uct_textbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_calendar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_hidden)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -192,6 +194,27 @@
             this.label4.TabIndex = 81;
             this.label4.Text = "Password:";
             // 
+            // ptb_calendar
+            // 
+            this.ptb_calendar.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_calendar;
+            this.ptb_calendar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_calendar.Location = new System.Drawing.Point(503, 518);
+            this.ptb_calendar.Name = "ptb_calendar";
+            this.ptb_calendar.Size = new System.Drawing.Size(30, 30);
+            this.ptb_calendar.TabIndex = 85;
+            this.ptb_calendar.TabStop = false;
+            // 
+            // ptb_hidden
+            // 
+            this.ptb_hidden.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_eye_close;
+            this.ptb_hidden.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_hidden.Location = new System.Drawing.Point(508, 669);
+            this.ptb_hidden.Name = "ptb_hidden";
+            this.ptb_hidden.Size = new System.Drawing.Size(25, 25);
+            this.ptb_hidden.TabIndex = 86;
+            this.ptb_hidden.TabStop = false;
+            this.ptb_hidden.Click += new System.EventHandler(this.ptb_hidden_Click);
+            // 
             // btn_cancel
             // 
             this.btn_cancel.BackColor = System.Drawing.Color.LightGray;
@@ -230,24 +253,25 @@
             this.btn_update.TextColor = System.Drawing.Color.White;
             this.btn_update.UseVisualStyleBackColor = false;
             // 
-            // uct_textbox3
+            // txt_pass
             // 
-            this.uct_textbox3.BackColor = System.Drawing.SystemColors.Window;
-            this.uct_textbox3.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.uct_textbox3.BorderFocusColor = System.Drawing.Color.Green;
-            this.uct_textbox3.BorderSize = 2;
-            this.uct_textbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uct_textbox3.ForeColor = System.Drawing.Color.Black;
-            this.uct_textbox3.Location = new System.Drawing.Point(246, 665);
-            this.uct_textbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.uct_textbox3.Multiline = false;
-            this.uct_textbox3.Name = "uct_textbox3";
-            this.uct_textbox3.Padding = new System.Windows.Forms.Padding(7);
-            this.uct_textbox3.PasswordChar = false;
-            this.uct_textbox3.Size = new System.Drawing.Size(288, 35);
-            this.uct_textbox3.TabIndex = 82;
-            this.uct_textbox3.Texts = "";
-            this.uct_textbox3.UnderlineStyle = true;
+            this.txt_pass.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_pass.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_pass.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_pass.BorderSize = 2;
+            this.txt_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pass.ForeColor = System.Drawing.Color.Black;
+            this.txt_pass.Location = new System.Drawing.Point(246, 665);
+            this.txt_pass.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_pass.Multiline = false;
+            this.txt_pass.Name = "txt_pass";
+            this.txt_pass.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_pass.PasswordChar = false;
+            this.txt_pass.Size = new System.Drawing.Size(288, 35);
+            this.txt_pass.TabIndex = 82;
+            this.txt_pass.Texts = "";
+            this.txt_pass.UnderlineStyle = true;
+            this.txt_pass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_pass_KeyPress);
             // 
             // txt_bday
             // 
@@ -269,53 +293,43 @@
             this.txt_bday.UnderlineStyle = true;
             this.txt_bday.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_bday_KeyPress);
             // 
-            // uct_textbox1
+            // txt_phone
             // 
-            this.uct_textbox1.BackColor = System.Drawing.SystemColors.Window;
-            this.uct_textbox1.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.uct_textbox1.BorderFocusColor = System.Drawing.Color.Green;
-            this.uct_textbox1.BorderSize = 2;
-            this.uct_textbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uct_textbox1.ForeColor = System.Drawing.Color.Black;
-            this.uct_textbox1.Location = new System.Drawing.Point(246, 468);
-            this.uct_textbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.uct_textbox1.Multiline = false;
-            this.uct_textbox1.Name = "uct_textbox1";
-            this.uct_textbox1.Padding = new System.Windows.Forms.Padding(7);
-            this.uct_textbox1.PasswordChar = false;
-            this.uct_textbox1.Size = new System.Drawing.Size(288, 35);
-            this.uct_textbox1.TabIndex = 79;
-            this.uct_textbox1.Texts = "";
-            this.uct_textbox1.UnderlineStyle = true;
+            this.txt_phone.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_phone.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_phone.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_phone.BorderSize = 2;
+            this.txt_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_phone.ForeColor = System.Drawing.Color.Black;
+            this.txt_phone.Location = new System.Drawing.Point(246, 468);
+            this.txt_phone.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_phone.Multiline = false;
+            this.txt_phone.Name = "txt_phone";
+            this.txt_phone.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_phone.PasswordChar = false;
+            this.txt_phone.Size = new System.Drawing.Size(288, 35);
+            this.txt_phone.TabIndex = 79;
+            this.txt_phone.Texts = "";
+            this.txt_phone.UnderlineStyle = true;
             // 
-            // txt_pass
+            // txt_name
             // 
-            this.txt_pass.BackColor = System.Drawing.SystemColors.Window;
-            this.txt_pass.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.txt_pass.BorderFocusColor = System.Drawing.Color.Green;
-            this.txt_pass.BorderSize = 2;
-            this.txt_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pass.ForeColor = System.Drawing.Color.Black;
-            this.txt_pass.Location = new System.Drawing.Point(246, 415);
-            this.txt_pass.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_pass.Multiline = false;
-            this.txt_pass.Name = "txt_pass";
-            this.txt_pass.Padding = new System.Windows.Forms.Padding(7);
-            this.txt_pass.PasswordChar = false;
-            this.txt_pass.Size = new System.Drawing.Size(288, 35);
-            this.txt_pass.TabIndex = 78;
-            this.txt_pass.Texts = "";
-            this.txt_pass.UnderlineStyle = true;
-            // 
-            // ptb_calendar
-            // 
-            this.ptb_calendar.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_calendar;
-            this.ptb_calendar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_calendar.Location = new System.Drawing.Point(503, 518);
-            this.ptb_calendar.Name = "ptb_calendar";
-            this.ptb_calendar.Size = new System.Drawing.Size(30, 30);
-            this.ptb_calendar.TabIndex = 85;
-            this.ptb_calendar.TabStop = false;
+            this.txt_name.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_name.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.txt_name.BorderFocusColor = System.Drawing.Color.Green;
+            this.txt_name.BorderSize = 2;
+            this.txt_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_name.ForeColor = System.Drawing.Color.Black;
+            this.txt_name.Location = new System.Drawing.Point(246, 415);
+            this.txt_name.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_name.Multiline = false;
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_name.PasswordChar = false;
+            this.txt_name.Size = new System.Drawing.Size(288, 35);
+            this.txt_name.TabIndex = 78;
+            this.txt_name.Texts = "";
+            this.txt_name.UnderlineStyle = true;
             // 
             // Emp_CashierEdit
             // 
@@ -323,10 +337,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(600, 800);
+            this.Controls.Add(this.ptb_hidden);
             this.Controls.Add(this.ptb_calendar);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_update);
-            this.Controls.Add(this.uct_textbox3);
+            this.Controls.Add(this.txt_pass);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_title);
@@ -339,8 +354,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_bday);
-            this.Controls.Add(this.uct_textbox1);
-            this.Controls.Add(this.txt_pass);
+            this.Controls.Add(this.txt_phone);
+            this.Controls.Add(this.txt_name);
             this.Controls.Add(this.ptb_img);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Emp_CashierEdit";
@@ -350,6 +365,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_calendar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_hidden)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -369,13 +385,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private Uct_textbox txt_bday;
-        private Uct_textbox uct_textbox1;
-        private Uct_textbox txt_pass;
+        private Uct_textbox txt_phone;
+        private Uct_textbox txt_name;
         private System.Windows.Forms.PictureBox ptb_img;
-        private Uct_textbox uct_textbox3;
+        private Uct_textbox txt_pass;
         private System.Windows.Forms.Label label4;
         private View.CustomButton btn_cancel;
         private View.CustomButton btn_update;
         private System.Windows.Forms.PictureBox ptb_calendar;
+        private System.Windows.Forms.PictureBox ptb_hidden;
     }
 }

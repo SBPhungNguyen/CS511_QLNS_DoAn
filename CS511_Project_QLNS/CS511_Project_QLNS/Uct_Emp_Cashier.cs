@@ -54,5 +54,15 @@ namespace CS511_Project_QLNS
         {
             this.OnClick(null);
         }
+
+        private void ptb_update_Click(object sender, EventArgs e)
+        {
+            Form2 parent = this.Parent.Parent.Parent as Form2;
+            Emp_CashierEdit edit = new Emp_CashierEdit(id);
+            parent.Hide();
+            edit.ShowDialog();
+
+            parent.Show();
+        }
     }
 }
