@@ -183,6 +183,7 @@
             this.ptb_img.Size = new System.Drawing.Size(241, 241);
             this.ptb_img.TabIndex = 69;
             this.ptb_img.TabStop = false;
+            this.ptb_img.Click += new System.EventHandler(this.ptb_img_Click);
             // 
             // label4
             // 
@@ -234,6 +235,7 @@
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.TextColor = System.Drawing.Color.Black;
             this.btn_cancel.UseVisualStyleBackColor = false;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // btn_update
             // 
@@ -253,6 +255,7 @@
             this.btn_update.Text = "Update";
             this.btn_update.TextColor = System.Drawing.Color.White;
             this.btn_update.UseVisualStyleBackColor = false;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // txt_pass
             // 

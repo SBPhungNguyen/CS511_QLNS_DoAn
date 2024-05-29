@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,8 @@ namespace CS511_Project_QLNS
         connection co = new connection();
         int is_state;   //0: invisible, 1:visible
         string pass;
+        string pic_dir;
+        FileInfo fileInfo = null;
         public string b_date
         {
             get { return txt_bday.Texts; }
@@ -30,6 +33,7 @@ namespace CS511_Project_QLNS
             sqlCon = new SqlConnection(co.connect);
             this.id = id;
             is_state = 0;
+            pic_dir = co.emp_dir;
             LoadData();
         }
         public void LoadData()
@@ -121,6 +125,36 @@ namespace CS511_Project_QLNS
         {
             CalendarShow calendar = new CalendarShow(this);
             calendar.ShowDialog();
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            btn_exit_Click(sender, e);
+        }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+            //
+            ptb_img.BackgroundImage.Dispose();
+            if (fileInfo != null)
+            {
+                fileInfo.CopyTo(pic_dir + id + ".png",true);
+            }
+        }
+
+        private void ptb_img_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Picture (.png) |*.png";
+            ofd.Multiselect = false;
+            DialogResult result = ofd.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                //ptb_img.BackgroundImage.Dispose();
+                //ptb_img.BackgroundImage = null;
+                fileInfo = new FileInfo(ofd.FileName);
+                ptb_img.BackgroundImage = System.Drawing.Image.FromFile(ofd.FileName);
+            }
         }
     }
 }

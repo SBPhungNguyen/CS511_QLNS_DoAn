@@ -59,6 +59,7 @@ namespace CS511_Project_QLNS
         {
             Form2 parent = this.Parent.Parent.Parent as Form2;
             Emp_CashierEdit edit = new Emp_CashierEdit(id);
+            ptb_img.BackgroundImage.Dispose();
             parent.Hide();
             edit.ShowDialog();
 
