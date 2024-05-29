@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -36,6 +37,14 @@ namespace CS511_Project_QLNS
         {
             // Get the selected date
             DateTime selectedDate = e.Start;
+
+            DateTime today = DateTime.Now.Date;
+            if (selectedDate >= today)
+            {
+                MessageBox.Show("Birthday cannot be in the future", "Opps");
+                return;
+            }
+            
             // Do something with the selected date, e.g., display in a label
             if (type == 0)
             {
