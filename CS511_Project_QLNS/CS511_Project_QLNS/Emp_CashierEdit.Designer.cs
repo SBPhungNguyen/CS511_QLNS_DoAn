@@ -121,6 +121,7 @@
             this.radio_manager.TabStop = true;
             this.radio_manager.Text = "Manager";
             this.radio_manager.UseVisualStyleBackColor = true;
+            this.radio_manager.CheckedChanged += new System.EventHandler(this.radio_manager_CheckedChanged);
             // 
             // radio_cashier
             // 
@@ -133,6 +134,7 @@
             this.radio_cashier.TabStop = true;
             this.radio_cashier.Text = "Employee";
             this.radio_cashier.UseVisualStyleBackColor = true;
+            this.radio_cashier.CheckedChanged += new System.EventHandler(this.radio_cashier_CheckedChanged);
             // 
             // label2
             // 

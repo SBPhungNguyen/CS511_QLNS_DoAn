@@ -22,22 +22,31 @@ namespace CS511_Project_QLNS
         string pass;
         string pic_dir;
         FileInfo fileInfo = null;
+        string pic_path;
+        int is_manager;
+
+        Form2 parent;
+
         public string b_date
         {
             get { return txt_bday.Texts; }
             set { txt_bday.Texts = value; }
         }
-        public Emp_CashierEdit(int id)
+        public Emp_CashierEdit(int id, Form2 form)
         {
             InitializeComponent();
             sqlCon = new SqlConnection(co.connect);
             this.id = id;
             is_state = 0;
             pic_dir = co.emp_dir;
+            parent = form;
             LoadData();
         }
         public void LoadData()
         {
+            if (parent.emp_id == this.id)
+                parent.emp_img.Dispose();
+
             if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
             cmd = new SqlCommand();
             cmd.Connection = sqlCon;
@@ -58,6 +67,7 @@ namespace CS511_Project_QLNS
                     radio_cashier.Checked = true;
                 else
                     radio_manager.Checked = true;
+                is_manager = int.Parse(dr.GetString(5));
                 pass = dr.GetString(6);
                 txt_pass.Texts = "";
                 int count_pass = pass.Count();
@@ -134,27 +144,87 @@ namespace CS511_Project_QLNS
 
         private void btn_update_Click(object sender, EventArgs e)
         {
-            //
-            ptb_img.BackgroundImage.Dispose();
-            if (fileInfo != null)
+            
+            //edit the emp detail in TBL_EMP
+            if (sqlCon.State != ConnectionState.Open)
+                sqlCon.Open();
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Clear();
+
+            //add code here to save the pic to the desired dir
+            if (pic_path != null)
             {
-                fileInfo.CopyTo(pic_dir + id + ".png",true);
+                FileInfo file = new FileInfo(pic_path);
+                file.CopyTo(pic_dir + lbl_id.Text + ".png", true);
             }
+
+            //load pic to the main form (if this is the current display user)
+            if (parent.emp_id == this.id)
+                parent.emp_img = System.Drawing.Image.FromFile(pic_dir + lbl_id.Text + ".png");
+
+            //update book info in table TBL_BOOK
+            cmd.CommandText = "UPDATE TBL_EMP SET E_NAME = @name, PHONE = @phone, BDAY = @bday, E_ROLE = @role, PWORD = @pass WHERE ID = " + lbl_id.Text;
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@name", txt_name.Texts);
+            cmd.Parameters.AddWithValue("@phone", txt_phone.Texts);
+            cmd.Parameters.AddWithValue("@bday", txt_bday.Texts);
+            cmd.Parameters.AddWithValue("@role", is_manager);
+            cmd.Parameters.AddWithValue("@pass", pass);
+            cmd.ExecuteNonQuery();
+
+            //Update book info in table TBL_EMP_IMPORT
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Clear();
+            cmd.CommandText = "UPDATE TBL_EMP_IMPORT SET EMP_NAME = @name WHERE EMP_ID = " + lbl_id.Text;
+            cmd.Parameters.AddWithValue("@name", txt_name.Texts);
+            cmd.ExecuteNonQuery();
+
+            sqlCon.Close();
+            MessageBox.Show("This has been updated", "Notification");
         }
 
         private void ptb_img_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Picture (.png) |*.png";
-            ofd.Multiselect = false;
-            DialogResult result = ofd.ShowDialog();
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "Picture (.png) | *.png";
+            dlg.Multiselect = false;
+            DialogResult result = dlg.ShowDialog();
             if (result == DialogResult.OK)
             {
-                //ptb_img.BackgroundImage.Dispose();
-                //ptb_img.BackgroundImage = null;
-                fileInfo = new FileInfo(ofd.FileName);
-                ptb_img.BackgroundImage = System.Drawing.Image.FromFile(ofd.FileName);
+                string[] split_line = pic_dir.Split('/');
+                if (dlg.FileName.Contains(lbl_id.Text + ".png") && dlg.FileName.Contains(pic_dir))
+                {
+                    MessageBox.Show("The picture you choosen was the same one with the previous", "Opps");
+                    return;
+                }
+
+                if (sqlCon.State == ConnectionState.Open) sqlCon.Close();
+                ptb_img.BackgroundImage = System.Drawing.Image.FromFile(dlg.FileName);
+
+                FileInfo file = new FileInfo(dlg.FileName);
+                file.CopyTo("new_pic.png", true);
+                pic_path = "new_pic.png";
             }
+        }
+
+        private void radio_cashier_CheckedChanged(object sender, EventArgs e)
+        {
+            if (is_manager == 0)
+                return;
+            is_manager = 0;
+            radio_cashier.Checked = true;
+        }
+
+        private void radio_manager_CheckedChanged(object sender, EventArgs e)
+        {
+            if (is_manager == 1)
+                return;
+            is_manager = 1;
+            radio_manager.Checked = true;
         }
     }
 }

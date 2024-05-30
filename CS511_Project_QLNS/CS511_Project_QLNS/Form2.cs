@@ -26,6 +26,12 @@ namespace CS511_Project_QLNS
 
         public int emp_id;
         public int is_manager;
+
+        public Image emp_img
+        {
+            get { return ptb_em_pic.BackgroundImage; }
+            set { ptb_em_pic.BackgroundImage = value; }
+        }
         public Form2(int id)
         {
             InitializeComponent();
