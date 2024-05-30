@@ -81,7 +81,8 @@ namespace CS511_Project_QLNS
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            ptb_img.Dispose();
+            parent.emp_img = System.Drawing.Image.FromFile(co.emp_dir + lbl_id.Text + ".png");
+            ptb_img.BackgroundImage.Dispose();
             this.Dispose();
             this.Close();   
         }
@@ -183,8 +184,12 @@ namespace CS511_Project_QLNS
             cmd.Parameters.AddWithValue("@name", txt_name.Texts);
             cmd.ExecuteNonQuery();
 
+            pic_path = null;
+
             sqlCon.Close();
             MessageBox.Show("This has been updated", "Notification");
+
+            
         }
 
         private void ptb_img_Click(object sender, EventArgs e)
@@ -195,6 +200,8 @@ namespace CS511_Project_QLNS
             DialogResult result = dlg.ShowDialog();
             if (result == DialogResult.OK)
             {
+                ptb_img.BackgroundImage.Dispose();
+                parent.emp_img.Dispose();
                 string[] split_line = pic_dir.Split('/');
                 if (dlg.FileName.Contains(lbl_id.Text + ".png") && dlg.FileName.Contains(pic_dir))
                 {
@@ -206,8 +213,8 @@ namespace CS511_Project_QLNS
                 ptb_img.BackgroundImage = System.Drawing.Image.FromFile(dlg.FileName);
 
                 FileInfo file = new FileInfo(dlg.FileName);
-                file.CopyTo("new_pic.png", true);
-                pic_path = "new_pic.png";
+                file.CopyTo("new_emp_pic.png", true);
+                pic_path = "new_emp_pic.png";
             }
         }
 
