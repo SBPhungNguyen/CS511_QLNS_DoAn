@@ -68,6 +68,7 @@ namespace CS511_Project_QLNS
             parent.Hide();
             edit.ShowDialog();
 
+            parent_uct.DisposePictureBoxImages();
             parent_uct.ClearFlowPanel();
             if (parent_uct.is_displayed_button == 0)
                 parent_uct.LoadData();

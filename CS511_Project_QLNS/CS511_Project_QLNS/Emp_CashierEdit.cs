@@ -26,6 +26,7 @@ namespace CS511_Project_QLNS
         int is_manager;
 
         Form2 parent;
+        Image img;
 
         public string b_date
         {
@@ -40,6 +41,9 @@ namespace CS511_Project_QLNS
             is_state = 0;
             pic_dir = co.emp_dir;
             parent = form;
+            ptb_img.BackgroundImage.Dispose();
+            fileInfo = null;
+            pic_path = null;
             LoadData();
         }
         public void LoadData()
@@ -58,7 +62,8 @@ namespace CS511_Project_QLNS
             if (dr.Read())
             {
                 lbl_id.Text = id.ToString();
-                ptb_img.BackgroundImage = System.Drawing.Image.FromFile(co.emp_dir + dr.GetString(1)+".png");
+                ptb_img.BackgroundImage = System.Drawing.Image.FromFile(co.emp_dir + dr.GetString(1) + ".png");
+                
                 txt_name.Texts = dr.GetString(2);
                 txt_phone.Texts = dr.GetString(3);
                 string[] split_line = dr.GetDateTime(4).ToString().Split(' ');
@@ -77,12 +82,14 @@ namespace CS511_Project_QLNS
                 }
             }
             dr.Close();
+            sqlCon.Close();
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            parent.emp_img = System.Drawing.Image.FromFile(co.emp_dir + lbl_id.Text + ".png");
             ptb_img.BackgroundImage.Dispose();
+            parent.emp_img.Dispose();
+            parent.emp_img = System.Drawing.Image.FromFile(co.emp_dir + parent.emp_id + ".png");
             this.Dispose();
             this.Close();   
         }
@@ -145,7 +152,7 @@ namespace CS511_Project_QLNS
 
         private void btn_update_Click(object sender, EventArgs e)
         {
-            
+
             //edit the emp detail in TBL_EMP
             if (sqlCon.State != ConnectionState.Open)
                 sqlCon.Open();
@@ -154,16 +161,14 @@ namespace CS511_Project_QLNS
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.Clear();
 
+            ptb_img.BackgroundImage.Dispose();
+
             //add code here to save the pic to the desired dir
             if (pic_path != null)
-            {
-                FileInfo file = new FileInfo(pic_path);
-                file.CopyTo(pic_dir + lbl_id.Text + ".png", true);
+            { 
+                fileInfo = new FileInfo(pic_path);
+                fileInfo.CopyTo(pic_dir + lbl_id.Text + ".png", true);
             }
-
-            //load pic to the main form (if this is the current display user)
-            if (parent.emp_id == this.id)
-                parent.emp_img = System.Drawing.Image.FromFile(pic_dir + lbl_id.Text + ".png");
 
             //update book info in table TBL_BOOK
             cmd.CommandText = "UPDATE TBL_EMP SET E_NAME = @name, PHONE = @phone, BDAY = @bday, E_ROLE = @role, PWORD = @pass WHERE ID = " + lbl_id.Text;
@@ -185,10 +190,10 @@ namespace CS511_Project_QLNS
             cmd.ExecuteNonQuery();
 
             pic_path = null;
+            fileInfo = null;
 
             sqlCon.Close();
             MessageBox.Show("This has been updated", "Notification");
-
             
         }
 
@@ -202,10 +207,15 @@ namespace CS511_Project_QLNS
             {
                 ptb_img.BackgroundImage.Dispose();
                 parent.emp_img.Dispose();
-                string[] split_line = pic_dir.Split('/');
+
                 if (dlg.FileName.Contains(lbl_id.Text + ".png") && dlg.FileName.Contains(pic_dir))
                 {
-                    MessageBox.Show("The picture you choosen was the same one with the previous", "Opps");
+                    MessageBox.Show("The picture you chose was the same one with the previous", "Opps");
+                    return;
+                }
+                if (dlg.FileName.Contains("new_emp_pic.png"))
+                {
+                    MessageBox.Show("This picture cannot be chosen, please choose another one", "Opps");
                     return;
                 }
 

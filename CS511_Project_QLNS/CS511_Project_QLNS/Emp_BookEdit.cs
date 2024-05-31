@@ -129,10 +129,15 @@ namespace CS511_Project_QLNS
                 string[] split_line = local_dir.Split('/');
                 if (dlg.FileName.Contains(lbl_id.Text + ".png") && dlg.FileName.Contains(local_dir))
                 {
-                    MessageBox.Show("The picture you choosen was the same one with the previous", "Opps");
+                    MessageBox.Show("The picture you chose was the same one with the previous", "Opps");
                     return;
                 }
 
+                if (dlg.FileName.Contains("new_pic.png"))
+                {
+                    MessageBox.Show("This picture cannot be chosen, please choose another one", "Opps");
+                    return;
+                }
                 if (sqlCon.State == ConnectionState.Open) sqlCon.Close();
                 ptb_img.BackgroundImage = System.Drawing.Image.FromFile(dlg.FileName);
 

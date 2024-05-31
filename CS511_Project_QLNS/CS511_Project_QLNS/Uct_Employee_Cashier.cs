@@ -81,6 +81,7 @@ namespace CS511_Project_QLNS
             if (is_displayed_button == 0)
                 return;
             is_displayed_button = 0;
+            DisposePictureBoxImages();
             ClearFlowPanel();
             btn_all.BackColor = color_btn_cate_chosen;
             btn_cat1.BackColor = color_btn_cate_normal;
@@ -93,6 +94,7 @@ namespace CS511_Project_QLNS
             if (is_displayed_button == 1)
                 return;
             is_displayed_button = 1;
+            DisposePictureBoxImages();
             ClearFlowPanel();
             btn_all.BackColor = color_btn_cate_normal;
             btn_cat1.BackColor = color_btn_cate_chosen;
@@ -105,6 +107,7 @@ namespace CS511_Project_QLNS
         {
             if (is_displayed_button == 2)
                 return;
+            DisposePictureBoxImages();
             ClearFlowPanel();
             is_displayed_button = 2;
             btn_all.BackColor = color_btn_cate_normal;
@@ -130,6 +133,32 @@ namespace CS511_Project_QLNS
             fpnl_emp.ResumeLayout();
         }
 
+
+        public void DisposePictureBoxImages()
+        {
+
+            if (fpnl_emp.Controls.Count > 0)
+            {
+                for (int i = (fpnl_emp.Controls.Count - 1); i >= 0; i--)
+                {
+                    Control c = fpnl_emp.Controls[i];
+
+                    if (c is PictureBox pictureBox)
+                    {
+                        // Check if the PictureBox has a background image
+                        if (pictureBox.BackgroundImage != null)
+                        {
+                            // Dispose of the image
+                            pictureBox.BackgroundImage.Dispose();
+                            // Set the BackgroundImage to null to avoid memory leaks
+                            pictureBox.BackgroundImage = null;
+                        }
+                    }
+                }
+                //GC.Collect();
+            }
+        }
+
         private void customButton1_Click(object sender, EventArgs e)
         {
             Form2 parent = this.Parent as Form2;
@@ -137,6 +166,7 @@ namespace CS511_Project_QLNS
             parent.Hide();
             emp.ShowDialog();
 
+            DisposePictureBoxImages();
             ClearFlowPanel();
             if (is_displayed_button == 0)
                 LoadData();
