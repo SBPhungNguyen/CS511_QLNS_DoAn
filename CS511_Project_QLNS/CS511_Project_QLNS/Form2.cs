@@ -9,14 +9,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Windows.Documents;
+using LiveCharts;
+using LiveCharts.Wpf;
+using System.Windows.Media;
 
 namespace CS511_Project_QLNS
 {
     public partial class Form2 : Form
     {
         connection co = new connection();
-        public Color color_btn_normal = Color.FromArgb(24, 138, 93);
-        public Color color_btn_chosen = Color.FromArgb(31, 181, 122);
+        public System.Drawing.Color color_btn_normal = System.Drawing.Color.FromArgb(24, 138, 93);
+        public System.Drawing.Color color_btn_chosen = System.Drawing.Color.FromArgb(31, 181, 122);
 
         Uct_Employee_Home uct_Employee_Home;
         Uct_Employee_Import uct_Employee_Import;
@@ -24,6 +28,22 @@ namespace CS511_Project_QLNS
         Uct_Employee_Chat uct_Employee_Chat;
         Uct_Employee_Cashier uct_Employee_Cashier;
 
+        //report
+        string connect;
+
+        public SqlConnection sqlCon;
+        public string local_dir;
+
+        public System.Drawing.Color color_btn_cate_normal = System.Drawing.Color.Green;
+        public System.Drawing.Color color_btn_cate_chosen = System.Drawing.Color.FromArgb(0, 181, 0);
+
+        public int is_displayed_button;
+
+        List<String> list = new List<String>();
+        ChartValues<decimal> decimals = new ChartValues<decimal>();
+
+
+        //emp info
         public int emp_id;
         public int is_manager;
 
@@ -195,6 +215,11 @@ namespace CS511_Project_QLNS
                     ctr1.Visible = false;
                 }
             }
+
+            btn_all_the_time.BackColor = color_btn_cate_chosen;
+            btn_by_month.BackColor = color_btn_cate_normal;
+            LoadDataReportChartA();
+            LoadChart();
         }
 
         private void btn_chat_Click(object sender, EventArgs e)
@@ -254,6 +279,57 @@ namespace CS511_Project_QLNS
                 }
             }
             return null;
+        }
+
+        public void LoadDataReportChartA()
+        {
+            list.Clear();
+            decimals.Clear();
+            SqlCommand cmd = new SqlCommand();
+            sqlCon = new SqlConnection(co.connect);
+            if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT MONTH(C_DATE) AS MONTH, YEAR(C_DATE) AS YEAR, SUM(TOTAL) AS TOTAL FROM TBL_CUS_RECEIPT GROUP BY MONTH(C_DATE), YEAR(C_DATE)";
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                int month = dr.GetInt32(0);
+                int year = dr.GetInt32(1);
+                list.Add(month + "/" + year);
+                decimals.Add(dr.GetDecimal(2));
+            }
+            dr.Close();
+            sqlCon.Close();
+        }
+
+        public void LoadChart()
+        {
+            chart.AxisX.Clear();
+            chart.AxisY.Clear();
+            chart.Series.Clear();
+            chart.AxisX.Add(new LiveCharts.Wpf.Axis
+            {
+                Title = "Month",
+                Labels = list
+
+            });
+            chart.AxisY.Add(new LiveCharts.Wpf.Axis
+            {
+                Title = "Revenue",
+                LabelFormatter = value => value.ToString()
+            });
+            var revenueSeries = new LineSeries
+            {
+                Title = "Revenue",
+                Values = decimals, //new ChartValues<double> { 1222 },
+                Stroke = new SolidColorBrush(System.Windows.Media.Color.FromRgb(34, 139, 34)), // Setting the line color to ForestGreen
+                //Fill = System.Windows.Media.Brushes.Transparent // Setting the fill to transparent
+            };
+            chart.AnimationsSpeed = TimeSpan.FromMilliseconds(200);
+
+            chart.Series.Add(revenueSeries);
         }
     }
 }
