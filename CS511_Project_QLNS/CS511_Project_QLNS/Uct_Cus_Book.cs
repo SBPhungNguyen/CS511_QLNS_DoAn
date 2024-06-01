@@ -92,6 +92,7 @@ namespace CS511_Project_QLNS
             if (quantity==0)
             {
                 MessageBox.Show("Sorry, this product has been run out");
+                return;
             }
             else
             {
@@ -113,6 +114,7 @@ namespace CS511_Project_QLNS
                     parent_form.cart_info[parent_form.cart_count]=id.ToString() + "*1";
                     parent_form.cart_count++;
                 }
+                MessageBox.Show("Added to cart successfully", "Notification");
             }
         }
     }
