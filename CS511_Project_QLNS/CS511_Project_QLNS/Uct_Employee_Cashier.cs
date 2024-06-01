@@ -81,7 +81,8 @@ namespace CS511_Project_QLNS
             if (is_displayed_button == 0)
                 return;
             is_displayed_button = 0;
-            DisposePictureBoxImages();
+            DisposeUserControlPictures();
+            //DisposePictureBoxImages();
             ClearFlowPanel();
             btn_all.BackColor = color_btn_cate_chosen;
             btn_cat1.BackColor = color_btn_cate_normal;
@@ -94,7 +95,8 @@ namespace CS511_Project_QLNS
             if (is_displayed_button == 1)
                 return;
             is_displayed_button = 1;
-            DisposePictureBoxImages();
+            DisposeUserControlPictures();
+            //DisposePictureBoxImages();
             ClearFlowPanel();
             btn_all.BackColor = color_btn_cate_normal;
             btn_cat1.BackColor = color_btn_cate_chosen;
@@ -107,7 +109,8 @@ namespace CS511_Project_QLNS
         {
             if (is_displayed_button == 2)
                 return;
-            DisposePictureBoxImages();
+            DisposeUserControlPictures();
+            //DisposePictureBoxImages();
             ClearFlowPanel();
             is_displayed_button = 2;
             btn_all.BackColor = color_btn_cate_normal;
@@ -133,31 +136,85 @@ namespace CS511_Project_QLNS
             fpnl_emp.ResumeLayout();
         }
 
-
-        public void DisposePictureBoxImages()
+        public void DisposeUserControlPictures()
         {
-
             if (fpnl_emp.Controls.Count > 0)
             {
-                for (int i = (fpnl_emp.Controls.Count - 1); i >= 0; i--)
+                foreach (Control control in fpnl_emp.Controls)
                 {
-                    Control c = fpnl_emp.Controls[i];
-
-                    if (c is PictureBox pictureBox)
+                    // Check if control is a UserControl
+                    if (control is UserControl userControl)
                     {
-                        // Check if the PictureBox has a background image
-                        if (pictureBox.BackgroundImage != null)
+                        // Dispose pictures within the UserControl (pass the user control)
+                        DisposeUserControlPictures(userControl);
+                    }
+                    else
+                    {
+                        // Check if control is a PictureBox directly in the FlowLayoutPanel
+                        if (control is PictureBox pictureBox)
                         {
-                            // Dispose of the image
-                            pictureBox.BackgroundImage.Dispose();
-                            // Set the BackgroundImage to null to avoid memory leaks
-                            pictureBox.BackgroundImage = null;
+                            DisposePictureBoxImage(pictureBox);
                         }
                     }
                 }
-                //GC.Collect();
             }
         }
+
+        private void DisposePictureBoxImage(PictureBox pictureBox)
+        {
+            // Check if PictureBox has a background image
+            if (pictureBox.BackgroundImage != null)
+            {
+                pictureBox.BackgroundImage.Dispose();
+                pictureBox.BackgroundImage = null;
+            }
+
+            // Check if PictureBox has an image directly loaded (optional)
+            if (pictureBox.Image != null)
+            {
+                pictureBox.Image.Dispose();
+                pictureBox.Image = null;
+            }
+        }
+
+        // Assuming you have this function in your user control code
+        private void DisposeUserControlPictures(UserControl userControl)
+        {
+            // Iterate through controls in the UserControl
+            foreach (Control control in userControl.Controls)
+            {
+                // Check for PictureBoxes within the UserControl
+                if (control is PictureBox pictureBox)
+                {
+                    DisposePictureBoxImage(pictureBox);
+                }
+                // You can add logic to handle nested UserControls here (optional)
+            }
+        }
+        //public void DisposePictureBoxImages()
+        //{
+
+        //    if (fpnl_emp.Controls.Count > 0)
+        //    {
+        //        for (int i = (fpnl_emp.Controls.Count - 1); i >= 0; i--)
+        //        {
+        //            Control c = fpnl_emp.Controls[i];
+
+        //            if (c is PictureBox pictureBox)
+        //            {
+        //                // Check if the PictureBox has a background image
+        //                if (pictureBox.BackgroundImage != null)
+        //                {
+        //                    // Dispose of the image
+        //                    pictureBox.BackgroundImage.Dispose();
+        //                    // Set the BackgroundImage to null to avoid memory leaks
+        //                    pictureBox.BackgroundImage = null;
+        //                }
+        //            }
+        //        }
+        //        //GC.Collect();
+        //    }
+        //}
 
         private void customButton1_Click(object sender, EventArgs e)
         {
@@ -166,7 +223,8 @@ namespace CS511_Project_QLNS
             parent.Hide();
             emp.ShowDialog();
 
-            DisposePictureBoxImages();
+            DisposeUserControlPictures();
+            //DisposePictureBoxImages();
             ClearFlowPanel();
             if (is_displayed_button == 0)
                 LoadData();

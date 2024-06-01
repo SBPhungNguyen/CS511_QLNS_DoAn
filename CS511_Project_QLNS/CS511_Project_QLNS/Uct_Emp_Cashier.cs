@@ -59,7 +59,6 @@ namespace CS511_Project_QLNS
         {
             Form2 parent = this.Parent.Parent.Parent as Form2;
             Uct_Employee_Cashier parent_uct = this.Parent.Parent as Uct_Employee_Cashier;
-            
 
             ptb_img.BackgroundImage.Dispose();
             parent.emp_img.Dispose();
@@ -68,7 +67,8 @@ namespace CS511_Project_QLNS
             parent.Hide();
             edit.ShowDialog();
 
-            parent_uct.DisposePictureBoxImages();
+            //parent_uct.DisposePictureBoxImages();
+            parent_uct.DisposeUserControlPictures();
             parent_uct.ClearFlowPanel();
             if (parent_uct.is_displayed_button == 0)
                 parent_uct.LoadData();
