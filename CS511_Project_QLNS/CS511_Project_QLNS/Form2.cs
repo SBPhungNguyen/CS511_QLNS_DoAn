@@ -220,6 +220,7 @@ namespace CS511_Project_QLNS
                 }
             }
 
+            is_displayed_button = 0;
             btn_all_the_time.BackColor = color_btn_cate_chosen;
             btn_by_month.BackColor = color_btn_cate_normal;
 
@@ -370,6 +371,53 @@ namespace CS511_Project_QLNS
             }
             piechart.AnimationsSpeed = TimeSpan.FromMilliseconds(200);
             piechart.Series = series;
+        }
+
+        private void btn_all_the_time_Click(object sender, EventArgs e)
+        {
+            if (is_displayed_button == 0)
+                return;
+            is_displayed_button = 0;
+            btn_all_the_time.BackColor = color_btn_cate_chosen;
+            btn_by_month.BackColor = color_btn_cate_normal;
+
+            cbb_month.Visible = false;
+
+            LoadDataReportChartA();
+            LoadDataPieChartA();
+            LoadChart();
+            LoadPieChart();
+        }
+
+        private void LoadMonthForCBBChart()
+        {
+            cbb_month.Items.Clear();
+            if (sqlCon.State == ConnectionState.Closed) {  sqlCon.Open(); }
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT DISTINCT MONTH(C_DATE), YEAR(C_DATE) FROM TBL_CUS_RECEIPT";
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                string mmyy = dr.GetInt32(0)+"/"+dr.GetInt32(1);
+                cbb_month.Items.Add(mmyy);
+            }
+            dr.Close();
+            sqlCon.Close();
+        }
+
+        private void btn_by_month_Click(object sender, EventArgs e)
+        {
+            if (is_displayed_button == 1)
+                return;
+            is_displayed_button = 1;
+            btn_all_the_time.BackColor = color_btn_cate_normal;
+            btn_by_month.BackColor = color_btn_cate_chosen;
+
+            cbb_month.Visible = true;
+            LoadMonthForCBBChart();
+            cbb_month.SelectedIndex = cbb_month.Items.Count - 1;
         }
     }
 }

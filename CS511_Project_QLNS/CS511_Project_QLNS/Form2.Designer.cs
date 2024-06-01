@@ -147,13 +147,14 @@
             this.btn_by_month.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_by_month.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_by_month.ForeColor = System.Drawing.Color.White;
-            this.btn_by_month.Location = new System.Drawing.Point(805, 190);
+            this.btn_by_month.Location = new System.Drawing.Point(805, 188);
             this.btn_by_month.Name = "btn_by_month";
             this.btn_by_month.Size = new System.Drawing.Size(490, 40);
             this.btn_by_month.TabIndex = 52;
             this.btn_by_month.Text = "By Month";
             this.btn_by_month.TextColor = System.Drawing.Color.White;
             this.btn_by_month.UseVisualStyleBackColor = false;
+            this.btn_by_month.Click += new System.EventHandler(this.btn_by_month_Click);
             // 
             // btn_all_the_time
             // 
@@ -166,13 +167,14 @@
             this.btn_all_the_time.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_all_the_time.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_all_the_time.ForeColor = System.Drawing.Color.White;
-            this.btn_all_the_time.Location = new System.Drawing.Point(315, 190);
+            this.btn_all_the_time.Location = new System.Drawing.Point(315, 188);
             this.btn_all_the_time.Name = "btn_all_the_time";
             this.btn_all_the_time.Size = new System.Drawing.Size(490, 40);
             this.btn_all_the_time.TabIndex = 51;
             this.btn_all_the_time.Text = "All The Time";
             this.btn_all_the_time.TextColor = System.Drawing.Color.White;
             this.btn_all_the_time.UseVisualStyleBackColor = false;
+            this.btn_all_the_time.Click += new System.EventHandler(this.btn_all_the_time_Click);
             // 
             // ptb_em_pic
             // 
