@@ -90,6 +90,8 @@ namespace CS511_Project_QLNS
             ptb_img.BackgroundImage.Dispose();
             parent.emp_img.Dispose();
             parent.emp_img = System.Drawing.Image.FromFile(co.emp_dir + parent.emp_id + ".png");
+            if (this.id == parent.emp_id)
+                parent.emp_name = txt_name.Texts;
             this.Dispose();
             this.Close();   
         }

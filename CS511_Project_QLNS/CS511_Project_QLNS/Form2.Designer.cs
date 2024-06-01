@@ -43,6 +43,13 @@
             this.btn_logout = new CS511_Project_QLNS.View.CustomButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.ptb_em_pic = new CS511_Project_QLNS.View.CustomPictureBox();
+            this.pieChart1 = new LiveCharts.WinForms.PieChart();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbb_month = new System.Windows.Forms.ComboBox();
+            this.btn_cat1 = new CS511_Project_QLNS.View.CustomButton();
+            this.btn_all = new CS511_Project_QLNS.View.CustomButton();
+            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.customPanel1.SuspendLayout();
@@ -179,9 +186,9 @@
             // pnl_UserName
             // 
             this.pnl_UserName.Controls.Add(this.lbl_em_name);
-            this.pnl_UserName.Location = new System.Drawing.Point(21, 86);
+            this.pnl_UserName.Location = new System.Drawing.Point(21, 76);
             this.pnl_UserName.Name = "pnl_UserName";
-            this.pnl_UserName.Size = new System.Drawing.Size(243, 45);
+            this.pnl_UserName.Size = new System.Drawing.Size(243, 64);
             this.pnl_UserName.TabIndex = 10;
             // 
             // lbl_em_name
@@ -191,7 +198,7 @@
             this.lbl_em_name.ForeColor = System.Drawing.SystemColors.Window;
             this.lbl_em_name.Location = new System.Drawing.Point(0, 0);
             this.lbl_em_name.Name = "lbl_em_name";
-            this.lbl_em_name.Size = new System.Drawing.Size(243, 45);
+            this.lbl_em_name.Size = new System.Drawing.Size(243, 64);
             this.lbl_em_name.TabIndex = 11;
             this.lbl_em_name.Text = "Mr/Ms";
             this.lbl_em_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -239,12 +246,101 @@
             this.ptb_em_pic.TabIndex = 10;
             this.ptb_em_pic.TabStop = false;
             // 
+            // pieChart1
+            // 
+            this.pieChart1.Location = new System.Drawing.Point(933, 365);
+            this.pieChart1.Name = "pieChart1";
+            this.pieChart1.Size = new System.Drawing.Size(355, 279);
+            this.pieChart1.TabIndex = 13;
+            this.pieChart1.Text = "pieChart1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(1038, 705);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(144, 20);
+            this.label2.TabIndex = 55;
+            this.label2.Text = "Top 5 best-sellers";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(523, 705);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(178, 20);
+            this.label1.TabIndex = 54;
+            this.label1.Text = "Revenue by all months";
+            // 
+            // cbb_month
+            // 
+            this.cbb_month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_month.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb_month.FormattingEnabled = true;
+            this.cbb_month.Location = new System.Drawing.Point(316, 251);
+            this.cbb_month.Name = "cbb_month";
+            this.cbb_month.Size = new System.Drawing.Size(220, 26);
+            this.cbb_month.TabIndex = 53;
+            // 
+            // btn_cat1
+            // 
+            this.btn_cat1.BackColor = System.Drawing.Color.Green;
+            this.btn_cat1.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_cat1.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_cat1.BorderRadius = 0;
+            this.btn_cat1.BorderSize = 0;
+            this.btn_cat1.FlatAppearance.BorderSize = 0;
+            this.btn_cat1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cat1.ForeColor = System.Drawing.Color.White;
+            this.btn_cat1.Location = new System.Drawing.Point(805, 190);
+            this.btn_cat1.Name = "btn_cat1";
+            this.btn_cat1.Size = new System.Drawing.Size(490, 40);
+            this.btn_cat1.TabIndex = 52;
+            this.btn_cat1.Text = "customButton2";
+            this.btn_cat1.TextColor = System.Drawing.Color.White;
+            this.btn_cat1.UseVisualStyleBackColor = false;
+            // 
+            // btn_all
+            // 
+            this.btn_all.BackColor = System.Drawing.Color.Green;
+            this.btn_all.BackgroundColor = System.Drawing.Color.Green;
+            this.btn_all.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_all.BorderRadius = 0;
+            this.btn_all.BorderSize = 0;
+            this.btn_all.FlatAppearance.BorderSize = 0;
+            this.btn_all.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_all.ForeColor = System.Drawing.Color.White;
+            this.btn_all.Location = new System.Drawing.Point(315, 190);
+            this.btn_all.Name = "btn_all";
+            this.btn_all.Size = new System.Drawing.Size(490, 40);
+            this.btn_all.TabIndex = 51;
+            this.btn_all.Text = "customButton1";
+            this.btn_all.TextColor = System.Drawing.Color.White;
+            this.btn_all.UseVisualStyleBackColor = false;
+            // 
+            // cartesianChart1
+            // 
+            this.cartesianChart1.Location = new System.Drawing.Point(316, 381);
+            this.cartesianChart1.Name = "cartesianChart1";
+            this.cartesianChart1.Size = new System.Drawing.Size(595, 263);
+            this.cartesianChart1.TabIndex = 56;
+            this.cartesianChart1.Text = "cartesianChart1";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1300, 800);
+            this.Controls.Add(this.cartesianChart1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbb_month);
+            this.Controls.Add(this.btn_cat1);
+            this.Controls.Add(this.btn_all);
+            this.Controls.Add(this.pieChart1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.ptb_em_pic);
@@ -279,5 +375,12 @@
         private System.Windows.Forms.Button btn_report;
         private System.Windows.Forms.Button btn_import;
         private System.Windows.Forms.Button btn_employee;
+        private LiveCharts.WinForms.PieChart pieChart1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbb_month;
+        private View.CustomButton btn_cat1;
+        private View.CustomButton btn_all;
+        private LiveCharts.WinForms.CartesianChart cartesianChart1;
     }
 }
