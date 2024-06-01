@@ -157,6 +157,8 @@ namespace CS511_Project_QLNS
                 //get the fpnl_books in parent_uct
                 Control fpnl = FindControlByName(parent_uct, "fpnl_books");
 
+                ptb_img.BackgroundImage.Dispose();
+
                 //remove this control out of the fpnl
                 fpnl.Controls.Remove(this);
 

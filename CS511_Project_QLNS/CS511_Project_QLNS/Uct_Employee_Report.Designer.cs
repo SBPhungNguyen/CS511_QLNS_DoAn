@@ -101,7 +101,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(300, 300);
+            this.chart1.Size = new System.Drawing.Size(311, 300);
             this.chart1.TabIndex = 46;
             this.chart1.Text = "chart1";
             // 
