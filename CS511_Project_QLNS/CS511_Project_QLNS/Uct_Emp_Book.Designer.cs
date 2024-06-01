@@ -108,9 +108,9 @@
             // ptb_img
             // 
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(14, 41);
+            this.ptb_img.Location = new System.Drawing.Point(22, 41);
             this.ptb_img.Name = "ptb_img";
-            this.ptb_img.Size = new System.Drawing.Size(80, 95);
+            this.ptb_img.Size = new System.Drawing.Size(70, 95);
             this.ptb_img.TabIndex = 9;
             this.ptb_img.TabStop = false;
             this.ptb_img.Click += new System.EventHandler(this.ptb_img_Click);

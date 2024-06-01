@@ -177,6 +177,7 @@ namespace CS511_Project_QLNS
         private void btn_report_Click(object sender, EventArgs e)
         {
             lbl_title.Text = "REPORT";
+            lbl_revenue.Text = "Revenue by all months";
 
             btn_home.BackColor = color_btn_normal;
             btn_import.BackColor = color_btn_normal;
@@ -312,6 +313,32 @@ namespace CS511_Project_QLNS
             dr.Close();
             sqlCon.Close();
         }
+        private void LoadDataReportB()
+        {
+            list.Clear();
+            decimals.Clear();
+            string mmyy = cbb_month.Items[cbb_month.SelectedIndex].ToString();
+            string[] split_line = mmyy.Split('/');
+            //MessageBox.Show(mmyy);
+            SqlCommand cmd = new SqlCommand();
+            sqlCon = new SqlConnection(co.connect);
+            if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT DAY(C_DATE), SUM(TOTAL) AS TOTAL FROM TBL_CUS_RECEIPT WHERE MONTH(C_DATE) = @mm AND YEAR(C_DATE) = @yy GROUP BY DAY(C_DATE)";
+            cmd.Parameters.AddWithValue("@mm", split_line[0]);
+            cmd.Parameters.AddWithValue("@yy", split_line[1]);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                int date = dr.GetInt32(0);
+                list.Add(date.ToString() + "/" + split_line[0]);
+                decimals.Add(dr.GetDecimal(1));
+            }
+            dr.Close();
+            sqlCon.Close();
+        }
         public void LoadDataPieChartA()
         {
             count = 0;
@@ -332,7 +359,30 @@ namespace CS511_Project_QLNS
             dr2.Close();
             sqlCon.Close();
         }
-
+        public void LoadDataPieChartB()
+        {
+            count = 0;
+            a = new string[200];
+            b = new int[200];
+            string mmyy = cbb_month.Items[cbb_month.SelectedIndex].ToString();
+            string[] split_line = mmyy.Split('/');
+            if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT TOP 5 TBL_REC_DETAIL.BOOK_NAME ,SUM(TBL_REC_DETAIL.QUANTITY) FROM TBL_REC_DETAIL, TBL_CUS_RECEIPT WHERE TBL_REC_DETAIL.ID_REC = TBL_CUS_RECEIPT.ID_REC AND MONTH(TBL_CUS_RECEIPT.C_DATE)=@mm AND YEAR(TBL_CUS_RECEIPT.C_DATE)=@yy GROUP BY TBL_REC_DETAIL.BOOK_NAME, TBL_REC_DETAIL.ID_BOOK ORDER BY SUM(TBL_REC_DETAIL.QUANTITY) DESC";
+            cmd.Parameters.AddWithValue("@mm", split_line[0]);
+            cmd.Parameters.AddWithValue("@yy", split_line[1]);
+            SqlDataReader dr2 = cmd.ExecuteReader();
+            while (dr2.Read())
+            {
+                a[count] = dr2.GetString(0);
+                b[count] = dr2.GetInt32(1);
+                count++;
+            }
+            dr2.Close();
+            sqlCon.Close();
+        }
         public void LoadChart()
         {
             chart.AxisX.Clear();
@@ -341,6 +391,33 @@ namespace CS511_Project_QLNS
             chart.AxisX.Add(new LiveCharts.Wpf.Axis
             {
                 Title = "Month",
+                Labels = list
+
+            });
+            chart.AxisY.Add(new LiveCharts.Wpf.Axis
+            {
+                Title = "Revenue",
+                LabelFormatter = value => value.ToString()
+            });
+            var revenueSeries = new LineSeries
+            {
+                Title = "Revenue",
+                Values = decimals, //new ChartValues<double> { 1222 },
+                Stroke = new SolidColorBrush(System.Windows.Media.Color.FromRgb(34, 139, 34)), // Setting the line color to ForestGreen
+                //Fill = System.Windows.Media.Brushes.Transparent // Setting the fill to transparent
+            };
+            chart.AnimationsSpeed = TimeSpan.FromMilliseconds(200);
+            chart.Series.Add(revenueSeries);
+        }
+
+        public void LoadChartB()
+        {
+            chart.AxisX.Clear();
+            chart.AxisY.Clear();
+            chart.Series.Clear();
+            chart.AxisX.Add(new LiveCharts.Wpf.Axis
+            {
+                Title = "Date",
                 Labels = list
 
             });
@@ -380,9 +457,12 @@ namespace CS511_Project_QLNS
             is_displayed_button = 0;
             btn_all_the_time.BackColor = color_btn_cate_chosen;
             btn_by_month.BackColor = color_btn_cate_normal;
+            lbl_revenue.Text = "Revenue by all months";
 
             cbb_month.Visible = false;
 
+            chart.Series.Clear();
+            piechart.Series.Clear();
             LoadDataReportChartA();
             LoadDataPieChartA();
             LoadChart();
@@ -418,6 +498,26 @@ namespace CS511_Project_QLNS
             cbb_month.Visible = true;
             LoadMonthForCBBChart();
             cbb_month.SelectedIndex = cbb_month.Items.Count - 1;
+            lbl_revenue.Text = "Revenue by " + cbb_month.Items[cbb_month.SelectedIndex];
+
+            chart.Series.Clear();
+            piechart.Series.Clear();
+            LoadDataReportB();
+            LoadChartB();
+            LoadDataPieChartB();
+            LoadPieChart();
+        }
+
+        private void cbb_month_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lbl_revenue.Text = "Revenue by " + cbb_month.Items[cbb_month.SelectedIndex];
+
+            chart.Series.Clear();
+            piechart.Series.Clear();
+            LoadDataReportB();
+            LoadChartB();
+            LoadDataPieChartB();
+            LoadPieChart();
         }
     }
 }

@@ -34,7 +34,7 @@
             this.lbl_title = new System.Windows.Forms.Label();
             this.piechart = new LiveCharts.WinForms.PieChart();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_revenue = new System.Windows.Forms.Label();
             this.cbb_month = new System.Windows.Forms.ComboBox();
             this.chart = new LiveCharts.WinForms.CartesianChart();
             this.btn_by_month = new CS511_Project_QLNS.View.CustomButton();
@@ -108,15 +108,15 @@
             this.label2.TabIndex = 55;
             this.label2.Text = "Top 5 best-sellers";
             // 
-            // label1
+            // lbl_revenue
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(523, 705);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 20);
-            this.label1.TabIndex = 54;
-            this.label1.Text = "Revenue by all months";
+            this.lbl_revenue.AutoSize = true;
+            this.lbl_revenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_revenue.Location = new System.Drawing.Point(523, 705);
+            this.lbl_revenue.Name = "lbl_revenue";
+            this.lbl_revenue.Size = new System.Drawing.Size(178, 20);
+            this.lbl_revenue.TabIndex = 54;
+            this.lbl_revenue.Text = "Revenue by all months";
             // 
             // cbb_month
             // 
@@ -127,6 +127,7 @@
             this.cbb_month.Name = "cbb_month";
             this.cbb_month.Size = new System.Drawing.Size(220, 26);
             this.cbb_month.TabIndex = 53;
+            this.cbb_month.SelectedIndexChanged += new System.EventHandler(this.cbb_month_SelectedIndexChanged);
             // 
             // chart
             // 
@@ -340,7 +341,7 @@
             this.ClientSize = new System.Drawing.Size(1300, 800);
             this.Controls.Add(this.chart);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_revenue);
             this.Controls.Add(this.cbb_month);
             this.Controls.Add(this.btn_by_month);
             this.Controls.Add(this.btn_all_the_time);
@@ -381,7 +382,7 @@
         private System.Windows.Forms.Button btn_employee;
         private LiveCharts.WinForms.PieChart piechart;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_revenue;
         private System.Windows.Forms.ComboBox cbb_month;
         private View.CustomButton btn_by_month;
         private View.CustomButton btn_all_the_time;
