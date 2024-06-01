@@ -32,7 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_exit = new System.Windows.Forms.PictureBox();
             this.lbl_title = new System.Windows.Forms.Label();
-            this.pieChart1 = new LiveCharts.WinForms.PieChart();
+            this.piechart = new LiveCharts.WinForms.PieChart();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cbb_month = new System.Windows.Forms.ComboBox();
@@ -90,13 +90,13 @@
             this.lbl_title.TabIndex = 12;
             this.lbl_title.Text = "HOME";
             // 
-            // pieChart1
+            // piechart
             // 
-            this.pieChart1.Location = new System.Drawing.Point(933, 365);
-            this.pieChart1.Name = "pieChart1";
-            this.pieChart1.Size = new System.Drawing.Size(355, 279);
-            this.pieChart1.TabIndex = 13;
-            this.pieChart1.Text = "pieChart1";
+            this.piechart.Location = new System.Drawing.Point(933, 365);
+            this.piechart.Name = "piechart";
+            this.piechart.Size = new System.Drawing.Size(355, 279);
+            this.piechart.TabIndex = 13;
+            this.piechart.Text = "pieChart1";
             // 
             // label2
             // 
@@ -130,9 +130,9 @@
             // 
             // chart
             // 
-            this.chart.Location = new System.Drawing.Point(316, 381);
+            this.chart.Location = new System.Drawing.Point(315, 381);
             this.chart.Name = "chart";
-            this.chart.Size = new System.Drawing.Size(595, 263);
+            this.chart.Size = new System.Drawing.Size(595, 279);
             this.chart.TabIndex = 56;
             this.chart.Text = "cartesianChart1";
             // 
@@ -342,7 +342,7 @@
             this.Controls.Add(this.cbb_month);
             this.Controls.Add(this.btn_by_month);
             this.Controls.Add(this.btn_all_the_time);
-            this.Controls.Add(this.pieChart1);
+            this.Controls.Add(this.piechart);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.ptb_em_pic);
@@ -377,7 +377,7 @@
         private System.Windows.Forms.Button btn_report;
         private System.Windows.Forms.Button btn_import;
         private System.Windows.Forms.Button btn_employee;
-        private LiveCharts.WinForms.PieChart pieChart1;
+        private LiveCharts.WinForms.PieChart piechart;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbb_month;

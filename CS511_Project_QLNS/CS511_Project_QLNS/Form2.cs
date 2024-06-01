@@ -13,6 +13,7 @@ using System.Windows.Documents;
 using LiveCharts;
 using LiveCharts.Wpf;
 using System.Windows.Media;
+using LiveCharts.WinForms;
 
 namespace CS511_Project_QLNS
 {
@@ -42,6 +43,9 @@ namespace CS511_Project_QLNS
         List<String> list = new List<String>();
         ChartValues<decimal> decimals = new ChartValues<decimal>();
 
+        string[] a = new string[200];
+        int[] b = new int[200];
+        int count;
 
         //emp info
         public int emp_id;
@@ -218,8 +222,12 @@ namespace CS511_Project_QLNS
 
             btn_all_the_time.BackColor = color_btn_cate_chosen;
             btn_by_month.BackColor = color_btn_cate_normal;
+
+            cbb_month.Visible = false;
             LoadDataReportChartA();
+            LoadDataPieChartA();
             LoadChart();
+            LoadPieChart();
         }
 
         private void btn_chat_Click(object sender, EventArgs e)
@@ -303,6 +311,26 @@ namespace CS511_Project_QLNS
             dr.Close();
             sqlCon.Close();
         }
+        public void LoadDataPieChartA()
+        {
+            count = 0;
+            a = new string[200];
+            b = new int[200];
+            if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT TOP 5 TBL_REC_DETAIL.BOOK_NAME ,SUM(TBL_REC_DETAIL.QUANTITY) FROM TBL_REC_DETAIL GROUP BY TBL_REC_DETAIL.BOOK_NAME, TBL_REC_DETAIL.ID_BOOK ORDER BY SUM(TBL_REC_DETAIL.QUANTITY) DESC";
+            SqlDataReader dr2 = cmd.ExecuteReader();
+            while (dr2.Read())
+            {
+                a[count] = dr2.GetString(0);
+                b[count] = dr2.GetInt32(1);
+                count++;
+            }
+            dr2.Close();
+            sqlCon.Close();
+        }
 
         public void LoadChart()
         {
@@ -328,8 +356,20 @@ namespace CS511_Project_QLNS
                 //Fill = System.Windows.Media.Brushes.Transparent // Setting the fill to transparent
             };
             chart.AnimationsSpeed = TimeSpan.FromMilliseconds(200);
-
             chart.Series.Add(revenueSeries);
+        }
+
+        Func<ChartPoint, string> label = chartpoint => string.Format("{0} ({1:P})", chartpoint.Y, chartpoint.Participation);
+        public void LoadPieChart()
+        {
+            SeriesCollection series = new SeriesCollection();
+            for (int i = 0; i < 5; i++)
+            {
+                series.Add(new PieSeries(i) { Title = a[i], Values = new ChartValues<int> { b[i] }, DataLabels = true, LabelPoint = label });
+
+            }
+            piechart.AnimationsSpeed = TimeSpan.FromMilliseconds(200);
+            piechart.Series = series;
         }
     }
 }
