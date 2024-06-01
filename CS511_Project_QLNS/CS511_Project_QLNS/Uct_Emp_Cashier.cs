@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZXing.OneD;
 
 namespace CS511_Project_QLNS
 {
@@ -76,6 +78,62 @@ namespace CS511_Project_QLNS
                 parent_uct.LoadDataWithCate(parent_uct.is_displayed_button.ToString());
 
             parent.Show();
+        }
+
+        Control FindControlByName(Control control, string controlName)
+        {
+            if (control.Name == controlName)
+            {
+                return control;
+            }
+
+            foreach (Control childControl in control.Controls)
+            {
+                Control foundControl = FindControlByName(childControl, controlName);
+                if (foundControl != null)
+                {
+                    return foundControl;
+                }
+            }
+            return null;
+        }
+
+        private void ptb_delete_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you wish to remove this permanently", "Warning", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                Form2 parent = this.Parent.Parent.Parent as Form2;
+                Uct_Employee_Cashier parent_uct = this.Parent.Parent as Uct_Employee_Cashier;
+
+                //get the fpnl_emp in parent_uct
+                Control fpnl = FindControlByName(parent_uct, "fpnl_emp");
+
+                //dispose the pic of this uct
+                ptb_img.BackgroundImage.Dispose();
+
+                //remove this control out of the fpnl
+                fpnl.Controls.Remove(this);
+
+                //delete this book from db
+                connection co = new connection();
+                SqlConnection sqlCon = new SqlConnection(co.connect);
+                SqlCommand cmd = new SqlCommand();
+                if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "DELETE FROM TBL_EMP WHERE ID = @id";
+                cmd.Parameters.AddWithValue("@id", this.id);
+                cmd.ExecuteNonQuery();
+            }
+            else if (result == DialogResult.No)
+            {
+                // User clicked No
+                // Perform actions for No click
+                return;
+            }
+
         }
     }
 }

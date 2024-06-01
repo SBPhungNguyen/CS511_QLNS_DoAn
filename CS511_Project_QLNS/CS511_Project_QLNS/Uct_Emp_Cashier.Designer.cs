@@ -103,6 +103,7 @@
             this.ptb_delete.Size = new System.Drawing.Size(25, 25);
             this.ptb_delete.TabIndex = 17;
             this.ptb_delete.TabStop = false;
+            this.ptb_delete.Click += new System.EventHandler(this.ptb_delete_Click);
             // 
             // ptb_img
             // 
