@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_exit = new System.Windows.Forms.PictureBox();
             this.lbl_title = new System.Windows.Forms.Label();
-            this.piechart = new LiveCharts.WinForms.PieChart();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_revenue = new System.Windows.Forms.Label();
             this.cbb_month = new System.Windows.Forms.ComboBox();
-            this.chart = new LiveCharts.WinForms.CartesianChart();
             this.btn_by_month = new CS511_Project_QLNS.View.CustomButton();
             this.btn_all_the_time = new CS511_Project_QLNS.View.CustomButton();
             this.ptb_em_pic = new CS511_Project_QLNS.View.CustomPictureBox();
@@ -50,11 +51,13 @@
             this.lbl_em_name = new System.Windows.Forms.Label();
             this.btn_logout = new CS511_Project_QLNS.View.CustomButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_em_pic)).BeginInit();
             this.customPanel1.SuspendLayout();
             this.pnl_UserName.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -90,14 +93,6 @@
             this.lbl_title.TabIndex = 12;
             this.lbl_title.Text = "HOME";
             // 
-            // piechart
-            // 
-            this.piechart.Location = new System.Drawing.Point(933, 365);
-            this.piechart.Name = "piechart";
-            this.piechart.Size = new System.Drawing.Size(355, 279);
-            this.piechart.TabIndex = 13;
-            this.piechart.Text = "pieChart1";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -128,14 +123,6 @@
             this.cbb_month.Size = new System.Drawing.Size(220, 26);
             this.cbb_month.TabIndex = 53;
             this.cbb_month.SelectedIndexChanged += new System.EventHandler(this.cbb_month_SelectedIndexChanged);
-            // 
-            // chart
-            // 
-            this.chart.Location = new System.Drawing.Point(315, 381);
-            this.chart.Name = "chart";
-            this.chart.Size = new System.Drawing.Size(595, 279);
-            this.chart.TabIndex = 56;
-            this.chart.Text = "cartesianChart1";
             // 
             // btn_by_month
             // 
@@ -324,6 +311,7 @@
             this.btn_logout.Text = "Log Out";
             this.btn_logout.TextColor = System.Drawing.Color.White;
             this.btn_logout.UseVisualStyleBackColor = false;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // panel2
             // 
@@ -333,19 +321,34 @@
             this.panel2.Size = new System.Drawing.Size(272, 2);
             this.panel2.TabIndex = 5;
             // 
+            // chart1
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(442, 332);
+            this.chart1.Name = "chart1";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(300, 300);
+            this.chart1.TabIndex = 56;
+            this.chart1.Text = "chart1";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1300, 800);
-            this.Controls.Add(this.chart);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_revenue);
             this.Controls.Add(this.cbb_month);
             this.Controls.Add(this.btn_by_month);
             this.Controls.Add(this.btn_all_the_time);
-            this.Controls.Add(this.piechart);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.ptb_em_pic);
@@ -359,6 +362,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptb_em_pic)).EndInit();
             this.customPanel1.ResumeLayout(false);
             this.pnl_UserName.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,12 +384,11 @@
         private System.Windows.Forms.Button btn_report;
         private System.Windows.Forms.Button btn_import;
         private System.Windows.Forms.Button btn_employee;
-        private LiveCharts.WinForms.PieChart piechart;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_revenue;
         private System.Windows.Forms.ComboBox cbb_month;
         private View.CustomButton btn_by_month;
         private View.CustomButton btn_all_the_time;
-        private LiveCharts.WinForms.CartesianChart chart;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

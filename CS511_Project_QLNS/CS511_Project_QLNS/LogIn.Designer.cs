@@ -98,7 +98,7 @@
             this.txt_pass.PasswordChar = true;
             this.txt_pass.Size = new System.Drawing.Size(233, 35);
             this.txt_pass.TabIndex = 23;
-            this.txt_pass.Texts = "";
+            this.txt_pass.Texts = "admin123";
             this.txt_pass.UnderlineStyle = true;
             // 
             // txt_name
@@ -117,7 +117,7 @@
             this.txt_name.PasswordChar = false;
             this.txt_name.Size = new System.Drawing.Size(233, 35);
             this.txt_name.TabIndex = 22;
-            this.txt_name.Texts = "";
+            this.txt_name.Texts = "Phạm Hương Ly";
             this.txt_name.UnderlineStyle = true;
             // 
             // btn_signin
@@ -156,7 +156,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(124, 252);
+            this.label2.Location = new System.Drawing.Point(124, 248);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(147, 16);
             this.label2.TabIndex = 20;
@@ -187,9 +187,9 @@
             this.lbl_LogIn.AutoSize = true;
             this.lbl_LogIn.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_LogIn.ForeColor = System.Drawing.Color.Green;
-            this.lbl_LogIn.Location = new System.Drawing.Point(122, 19);
+            this.lbl_LogIn.Location = new System.Drawing.Point(131, 18);
             this.lbl_LogIn.Name = "lbl_LogIn";
-            this.lbl_LogIn.Size = new System.Drawing.Size(155, 40);
+            this.lbl_LogIn.Size = new System.Drawing.Size(159, 41);
             this.lbl_LogIn.TabIndex = 14;
             this.lbl_LogIn.Text = "SIGN IN";
             // 

@@ -48,6 +48,7 @@ namespace CS511_Project_QLNS
             SqlCommand cmd;
             connection co = new connection();
             sqlCon = new SqlConnection(co.connect);
+            if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
             cmd = new SqlCommand();
             cmd.Connection = sqlCon;
             cmd.CommandType = CommandType.Text;
@@ -60,11 +61,9 @@ namespace CS511_Project_QLNS
                     Form2 form = new Form2(dr.GetInt32(0));
                     this.Hide();
                     form.ShowDialog();
-
                     this.Show();
                 }
             }
-
 
         }
     }

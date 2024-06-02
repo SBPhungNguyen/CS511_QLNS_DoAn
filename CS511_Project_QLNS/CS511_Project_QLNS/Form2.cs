@@ -94,7 +94,7 @@ namespace CS511_Project_QLNS
             }
 
             uct_Employee_Home = new Uct_Employee_Home();
-            uct_Employee_Home.Location = new System.Drawing.Point(315, 130);
+            uct_Employee_Home.Location = new System.Drawing.Point(235, 105);
             uct_Employee_Home.Name = "uct_Employee_Home";
             this.Controls.Add(uct_Employee_Home);
             uct_Employee_Home.BringToFront();
@@ -152,7 +152,7 @@ namespace CS511_Project_QLNS
             }
 
             uct_Employee_Home = new Uct_Employee_Home();
-            uct_Employee_Home.Location = new System.Drawing.Point(315, 130);
+            uct_Employee_Home.Location = new System.Drawing.Point(235, 105);
             uct_Employee_Home.Name = "uct_Employee_Home";
             this.Controls.Add(uct_Employee_Home);
             uct_Employee_Home.BringToFront();
@@ -169,7 +169,7 @@ namespace CS511_Project_QLNS
             btn_employee.BackColor = color_btn_normal;
 
             uct_Employee_Import = new Uct_Employee_Import();
-            uct_Employee_Import.Location = new System.Drawing.Point(315, 130);
+            uct_Employee_Import.Location = new System.Drawing.Point(235, 105);
             uct_Employee_Import.Name = "uct_Employee_Import";
             this.Controls.Add(uct_Employee_Import);
             uct_Employee_Import.BringToFront();
@@ -225,11 +225,11 @@ namespace CS511_Project_QLNS
             btn_all_the_time.BackColor = color_btn_cate_chosen;
             btn_by_month.BackColor = color_btn_cate_normal;
 
-            cbb_month.Visible = false;
-            LoadDataReportChartA();
-            LoadDataPieChartA();
-            LoadChart();
-            LoadPieChart();
+            //cbb_month.Visible = false;
+            //LoadDataReportChartA();
+            //LoadDataPieChartA();
+            //LoadChart();
+            //LoadPieChart();
         }
 
         private void btn_chat_Click(object sender, EventArgs e)
@@ -243,7 +243,7 @@ namespace CS511_Project_QLNS
             btn_employee.BackColor = color_btn_normal;
 
             uct_Employee_Chat = new Uct_Employee_Chat();
-            uct_Employee_Chat.Location = new System.Drawing.Point(315, 130);
+            uct_Employee_Chat.Location = new System.Drawing.Point(235, 105);
             uct_Employee_Chat.Name = "uct_Employee_Chat";
             this.Controls.Add(uct_Employee_Chat);
             uct_Employee_Chat.BringToFront();
@@ -267,7 +267,7 @@ namespace CS511_Project_QLNS
             }
 
             uct_Employee_Cashier = new Uct_Employee_Cashier();
-            uct_Employee_Cashier.Location = new System.Drawing.Point(315, 130);
+            uct_Employee_Cashier.Location = new System.Drawing.Point(235, 105);
             uct_Employee_Cashier.Name = "uct_Employee_Cashier";
             this.Controls.Add(uct_Employee_Cashier);
             uct_Employee_Cashier.BringToFront();
@@ -385,56 +385,56 @@ namespace CS511_Project_QLNS
         }
         public void LoadChart()
         {
-            chart.AxisX.Clear();
-            chart.AxisY.Clear();
-            chart.Series.Clear();
-            chart.AxisX.Add(new LiveCharts.Wpf.Axis
-            {
-                Title = "Month",
-                Labels = list
+            //chart.AxisX.Clear();
+            //chart.AxisY.Clear();
+            //chart.Series.Clear();
+            //chart.AxisX.Add(new LiveCharts.Wpf.Axis
+            //{
+            //    Title = "Month",
+            //    Labels = list
 
-            });
-            chart.AxisY.Add(new LiveCharts.Wpf.Axis
-            {
-                Title = "Revenue",
-                LabelFormatter = value => value.ToString()
-            });
-            var revenueSeries = new LineSeries
-            {
-                Title = "Revenue",
-                Values = decimals, //new ChartValues<double> { 1222 },
-                Stroke = new SolidColorBrush(System.Windows.Media.Color.FromRgb(34, 139, 34)), // Setting the line color to ForestGreen
-                //Fill = System.Windows.Media.Brushes.Transparent // Setting the fill to transparent
-            };
-            chart.AnimationsSpeed = TimeSpan.FromMilliseconds(200);
-            chart.Series.Add(revenueSeries);
+            //});
+            //chart.AxisY.Add(new LiveCharts.Wpf.Axis
+            //{
+            //    Title = "Revenue",
+            //    LabelFormatter = value => value.ToString()
+            //});
+            //var revenueSeries = new LineSeries
+            //{
+            //    Title = "Revenue",
+            //    Values = decimals, //new ChartValues<double> { 1222 },
+            //    Stroke = new SolidColorBrush(System.Windows.Media.Color.FromRgb(34, 139, 34)), // Setting the line color to ForestGreen
+            //    //Fill = System.Windows.Media.Brushes.Transparent // Setting the fill to transparent
+            //};
+            //chart.AnimationsSpeed = TimeSpan.FromMilliseconds(200);
+            //chart.Series.Add(revenueSeries);
         }
 
         public void LoadChartB()
         {
-            chart.AxisX.Clear();
-            chart.AxisY.Clear();
-            chart.Series.Clear();
-            chart.AxisX.Add(new LiveCharts.Wpf.Axis
-            {
-                Title = "Date",
-                Labels = list
+            //chart.AxisX.Clear();
+            //chart.AxisY.Clear();
+            //chart.Series.Clear();
+            //chart.AxisX.Add(new LiveCharts.Wpf.Axis
+            //{
+            //    Title = "Date",
+            //    Labels = list
 
-            });
-            chart.AxisY.Add(new LiveCharts.Wpf.Axis
-            {
-                Title = "Revenue",
-                LabelFormatter = value => value.ToString()
-            });
-            var revenueSeries = new LineSeries
-            {
-                Title = "Revenue",
-                Values = decimals, //new ChartValues<double> { 1222 },
-                Stroke = new SolidColorBrush(System.Windows.Media.Color.FromRgb(34, 139, 34)), // Setting the line color to ForestGreen
-                //Fill = System.Windows.Media.Brushes.Transparent // Setting the fill to transparent
-            };
-            chart.AnimationsSpeed = TimeSpan.FromMilliseconds(200);
-            chart.Series.Add(revenueSeries);
+            //});
+            //chart.AxisY.Add(new LiveCharts.Wpf.Axis
+            //{
+            //    Title = "Revenue",
+            //    LabelFormatter = value => value.ToString()
+            //});
+            //var revenueSeries = new LineSeries
+            //{
+            //    Title = "Revenue",
+            //    Values = decimals, //new ChartValues<double> { 1222 },
+            //    Stroke = new SolidColorBrush(System.Windows.Media.Color.FromRgb(34, 139, 34)), // Setting the line color to ForestGreen
+            //    //Fill = System.Windows.Media.Brushes.Transparent // Setting the fill to transparent
+            //};
+            //chart.AnimationsSpeed = TimeSpan.FromMilliseconds(200);
+            //chart.Series.Add(revenueSeries);
         }
 
         Func<ChartPoint, string> label = chartpoint => string.Format("{0} ({1:P})", chartpoint.Y, chartpoint.Participation);
@@ -446,8 +446,8 @@ namespace CS511_Project_QLNS
                 series.Add(new PieSeries(i) { Title = a[i], Values = new ChartValues<int> { b[i] }, DataLabels = true, LabelPoint = label });
 
             }
-            piechart.AnimationsSpeed = TimeSpan.FromMilliseconds(200);
-            piechart.Series = series;
+            //piechart.AnimationsSpeed = TimeSpan.FromMilliseconds(200);
+            //piechart.Series = series;
         }
 
         private void btn_all_the_time_Click(object sender, EventArgs e)
@@ -461,8 +461,8 @@ namespace CS511_Project_QLNS
 
             cbb_month.Visible = false;
 
-            chart.Series.Clear();
-            piechart.Series.Clear();
+            //chart.Series.Clear();
+            //piechart.Series.Clear();
             LoadDataReportChartA();
             LoadDataPieChartA();
             LoadChart();
@@ -489,35 +489,43 @@ namespace CS511_Project_QLNS
 
         private void btn_by_month_Click(object sender, EventArgs e)
         {
-            if (is_displayed_button == 1)
-                return;
-            is_displayed_button = 1;
-            btn_all_the_time.BackColor = color_btn_cate_normal;
-            btn_by_month.BackColor = color_btn_cate_chosen;
+            //if (is_displayed_button == 1)
+            //    return;
+            //is_displayed_button = 1;
+            //btn_all_the_time.BackColor = color_btn_cate_normal;
+            //btn_by_month.BackColor = color_btn_cate_chosen;
 
-            cbb_month.Visible = true;
-            LoadMonthForCBBChart();
-            cbb_month.SelectedIndex = cbb_month.Items.Count - 1;
-            lbl_revenue.Text = "Revenue by " + cbb_month.Items[cbb_month.SelectedIndex];
+            //cbb_month.Visible = true;
+            //LoadMonthForCBBChart();
+            //cbb_month.SelectedIndex = cbb_month.Items.Count - 1;
+            //lbl_revenue.Text = "Revenue by " + cbb_month.Items[cbb_month.SelectedIndex];
 
-            chart.Series.Clear();
-            piechart.Series.Clear();
-            LoadDataReportB();
-            LoadChartB();
-            LoadDataPieChartB();
-            LoadPieChart();
+            //chart.Series.Clear();
+            //piechart.Series.Clear();
+            //LoadDataReportB();
+            //LoadChartB();
+            //LoadDataPieChartB();
+            //LoadPieChart();
         }
 
         private void cbb_month_SelectedIndexChanged(object sender, EventArgs e)
         {
             lbl_revenue.Text = "Revenue by " + cbb_month.Items[cbb_month.SelectedIndex];
 
-            chart.Series.Clear();
-            piechart.Series.Clear();
-            LoadDataReportB();
-            LoadChartB();
-            LoadDataPieChartB();
-            LoadPieChart();
+            //chart.Series.Clear();
+            //piechart.Series.Clear();
+            //LoadDataReportB();
+            //LoadChartB();
+            //LoadDataPieChartB();
+            //LoadPieChart();
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            ptb_em_pic.Dispose();
+            this.Dispose();
+            this.Close();
+
         }
     }
 }
