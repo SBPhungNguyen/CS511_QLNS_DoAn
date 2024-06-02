@@ -372,9 +372,10 @@
               "RelativeDocumentMoniker": "CS511_Project_QLNS\\Form2.cs",
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Form2.cs",
               "RelativeToolTip": "CS511_Project_QLNS\\Form2.cs",
-              "ViewState": "AQIAAL8BAAAAAAAAAAAlwNYBAAAAAAAA",
+              "ViewState": "AQIAANABAAAAAAAAAAAAAOoBAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T06:02:52.047Z"
+              "WhenOpened": "2024-05-08T06:02:52.047Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -408,7 +409,8 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\LogIn.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\LogIn.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T12:53:04.971Z"
+              "WhenOpened": "2024-05-08T12:53:04.971Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -431,7 +433,8 @@
               "RelativeToolTip": "CS511_Project_QLNS\\LogIn.cs",
               "ViewState": "AQIAACwAAAAAAAAAAIA3wDcAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T07:27:51.678Z"
+              "WhenOpened": "2024-05-07T07:27:51.678Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

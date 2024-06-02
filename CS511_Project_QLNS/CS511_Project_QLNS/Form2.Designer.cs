@@ -102,7 +102,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(963, 705);
+            this.label2.Location = new System.Drawing.Point(985, 705);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(144, 20);
             this.label2.TabIndex = 55;
@@ -135,14 +135,14 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(316, 332);
+            this.chart1.Location = new System.Drawing.Point(315, 346);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(512, 300);
+            this.chart1.Size = new System.Drawing.Size(539, 317);
             this.chart1.TabIndex = 56;
             this.chart1.Text = "chart1";
             // 
@@ -152,13 +152,13 @@
             this.chart2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(862, 305);
+            this.chart2.Location = new System.Drawing.Point(875, 326);
             this.chart2.Name = "chart2";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(426, 334);
+            this.chart2.Size = new System.Drawing.Size(413, 300);
             this.chart2.TabIndex = 57;
             this.chart2.Text = "chart2";
             // 

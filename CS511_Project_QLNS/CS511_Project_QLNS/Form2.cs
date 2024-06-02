@@ -227,9 +227,9 @@ namespace CS511_Project_QLNS
             btn_by_month.BackColor = color_btn_cate_normal;
 
             cbb_month.Visible = false;
-            //LoadDataReportChartA();
+            LoadDataReportChartA();
             LoadDataPieChartA();
-            //LoadChart();
+            LoadChart();
             LoadPieChart();
         }
 
@@ -387,29 +387,45 @@ namespace CS511_Project_QLNS
         }
         public void LoadChart()
         {
-            //chart.AxisX.Clear();
-            //chart.AxisY.Clear();
-            //chart.Series.Clear();
-            //chart.AxisX.Add(new LiveCharts.Wpf.Axis
-            //{
-            //    Title = "Month",
-            //    Labels = list
+            // Clear any existing series
+            chart1.Series.Clear();
 
-            //});
-            //chart.AxisY.Add(new LiveCharts.Wpf.Axis
-            //{
-            //    Title = "Revenue",
-            //    LabelFormatter = value => value.ToString()
-            //});
-            //var revenueSeries = new LineSeries
-            //{
-            //    Title = "Revenue",
-            //    Values = decimals, //new ChartValues<double> { 1222 },
-            //    Stroke = new SolidColorBrush(System.Windows.Media.Color.FromRgb(34, 139, 34)), // Setting the line color to ForestGreen
-            //    //Fill = System.Windows.Media.Brushes.Transparent // Setting the fill to transparent
-            //};
-            //chart.AnimationsSpeed = TimeSpan.FromMilliseconds(200);
-            //chart.Series.Add(revenueSeries);
+            // Create a new series
+            System.Windows.Forms.DataVisualization.Charting.Series series = new System.Windows.Forms.DataVisualization.Charting.Series
+            {
+                Name = "Series1",
+                IsVisibleInLegend = false,
+                ChartType = SeriesChartType.Line
+            };
+
+            for(int i = 0; i<list.Count;i++)
+            {
+                series.Points.AddXY(list[i], decimals[i]);
+            }
+
+            // Customize label appearance for each data point
+            foreach (DataPoint point in series.Points)
+            {
+                point.Label = point.YValues[0].ToString();
+                point.Font = new Font("Arial", 8f, FontStyle.Bold);
+            }
+
+            // Add series to the chart
+            chart1.Series.Add(series);
+
+            // Customize the chart appearance
+            chart1.ChartAreas[0].AxisX.Title = "Month";
+            chart1.ChartAreas[0].AxisY.Title = "Revenue";
+            chart1.ChartAreas[0].AxisX.Interval = 1;
+
+            // Customize grid lines to be lighter
+            chart1.ChartAreas[0].AxisX.MajorGrid.LineColor = System.Drawing.Color.LightGray;
+            chart1.ChartAreas[0].AxisY.MajorGrid.LineColor = System.Drawing.Color.LightGray;
+            chart1.ChartAreas[0].AxisX.MajorGrid.LineWidth = 1;
+            chart1.ChartAreas[0].AxisY.MajorGrid.LineWidth = 1;
+
+            // Optional: Customize legend position
+            chart1.Legends[0].Docking = Docking.Bottom;
         }
 
         public void LoadChartB()
@@ -463,18 +479,16 @@ namespace CS511_Project_QLNS
             {
                 double percentage = point.YValues[0] / series.Points.FindMaxByValue().YValues[0] * 100;
                 point.Label = string.Format("{0}: {1} ({2:P1})", point.AxisLabel, point.YValues[0], point.YValues[0] / s);
-                point.Font = new Font("Arial", 9f, FontStyle.Regular);
+                point.Font = new Font("Arial", 8f, FontStyle.Regular);
             }
 
             // Add series to the chart
             chart2.Series.Add(series);
 
             // Customize the chart appearance
-            //chart1.Titles.Add("Sample Pie Chart");
-
             chart2.ChartAreas[0].Area3DStyle.Enable3D = false;  // Disable 3D effect
             chart2.Legends[0].Enabled = true;
-            chart1.Legends[0].Docking = Docking.Bottom;
+            chart2.Legends[0].Docking = Docking.Bottom;
 
         }
 
@@ -489,8 +503,8 @@ namespace CS511_Project_QLNS
 
             cbb_month.Visible = false;
 
-            //chart.Series.Clear();
-            //piechart.Series.Clear();
+            chart1.Series.Clear();
+            chart2.Series.Clear();
             LoadDataReportChartA();
             LoadDataPieChartA();
             LoadChart();
@@ -517,35 +531,35 @@ namespace CS511_Project_QLNS
 
         private void btn_by_month_Click(object sender, EventArgs e)
         {
-            //if (is_displayed_button == 1)
-            //    return;
-            //is_displayed_button = 1;
-            //btn_all_the_time.BackColor = color_btn_cate_normal;
-            //btn_by_month.BackColor = color_btn_cate_chosen;
+            if (is_displayed_button == 1)
+                return;
+            is_displayed_button = 1;
+            btn_all_the_time.BackColor = color_btn_cate_normal;
+            btn_by_month.BackColor = color_btn_cate_chosen;
 
-            //cbb_month.Visible = true;
-            //LoadMonthForCBBChart();
-            //cbb_month.SelectedIndex = cbb_month.Items.Count - 1;
-            //lbl_revenue.Text = "Revenue by " + cbb_month.Items[cbb_month.SelectedIndex];
+            cbb_month.Visible = true;
+            LoadMonthForCBBChart();
+            cbb_month.SelectedIndex = cbb_month.Items.Count - 1;
+            lbl_revenue.Text = "Revenue by " + cbb_month.Items[cbb_month.SelectedIndex];
 
-            //chart.Series.Clear();
-            //piechart.Series.Clear();
-            //LoadDataReportB();
-            //LoadChartB();
-            //LoadDataPieChartB();
-            //LoadPieChart();
+            chart1.Series.Clear();
+            chart2.Series.Clear();
+            LoadDataReportB();
+            LoadChart();
+            LoadDataPieChartB();
+            LoadPieChart();
         }
 
         private void cbb_month_SelectedIndexChanged(object sender, EventArgs e)
         {
             lbl_revenue.Text = "Revenue by " + cbb_month.Items[cbb_month.SelectedIndex];
 
-            //chart.Series.Clear();
-            //piechart.Series.Clear();
-            //LoadDataReportB();
-            //LoadChartB();
-            //LoadDataPieChartB();
-            //LoadPieChart();
+            chart1.Series.Clear();
+            chart2.Series.Clear();
+            LoadDataReportB();
+            LoadChart();
+            LoadDataPieChartB();
+            LoadPieChart();
         }
 
         private void btn_logout_Click(object sender, EventArgs e)
