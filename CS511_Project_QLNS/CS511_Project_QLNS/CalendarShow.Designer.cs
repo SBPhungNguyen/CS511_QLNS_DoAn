@@ -51,7 +51,7 @@
             // 
             this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
             this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_exit.Location = new System.Drawing.Point(229, 5);
+            this.btn_exit.Location = new System.Drawing.Point(268, 5);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(30, 30);
             this.btn_exit.TabIndex = 19;
@@ -80,7 +80,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(260, 245);
+            this.ClientSize = new System.Drawing.Size(300, 245);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
