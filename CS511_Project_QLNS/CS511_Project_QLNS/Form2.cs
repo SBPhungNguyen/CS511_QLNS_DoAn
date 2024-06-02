@@ -14,6 +14,7 @@ using LiveCharts;
 using LiveCharts.Wpf;
 using System.Windows.Media;
 using LiveCharts.WinForms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace CS511_Project_QLNS
 {
@@ -225,11 +226,11 @@ namespace CS511_Project_QLNS
             btn_all_the_time.BackColor = color_btn_cate_chosen;
             btn_by_month.BackColor = color_btn_cate_normal;
 
-            //cbb_month.Visible = false;
+            cbb_month.Visible = false;
             //LoadDataReportChartA();
-            //LoadDataPieChartA();
+            LoadDataPieChartA();
             //LoadChart();
-            //LoadPieChart();
+            LoadPieChart();
         }
 
         private void btn_chat_Click(object sender, EventArgs e)
@@ -344,6 +345,7 @@ namespace CS511_Project_QLNS
             count = 0;
             a = new string[200];
             b = new int[200];
+            sqlCon = new SqlConnection(co.connect);
             if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = sqlCon;
@@ -437,17 +439,43 @@ namespace CS511_Project_QLNS
             //chart.Series.Add(revenueSeries);
         }
 
-        Func<ChartPoint, string> label = chartpoint => string.Format("{0} ({1:P})", chartpoint.Y, chartpoint.Participation);
         public void LoadPieChart()
         {
-            SeriesCollection series = new SeriesCollection();
-            for (int i = 0; i < 5; i++)
-            {
-                series.Add(new PieSeries(i) { Title = a[i], Values = new ChartValues<int> { b[i] }, DataLabels = true, LabelPoint = label });
+            chart2.Series.Clear();
 
+            // Create a new series
+            System.Windows.Forms.DataVisualization.Charting.Series series = new System.Windows.Forms.DataVisualization.Charting.Series
+            {
+                Name = "Series1",
+                IsVisibleInLegend = false,
+                ChartType = SeriesChartType.Doughnut,
+            };
+
+            int s = 0;
+            for (int i = 0; i<count;i++)
+            {
+                series.Points.AddXY(a[i], b[i]);
+                s = s + b[i];
             }
-            //piechart.AnimationsSpeed = TimeSpan.FromMilliseconds(200);
-            //piechart.Series = series;
+
+            // Customize label appearance for each data point
+            foreach (DataPoint point in series.Points)
+            {
+                double percentage = point.YValues[0] / series.Points.FindMaxByValue().YValues[0] * 100;
+                point.Label = string.Format("{0}: {1} ({2:P1})", point.AxisLabel, point.YValues[0], point.YValues[0] / s);
+                point.Font = new Font("Arial", 9f, FontStyle.Regular);
+            }
+
+            // Add series to the chart
+            chart2.Series.Add(series);
+
+            // Customize the chart appearance
+            //chart1.Titles.Add("Sample Pie Chart");
+
+            chart2.ChartAreas[0].Area3DStyle.Enable3D = false;  // Disable 3D effect
+            chart2.Legends[0].Enabled = true;
+            chart1.Legends[0].Docking = Docking.Bottom;
+
         }
 
         private void btn_all_the_time_Click(object sender, EventArgs e)
