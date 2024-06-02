@@ -52,7 +52,7 @@
             // 
             this.lbl_price.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_price.ForeColor = System.Drawing.Color.Red;
+            this.lbl_price.ForeColor = System.Drawing.Color.Purple;
             this.lbl_price.Location = new System.Drawing.Point(0, 0);
             this.lbl_price.Name = "lbl_price";
             this.lbl_price.Size = new System.Drawing.Size(160, 32);

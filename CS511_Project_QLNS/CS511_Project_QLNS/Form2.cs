@@ -48,6 +48,10 @@ namespace CS511_Project_QLNS
         int[] b = new int[200];
         int count;
 
+        string[] month = new string[200];
+        decimal[] decimalss = new decimal[200];
+        int count_2;
+
         //emp info
         public int emp_id;
         public int is_manager;
@@ -227,6 +231,7 @@ namespace CS511_Project_QLNS
             btn_by_month.BackColor = color_btn_cate_normal;
 
             cbb_month.Visible = false;
+            lbl_month.Visible = false;
             LoadDataReportChartA();
             LoadDataPieChartA();
             LoadChart();
@@ -294,8 +299,26 @@ namespace CS511_Project_QLNS
 
         public void LoadDataReportChartA()
         {
-            list.Clear();
-            decimals.Clear();
+            //list.Clear();
+            //decimals.Clear();
+            //SqlCommand cmd = new SqlCommand();
+            //sqlCon = new SqlConnection(co.connect);
+            //if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+            //cmd = new SqlCommand();
+            //cmd.Connection = sqlCon;
+            //cmd.CommandType = CommandType.Text;
+            //cmd.CommandText = "SELECT MONTH(C_DATE) AS MONTH, YEAR(C_DATE) AS YEAR, SUM(TOTAL) AS TOTAL FROM TBL_CUS_RECEIPT GROUP BY MONTH(C_DATE), YEAR(C_DATE)";
+            //SqlDataReader dr = cmd.ExecuteReader();
+            //while (dr.Read())
+            //{
+            //    int month = dr.GetInt32(0);
+            //    int year = dr.GetInt32(1);
+            //    list.Add(month + "/" + year);
+            //    decimals.Add(dr.GetDecimal(2));
+            //}
+            //dr.Close();
+            //sqlCon.Close();
+
             SqlCommand cmd = new SqlCommand();
             sqlCon = new SqlConnection(co.connect);
             if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
@@ -304,23 +327,49 @@ namespace CS511_Project_QLNS
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "SELECT MONTH(C_DATE) AS MONTH, YEAR(C_DATE) AS YEAR, SUM(TOTAL) AS TOTAL FROM TBL_CUS_RECEIPT GROUP BY MONTH(C_DATE), YEAR(C_DATE)";
             SqlDataReader dr = cmd.ExecuteReader();
+            count_2 = 0;
             while (dr.Read())
             {
-                int month = dr.GetInt32(0);
+                int mm = dr.GetInt32(0);
                 int year = dr.GetInt32(1);
-                list.Add(month + "/" + year);
-                decimals.Add(dr.GetDecimal(2));
+                month[count_2] = mm + "/" + year;
+                decimalss[count_2] = dr.GetDecimal(2);
+                count_2++;
             }
             dr.Close();
             sqlCon.Close();
         }
         private void LoadDataReportB()
         {
-            list.Clear();
-            decimals.Clear();
+            //list.Clear();
+            //decimals.Clear();
+            //string mmyy = cbb_month.Items[cbb_month.SelectedIndex].ToString();
+            //string[] split_line = mmyy.Split('/');
+            ////MessageBox.Show(mmyy);
+            //SqlCommand cmd = new SqlCommand();
+            //sqlCon = new SqlConnection(co.connect);
+            //if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+            //cmd = new SqlCommand();
+            //cmd.Connection = sqlCon;
+            //cmd.CommandType = CommandType.Text;
+            //cmd.CommandText = "SELECT DAY(C_DATE), SUM(TOTAL) AS TOTAL FROM TBL_CUS_RECEIPT WHERE MONTH(C_DATE) = @mm AND YEAR(C_DATE) = @yy GROUP BY DAY(C_DATE)";
+            //cmd.Parameters.AddWithValue("@mm", split_line[0]);
+            //cmd.Parameters.AddWithValue("@yy", split_line[1]);
+            //SqlDataReader dr = cmd.ExecuteReader();
+            //while (dr.Read())
+            //{
+            //    int date = dr.GetInt32(0);
+            //    list.Add(date.ToString() + "/" + split_line[0]);
+            //    decimals.Add(dr.GetDecimal(1));
+            //}
+            //dr.Close();
+            //sqlCon.Close();
+
+
             string mmyy = cbb_month.Items[cbb_month.SelectedIndex].ToString();
             string[] split_line = mmyy.Split('/');
             //MessageBox.Show(mmyy);
+            count_2 = 0;
             SqlCommand cmd = new SqlCommand();
             sqlCon = new SqlConnection(co.connect);
             if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
@@ -334,8 +383,9 @@ namespace CS511_Project_QLNS
             while (dr.Read())
             {
                 int date = dr.GetInt32(0);
-                list.Add(date.ToString() + "/" + split_line[0]);
-                decimals.Add(dr.GetDecimal(1));
+                month[count_2] = (date.ToString() + "/" + split_line[0]);
+                decimalss[count_2] = (dr.GetDecimal(1));
+                count_2++;
             }
             dr.Close();
             sqlCon.Close();
@@ -398,9 +448,9 @@ namespace CS511_Project_QLNS
                 ChartType = SeriesChartType.Line
             };
 
-            for(int i = 0; i<list.Count;i++)
+            for(int i = 0; i<count_2;i++)
             {
-                series.Points.AddXY(list[i], decimals[i]);
+                series.Points.AddXY(month[i], decimalss[i]);
             }
 
             // Customize label appearance for each data point
@@ -476,12 +526,14 @@ namespace CS511_Project_QLNS
             lbl_revenue.Text = "Revenue by all months";
 
             cbb_month.Visible = false;
+            lbl_month.Visible = false;
 
             chart1.Series.Clear();
             chart2.Series.Clear();
             LoadDataReportChartA();
-            LoadDataPieChartA();
             LoadChart();
+
+            LoadDataPieChartA();
             LoadPieChart();
         }
 
@@ -512,6 +564,7 @@ namespace CS511_Project_QLNS
             btn_by_month.BackColor = color_btn_cate_chosen;
 
             cbb_month.Visible = true;
+            lbl_month.Visible = true;
             LoadMonthForCBBChart();
             cbb_month.SelectedIndex = cbb_month.Items.Count - 1;
             lbl_revenue.Text = "Revenue by " + cbb_month.Items[cbb_month.SelectedIndex];
@@ -527,7 +580,7 @@ namespace CS511_Project_QLNS
         private void cbb_month_SelectedIndexChanged(object sender, EventArgs e)
         {
             lbl_revenue.Text = "Revenue by " + cbb_month.Items[cbb_month.SelectedIndex];
-
+            is_displayed_button = 1;
             chart1.Series.Clear();
             chart2.Series.Clear();
             LoadDataReportB();

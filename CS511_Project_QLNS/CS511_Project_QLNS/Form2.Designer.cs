@@ -56,6 +56,7 @@
             this.lbl_em_name = new System.Windows.Forms.Label();
             this.btn_logout = new CS511_Project_QLNS.View.CustomButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_month = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -123,7 +124,7 @@
             this.cbb_month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbb_month.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_month.FormattingEnabled = true;
-            this.cbb_month.Location = new System.Drawing.Point(316, 251);
+            this.cbb_month.Location = new System.Drawing.Point(401, 259);
             this.cbb_month.Name = "cbb_month";
             this.cbb_month.Size = new System.Drawing.Size(220, 26);
             this.cbb_month.TabIndex = 53;
@@ -359,12 +360,23 @@
             this.panel2.Size = new System.Drawing.Size(272, 2);
             this.panel2.TabIndex = 5;
             // 
+            // lbl_month
+            // 
+            this.lbl_month.AutoSize = true;
+            this.lbl_month.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_month.Location = new System.Drawing.Point(320, 262);
+            this.lbl_month.Name = "lbl_month";
+            this.lbl_month.Size = new System.Drawing.Size(60, 20);
+            this.lbl_month.TabIndex = 58;
+            this.lbl_month.Text = "Month:";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1300, 800);
+            this.Controls.Add(this.lbl_month);
             this.Controls.Add(this.chart2);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.label2);
@@ -415,5 +427,6 @@
         private View.CustomButton btn_all_the_time;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.Label lbl_month;
     }
 }
