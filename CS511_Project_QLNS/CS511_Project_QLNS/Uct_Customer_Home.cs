@@ -400,5 +400,61 @@ namespace CS511_Project_QLNS
                 sqlCon.Close();
             }
         }
+
+        public void DisposePictureBoxImages()
+        {
+            if (fpnl_books.Controls.Count > 0)
+            {
+                foreach (Control control in fpnl_books.Controls)
+                {
+                    // Check if control is a UserControl
+                    if (control is UserControl userControl)
+                    {
+                        // Dispose pictures within the UserControl (pass the user control)
+                        DisposeUserControlPictures(userControl);
+                    }
+                    else
+                    {
+                        // Check if control is a PictureBox directly in the FlowLayoutPanel
+                        if (control is PictureBox pictureBox)
+                        {
+                            DisposePictureBoxImage(pictureBox);
+                        }
+                    }
+                }
+            }
+        }
+
+        private void DisposePictureBoxImage(PictureBox pictureBox)
+        {
+            // Check if PictureBox has a background image
+            if (pictureBox.BackgroundImage != null)
+            {
+                pictureBox.BackgroundImage.Dispose();
+                pictureBox.BackgroundImage = null;
+            }
+
+            // Check if PictureBox has an image directly loaded (optional)
+            if (pictureBox.Image != null)
+            {
+                pictureBox.Image.Dispose();
+                pictureBox.Image = null;
+            }
+        }
+
+        // Assuming you have this function in your user control code
+        private void DisposeUserControlPictures(UserControl userControl)
+        {
+            // Iterate through controls in the UserControl
+            foreach (Control control in userControl.Controls)
+            {
+                // Check for PictureBoxes within the UserControl
+                if (control is PictureBox pictureBox)
+                {
+                    DisposePictureBoxImage(pictureBox);
+                }
+                // You can add logic to handle nested UserControls here (optional)
+            }
+        }
     }
 }

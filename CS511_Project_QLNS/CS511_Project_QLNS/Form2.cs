@@ -428,32 +428,6 @@ namespace CS511_Project_QLNS
             chart1.Legends[0].Docking = Docking.Bottom;
         }
 
-        public void LoadChartB()
-        {
-            //chart.AxisX.Clear();
-            //chart.AxisY.Clear();
-            //chart.Series.Clear();
-            //chart.AxisX.Add(new LiveCharts.Wpf.Axis
-            //{
-            //    Title = "Date",
-            //    Labels = list
-
-            //});
-            //chart.AxisY.Add(new LiveCharts.Wpf.Axis
-            //{
-            //    Title = "Revenue",
-            //    LabelFormatter = value => value.ToString()
-            //});
-            //var revenueSeries = new LineSeries
-            //{
-            //    Title = "Revenue",
-            //    Values = decimals, //new ChartValues<double> { 1222 },
-            //    Stroke = new SolidColorBrush(System.Windows.Media.Color.FromRgb(34, 139, 34)), // Setting the line color to ForestGreen
-            //    //Fill = System.Windows.Media.Brushes.Transparent // Setting the fill to transparent
-            //};
-            //chart.AnimationsSpeed = TimeSpan.FromMilliseconds(200);
-            //chart.Series.Add(revenueSeries);
-        }
 
         public void LoadPieChart()
         {
@@ -565,6 +539,12 @@ namespace CS511_Project_QLNS
         private void btn_logout_Click(object sender, EventArgs e)
         {
             ptb_em_pic.Dispose();
+            Uct_Employee_Home uct1 = FindControlByName(this,"uct_Employee_Home") as Uct_Employee_Home;
+            if (uct1 != null)
+                uct1.DisposePictureBoxImages();
+            Uct_Employee_Cashier uct2 = FindControlByName(this, "uct_Employee_Cashier") as Uct_Employee_Cashier;
+            if (uct2 != null)
+                uct2.DisposeUserControlPictures();
             this.Dispose();
             this.Close();
 

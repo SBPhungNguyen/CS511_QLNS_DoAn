@@ -93,6 +93,12 @@ namespace CS511_Project_QLNS
             btn_cart.BackColor = color_btn_normal;
             btn_chat.BackColor = color_btn_normal;
 
+            Uct_Customer_Home uct = FindControlByName(this, "uct_Customer_Home") as Uct_Customer_Home;
+            if (uct != null)
+            {
+                uct.DisposePictureBoxImages();
+            }
+
             uct_Customer_Home = new Uct_Customer_Home();
             uct_Customer_Home.Location = new System.Drawing.Point(235, 105);
             uct_Customer_Home.Name = "uct_Customer_Home";
@@ -152,7 +158,31 @@ namespace CS511_Project_QLNS
 
         private void btn_logout_Click(object sender, EventArgs e)
         {
+            Uct_Customer_Home uct = FindControlByName(this, "uct_Customer_Home") as Uct_Customer_Home;
+            if (uct != null)
+            {
+                uct.DisposePictureBoxImages();
+            }
             this.Close();
+
+        }
+
+        Control FindControlByName(Control control, string controlName)
+        {
+            if (control.Name == controlName)
+            {
+                return control;
+            }
+
+            foreach (Control childControl in control.Controls)
+            {
+                Control foundControl = FindControlByName(childControl, controlName);
+                if (foundControl != null)
+                {
+                    return foundControl;
+                }
+            }
+            return null;
         }
     }
 }
