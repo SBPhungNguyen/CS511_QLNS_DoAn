@@ -118,12 +118,14 @@ namespace CS511_Project_QLNS
             cmd = new SqlCommand();
             cmd.Connection = sqlCon;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT * FROM TBL_EMP";
+            cmd.CommandText = "SELECT * FROM TBL_EMP WHERE ID = @id";
+            cmd.Parameters.AddWithValue("@id", emp_id);
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
             {
                 lbl_em_name.Text = dr.GetString(2);
                 ptb_em_pic.BackgroundImage = System.Drawing.Image.FromFile(co.emp_dir + emp_id + ".png");
+                
                 is_manager = int.Parse(dr.GetString(5));
             }
             sqlCon.Close();
