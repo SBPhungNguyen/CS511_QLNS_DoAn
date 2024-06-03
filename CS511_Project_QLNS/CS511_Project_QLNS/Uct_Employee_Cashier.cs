@@ -78,8 +78,6 @@ namespace CS511_Project_QLNS
 
         private void btn_all_Click(object sender, EventArgs e)
         {
-            if (is_displayed_button == 0)
-                return;
             is_displayed_button = 0;
             DisposeUserControlPictures();
             //DisposePictureBoxImages();
@@ -92,8 +90,6 @@ namespace CS511_Project_QLNS
 
         private void btn_cat1_Click(object sender, EventArgs e)
         {
-            if (is_displayed_button == 1)
-                return;
             is_displayed_button = 1;
             DisposeUserControlPictures();
             //DisposePictureBoxImages();
@@ -107,8 +103,6 @@ namespace CS511_Project_QLNS
 
         private void btn_cat2_Click(object sender, EventArgs e)
         {
-            if (is_displayed_button == 2)
-                return;
             DisposeUserControlPictures();
             //DisposePictureBoxImages();
             ClearFlowPanel();
@@ -191,30 +185,6 @@ namespace CS511_Project_QLNS
                 // You can add logic to handle nested UserControls here (optional)
             }
         }
-        //public void DisposePictureBoxImages()
-        //{
-
-        //    if (fpnl_emp.Controls.Count > 0)
-        //    {
-        //        for (int i = (fpnl_emp.Controls.Count - 1); i >= 0; i--)
-        //        {
-        //            Control c = fpnl_emp.Controls[i];
-
-        //            if (c is PictureBox pictureBox)
-        //            {
-        //                // Check if the PictureBox has a background image
-        //                if (pictureBox.BackgroundImage != null)
-        //                {
-        //                    // Dispose of the image
-        //                    pictureBox.BackgroundImage.Dispose();
-        //                    // Set the BackgroundImage to null to avoid memory leaks
-        //                    pictureBox.BackgroundImage = null;
-        //                }
-        //            }
-        //        }
-        //        //GC.Collect();
-        //    }
-        //}
 
         private void customButton1_Click(object sender, EventArgs e)
         {
@@ -231,6 +201,256 @@ namespace CS511_Project_QLNS
             else
                 LoadDataWithCate(is_displayed_button.ToString());
             parent.Show();
+        }
+
+        private void ptb_Search_Click(object sender, EventArgs e)
+        {
+            if (is_displayed_button == 0)
+                SearchWithAll();
+            else
+                SearchWithCate(is_displayed_button%2);
+        }
+        public void SearchWithAll()
+        {
+            int type = cbb_type.SelectedIndex;
+            if (txt_search.Texts == "")
+            {
+                MessageBox.Show("Please enter the string you want to search", "No string found");
+                return;
+            }
+            if (type == 0)
+            {
+                DisposeUserControlPictures();
+
+                ClearFlowPanel();
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * from TBL_EMP";
+
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    if (rd.GetInt32(0).ToString().ToLower().Contains(txt_search.Texts.ToLower()) || rd.GetString(2).ToLower().Contains(txt_search.Texts.ToLower()) || rd.GetString(3).ToLower().Contains(txt_search.Texts.ToLower()))
+                    {
+                        Uct_Emp_Cashier book = new Uct_Emp_Cashier();
+                        Image img = System.Drawing.Image.FromFile(co.emp_dir + rd.GetString(1) + ".png");
+
+                        book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetString(3));
+                        fpnl_emp.Controls.Add(book);
+                    }
+                }
+                sqlCon.Close();
+            }
+            else if (type == 1)
+            {
+                DisposeUserControlPictures();
+
+                ClearFlowPanel();
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * from TBL_EMP";
+
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    if (rd.GetInt32(0).ToString().ToLower().Contains(txt_search.Texts.ToLower()))
+                    {
+                        Uct_Emp_Cashier book = new Uct_Emp_Cashier();
+                        Image img = System.Drawing.Image.FromFile(co.emp_dir + rd.GetString(1) + ".png");
+
+                        book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetString(3));
+                        fpnl_emp.Controls.Add(book);
+                    }
+                }
+                sqlCon.Close();
+            }
+            else if (type==2)
+            {
+                DisposeUserControlPictures();
+
+                ClearFlowPanel();
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * FROM TBL_EMP";
+
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    if (rd.GetString(2).ToLower().Contains(txt_search.Texts.ToLower()))
+                    {
+                        Uct_Emp_Cashier book = new Uct_Emp_Cashier();
+                        Image img = System.Drawing.Image.FromFile(co.emp_dir + rd.GetString(1) + ".png");
+
+                        book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetString(3));
+                        fpnl_emp.Controls.Add(book);
+                    }
+                }
+                sqlCon.Close();
+            }
+            else
+            {
+                DisposeUserControlPictures();
+
+                ClearFlowPanel();
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * FROM TBL_EMP";
+
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    if (rd.GetString(3).ToLower().Contains(txt_search.Texts.ToLower()))
+                    {
+                        Uct_Emp_Cashier book = new Uct_Emp_Cashier();
+                        Image img = System.Drawing.Image.FromFile(co.emp_dir + rd.GetString(1) + ".png");
+
+                        book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetString(3));
+                        fpnl_emp.Controls.Add(book);
+                    }
+                }
+                sqlCon.Close();
+            }
+        }
+        public void SearchWithCate(int cate)
+        {
+            int type = cbb_type.SelectedIndex;
+            if (txt_search.Texts == "")
+            {
+                MessageBox.Show("Please enter the string you want to search", "No string found");
+                return;
+            }
+            if (type == 0)
+            {
+                DisposeUserControlPictures();
+
+                ClearFlowPanel();
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * from TBL_EMP WHERE E_ROLE = " + cate;
+
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    if (rd.GetInt32(0).ToString().Contains(txt_search.Texts.ToLower()) || rd.GetString(2).ToLower().Contains(txt_search.Texts.ToLower()) || rd.GetString(3).ToLower().Contains(txt_search.Texts.ToLower()))
+                    {
+                        Uct_Emp_Cashier book = new Uct_Emp_Cashier();
+                        Image img = System.Drawing.Image.FromFile(co.emp_dir + rd.GetString(1) + ".png");
+
+                        book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetString(3));
+                        fpnl_emp.Controls.Add(book);
+                    }
+                }
+                sqlCon.Close();
+            }
+            else if (type == 1)
+            {
+                DisposeUserControlPictures();
+
+                ClearFlowPanel();
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * from TBL_EMP WHERE E_ROLE = " + cate;
+
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    if (rd.GetInt32(0).ToString().Contains(txt_search.Texts))
+                    {
+                        Uct_Emp_Cashier book = new Uct_Emp_Cashier();
+                        Image img = System.Drawing.Image.FromFile(co.emp_dir + rd.GetString(1) + ".png");
+
+                        book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetString(3));
+                        fpnl_emp.Controls.Add(book);
+                    }
+                }
+                sqlCon.Close();
+            }
+            else if (type ==2)
+            {
+                DisposeUserControlPictures();
+
+                ClearFlowPanel();
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * from TBL_EMP WHERE E_ROLE = " + cate;
+
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    if (rd.GetString(2).ToLower().Contains(txt_search.Texts.ToLower()))
+                    {
+                        Uct_Emp_Cashier book = new Uct_Emp_Cashier();
+                        Image img = System.Drawing.Image.FromFile(co.emp_dir + rd.GetString(1) + ".png");
+
+                        book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetString(3));
+                        fpnl_emp.Controls.Add(book);
+                    }
+                }
+                sqlCon.Close();
+            }
+            else
+            {
+                DisposeUserControlPictures();
+
+                ClearFlowPanel();
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlCon;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * from TBL_EMP WHERE E_ROLE = " + cate;
+
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    if (rd.GetString(3).ToLower().Contains(txt_search.Texts.ToLower()))
+                    {
+                        Uct_Emp_Cashier book = new Uct_Emp_Cashier();
+                        Image img = System.Drawing.Image.FromFile(co.emp_dir + rd.GetString(1) + ".png");
+
+                        book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetString(3));
+                        fpnl_emp.Controls.Add(book);
+                    }
+                }
+                sqlCon.Close();
+            }
         }
     }
 }
