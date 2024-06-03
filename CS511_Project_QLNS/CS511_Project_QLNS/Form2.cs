@@ -130,6 +130,13 @@ namespace CS511_Project_QLNS
         }
         private void btn_exit_Click(object sender, EventArgs e)
         {
+            SqlConnection sqlCon = new SqlConnection(co.connect);
+            sqlCon.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "DELETE FROM TBL_CHAT";
+            cmd.ExecuteNonQuery();
             Application.Exit();
         }
 
@@ -603,6 +610,13 @@ namespace CS511_Project_QLNS
             Uct_Employee_Cashier uct2 = FindControlByName(this, "uct_Employee_Cashier") as Uct_Employee_Cashier;
             if (uct2 != null)
                 uct2.DisposeUserControlPictures();
+            SqlConnection sqlCon = new SqlConnection(co.connect);
+            sqlCon.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "DELETE FROM TBL_CHAT";
+            cmd.ExecuteNonQuery();
             this.Dispose();
             this.Close();
 

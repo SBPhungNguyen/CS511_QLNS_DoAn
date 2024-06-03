@@ -1,7 +1,9 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -74,6 +76,13 @@ namespace CS511_Project_QLNS
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
+            SqlConnection sqlCon = new SqlConnection(co.connect);
+            sqlCon.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "DELETE FROM TBL_CHAT";
+            cmd.ExecuteNonQuery();
             Application.Exit();
         }
 
@@ -161,6 +170,14 @@ namespace CS511_Project_QLNS
 
         private void btn_logout_Click(object sender, EventArgs e)
         {
+            SqlConnection sqlCon = new SqlConnection(co.connect);
+            sqlCon.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "DELETE FROM TBL_CHAT";
+            cmd.ExecuteNonQuery();
+
             Uct_Customer_Home uct = FindControlByName(this, "uct_Customer_Home") as Uct_Customer_Home;
             if (uct != null)
             {
