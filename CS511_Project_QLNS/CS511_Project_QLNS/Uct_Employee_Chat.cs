@@ -124,6 +124,9 @@ namespace CS511_Project_QLNS
             cmd.CommandText = "INSERT INTO TBL_CHAT VALUES ('1','1',@txt)";
             cmd.Parameters.AddWithValue("@txt", txt_text.Texts);
             cmd.ExecuteNonQuery();
+
+            txt_text.Texts = "";
+
         }
     }
 }

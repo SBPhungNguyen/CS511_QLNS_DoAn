@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{22D14924-2344-4814-8EB4-A2AF1138FF2C}|CS511_Project_QLNS\\CS511_Project_QLNS.csproj|solutionrelative:cs511_project_qlns\\uct_customer_cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22D14924-2344-4814-8EB4-A2AF1138FF2C}|CS511_Project_QLNS\\CS511_Project_QLNS.csproj|d:\\github\\cs511_qlns_doan\\cs511_project_qlns\\cs511_project_qlns\\uct_cus_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{22D14924-2344-4814-8EB4-A2AF1138FF2C}|CS511_Project_QLNS\\CS511_Project_QLNS.csproj|D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\cs511_project_qlns\\uct_cus_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{22D14924-2344-4814-8EB4-A2AF1138FF2C}|CS511_Project_QLNS\\CS511_Project_QLNS.csproj|solutionrelative:cs511_project_qlns\\uct_cus_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -364,7 +364,7 @@
               "RelativeDocumentMoniker": "CS511_Project_QLNS\\Uct_Employee_Chat.cs",
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Employee_Chat.cs",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Employee_Chat.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAuwGoAAAAlAAAA",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAuwIAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T07:15:08.52Z",
               "EditorCaption": ""
@@ -378,8 +378,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Cus_Chat.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Cus_Chat.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T03:43:15.975Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T03:43:15.975Z"
             },
             {
               "$type": "Document",
@@ -401,7 +400,7 @@
               "RelativeDocumentMoniker": "CS511_Project_QLNS\\Uct_Customer_Chat.cs",
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Customer_Chat.cs",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Customer_Chat.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAowH8AAAAJAAAA",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAuwIAAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T03:46:30.63Z",
               "EditorCaption": ""
@@ -438,8 +437,7 @@
               "ToolTip": "D:\\GitHub\\CS511_QLNS_DoAn\\CS511_Project_QLNS\\CS511_Project_QLNS\\Uct_Customer_Cart.cs [Design]",
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Customer_Cart.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T07:48:19.017Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-07T07:48:19.017Z"
             },
             {
               "$type": "Document",
@@ -463,8 +461,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Cus_Chat.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T06:57:13.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T06:57:13.015Z"
             },
             {
               "$type": "Document",
@@ -1195,8 +1192,7 @@
               "RelativeToolTip": "CS511_Project_QLNS\\Uct_Customer_Cart.cs",
               "ViewState": "AQIAAEYAAAAAAAAAAAAAAFkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T08:02:46.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T08:02:46.575Z"
             },
             {
               "$type": "Document",
