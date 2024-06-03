@@ -33,6 +33,8 @@ namespace CS511_Project_QLNS
         Uct_Customer_ReceiptSearch uct_Customer_ReceiptSearch = new Uct_Customer_ReceiptSearch();
         Uct_Customer_Chat uct_Customer_Chat = new Uct_Customer_Chat();
 
+        //timer for chatting
+        public Timer cus_timer = new Timer();
         public Form1()
         {
             InitializeComponent();
@@ -67,6 +69,7 @@ namespace CS511_Project_QLNS
             //Uct_Customer_Chat uct = new Uct_Customer_Chat();
             //uct.Location = new System.Drawing.Point(235, 105);
             //this.Controls.Add(uct);
+            cus_timer.Start();
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -163,6 +166,7 @@ namespace CS511_Project_QLNS
             {
                 uct.DisposePictureBoxImages();
             }
+            cus_timer.Stop();
             this.Close();
 
         }

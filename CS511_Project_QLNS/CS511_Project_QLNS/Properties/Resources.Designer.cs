@@ -63,6 +63,16 @@ namespace CS511_Project_QLNS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bookstore {
+            get {
+                object obj = ResourceManager.GetObject("bookstore", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cross2_image {
             get {
                 object obj = ResourceManager.GetObject("Cross2_image", resourceCulture);
