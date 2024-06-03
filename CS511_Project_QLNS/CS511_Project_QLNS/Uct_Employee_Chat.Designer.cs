@@ -46,6 +46,7 @@
             this.ptb_send.Size = new System.Drawing.Size(35, 35);
             this.ptb_send.TabIndex = 8;
             this.ptb_send.TabStop = false;
+            this.ptb_send.Click += new System.EventHandler(this.ptb_send_Click);
             // 
             // txt_text
             // 
