@@ -100,6 +100,7 @@
             this.ptb_send.Size = new System.Drawing.Size(35, 35);
             this.ptb_send.TabIndex = 11;
             this.ptb_send.TabStop = false;
+            this.ptb_send.Click += new System.EventHandler(this.ptb_send_Click);
             // 
             // Uct_Customer_Chat
             // 

@@ -49,12 +49,13 @@
             this.rtb_text.Location = new System.Drawing.Point(70, 34);
             this.rtb_text.Name = "rtb_text";
             this.rtb_text.ReadOnly = true;
-            this.rtb_text.Size = new System.Drawing.Size(754, 65);
+            this.rtb_text.Size = new System.Drawing.Size(799, 65);
             this.rtb_text.TabIndex = 2;
             this.rtb_text.Text = "";
             // 
             // ptb_img
             // 
+            this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_img.Location = new System.Drawing.Point(1, 9);
             this.ptb_img.Name = "ptb_img";
             this.ptb_img.Size = new System.Drawing.Size(50, 50);
@@ -69,7 +70,7 @@
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.ptb_img);
             this.Name = "Uct_Cus_Chat";
-            this.Size = new System.Drawing.Size(839, 108);
+            this.Size = new System.Drawing.Size(898, 108);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

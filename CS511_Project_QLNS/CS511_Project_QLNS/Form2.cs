@@ -57,7 +57,7 @@ namespace CS511_Project_QLNS
         public int is_manager;
 
         //timer for chatting
-        public Timer emp_timer = new Timer();
+        //public Timer emp_timer = new Timer();
         public Image emp_img
         {
             get { return ptb_em_pic.BackgroundImage; }
@@ -106,8 +106,8 @@ namespace CS511_Project_QLNS
             this.Controls.Add(uct_Employee_Home);
             uct_Employee_Home.BringToFront();
 
-            emp_timer.Interval = 100;
-            emp_timer.Start();
+            //emp_timer.Interval = 100;
+            //emp_timer.Start();
         }
         public void LoadEmpInfo()
         {
@@ -595,7 +595,7 @@ namespace CS511_Project_QLNS
 
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            emp_timer.Stop();
+            //emp_timer.Stop();
             ptb_em_pic.Dispose();
             Uct_Employee_Home uct1 = FindControlByName(this,"uct_Employee_Home") as Uct_Employee_Home;
             if (uct1 != null)

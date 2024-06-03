@@ -16,5 +16,11 @@ namespace CS511_Project_QLNS
         {
             InitializeComponent();
         }
+        public void LoadData(Image img, string name, string txt)
+        {
+            ptb_img.BackgroundImage = img;
+            lbl_name.Text = name;
+            rtb_text.Text = txt;
+        }
     }
 }

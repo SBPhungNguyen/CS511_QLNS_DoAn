@@ -13,3 +13,8 @@ cart_info
 E_ROLE
 0: cashier
 1: manager
+
+TBL_CHAT
+FROMP, PIC
+0: customer
+1: bookstore
