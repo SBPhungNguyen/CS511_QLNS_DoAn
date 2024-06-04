@@ -113,8 +113,10 @@ namespace CS511_Project_QLNS
                 {
                     parent_form.cart_info[parent_form.cart_count]=id.ToString() + "*1";
                     parent_form.cart_count++;
+                    MessageBox.Show("Added to cart successfully", "Notification");
+                    return;
                 }
-                MessageBox.Show("Added to cart successfully", "Notification");
+                MessageBox.Show("This has been in your cart already", "Notification");
             }
         }
     }
