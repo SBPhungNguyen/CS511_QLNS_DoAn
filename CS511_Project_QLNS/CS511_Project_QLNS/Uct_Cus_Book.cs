@@ -119,11 +119,8 @@ namespace CS511_Project_QLNS
                 {
                     parent_form.cart_info[parent_form.cart_count]=id.ToString() + "*1";
                     parent_form.cart_count++;
-                    System.Windows.Forms.MessageBox.Show("Added to cart successfully", "Notification");
                     return;
                 }
-                System.Windows.Forms.MessageBox.Show("This has been in your cart already", "Notification");
-
             }
         }
         protected override void OnPaint(PaintEventArgs e)

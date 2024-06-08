@@ -63,7 +63,7 @@
             this.ptb_bigimg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_bigimg.Location = new System.Drawing.Point(3, 3);
             this.ptb_bigimg.Name = "ptb_bigimg";
-            this.ptb_bigimg.Size = new System.Drawing.Size(1140, 346);
+            this.ptb_bigimg.Size = new System.Drawing.Size(1138, 346);
             this.ptb_bigimg.TabIndex = 0;
             this.ptb_bigimg.TabStop = false;
             // 

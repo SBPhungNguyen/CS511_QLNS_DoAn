@@ -21,6 +21,10 @@ namespace CS511_Project_QLNS
             InitializeComponent();
             this.parent_form = parent_form;
         }
+        public Uct_Cus_Product()
+        {
+            InitializeComponent();
+        }
 
         public void LoadData(string id, Image img, string name, string price, string quantity, int maximum)
         {
@@ -130,6 +134,8 @@ namespace CS511_Project_QLNS
 
         private void ptb_delete_Click(object sender, EventArgs e)
         {
+            //dispose the pic
+            ptb_img.BackgroundImage.Dispose();
             //remove the uct on the fpnl
 
                 //this is the fpnl

@@ -136,6 +136,10 @@ namespace CS511_Project_QLNS
 
                 sqlCon.Close();
 
+                //dispose the picture in the uct
+                parent_uct.DisposePictureBoxImages();
+
+                //clean the flow layout panel
                 ClearFlowPanel();
                 parent_form.cart_count = 0;
 

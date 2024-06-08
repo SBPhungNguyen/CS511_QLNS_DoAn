@@ -35,7 +35,7 @@
             // 
             this.fpnl_item.Location = new System.Drawing.Point(3, 55);
             this.fpnl_item.Name = "fpnl_item";
-            this.fpnl_item.Size = new System.Drawing.Size(1724, 845);
+            this.fpnl_item.Size = new System.Drawing.Size(1724, 872);
             this.fpnl_item.TabIndex = 0;
             // 
             // Uct_Customer_Home
@@ -45,7 +45,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.Controls.Add(this.fpnl_item);
             this.Name = "Uct_Customer_Home";
-            this.Size = new System.Drawing.Size(1780, 900);
+            this.Size = new System.Drawing.Size(1740, 930);
             this.ResumeLayout(false);
 
         }
