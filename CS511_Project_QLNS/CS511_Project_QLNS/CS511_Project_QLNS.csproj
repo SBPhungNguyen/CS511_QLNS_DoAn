@@ -220,6 +220,12 @@
     <Compile Include="Uct_Cus_Comment.Designer.cs">
       <DependentUpon>Uct_Cus_Comment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uct_Cus_HomeInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Cus_HomeInfo.Designer.cs">
+      <DependentUpon>Uct_Cus_HomeInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uct_Cus_Product.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -385,6 +391,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_Cus_Comment.resx">
       <DependentUpon>Uct_Cus_Comment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Cus_HomeInfo.resx">
+      <DependentUpon>Uct_Cus_HomeInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_Cus_Product.resx">
       <DependentUpon>Uct_Cus_Product.cs</DependentUpon>

@@ -35,7 +35,7 @@
             // 
             this.fpnl_item.Location = new System.Drawing.Point(3, 55);
             this.fpnl_item.Name = "fpnl_item";
-            this.fpnl_item.Size = new System.Drawing.Size(1724, 830);
+            this.fpnl_item.Size = new System.Drawing.Size(1724, 845);
             this.fpnl_item.TabIndex = 0;
             // 
             // Uct_Customer_Home
