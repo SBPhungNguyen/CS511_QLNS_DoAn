@@ -28,6 +28,12 @@ namespace CS511_Project_QLNS
         {
             InitializeComponent();
 
+            Uct_Cus_BookInfo_General uct_Cus_BookInfo_General = new Uct_Cus_BookInfo_General();
+            uct_Cus_BookInfo_General.Name = "uct_Cus_BookInfo_General";
+            uct_Cus_BookInfo_General.Location = new Point(0, 40);
+            this.Controls.Add(uct_Cus_BookInfo_General);
+            uct_Cus_BookInfo_General.BringToFront();
+
             fpnl_cmt.AutoScroll = true;
             fpnl_cmt.WrapContents = true;
 
