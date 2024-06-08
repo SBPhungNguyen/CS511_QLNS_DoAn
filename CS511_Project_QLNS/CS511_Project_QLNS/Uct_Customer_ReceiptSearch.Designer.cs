@@ -86,7 +86,7 @@
             // 
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.btn_camera);
-            this.panel5.Location = new System.Drawing.Point(889, 112);
+            this.panel5.Location = new System.Drawing.Point(889, 118);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(473, 60);
             this.panel5.TabIndex = 5;
@@ -125,7 +125,7 @@
             // 
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.btn_choosepic);
-            this.panel4.Location = new System.Drawing.Point(889, 35);
+            this.panel4.Location = new System.Drawing.Point(889, 34);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(473, 60);
             this.panel4.TabIndex = 4;
@@ -194,7 +194,7 @@
             this.lbl_sumprice.ForeColor = System.Drawing.Color.Red;
             this.lbl_sumprice.Location = new System.Drawing.Point(1412, 602);
             this.lbl_sumprice.Name = "lbl_sumprice";
-            this.lbl_sumprice.Size = new System.Drawing.Size(40, 41);
+            this.lbl_sumprice.Size = new System.Drawing.Size(38, 40);
             this.lbl_sumprice.TabIndex = 14;
             this.lbl_sumprice.Text = "0";
             // 
@@ -204,7 +204,7 @@
             this.label7.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(1260, 602);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 41);
+            this.label7.Size = new System.Drawing.Size(113, 40);
             this.label7.TabIndex = 13;
             this.label7.Text = "Total:";
             // 
