@@ -166,6 +166,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uct_Customer_BookSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Customer_BookSearch.Designer.cs">
+      <DependentUpon>Uct_Customer_BookSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uct_Customer_Cart.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -353,6 +359,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Uct_Customer_BookSearch.resx">
+      <DependentUpon>Uct_Customer_BookSearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Uct_Customer_Cart.resx">
       <DependentUpon>Uct_Customer_Cart.cs</DependentUpon>
     </EmbeddedResource>
