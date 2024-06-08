@@ -190,6 +190,12 @@
     <Compile Include="Uct_Customer_ReceiptSearch.Designer.cs">
       <DependentUpon>Uct_Customer_ReceiptSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uct_Cus_Adv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Cus_Adv.Designer.cs">
+      <DependentUpon>Uct_Cus_Adv.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uct_Cus_Book.cs">
       <SubType>UserControl</SubType>
     </Compile>

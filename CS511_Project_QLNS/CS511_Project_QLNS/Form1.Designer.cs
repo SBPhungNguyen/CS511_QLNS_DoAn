@@ -51,6 +51,8 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Green;
             this.panel1.Controls.Add(this.btn_exit);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -60,6 +62,7 @@
             // 
             // btn_exit
             // 
+            this.btn_exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
             this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_exit.Location = new System.Drawing.Point(1263, 5);
@@ -92,7 +95,7 @@
             this.customPictureBox1.ColorBorder = System.Drawing.Color.RoyalBlue;
             this.customPictureBox1.ColorBorder2 = System.Drawing.Color.HotPink;
             this.customPictureBox1.Gradiant = 50F;
-            this.customPictureBox1.Location = new System.Drawing.Point(70, 136);
+            this.customPictureBox1.Location = new System.Drawing.Point(70, 134);
             this.customPictureBox1.Name = "customPictureBox1";
             this.customPictureBox1.Size = new System.Drawing.Size(125, 115);
             this.customPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -101,6 +104,8 @@
             // 
             // customPanel1
             // 
+            this.customPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.customPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.customPanel1.BorderColor = System.Drawing.Color.Lime;
             this.customPanel1.Controls.Add(this.pnl_UserName);
@@ -110,7 +115,7 @@
             this.customPanel1.Controls.Add(this.btn_cart);
             this.customPanel1.Controls.Add(this.panel2);
             this.customPanel1.Controls.Add(this.btn_home);
-            this.customPanel1.Location = new System.Drawing.Point(-9, 191);
+            this.customPanel1.Location = new System.Drawing.Point(-9, 189);
             this.customPanel1.Name = "customPanel1";
             this.customPanel1.Radius = 20;
             this.customPanel1.Size = new System.Drawing.Size(270, 611);
@@ -260,6 +265,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customPictureBox1)).EndInit();

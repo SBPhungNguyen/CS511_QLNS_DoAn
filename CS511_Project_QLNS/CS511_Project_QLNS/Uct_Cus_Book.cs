@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting;
 
 namespace CS511_Project_QLNS
 {
     public partial class Uct_Cus_Book : UserControl
     {
+        private int lineThickness = 1; // Adjust for desired line thickness
+        private Color lineColor = Color.Black; // 
+
         public int id;
         public Form1 parent_form;
         public Image img
@@ -37,6 +41,8 @@ namespace CS511_Project_QLNS
         public Uct_Cus_Book()
         {
             InitializeComponent();
+            SetStyle(ControlStyles.DoubleBuffer, true); // Improve painting performance
+
 
         }
         public void LoadData(int id, Image pic, string title, string price, int quantity)
@@ -91,7 +97,7 @@ namespace CS511_Project_QLNS
         {
             if (quantity==0)
             {
-                MessageBox.Show("Sorry, this product has been run out");
+                System.Windows.Forms.MessageBox.Show("Sorry, this product has been run out");
                 return;
             }
             else
@@ -113,11 +119,20 @@ namespace CS511_Project_QLNS
                 {
                     parent_form.cart_info[parent_form.cart_count]=id.ToString() + "*1";
                     parent_form.cart_count++;
-                    MessageBox.Show("Added to cart successfully", "Notification");
+                    System.Windows.Forms.MessageBox.Show("Added to cart successfully", "Notification");
                     return;
                 }
-                MessageBox.Show("This has been in your cart already", "Notification");
+                System.Windows.Forms.MessageBox.Show("This has been in your cart already", "Notification");
+
             }
         }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            //Draw the line using preferred placement and thickness
+            e.Graphics.DrawRectangle(new Pen(lineColor, lineThickness), 0, 0, this.Width - 1, this.Height - 1);
+        }
+
     }
 }

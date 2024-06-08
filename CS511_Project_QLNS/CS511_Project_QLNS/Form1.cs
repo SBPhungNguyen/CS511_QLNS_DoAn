@@ -57,7 +57,7 @@ namespace CS511_Project_QLNS
             uct_Customer_Home.Location = new System.Drawing.Point(235, 105);
             uct_Customer_Home.Name = "uct_Customer_Home";
             this.Controls.Add(uct_Customer_Home);
-
+            uct_Customer_Home.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom | AnchorStyles.Top;
             cart_count = 0;
 
             //Uct_Customer_Cart uct = new Uct_Customer_Cart(); 

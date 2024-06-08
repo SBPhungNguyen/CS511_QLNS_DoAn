@@ -43,7 +43,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.lbl_price);
-            this.panel2.Location = new System.Drawing.Point(104, 97);
+            this.panel2.Location = new System.Drawing.Point(60, 299);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(160, 32);
             this.panel2.TabIndex = 7;
@@ -51,8 +51,8 @@
             // lbl_price
             // 
             this.lbl_price.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_price.ForeColor = System.Drawing.Color.Purple;
+            this.lbl_price.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_price.ForeColor = System.Drawing.Color.Red;
             this.lbl_price.Location = new System.Drawing.Point(0, 0);
             this.lbl_price.Name = "lbl_price";
             this.lbl_price.Size = new System.Drawing.Size(160, 32);
@@ -64,28 +64,28 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.lbl_name);
-            this.panel1.Location = new System.Drawing.Point(104, 39);
+            this.panel1.Location = new System.Drawing.Point(14, 229);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(160, 69);
+            this.panel1.Size = new System.Drawing.Size(250, 73);
             this.panel1.TabIndex = 6;
             // 
             // lbl_name
             // 
             this.lbl_name.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.Font = new System.Drawing.Font("Sans Serif Collection", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_name.Location = new System.Drawing.Point(0, 0);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(160, 69);
+            this.lbl_name.Size = new System.Drawing.Size(250, 73);
             this.lbl_name.TabIndex = 0;
             this.lbl_name.Text = "label1";
-            this.lbl_name.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_name.Click += new System.EventHandler(this.lbl_name_Click);
             // 
             // ptb_cart
             // 
             this.ptb_cart.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_cart;
             this.ptb_cart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_cart.Location = new System.Drawing.Point(244, 4);
+            this.ptb_cart.Location = new System.Drawing.Point(248, 8);
             this.ptb_cart.Name = "ptb_cart";
             this.ptb_cart.Size = new System.Drawing.Size(30, 30);
             this.ptb_cart.TabIndex = 8;
@@ -95,9 +95,9 @@
             // ptb_img
             // 
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(14, 38);
+            this.ptb_img.Location = new System.Drawing.Point(72, 40);
             this.ptb_img.Name = "ptb_img";
-            this.ptb_img.Size = new System.Drawing.Size(80, 95);
+            this.ptb_img.Size = new System.Drawing.Size(140, 180);
             this.ptb_img.TabIndex = 5;
             this.ptb_img.TabStop = false;
             this.ptb_img.Click += new System.EventHandler(this.ptb_img_Click);
@@ -106,14 +106,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(234)))));
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.ptb_cart);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ptb_img);
-            this.Margin = new System.Windows.Forms.Padding(0, 10, 35, 5);
+            this.Margin = new System.Windows.Forms.Padding(0, 5, 45, 10);
             this.Name = "Uct_Cus_Book";
-            this.Size = new System.Drawing.Size(280, 150);
+            this.Size = new System.Drawing.Size(285, 400);
             this.Click += new System.EventHandler(this.Uct_Cus_Book_Click);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
