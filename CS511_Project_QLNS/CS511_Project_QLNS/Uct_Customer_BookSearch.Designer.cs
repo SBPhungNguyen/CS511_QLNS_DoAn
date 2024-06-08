@@ -213,7 +213,7 @@
             this.txt_search.BorderColor = System.Drawing.Color.MediumSeaGreen;
             this.txt_search.BorderFocusColor = System.Drawing.Color.Green;
             this.txt_search.BorderSize = 2;
-            this.txt_search.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_search.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_search.ForeColor = System.Drawing.Color.Black;
             this.txt_search.Location = new System.Drawing.Point(150, 8);
             this.txt_search.Margin = new System.Windows.Forms.Padding(4);
@@ -221,7 +221,7 @@
             this.txt_search.Name = "txt_search";
             this.txt_search.Padding = new System.Windows.Forms.Padding(7);
             this.txt_search.PasswordChar = false;
-            this.txt_search.Size = new System.Drawing.Size(397, 39);
+            this.txt_search.Size = new System.Drawing.Size(397, 38);
             this.txt_search.TabIndex = 7;
             this.txt_search.Texts = "";
             this.txt_search.UnderlineStyle = true;

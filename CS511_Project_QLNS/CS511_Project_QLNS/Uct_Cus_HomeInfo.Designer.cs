@@ -87,7 +87,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1000, 85);
+            this.label5.Location = new System.Drawing.Point(1004, 85);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(256, 40);
             this.label5.TabIndex = 5;
@@ -97,7 +97,7 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1362, 85);
+            this.label6.Location = new System.Drawing.Point(1362, 80);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(256, 40);
             this.label6.TabIndex = 7;
@@ -108,9 +108,9 @@
             // 
             this.pictureBox3.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_phone;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(1312, 85);
+            this.pictureBox3.Location = new System.Drawing.Point(1312, 84);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
             // 
@@ -118,7 +118,7 @@
             // 
             this.pictureBox2.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_email;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(950, 85);
+            this.pictureBox2.Location = new System.Drawing.Point(954, 85);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.TabIndex = 6;

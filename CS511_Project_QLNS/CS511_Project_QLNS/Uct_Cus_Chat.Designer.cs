@@ -37,28 +37,30 @@
             // lbl_name
             // 
             this.lbl_name.AutoSize = true;
-            this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.Location = new System.Drawing.Point(67, 9);
+            this.lbl_name.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.Location = new System.Drawing.Point(103, 9);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(59, 20);
+            this.lbl_name.Size = new System.Drawing.Size(89, 32);
             this.lbl_name.TabIndex = 1;
             this.lbl_name.Text = "Guest";
             // 
             // rtb_text
             // 
-            this.rtb_text.Location = new System.Drawing.Point(70, 34);
+            this.rtb_text.BackColor = System.Drawing.Color.White;
+            this.rtb_text.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtb_text.Location = new System.Drawing.Point(109, 50);
             this.rtb_text.Name = "rtb_text";
             this.rtb_text.ReadOnly = true;
-            this.rtb_text.Size = new System.Drawing.Size(799, 65);
+            this.rtb_text.Size = new System.Drawing.Size(1463, 65);
             this.rtb_text.TabIndex = 2;
             this.rtb_text.Text = "";
             // 
             // ptb_img
             // 
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(1, 9);
+            this.ptb_img.Location = new System.Drawing.Point(0, 9);
             this.ptb_img.Name = "ptb_img";
-            this.ptb_img.Size = new System.Drawing.Size(50, 50);
+            this.ptb_img.Size = new System.Drawing.Size(80, 80);
             this.ptb_img.TabIndex = 0;
             this.ptb_img.TabStop = false;
             // 
@@ -66,11 +68,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.rtb_text);
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.ptb_img);
             this.Name = "Uct_Cus_Chat";
-            this.Size = new System.Drawing.Size(898, 108);
+            this.Size = new System.Drawing.Size(1680, 120);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
