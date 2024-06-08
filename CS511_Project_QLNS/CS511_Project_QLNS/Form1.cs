@@ -52,22 +52,22 @@ namespace CS511_Project_QLNS
             }
 
             //this is to get the uct_home show up
-            //btn_home.BackColor = color_btn_chosen;
-            //Uct_Customer_Home uct_Customer_Home = new Uct_Customer_Home();
-            //uct_Customer_Home.Location = new System.Drawing.Point(235, 105);
-            //uct_Customer_Home.Name = "uct_Customer_Home";
-            //this.Controls.Add(uct_Customer_Home);
-            //uct_Customer_Home.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom | AnchorStyles.Top;
-            //cart_count = 0;
-
-
             btn_home.BackColor = color_btn_chosen;
-            Uct_Customer_BookSearch uct_Customer_Home = new Uct_Customer_BookSearch();
+            Uct_Customer_Home uct_Customer_Home = new Uct_Customer_Home();
             uct_Customer_Home.Location = new System.Drawing.Point(235, 105);
             uct_Customer_Home.Name = "uct_Customer_Home";
             this.Controls.Add(uct_Customer_Home);
             uct_Customer_Home.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom | AnchorStyles.Top;
             cart_count = 0;
+
+
+            //btn_home.BackColor = color_btn_chosen;
+            //Uct_Customer_BookSearch uct_Customer_Home = new Uct_Customer_BookSearch();
+            //uct_Customer_Home.Location = new System.Drawing.Point(235, 105);
+            //uct_Customer_Home.Name = "uct_Customer_Home";
+            //this.Controls.Add(uct_Customer_Home);
+            //uct_Customer_Home.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom | AnchorStyles.Top;
+            //cart_count = 0;
 
             //Uct_Customer_Cart uct = new Uct_Customer_Cart(); 
             //uct.Location = new System.Drawing.Point(235, 105);
@@ -117,7 +117,7 @@ namespace CS511_Project_QLNS
             Uct_Customer_Home uct = FindControlByName(this, "uct_Customer_Home") as Uct_Customer_Home;
             if (uct != null)
             {
-                uct.DisposePictureBoxImages();
+                //uct.DisposePictureBoxImages();
             }
 
             uct_Customer_Home = new Uct_Customer_Home();
@@ -190,7 +190,7 @@ namespace CS511_Project_QLNS
             Uct_Customer_Home uct = FindControlByName(this, "uct_Customer_Home") as Uct_Customer_Home;
             if (uct != null)
             {
-                uct.DisposePictureBoxImages();
+                //uct.DisposePictureBoxImages();
             }
             //cus_timer.Stop();
             this.Close();

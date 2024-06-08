@@ -47,10 +47,10 @@
             // fpnl_books
             // 
             this.fpnl_books.BackColor = System.Drawing.SystemColors.Window;
-            this.fpnl_books.Location = new System.Drawing.Point(0, 116);
+            this.fpnl_books.Location = new System.Drawing.Point(0, 117);
             this.fpnl_books.Name = "fpnl_books";
             this.fpnl_books.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.fpnl_books.Size = new System.Drawing.Size(1731, 781);
+            this.fpnl_books.Size = new System.Drawing.Size(1731, 780);
             this.fpnl_books.TabIndex = 40;
             // 
             // btn_cat6
@@ -64,9 +64,9 @@
             this.btn_cat6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat6.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat6.ForeColor = System.Drawing.Color.White;
-            this.btn_cat6.Location = new System.Drawing.Point(1483, 55);
+            this.btn_cat6.Location = new System.Drawing.Point(1440, 55);
             this.btn_cat6.Name = "btn_cat6";
-            this.btn_cat6.Size = new System.Drawing.Size(247, 61);
+            this.btn_cat6.Size = new System.Drawing.Size(240, 61);
             this.btn_cat6.TabIndex = 47;
             this.btn_cat6.Text = "History";
             this.btn_cat6.TextColor = System.Drawing.Color.White;
@@ -84,9 +84,9 @@
             this.btn_cat5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat5.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat5.ForeColor = System.Drawing.Color.White;
-            this.btn_cat5.Location = new System.Drawing.Point(1236, 55);
+            this.btn_cat5.Location = new System.Drawing.Point(1200, 55);
             this.btn_cat5.Name = "btn_cat5";
-            this.btn_cat5.Size = new System.Drawing.Size(247, 61);
+            this.btn_cat5.Size = new System.Drawing.Size(240, 61);
             this.btn_cat5.TabIndex = 46;
             this.btn_cat5.Text = "Mystery";
             this.btn_cat5.TextColor = System.Drawing.Color.White;
@@ -104,9 +104,9 @@
             this.btn_cat4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat4.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat4.ForeColor = System.Drawing.Color.White;
-            this.btn_cat4.Location = new System.Drawing.Point(989, 55);
+            this.btn_cat4.Location = new System.Drawing.Point(960, 55);
             this.btn_cat4.Name = "btn_cat4";
-            this.btn_cat4.Size = new System.Drawing.Size(247, 61);
+            this.btn_cat4.Size = new System.Drawing.Size(240, 61);
             this.btn_cat4.TabIndex = 45;
             this.btn_cat4.Text = "Non-Fiction";
             this.btn_cat4.TextColor = System.Drawing.Color.White;
@@ -124,9 +124,9 @@
             this.btn_cat3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat3.ForeColor = System.Drawing.Color.White;
-            this.btn_cat3.Location = new System.Drawing.Point(743, 55);
+            this.btn_cat3.Location = new System.Drawing.Point(720, 55);
             this.btn_cat3.Name = "btn_cat3";
-            this.btn_cat3.Size = new System.Drawing.Size(247, 61);
+            this.btn_cat3.Size = new System.Drawing.Size(240, 61);
             this.btn_cat3.TabIndex = 44;
             this.btn_cat3.Text = "Self Help";
             this.btn_cat3.TextColor = System.Drawing.Color.White;
@@ -144,9 +144,9 @@
             this.btn_cat2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat2.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat2.ForeColor = System.Drawing.Color.White;
-            this.btn_cat2.Location = new System.Drawing.Point(496, 55);
+            this.btn_cat2.Location = new System.Drawing.Point(480, 55);
             this.btn_cat2.Name = "btn_cat2";
-            this.btn_cat2.Size = new System.Drawing.Size(247, 61);
+            this.btn_cat2.Size = new System.Drawing.Size(240, 61);
             this.btn_cat2.TabIndex = 43;
             this.btn_cat2.Text = "Fantasy";
             this.btn_cat2.TextColor = System.Drawing.Color.White;
@@ -164,9 +164,9 @@
             this.btn_cat1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat1.ForeColor = System.Drawing.Color.White;
-            this.btn_cat1.Location = new System.Drawing.Point(249, 55);
+            this.btn_cat1.Location = new System.Drawing.Point(240, 55);
             this.btn_cat1.Name = "btn_cat1";
-            this.btn_cat1.Size = new System.Drawing.Size(247, 61);
+            this.btn_cat1.Size = new System.Drawing.Size(240, 61);
             this.btn_cat1.TabIndex = 42;
             this.btn_cat1.Text = "Classics";
             this.btn_cat1.TextColor = System.Drawing.Color.White;
@@ -186,7 +186,7 @@
             this.btn_all.ForeColor = System.Drawing.Color.White;
             this.btn_all.Location = new System.Drawing.Point(0, 55);
             this.btn_all.Name = "btn_all";
-            this.btn_all.Size = new System.Drawing.Size(249, 61);
+            this.btn_all.Size = new System.Drawing.Size(240, 61);
             this.btn_all.TabIndex = 41;
             this.btn_all.Text = "All";
             this.btn_all.TextColor = System.Drawing.Color.White;
@@ -266,7 +266,7 @@
             this.Controls.Add(this.fpnl_books);
             this.Controls.Add(this.customPanel1);
             this.Name = "Uct_Customer_BookSearch";
-            this.Size = new System.Drawing.Size(1730, 900);
+            this.Size = new System.Drawing.Size(1680, 900);
             this.customPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_Search)).EndInit();
             this.ResumeLayout(false);

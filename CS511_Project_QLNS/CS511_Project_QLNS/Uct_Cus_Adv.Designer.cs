@@ -41,9 +41,9 @@
             // 
             this.ptb_smallimg2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptb_smallimg2.BackgroundImage")));
             this.ptb_smallimg2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_smallimg2.Location = new System.Drawing.Point(1147, 251);
+            this.ptb_smallimg2.Location = new System.Drawing.Point(1147, 178);
             this.ptb_smallimg2.Name = "ptb_smallimg2";
-            this.ptb_smallimg2.Size = new System.Drawing.Size(580, 245);
+            this.ptb_smallimg2.Size = new System.Drawing.Size(580, 170);
             this.ptb_smallimg2.TabIndex = 2;
             this.ptb_smallimg2.TabStop = false;
             // 
@@ -53,7 +53,7 @@
             this.ptb_smallimg1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_smallimg1.Location = new System.Drawing.Point(1147, 3);
             this.ptb_smallimg1.Name = "ptb_smallimg1";
-            this.ptb_smallimg1.Size = new System.Drawing.Size(580, 245);
+            this.ptb_smallimg1.Size = new System.Drawing.Size(580, 170);
             this.ptb_smallimg1.TabIndex = 1;
             this.ptb_smallimg1.TabStop = false;
             // 
@@ -63,7 +63,7 @@
             this.ptb_bigimg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_bigimg.Location = new System.Drawing.Point(3, 3);
             this.ptb_bigimg.Name = "ptb_bigimg";
-            this.ptb_bigimg.Size = new System.Drawing.Size(1140, 494);
+            this.ptb_bigimg.Size = new System.Drawing.Size(1140, 346);
             this.ptb_bigimg.TabIndex = 0;
             this.ptb_bigimg.TabStop = false;
             // 
@@ -75,7 +75,7 @@
             this.Controls.Add(this.ptb_smallimg1);
             this.Controls.Add(this.ptb_bigimg);
             this.Name = "Uct_Cus_Adv";
-            this.Size = new System.Drawing.Size(1730, 500);
+            this.Size = new System.Drawing.Size(1650, 350);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_smallimg2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_smallimg1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_bigimg)).EndInit();
