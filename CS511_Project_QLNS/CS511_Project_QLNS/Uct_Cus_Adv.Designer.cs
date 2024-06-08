@@ -28,10 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Uct_Cus_Adv));
+            this.ptb_smallimg2 = new System.Windows.Forms.PictureBox();
+            this.ptb_smallimg1 = new System.Windows.Forms.PictureBox();
+            this.ptb_bigimg = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_smallimg2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_smallimg1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_bigimg)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // ptb_smallimg2
+            // 
+            this.ptb_smallimg2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptb_smallimg2.BackgroundImage")));
+            this.ptb_smallimg2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_smallimg2.Location = new System.Drawing.Point(1147, 251);
+            this.ptb_smallimg2.Name = "ptb_smallimg2";
+            this.ptb_smallimg2.Size = new System.Drawing.Size(580, 245);
+            this.ptb_smallimg2.TabIndex = 2;
+            this.ptb_smallimg2.TabStop = false;
+            // 
+            // ptb_smallimg1
+            // 
+            this.ptb_smallimg1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptb_smallimg1.BackgroundImage")));
+            this.ptb_smallimg1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_smallimg1.Location = new System.Drawing.Point(1147, 3);
+            this.ptb_smallimg1.Name = "ptb_smallimg1";
+            this.ptb_smallimg1.Size = new System.Drawing.Size(580, 245);
+            this.ptb_smallimg1.TabIndex = 1;
+            this.ptb_smallimg1.TabStop = false;
+            // 
+            // ptb_bigimg
+            // 
+            this.ptb_bigimg.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptb_bigimg.BackgroundImage")));
+            this.ptb_bigimg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_bigimg.Location = new System.Drawing.Point(3, 3);
+            this.ptb_bigimg.Name = "ptb_bigimg";
+            this.ptb_bigimg.Size = new System.Drawing.Size(1140, 494);
+            this.ptb_bigimg.TabIndex = 0;
+            this.ptb_bigimg.TabStop = false;
+            // 
+            // Uct_Cus_Adv
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.ptb_smallimg2);
+            this.Controls.Add(this.ptb_smallimg1);
+            this.Controls.Add(this.ptb_bigimg);
+            this.Name = "Uct_Cus_Adv";
+            this.Size = new System.Drawing.Size(1730, 500);
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_smallimg2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_smallimg1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_bigimg)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox ptb_bigimg;
+        private System.Windows.Forms.PictureBox ptb_smallimg1;
+        private System.Windows.Forms.PictureBox ptb_smallimg2;
     }
 }

@@ -365,6 +365,9 @@
     <EmbeddedResource Include="Uct_Customer_ReceiptSearch.resx">
       <DependentUpon>Uct_Customer_ReceiptSearch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Cus_Adv.resx">
+      <DependentUpon>Uct_Cus_Adv.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Uct_Cus_Book.resx">
       <DependentUpon>Uct_Cus_Book.cs</DependentUpon>
     </EmbeddedResource>

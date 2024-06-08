@@ -59,3 +59,4 @@ D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\bin\Debug\LiveCh
 D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\bin\Debug\LiveCharts.WinForms.xml
 D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\bin\Debug\LiveCharts.Wpf.pdb
 D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\bin\Debug\LiveCharts.Wpf.xml
+D:\GitHub\CS511_QLNS_DoAn\CS511_Project_QLNS\CS511_Project_QLNS\obj\Debug\CS511_Project_QLNS.Uct_Cus_Adv.resources
