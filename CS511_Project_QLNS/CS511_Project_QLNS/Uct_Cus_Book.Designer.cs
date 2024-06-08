@@ -43,7 +43,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.lbl_price);
-            this.panel2.Location = new System.Drawing.Point(60, 299);
+            this.panel2.Location = new System.Drawing.Point(63, 300);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(160, 32);
             this.panel2.TabIndex = 7;
@@ -64,7 +64,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.lbl_name);
-            this.panel1.Location = new System.Drawing.Point(14, 229);
+            this.panel1.Location = new System.Drawing.Point(19, 229);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 73);
             this.panel1.TabIndex = 6;
@@ -95,7 +95,7 @@
             // ptb_img
             // 
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(72, 40);
+            this.ptb_img.Location = new System.Drawing.Point(76, 40);
             this.ptb_img.Name = "ptb_img";
             this.ptb_img.Size = new System.Drawing.Size(140, 180);
             this.ptb_img.TabIndex = 5;
