@@ -47,10 +47,10 @@
             // fpnl_books
             // 
             this.fpnl_books.BackColor = System.Drawing.SystemColors.Window;
-            this.fpnl_books.Location = new System.Drawing.Point(0, 117);
+            this.fpnl_books.Location = new System.Drawing.Point(0, 144);
             this.fpnl_books.Name = "fpnl_books";
             this.fpnl_books.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.fpnl_books.Size = new System.Drawing.Size(1700, 780);
+            this.fpnl_books.Size = new System.Drawing.Size(1700, 753);
             this.fpnl_books.TabIndex = 40;
             // 
             // btn_cat6
@@ -64,7 +64,7 @@
             this.btn_cat6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat6.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat6.ForeColor = System.Drawing.Color.White;
-            this.btn_cat6.Location = new System.Drawing.Point(1440, 55);
+            this.btn_cat6.Location = new System.Drawing.Point(1440, 73);
             this.btn_cat6.Name = "btn_cat6";
             this.btn_cat6.Size = new System.Drawing.Size(240, 61);
             this.btn_cat6.TabIndex = 47;
@@ -84,7 +84,7 @@
             this.btn_cat5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat5.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat5.ForeColor = System.Drawing.Color.White;
-            this.btn_cat5.Location = new System.Drawing.Point(1200, 55);
+            this.btn_cat5.Location = new System.Drawing.Point(1200, 73);
             this.btn_cat5.Name = "btn_cat5";
             this.btn_cat5.Size = new System.Drawing.Size(240, 61);
             this.btn_cat5.TabIndex = 46;
@@ -104,7 +104,7 @@
             this.btn_cat4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat4.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat4.ForeColor = System.Drawing.Color.White;
-            this.btn_cat4.Location = new System.Drawing.Point(960, 55);
+            this.btn_cat4.Location = new System.Drawing.Point(960, 73);
             this.btn_cat4.Name = "btn_cat4";
             this.btn_cat4.Size = new System.Drawing.Size(240, 61);
             this.btn_cat4.TabIndex = 45;
@@ -124,7 +124,7 @@
             this.btn_cat3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat3.ForeColor = System.Drawing.Color.White;
-            this.btn_cat3.Location = new System.Drawing.Point(720, 55);
+            this.btn_cat3.Location = new System.Drawing.Point(720, 73);
             this.btn_cat3.Name = "btn_cat3";
             this.btn_cat3.Size = new System.Drawing.Size(240, 61);
             this.btn_cat3.TabIndex = 44;
@@ -144,7 +144,7 @@
             this.btn_cat2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat2.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat2.ForeColor = System.Drawing.Color.White;
-            this.btn_cat2.Location = new System.Drawing.Point(480, 55);
+            this.btn_cat2.Location = new System.Drawing.Point(480, 73);
             this.btn_cat2.Name = "btn_cat2";
             this.btn_cat2.Size = new System.Drawing.Size(240, 61);
             this.btn_cat2.TabIndex = 43;
@@ -164,7 +164,7 @@
             this.btn_cat1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat1.ForeColor = System.Drawing.Color.White;
-            this.btn_cat1.Location = new System.Drawing.Point(240, 55);
+            this.btn_cat1.Location = new System.Drawing.Point(240, 73);
             this.btn_cat1.Name = "btn_cat1";
             this.btn_cat1.Size = new System.Drawing.Size(240, 61);
             this.btn_cat1.TabIndex = 42;
@@ -184,7 +184,7 @@
             this.btn_all.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_all.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_all.ForeColor = System.Drawing.Color.White;
-            this.btn_all.Location = new System.Drawing.Point(0, 55);
+            this.btn_all.Location = new System.Drawing.Point(0, 73);
             this.btn_all.Name = "btn_all";
             this.btn_all.Size = new System.Drawing.Size(240, 61);
             this.btn_all.TabIndex = 41;
@@ -203,7 +203,7 @@
             this.customPanel1.Location = new System.Drawing.Point(2, 2);
             this.customPanel1.Name = "customPanel1";
             this.customPanel1.Radius = 5;
-            this.customPanel1.Size = new System.Drawing.Size(572, 45);
+            this.customPanel1.Size = new System.Drawing.Size(606, 53);
             this.customPanel1.TabIndex = 39;
             this.customPanel1.Thickness = 2F;
             // 
@@ -213,15 +213,15 @@
             this.txt_search.BorderColor = System.Drawing.Color.MediumSeaGreen;
             this.txt_search.BorderFocusColor = System.Drawing.Color.Green;
             this.txt_search.BorderSize = 2;
-            this.txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_search.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_search.Location = new System.Drawing.Point(141, 4);
+            this.txt_search.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_search.ForeColor = System.Drawing.Color.Black;
+            this.txt_search.Location = new System.Drawing.Point(150, 8);
             this.txt_search.Margin = new System.Windows.Forms.Padding(4);
             this.txt_search.Multiline = false;
             this.txt_search.Name = "txt_search";
             this.txt_search.Padding = new System.Windows.Forms.Padding(7);
             this.txt_search.PasswordChar = false;
-            this.txt_search.Size = new System.Drawing.Size(383, 35);
+            this.txt_search.Size = new System.Drawing.Size(397, 39);
             this.txt_search.TabIndex = 7;
             this.txt_search.Texts = "";
             this.txt_search.UnderlineStyle = true;
@@ -229,24 +229,24 @@
             // cbb_type
             // 
             this.cbb_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbb_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb_type.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_type.FormattingEnabled = true;
             this.cbb_type.Items.AddRange(new object[] {
             "All",
             "Title",
             "Author"});
-            this.cbb_type.Location = new System.Drawing.Point(12, 9);
+            this.cbb_type.Location = new System.Drawing.Point(12, 11);
             this.cbb_type.Name = "cbb_type";
-            this.cbb_type.Size = new System.Drawing.Size(121, 26);
+            this.cbb_type.Size = new System.Drawing.Size(121, 32);
             this.cbb_type.TabIndex = 6;
             // 
             // ptb_Search
             // 
             this.ptb_Search.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_search;
             this.ptb_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_Search.Location = new System.Drawing.Point(531, 5);
+            this.ptb_Search.Location = new System.Drawing.Point(557, 4);
             this.ptb_Search.Name = "ptb_Search";
-            this.ptb_Search.Size = new System.Drawing.Size(35, 35);
+            this.ptb_Search.Size = new System.Drawing.Size(45, 45);
             this.ptb_Search.TabIndex = 5;
             this.ptb_Search.TabStop = false;
             this.ptb_Search.Click += new System.EventHandler(this.ptb_Search_Click);

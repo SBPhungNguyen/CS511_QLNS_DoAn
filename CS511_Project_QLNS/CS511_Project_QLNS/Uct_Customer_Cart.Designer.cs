@@ -108,7 +108,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(240)))), ((int)(((byte)(230)))));
             this.panel1.Controls.Add(this.btn_buy);
             this.panel1.Controls.Add(this.lbl_sumprice);
             this.panel1.Controls.Add(this.label1);
