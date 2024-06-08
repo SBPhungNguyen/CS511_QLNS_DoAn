@@ -45,9 +45,14 @@ namespace CS511_Project_QLNS
             fpnl_item.WrapContents = true;
             fpnl_item.AutoScroll = true;
             Uct_Cus_Adv uct_Cus_Adv = new Uct_Cus_Adv();
+            uct_Cus_Adv.Name = "uct_Cus_Adv";
             fpnl_item.Controls.Add(uct_Cus_Adv);
             Uct_Customer_BookSearch uct_Customer_BookSearch = new Uct_Customer_BookSearch();
+            uct_Customer_BookSearch.Name = "uct_Customer_BookSearch";
             fpnl_item.Controls.Add(uct_Customer_BookSearch);
+            Uct_Cus_HomeInfo uct_Cus_HomeInfo = new Uct_Cus_HomeInfo();
+            uct_Cus_HomeInfo.Name = "uct_Cus_HomeInfo";
+            fpnl_item.Controls.Add(uct_Cus_HomeInfo);
         }
 
         //public void LoadData()

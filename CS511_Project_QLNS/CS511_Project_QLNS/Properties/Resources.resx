@@ -145,6 +145,9 @@
   <data name="icon_cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon_email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon_eye_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_eye_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,6 +160,9 @@
   <data name="icon_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon_location" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_location.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon_male" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_male.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -165,6 +171,9 @@
   </data>
   <data name="icon_pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_picture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

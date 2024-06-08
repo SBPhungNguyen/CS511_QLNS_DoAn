@@ -115,9 +115,10 @@ namespace CS511_Project_QLNS
             btn_chat.BackColor = color_btn_normal;
 
             Uct_Customer_Home uct = FindControlByName(this, "uct_Customer_Home") as Uct_Customer_Home;
-            if (uct != null)
+            Uct_Customer_BookSearch uct2 = FindControlByName(uct, "uct_Customer_BookSearch") as Uct_Customer_BookSearch;
+            if (uct2 != null)
             {
-                //uct.DisposePictureBoxImages();
+                uct2.DisposePictureBoxImages();
             }
 
             uct_Customer_Home = new Uct_Customer_Home();
@@ -188,9 +189,10 @@ namespace CS511_Project_QLNS
             cmd.ExecuteNonQuery();
 
             Uct_Customer_Home uct = FindControlByName(this, "uct_Customer_Home") as Uct_Customer_Home;
-            if (uct != null)
+            Uct_Customer_BookSearch uct2 = FindControlByName(uct, "uct_Customer_BookSearch") as Uct_Customer_BookSearch;
+            if (uct2 != null)
             {
-                //uct.DisposePictureBoxImages();
+                uct2.DisposePictureBoxImages();
             }
             //cus_timer.Stop();
             this.Close();

@@ -45,7 +45,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.Controls.Add(this.fpnl_item);
             this.Name = "Uct_Customer_Home";
-            this.Size = new System.Drawing.Size(1730, 900);
+            this.Size = new System.Drawing.Size(1780, 900);
             this.ResumeLayout(false);
 
         }
