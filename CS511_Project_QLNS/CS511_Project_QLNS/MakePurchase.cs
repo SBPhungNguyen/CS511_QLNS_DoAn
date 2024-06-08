@@ -267,5 +267,15 @@ namespace CS511_Project_QLNS
                 return false;
             }
         }
+        private int lineThickness = 1; // Adjust for desired line thickness
+        private Color lineColor = Color.Black; // 
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            //Draw the line using preferred placement and thickness
+            e.Graphics.DrawRectangle(new Pen(lineColor, lineThickness), 0, 0, this.Width - 1, this.Height - 1);
+        }
     }
 }
