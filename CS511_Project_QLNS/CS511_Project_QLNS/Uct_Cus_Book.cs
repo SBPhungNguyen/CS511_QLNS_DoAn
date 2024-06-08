@@ -60,11 +60,11 @@ namespace CS511_Project_QLNS
         {
             BookInfo bi = new BookInfo(this);
 
-            Form form = GetParentForm();       
-            form.Hide();
+            //Form form = GetParentForm();       
+            //form.Hide();
             bi.ShowDialog();
 
-            form.Show();
+            //form.Show();
         }
 
         //this is to find the parent form of this 
