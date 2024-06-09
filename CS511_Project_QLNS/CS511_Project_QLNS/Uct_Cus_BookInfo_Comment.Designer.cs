@@ -116,6 +116,7 @@
             this.rad_female.TabStop = true;
             this.rad_female.Text = "Female";
             this.rad_female.UseVisualStyleBackColor = true;
+            this.rad_female.CheckedChanged += new System.EventHandler(this.rad_female_CheckedChanged);
             // 
             // rad_male
             // 
@@ -128,6 +129,7 @@
             this.rad_male.TabStop = true;
             this.rad_male.Text = "Male";
             this.rad_male.UseVisualStyleBackColor = true;
+            this.rad_male.CheckedChanged += new System.EventHandler(this.rad_male_CheckedChanged);
             // 
             // label6
             // 
@@ -148,6 +150,9 @@
             this.ptb_star5.Size = new System.Drawing.Size(33, 33);
             this.ptb_star5.TabIndex = 44;
             this.ptb_star5.TabStop = false;
+            this.ptb_star5.Click += new System.EventHandler(this.ptb_star5_Click);
+            this.ptb_star5.MouseEnter += new System.EventHandler(this.ptb_star5_MouseEnter);
+            this.ptb_star5.MouseLeave += new System.EventHandler(this.ptb_star5_MouseLeave);
             // 
             // ptb_star4
             // 
@@ -158,6 +163,9 @@
             this.ptb_star4.Size = new System.Drawing.Size(33, 33);
             this.ptb_star4.TabIndex = 43;
             this.ptb_star4.TabStop = false;
+            this.ptb_star4.Click += new System.EventHandler(this.ptb_star4_Click);
+            this.ptb_star4.MouseEnter += new System.EventHandler(this.ptb_star4_MouseEnter);
+            this.ptb_star4.MouseLeave += new System.EventHandler(this.ptb_star4_MouseLeave);
             // 
             // ptb_star3
             // 
@@ -168,6 +176,9 @@
             this.ptb_star3.Size = new System.Drawing.Size(33, 33);
             this.ptb_star3.TabIndex = 42;
             this.ptb_star3.TabStop = false;
+            this.ptb_star3.Click += new System.EventHandler(this.ptb_star3_Click);
+            this.ptb_star3.MouseEnter += new System.EventHandler(this.ptb_star3_MouseEnter);
+            this.ptb_star3.MouseLeave += new System.EventHandler(this.ptb_star3_MouseLeave);
             // 
             // ptb_star2
             // 
@@ -178,6 +189,9 @@
             this.ptb_star2.Size = new System.Drawing.Size(33, 33);
             this.ptb_star2.TabIndex = 41;
             this.ptb_star2.TabStop = false;
+            this.ptb_star2.Click += new System.EventHandler(this.ptb_star2_Click);
+            this.ptb_star2.MouseEnter += new System.EventHandler(this.ptb_star2_MouseEnter);
+            this.ptb_star2.MouseLeave += new System.EventHandler(this.ptb_star2_MouseLeave);
             // 
             // ptb_star1
             // 
@@ -188,6 +202,9 @@
             this.ptb_star1.Size = new System.Drawing.Size(33, 33);
             this.ptb_star1.TabIndex = 40;
             this.ptb_star1.TabStop = false;
+            this.ptb_star1.Click += new System.EventHandler(this.ptb_star1_Click);
+            this.ptb_star1.MouseEnter += new System.EventHandler(this.ptb_star1_MouseEnter);
+            this.ptb_star1.MouseLeave += new System.EventHandler(this.ptb_star1_MouseLeave);
             // 
             // label4
             // 
@@ -234,6 +251,7 @@
             this.btn_postcomment.Text = "Post comment";
             this.btn_postcomment.TextColor = System.Drawing.Color.White;
             this.btn_postcomment.UseVisualStyleBackColor = false;
+            this.btn_postcomment.Click += new System.EventHandler(this.btn_postcomment_Click);
             // 
             // txt_cmtname
             // 
