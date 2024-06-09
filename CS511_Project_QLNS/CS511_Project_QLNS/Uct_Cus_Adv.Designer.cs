@@ -46,6 +46,7 @@
             this.ptb_smallimg2.Size = new System.Drawing.Size(580, 170);
             this.ptb_smallimg2.TabIndex = 2;
             this.ptb_smallimg2.TabStop = false;
+            this.ptb_smallimg2.Click += new System.EventHandler(this.ptb_smallimg2_Click);
             // 
             // ptb_smallimg1
             // 
@@ -56,6 +57,7 @@
             this.ptb_smallimg1.Size = new System.Drawing.Size(580, 170);
             this.ptb_smallimg1.TabIndex = 1;
             this.ptb_smallimg1.TabStop = false;
+            this.ptb_smallimg1.Click += new System.EventHandler(this.ptb_smallimg1_Click);
             // 
             // ptb_bigimg
             // 
@@ -66,6 +68,7 @@
             this.ptb_bigimg.Size = new System.Drawing.Size(1138, 346);
             this.ptb_bigimg.TabIndex = 0;
             this.ptb_bigimg.TabStop = false;
+            this.ptb_bigimg.Click += new System.EventHandler(this.ptb_bigimg_Click);
             // 
             // Uct_Cus_Adv
             // 

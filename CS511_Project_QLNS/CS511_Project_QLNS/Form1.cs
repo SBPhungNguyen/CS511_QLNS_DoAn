@@ -111,6 +111,11 @@ namespace CS511_Project_QLNS
             {
                 uct2.DisposePictureBoxImages();
             }
+            Uct_Cus_Adv uct3 = FindControlByName(uct, "uct_Cus_Adv") as Uct_Cus_Adv;
+            if (uct3 != null)
+            {
+                uct3.DisposePic();
+            }
 
             uct_Customer_Home = new Uct_Customer_Home();
             uct_Customer_Home.Location = new System.Drawing.Point(235, 105);
@@ -184,6 +189,11 @@ namespace CS511_Project_QLNS
             if (uct2 != null)
             {
                 uct2.DisposePictureBoxImages();
+            }
+            Uct_Cus_Adv uct3 = FindControlByName(uct, "uct_Cus_Adv") as Uct_Cus_Adv;
+            if (uct3 != null)
+            {
+                uct3.DisposePic();
             }
 
             Uct_Customer_Cart uct_cart = FindControlByName(this,"uct_Customer_Cart") as Uct_Customer_Cart;
