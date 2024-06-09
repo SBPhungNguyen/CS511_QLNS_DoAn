@@ -41,6 +41,10 @@ namespace CS511_Project_QLNS
             cbb_type.SelectedIndex = 0;
 
             LoadData(); 
+
+            //Uct_Emp_BookSearch uct_Emp_BookSearch = new Uct_Emp_BookSearch();
+            //uct_Emp_BookSearch.Location = new System.Drawing.Point(0, 20);
+            //this.Controls.Add(uct_Emp_BookSearch);
         }
 
         public void LoadData()

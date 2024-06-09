@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.fpnl_books = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_add = new CS511_Project_QLNS.View.CustomButton();
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
             this.txt_search = new CS511_Project_QLNS.Uct_textbox();
             this.cbb_type = new System.Windows.Forms.ComboBox();
             this.ptb_Search = new System.Windows.Forms.PictureBox();
-            this.fpnl_books = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_cat6 = new CS511_Project_QLNS.View.CustomButton();
             this.btn_cat5 = new CS511_Project_QLNS.View.CustomButton();
             this.btn_cat4 = new CS511_Project_QLNS.View.CustomButton();
@@ -44,6 +44,15 @@
             this.customPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_Search)).BeginInit();
             this.SuspendLayout();
+            // 
+            // fpnl_books
+            // 
+            this.fpnl_books.BackColor = System.Drawing.Color.White;
+            this.fpnl_books.Location = new System.Drawing.Point(0, 150);
+            this.fpnl_books.Name = "fpnl_books";
+            this.fpnl_books.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.fpnl_books.Size = new System.Drawing.Size(1680, 747);
+            this.fpnl_books.TabIndex = 50;
             // 
             // btn_add
             // 
@@ -63,6 +72,7 @@
             this.btn_add.Text = "Add";
             this.btn_add.TextColor = System.Drawing.Color.White;
             this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // customPanel1
             // 
@@ -120,15 +130,7 @@
             this.ptb_Search.Size = new System.Drawing.Size(40, 40);
             this.ptb_Search.TabIndex = 5;
             this.ptb_Search.TabStop = false;
-            // 
-            // fpnl_books
-            // 
-            this.fpnl_books.BackColor = System.Drawing.Color.White;
-            this.fpnl_books.Location = new System.Drawing.Point(0, 150);
-            this.fpnl_books.Name = "fpnl_books";
-            this.fpnl_books.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.fpnl_books.Size = new System.Drawing.Size(1680, 747);
-            this.fpnl_books.TabIndex = 50;
+            this.ptb_Search.Click += new System.EventHandler(this.ptb_Search_Click);
             // 
             // btn_cat6
             // 
@@ -148,6 +150,7 @@
             this.btn_cat6.Text = "History";
             this.btn_cat6.TextColor = System.Drawing.Color.White;
             this.btn_cat6.UseVisualStyleBackColor = false;
+            this.btn_cat6.Click += new System.EventHandler(this.btn_cat6_Click);
             // 
             // btn_cat5
             // 
@@ -167,6 +170,7 @@
             this.btn_cat5.Text = "Mystery";
             this.btn_cat5.TextColor = System.Drawing.Color.White;
             this.btn_cat5.UseVisualStyleBackColor = false;
+            this.btn_cat5.Click += new System.EventHandler(this.btn_cat5_Click);
             // 
             // btn_cat4
             // 
@@ -186,6 +190,7 @@
             this.btn_cat4.Text = "Non-Fiction";
             this.btn_cat4.TextColor = System.Drawing.Color.White;
             this.btn_cat4.UseVisualStyleBackColor = false;
+            this.btn_cat4.Click += new System.EventHandler(this.btn_cat4_Click);
             // 
             // btn_cat3
             // 
@@ -205,6 +210,7 @@
             this.btn_cat3.Text = "Self Help";
             this.btn_cat3.TextColor = System.Drawing.Color.White;
             this.btn_cat3.UseVisualStyleBackColor = false;
+            this.btn_cat3.Click += new System.EventHandler(this.btn_cat3_Click);
             // 
             // btn_cat2
             // 
@@ -224,6 +230,7 @@
             this.btn_cat2.Text = "Fantasy";
             this.btn_cat2.TextColor = System.Drawing.Color.White;
             this.btn_cat2.UseVisualStyleBackColor = false;
+            this.btn_cat2.Click += new System.EventHandler(this.btn_cat2_Click);
             // 
             // btn_cat1
             // 
@@ -243,6 +250,7 @@
             this.btn_cat1.Text = "Classics";
             this.btn_cat1.TextColor = System.Drawing.Color.White;
             this.btn_cat1.UseVisualStyleBackColor = false;
+            this.btn_cat1.Click += new System.EventHandler(this.btn_cat1_Click);
             // 
             // btn_all
             // 
@@ -262,6 +270,7 @@
             this.btn_all.Text = "All";
             this.btn_all.TextColor = System.Drawing.Color.White;
             this.btn_all.UseVisualStyleBackColor = false;
+            this.btn_all.Click += new System.EventHandler(this.btn_all_Click);
             // 
             // Uct_Emp_BookSearch
             // 
