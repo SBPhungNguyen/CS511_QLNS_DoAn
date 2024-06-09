@@ -292,6 +292,12 @@
     <Compile Include="Uct_Emp_Book.Designer.cs">
       <DependentUpon>Uct_Emp_Book.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uct_Emp_BookSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Emp_BookSearch.Designer.cs">
+      <DependentUpon>Uct_Emp_BookSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uct_Emp_Cashier.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -445,6 +451,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_Emp_Book.resx">
       <DependentUpon>Uct_Emp_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Emp_BookSearch.resx">
+      <DependentUpon>Uct_Emp_BookSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_Emp_Cashier.resx">
       <DependentUpon>Uct_Emp_Cashier.cs</DependentUpon>
