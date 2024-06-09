@@ -565,5 +565,8 @@
   <ItemGroup>
     <None Include="Resources\icon_location.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_star_half.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

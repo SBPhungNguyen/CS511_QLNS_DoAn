@@ -52,7 +52,7 @@
             this.lbl_title.AutoSize = true;
             this.lbl_title.Font = new System.Drawing.Font("Tahoma", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_title.ForeColor = System.Drawing.Color.Green;
-            this.lbl_title.Location = new System.Drawing.Point(741, 42);
+            this.lbl_title.Location = new System.Drawing.Point(741, 32);
             this.lbl_title.Name = "lbl_title";
             this.lbl_title.Size = new System.Drawing.Size(453, 52);
             this.lbl_title.TabIndex = 22;
@@ -63,20 +63,21 @@
             this.lbl_name.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_name.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.Location = new System.Drawing.Point(914, 149);
+            this.lbl_name.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.Location = new System.Drawing.Point(918, 115);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(675, 135);
+            this.lbl_name.Size = new System.Drawing.Size(769, 101);
             this.lbl_name.TabIndex = 24;
             this.lbl_name.Text = "asdasd asd safjkhga ufau fduer";
             // 
             // lbl_price
             // 
-            this.lbl_price.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_price.AutoSize = true;
+            this.lbl_price.Font = new System.Drawing.Font("Arial", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_price.ForeColor = System.Drawing.Color.Red;
-            this.lbl_price.Location = new System.Drawing.Point(914, 396);
+            this.lbl_price.Location = new System.Drawing.Point(917, 429);
             this.lbl_price.Name = "lbl_price";
-            this.lbl_price.Size = new System.Drawing.Size(189, 80);
+            this.lbl_price.Size = new System.Drawing.Size(159, 55);
             this.lbl_price.TabIndex = 25;
             this.lbl_price.Text = "Code:";
             // 
@@ -84,7 +85,7 @@
             // 
             this.lbl_star.AutoSize = true;
             this.lbl_star.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_star.Location = new System.Drawing.Point(916, 322);
+            this.lbl_star.Location = new System.Drawing.Point(921, 336);
             this.lbl_star.Name = "lbl_star";
             this.lbl_star.Size = new System.Drawing.Size(54, 32);
             this.lbl_star.TabIndex = 34;
@@ -94,7 +95,7 @@
             // 
             this.lbl_cmt.AutoSize = true;
             this.lbl_cmt.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_cmt.Location = new System.Drawing.Point(1279, 322);
+            this.lbl_cmt.Location = new System.Drawing.Point(1288, 336);
             this.lbl_cmt.Name = "lbl_cmt";
             this.lbl_cmt.Size = new System.Drawing.Size(310, 32);
             this.lbl_cmt.TabIndex = 35;
@@ -104,7 +105,7 @@
             // 
             this.ptb_star5.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_star_black;
             this.ptb_star5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_star5.Location = new System.Drawing.Point(1141, 320);
+            this.ptb_star5.Location = new System.Drawing.Point(1146, 334);
             this.ptb_star5.Name = "ptb_star5";
             this.ptb_star5.Size = new System.Drawing.Size(33, 33);
             this.ptb_star5.TabIndex = 33;
@@ -114,7 +115,7 @@
             // 
             this.ptb_star4.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_star_black;
             this.ptb_star4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_star4.Location = new System.Drawing.Point(1100, 320);
+            this.ptb_star4.Location = new System.Drawing.Point(1105, 334);
             this.ptb_star4.Name = "ptb_star4";
             this.ptb_star4.Size = new System.Drawing.Size(33, 33);
             this.ptb_star4.TabIndex = 32;
@@ -124,7 +125,7 @@
             // 
             this.ptb_star3.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_star_black;
             this.ptb_star3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_star3.Location = new System.Drawing.Point(1060, 320);
+            this.ptb_star3.Location = new System.Drawing.Point(1065, 334);
             this.ptb_star3.Name = "ptb_star3";
             this.ptb_star3.Size = new System.Drawing.Size(33, 33);
             this.ptb_star3.TabIndex = 31;
@@ -134,7 +135,7 @@
             // 
             this.ptb_star2.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_star_black;
             this.ptb_star2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_star2.Location = new System.Drawing.Point(1020, 320);
+            this.ptb_star2.Location = new System.Drawing.Point(1025, 334);
             this.ptb_star2.Name = "ptb_star2";
             this.ptb_star2.Size = new System.Drawing.Size(33, 33);
             this.ptb_star2.TabIndex = 30;
@@ -144,7 +145,7 @@
             // 
             this.ptb_star1.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_star_black;
             this.ptb_star1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_star1.Location = new System.Drawing.Point(977, 320);
+            this.ptb_star1.Location = new System.Drawing.Point(982, 334);
             this.ptb_star1.Name = "ptb_star1";
             this.ptb_star1.Size = new System.Drawing.Size(33, 33);
             this.ptb_star1.TabIndex = 29;
@@ -153,9 +154,9 @@
             // ptb_img
             // 
             this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(538, 149);
+            this.ptb_img.Location = new System.Drawing.Point(538, 115);
             this.ptb_img.Name = "ptb_img";
-            this.ptb_img.Size = new System.Drawing.Size(267, 369);
+            this.ptb_img.Size = new System.Drawing.Size(277, 369);
             this.ptb_img.TabIndex = 23;
             this.ptb_img.TabStop = false;
             // 
@@ -176,7 +177,7 @@
             this.Controls.Add(this.ptb_img);
             this.Controls.Add(this.lbl_title);
             this.Name = "Uct_Cus_BookInfo_General";
-            this.Size = new System.Drawing.Size(2048, 600);
+            this.Size = new System.Drawing.Size(2020, 546);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star3)).EndInit();

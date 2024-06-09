@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -253,6 +254,8 @@ namespace CS511_Project_QLNS
 
         private void btn_postcomment_Click(object sender, EventArgs e)
         {
+
+
             if (txt_cmtname.Texts == "" || rtb_cmttext.Text == "" || star_chosen == 0)
             {
                 MessageBox.Show("Please feel in all the blanks", "Opps");
@@ -281,6 +284,58 @@ namespace CS511_Project_QLNS
 
                 cmd.ExecuteNonQuery();
                 sqlCon.Close();
+
+
+                BookInfo bookInfo = this.Parent.Parent as BookInfo;
+                //if (bookInfo != null)
+                {
+
+                    if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
+                    cmd = new SqlCommand();
+                    cmd.Connection = sqlCon;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "SELECT * FROM TBL_BOOK_COMMENT WHERE ID_BOOK = " + id;
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    double sum = 0;
+                    int count = 0;
+                    while (dr.Read())
+                    {
+                        sum = sum + dr.GetInt32(1);
+                        count++;
+                    }
+                    dr.Close();
+                    sqlCon.Close();
+                    double new_star;
+                    if (sum == 0)
+                    {
+                        new_star = 0;
+                    }
+                    else
+                    {
+                        if (Math.Floor((double)sum / count) == (double)sum / count)
+                        {
+                            new_star = (double)sum / count;
+                        }
+                        else
+                            // Round to one decimal place using MidpointRounding.ToEven
+                            new_star = Math.Round((double)sum / count, 1, MidpointRounding.ToEven);
+                    }
+
+                    Uct_Cus_BookInfo_General uct1 = bookInfo.FindControlByName(bookInfo, "uct_Cus_BookInfo_General") as Uct_Cus_BookInfo_General;
+                    //if (uct != null)
+                    {
+                        string formatted;
+                        uct1.Set_lbl_cmt(count);
+                        uct1.CheckStar(new_star);
+                        if (new_star == 0 || new_star == 1 || new_star == 2 || new_star == 3 || new_star == 4 || new_star == 5)
+                            formatted = new_star + ".0";
+                        else
+                        {
+                            formatted = new_star.ToString();
+                        }
+                        uct1.star_point = formatted;
+                    }
+                }
             }
         }
     }

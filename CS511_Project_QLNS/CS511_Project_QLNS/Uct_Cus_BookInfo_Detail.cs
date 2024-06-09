@@ -19,7 +19,7 @@ namespace CS511_Project_QLNS
         public void LoadData(int id, string title, string author, string genre, decimal price, string quantity, string des)
         {
             lbl_id.Text = id.ToString();
-            lbl_title.Text = title;
+            lbl_name.Text = title;
             lbl_author.Text = author;
             string k = genre;
             switch (k)

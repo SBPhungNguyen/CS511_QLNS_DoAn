@@ -71,7 +71,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Green;
-            this.label10.Location = new System.Drawing.Point(658, 401);
+            this.label10.Location = new System.Drawing.Point(386, 398);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(255, 34);
             this.label10.TabIndex = 54;
@@ -295,7 +295,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lbl_title);
             this.Name = "Uct_Cus_BookInfo_Comment";
-            this.Size = new System.Drawing.Size(2048, 1000);
+            this.Size = new System.Drawing.Size(2020, 1050);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_cmtpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star4)).EndInit();
