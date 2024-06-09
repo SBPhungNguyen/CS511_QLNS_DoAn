@@ -58,6 +58,7 @@
             // rtb_txt
             // 
             this.rtb_txt.BackColor = System.Drawing.Color.White;
+            this.rtb_txt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtb_txt.Location = new System.Drawing.Point(80, 74);
             this.rtb_txt.Name = "rtb_txt";
             this.rtb_txt.Size = new System.Drawing.Size(1056, 61);
