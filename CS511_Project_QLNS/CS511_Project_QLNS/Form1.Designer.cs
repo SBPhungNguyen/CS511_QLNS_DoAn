@@ -144,6 +144,7 @@
             // 
             // btn_logout
             // 
+            this.btn_logout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.btn_logout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.btn_logout.BorderColor = System.Drawing.Color.MediumSeaGreen;
@@ -153,9 +154,9 @@
             this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_logout.ForeColor = System.Drawing.Color.White;
-            this.btn_logout.Location = new System.Drawing.Point(8, 548);
+            this.btn_logout.Location = new System.Drawing.Point(8, 528);
             this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(284, 63);
+            this.btn_logout.Size = new System.Drawing.Size(285, 80);
             this.btn_logout.TabIndex = 9;
             this.btn_logout.Text = "Log Out";
             this.btn_logout.TextColor = System.Drawing.Color.White;
@@ -173,9 +174,9 @@
             this.btn_chat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_chat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_chat.ForeColor = System.Drawing.Color.White;
-            this.btn_chat.Location = new System.Drawing.Point(4, 358);
+            this.btn_chat.Location = new System.Drawing.Point(7, 410);
             this.btn_chat.Name = "btn_chat";
-            this.btn_chat.Size = new System.Drawing.Size(288, 63);
+            this.btn_chat.Size = new System.Drawing.Size(285, 80);
             this.btn_chat.TabIndex = 8;
             this.btn_chat.Text = "Chat";
             this.btn_chat.TextColor = System.Drawing.Color.White;
@@ -194,9 +195,9 @@
             this.btn_receipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_receipt.ForeColor = System.Drawing.Color.White;
             this.btn_receipt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_receipt.Location = new System.Drawing.Point(4, 296);
+            this.btn_receipt.Location = new System.Drawing.Point(7, 330);
             this.btn_receipt.Name = "btn_receipt";
-            this.btn_receipt.Size = new System.Drawing.Size(288, 63);
+            this.btn_receipt.Size = new System.Drawing.Size(285, 80);
             this.btn_receipt.TabIndex = 7;
             this.btn_receipt.Text = "Receipt Search";
             this.btn_receipt.TextColor = System.Drawing.Color.White;
@@ -214,9 +215,9 @@
             this.btn_cart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cart.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cart.ForeColor = System.Drawing.Color.White;
-            this.btn_cart.Location = new System.Drawing.Point(4, 233);
+            this.btn_cart.Location = new System.Drawing.Point(7, 250);
             this.btn_cart.Name = "btn_cart";
-            this.btn_cart.Size = new System.Drawing.Size(288, 63);
+            this.btn_cart.Size = new System.Drawing.Size(285, 80);
             this.btn_cart.TabIndex = 6;
             this.btn_cart.Text = "Cart";
             this.btn_cart.TextColor = System.Drawing.Color.White;
@@ -244,7 +245,7 @@
             this.btn_home.ForeColor = System.Drawing.Color.White;
             this.btn_home.Location = new System.Drawing.Point(7, 170);
             this.btn_home.Name = "btn_home";
-            this.btn_home.Size = new System.Drawing.Size(285, 63);
+            this.btn_home.Size = new System.Drawing.Size(285, 80);
             this.btn_home.TabIndex = 4;
             this.btn_home.Text = "Home";
             this.btn_home.TextColor = System.Drawing.Color.White;

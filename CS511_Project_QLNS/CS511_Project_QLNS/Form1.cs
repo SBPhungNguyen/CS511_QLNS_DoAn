@@ -185,6 +185,12 @@ namespace CS511_Project_QLNS
             {
                 uct2.DisposePictureBoxImages();
             }
+
+            Uct_Customer_Cart uct_cart = FindControlByName(this,"uct_Customer_Cart") as Uct_Customer_Cart;
+            if (uct_cart != null)
+            {
+                uct_cart.DisposePictureBoxImages();
+            }
             //cus_timer.Stop();
             this.Close();
 
