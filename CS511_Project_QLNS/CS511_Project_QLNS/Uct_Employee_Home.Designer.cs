@@ -48,10 +48,10 @@
             // fpnl_books
             // 
             this.fpnl_books.BackColor = System.Drawing.Color.White;
-            this.fpnl_books.Location = new System.Drawing.Point(0, 130);
+            this.fpnl_books.Location = new System.Drawing.Point(0, 150);
             this.fpnl_books.Name = "fpnl_books";
             this.fpnl_books.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.fpnl_books.Size = new System.Drawing.Size(1680, 767);
+            this.fpnl_books.Size = new System.Drawing.Size(1680, 747);
             this.fpnl_books.TabIndex = 40;
             // 
             // btn_add
@@ -63,11 +63,11 @@
             this.btn_add.BorderSize = 0;
             this.btn_add.FlatAppearance.BorderSize = 0;
             this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.Location = new System.Drawing.Point(692, 0);
+            this.btn_add.Location = new System.Drawing.Point(960, 0);
             this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(150, 40);
+            this.btn_add.Size = new System.Drawing.Size(200, 55);
             this.btn_add.TabIndex = 48;
             this.btn_add.Text = "Add";
             this.btn_add.TextColor = System.Drawing.Color.White;
@@ -143,7 +143,7 @@
             this.btn_cat6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat6.Font = new System.Drawing.Font("Tahoma", 13.8F);
             this.btn_cat6.ForeColor = System.Drawing.Color.White;
-            this.btn_cat6.Location = new System.Drawing.Point(1440, 64);
+            this.btn_cat6.Location = new System.Drawing.Point(1440, 84);
             this.btn_cat6.Name = "btn_cat6";
             this.btn_cat6.Size = new System.Drawing.Size(240, 60);
             this.btn_cat6.TabIndex = 47;
@@ -163,7 +163,7 @@
             this.btn_cat5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat5.Font = new System.Drawing.Font("Tahoma", 13.8F);
             this.btn_cat5.ForeColor = System.Drawing.Color.White;
-            this.btn_cat5.Location = new System.Drawing.Point(1200, 64);
+            this.btn_cat5.Location = new System.Drawing.Point(1200, 84);
             this.btn_cat5.Name = "btn_cat5";
             this.btn_cat5.Size = new System.Drawing.Size(240, 60);
             this.btn_cat5.TabIndex = 46;
@@ -183,7 +183,7 @@
             this.btn_cat4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat4.Font = new System.Drawing.Font("Tahoma", 13.8F);
             this.btn_cat4.ForeColor = System.Drawing.Color.White;
-            this.btn_cat4.Location = new System.Drawing.Point(960, 64);
+            this.btn_cat4.Location = new System.Drawing.Point(960, 84);
             this.btn_cat4.Name = "btn_cat4";
             this.btn_cat4.Size = new System.Drawing.Size(240, 60);
             this.btn_cat4.TabIndex = 45;
@@ -203,7 +203,7 @@
             this.btn_cat3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat3.Font = new System.Drawing.Font("Tahoma", 13.8F);
             this.btn_cat3.ForeColor = System.Drawing.Color.White;
-            this.btn_cat3.Location = new System.Drawing.Point(720, 64);
+            this.btn_cat3.Location = new System.Drawing.Point(720, 84);
             this.btn_cat3.Name = "btn_cat3";
             this.btn_cat3.Size = new System.Drawing.Size(240, 60);
             this.btn_cat3.TabIndex = 44;
@@ -223,7 +223,7 @@
             this.btn_cat2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat2.Font = new System.Drawing.Font("Tahoma", 13.8F);
             this.btn_cat2.ForeColor = System.Drawing.Color.White;
-            this.btn_cat2.Location = new System.Drawing.Point(480, 64);
+            this.btn_cat2.Location = new System.Drawing.Point(480, 84);
             this.btn_cat2.Name = "btn_cat2";
             this.btn_cat2.Size = new System.Drawing.Size(240, 60);
             this.btn_cat2.TabIndex = 43;
@@ -243,7 +243,7 @@
             this.btn_cat1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cat1.Font = new System.Drawing.Font("Tahoma", 13.8F);
             this.btn_cat1.ForeColor = System.Drawing.Color.White;
-            this.btn_cat1.Location = new System.Drawing.Point(240, 64);
+            this.btn_cat1.Location = new System.Drawing.Point(240, 84);
             this.btn_cat1.Name = "btn_cat1";
             this.btn_cat1.Size = new System.Drawing.Size(240, 60);
             this.btn_cat1.TabIndex = 42;
@@ -263,7 +263,7 @@
             this.btn_all.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_all.Font = new System.Drawing.Font("Tahoma", 13.8F);
             this.btn_all.ForeColor = System.Drawing.Color.White;
-            this.btn_all.Location = new System.Drawing.Point(0, 64);
+            this.btn_all.Location = new System.Drawing.Point(0, 84);
             this.btn_all.Name = "btn_all";
             this.btn_all.Size = new System.Drawing.Size(240, 60);
             this.btn_all.TabIndex = 41;
