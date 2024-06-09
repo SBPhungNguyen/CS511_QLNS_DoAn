@@ -41,9 +41,9 @@
             // 
             this.ptb_smallimg2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptb_smallimg2.BackgroundImage")));
             this.ptb_smallimg2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_smallimg2.Location = new System.Drawing.Point(1147, 178);
+            this.ptb_smallimg2.Location = new System.Drawing.Point(1147, 177);
             this.ptb_smallimg2.Name = "ptb_smallimg2";
-            this.ptb_smallimg2.Size = new System.Drawing.Size(580, 170);
+            this.ptb_smallimg2.Size = new System.Drawing.Size(500, 170);
             this.ptb_smallimg2.TabIndex = 2;
             this.ptb_smallimg2.TabStop = false;
             this.ptb_smallimg2.Click += new System.EventHandler(this.ptb_smallimg2_Click);
@@ -54,7 +54,7 @@
             this.ptb_smallimg1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptb_smallimg1.Location = new System.Drawing.Point(1147, 3);
             this.ptb_smallimg1.Name = "ptb_smallimg1";
-            this.ptb_smallimg1.Size = new System.Drawing.Size(580, 170);
+            this.ptb_smallimg1.Size = new System.Drawing.Size(500, 170);
             this.ptb_smallimg1.TabIndex = 1;
             this.ptb_smallimg1.TabStop = false;
             this.ptb_smallimg1.Click += new System.EventHandler(this.ptb_smallimg1_Click);
