@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.lbl_title = new System.Windows.Forms.Label();
-            this.ptb_img = new System.Windows.Forms.PictureBox();
             this.lbl_name = new System.Windows.Forms.Label();
             this.lbl_price = new System.Windows.Forms.Label();
+            this.lbl_star = new System.Windows.Forms.Label();
+            this.lbl_cmt = new System.Windows.Forms.Label();
             this.ptb_star5 = new System.Windows.Forms.PictureBox();
             this.ptb_star4 = new System.Windows.Forms.PictureBox();
             this.ptb_star3 = new System.Windows.Forms.PictureBox();
             this.ptb_star2 = new System.Windows.Forms.PictureBox();
             this.ptb_star1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
+            this.ptb_img = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_title
@@ -52,20 +52,11 @@
             this.lbl_title.AutoSize = true;
             this.lbl_title.Font = new System.Drawing.Font("Tahoma", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_title.ForeColor = System.Drawing.Color.Green;
-            this.lbl_title.Location = new System.Drawing.Point(913, 41);
+            this.lbl_title.Location = new System.Drawing.Point(741, 42);
             this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(465, 53);
+            this.lbl_title.Size = new System.Drawing.Size(453, 52);
             this.lbl_title.TabIndex = 22;
             this.lbl_title.Text = "BOOK INFOMATION";
-            // 
-            // ptb_img
-            // 
-            this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_img.Location = new System.Drawing.Point(538, 149);
-            this.ptb_img.Name = "ptb_img";
-            this.ptb_img.Size = new System.Drawing.Size(267, 369);
-            this.ptb_img.TabIndex = 23;
-            this.ptb_img.TabStop = false;
             // 
             // lbl_name
             // 
@@ -88,6 +79,26 @@
             this.lbl_price.Size = new System.Drawing.Size(189, 80);
             this.lbl_price.TabIndex = 25;
             this.lbl_price.Text = "Code:";
+            // 
+            // lbl_star
+            // 
+            this.lbl_star.AutoSize = true;
+            this.lbl_star.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_star.Location = new System.Drawing.Point(916, 322);
+            this.lbl_star.Name = "lbl_star";
+            this.lbl_star.Size = new System.Drawing.Size(54, 32);
+            this.lbl_star.TabIndex = 34;
+            this.lbl_star.Text = "5.0";
+            // 
+            // lbl_cmt
+            // 
+            this.lbl_cmt.AutoSize = true;
+            this.lbl_cmt.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_cmt.Location = new System.Drawing.Point(1279, 322);
+            this.lbl_cmt.Name = "lbl_cmt";
+            this.lbl_cmt.Size = new System.Drawing.Size(310, 32);
+            this.lbl_cmt.TabIndex = 35;
+            this.lbl_cmt.Text = "There are 12 comments";
             // 
             // ptb_star5
             // 
@@ -139,33 +150,22 @@
             this.ptb_star1.TabIndex = 29;
             this.ptb_star1.TabStop = false;
             // 
-            // label1
+            // ptb_img
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(916, 322);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 32);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "5.0";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1279, 322);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(310, 32);
-            this.label2.TabIndex = 35;
-            this.label2.Text = "There are 12 comments";
+            this.ptb_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_img.Location = new System.Drawing.Point(538, 149);
+            this.ptb_img.Name = "ptb_img";
+            this.ptb_img.Size = new System.Drawing.Size(267, 369);
+            this.ptb_img.TabIndex = 23;
+            this.ptb_img.TabStop = false;
             // 
             // Uct_Cus_BookInfo_General
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_cmt);
+            this.Controls.Add(this.lbl_star);
             this.Controls.Add(this.ptb_star5);
             this.Controls.Add(this.ptb_star4);
             this.Controls.Add(this.ptb_star3);
@@ -177,12 +177,12 @@
             this.Controls.Add(this.lbl_title);
             this.Name = "Uct_Cus_BookInfo_General";
             this.Size = new System.Drawing.Size(2048, 600);
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_img)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,7 +199,7 @@
         private System.Windows.Forms.PictureBox ptb_star3;
         private System.Windows.Forms.PictureBox ptb_star2;
         private System.Windows.Forms.PictureBox ptb_star1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_star;
+        private System.Windows.Forms.Label lbl_cmt;
     }
 }
