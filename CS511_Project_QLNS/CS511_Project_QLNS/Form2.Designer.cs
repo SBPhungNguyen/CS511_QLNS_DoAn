@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_exit = new System.Windows.Forms.PictureBox();
             this.lbl_title = new System.Windows.Forms.Label();
@@ -135,33 +135,35 @@
             // 
             // chart1
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart1.Legends.Add(legend5);
+            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(315, 346);
             this.chart1.Name = "chart1";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chart1.Series.Add(series5);
-            this.chart1.Size = new System.Drawing.Size(539, 317);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(518, 317);
             this.chart1.TabIndex = 56;
             this.chart1.Text = "chart1";
             // 
             // chart2
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart2.Legends.Add(legend6);
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(875, 326);
             this.chart2.Name = "chart2";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chart2.Series.Add(series6);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(413, 300);
             this.chart2.TabIndex = 57;
             this.chart2.Text = "chart2";
@@ -215,7 +217,7 @@
             this.ptb_em_pic.ColorBorder = System.Drawing.Color.RoyalBlue;
             this.ptb_em_pic.ColorBorder2 = System.Drawing.Color.HotPink;
             this.ptb_em_pic.Gradiant = 50F;
-            this.ptb_em_pic.Location = new System.Drawing.Point(70, 135);
+            this.ptb_em_pic.Location = new System.Drawing.Point(89, 135);
             this.ptb_em_pic.Name = "ptb_em_pic";
             this.ptb_em_pic.Size = new System.Drawing.Size(125, 115);
             this.ptb_em_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -247,11 +249,11 @@
             // 
             this.btn_employee.FlatAppearance.BorderSize = 0;
             this.btn_employee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_employee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_employee.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.btn_employee.ForeColor = System.Drawing.Color.White;
-            this.btn_employee.Location = new System.Drawing.Point(7, 421);
+            this.btn_employee.Location = new System.Drawing.Point(7, 485);
             this.btn_employee.Name = "btn_employee";
-            this.btn_employee.Size = new System.Drawing.Size(260, 63);
+            this.btn_employee.Size = new System.Drawing.Size(285, 80);
             this.btn_employee.TabIndex = 15;
             this.btn_employee.Text = "Employee";
             this.btn_employee.UseVisualStyleBackColor = true;
@@ -262,11 +264,11 @@
             this.btn_chat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.btn_chat.FlatAppearance.BorderSize = 0;
             this.btn_chat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_chat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_chat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.btn_chat.ForeColor = System.Drawing.Color.White;
-            this.btn_chat.Location = new System.Drawing.Point(7, 358);
+            this.btn_chat.Location = new System.Drawing.Point(7, 409);
             this.btn_chat.Name = "btn_chat";
-            this.btn_chat.Size = new System.Drawing.Size(260, 63);
+            this.btn_chat.Size = new System.Drawing.Size(285, 80);
             this.btn_chat.TabIndex = 14;
             this.btn_chat.Text = "Chat";
             this.btn_chat.UseVisualStyleBackColor = false;
@@ -277,11 +279,11 @@
             this.btn_report.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.btn_report.FlatAppearance.BorderSize = 0;
             this.btn_report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_report.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_report.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.btn_report.ForeColor = System.Drawing.Color.White;
-            this.btn_report.Location = new System.Drawing.Point(7, 296);
+            this.btn_report.Location = new System.Drawing.Point(7, 330);
             this.btn_report.Name = "btn_report";
-            this.btn_report.Size = new System.Drawing.Size(260, 63);
+            this.btn_report.Size = new System.Drawing.Size(285, 80);
             this.btn_report.TabIndex = 13;
             this.btn_report.Text = "Report";
             this.btn_report.UseVisualStyleBackColor = false;
@@ -292,11 +294,11 @@
             this.btn_import.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.btn_import.FlatAppearance.BorderSize = 0;
             this.btn_import.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_import.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_import.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.btn_import.ForeColor = System.Drawing.Color.White;
-            this.btn_import.Location = new System.Drawing.Point(7, 233);
+            this.btn_import.Location = new System.Drawing.Point(7, 250);
             this.btn_import.Name = "btn_import";
-            this.btn_import.Size = new System.Drawing.Size(260, 63);
+            this.btn_import.Size = new System.Drawing.Size(285, 80);
             this.btn_import.TabIndex = 12;
             this.btn_import.Text = "Import";
             this.btn_import.UseVisualStyleBackColor = false;
@@ -307,11 +309,11 @@
             this.btn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(181)))), ((int)(((byte)(122)))));
             this.btn_home.FlatAppearance.BorderSize = 0;
             this.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_home.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_home.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.btn_home.ForeColor = System.Drawing.Color.White;
-            this.btn_home.Location = new System.Drawing.Point(7, 170);
+            this.btn_home.Location = new System.Drawing.Point(8, 170);
             this.btn_home.Name = "btn_home";
-            this.btn_home.Size = new System.Drawing.Size(260, 63);
+            this.btn_home.Size = new System.Drawing.Size(285, 80);
             this.btn_home.TabIndex = 11;
             this.btn_home.Text = "Home";
             this.btn_home.UseVisualStyleBackColor = false;
@@ -320,9 +322,9 @@
             // pnl_UserName
             // 
             this.pnl_UserName.Controls.Add(this.lbl_em_name);
-            this.pnl_UserName.Location = new System.Drawing.Point(21, 76);
+            this.pnl_UserName.Location = new System.Drawing.Point(9, 72);
             this.pnl_UserName.Name = "pnl_UserName";
-            this.pnl_UserName.Size = new System.Drawing.Size(243, 64);
+            this.pnl_UserName.Size = new System.Drawing.Size(283, 89);
             this.pnl_UserName.TabIndex = 10;
             // 
             // lbl_em_name
@@ -332,13 +334,14 @@
             this.lbl_em_name.ForeColor = System.Drawing.SystemColors.Window;
             this.lbl_em_name.Location = new System.Drawing.Point(0, 0);
             this.lbl_em_name.Name = "lbl_em_name";
-            this.lbl_em_name.Size = new System.Drawing.Size(243, 64);
+            this.lbl_em_name.Size = new System.Drawing.Size(283, 89);
             this.lbl_em_name.TabIndex = 11;
             this.lbl_em_name.Text = "Mr/Ms";
             this.lbl_em_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_logout
             // 
+            this.btn_logout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.btn_logout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.btn_logout.BorderColor = System.Drawing.Color.MediumSeaGreen;
@@ -346,11 +349,11 @@
             this.btn_logout.BorderSize = 0;
             this.btn_logout.FlatAppearance.BorderSize = 0;
             this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.btn_logout.ForeColor = System.Drawing.Color.White;
-            this.btn_logout.Location = new System.Drawing.Point(8, 548);
+            this.btn_logout.Location = new System.Drawing.Point(8, 529);
             this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(259, 63);
+            this.btn_logout.Size = new System.Drawing.Size(285, 80);
             this.btn_logout.TabIndex = 9;
             this.btn_logout.Text = "Log Out";
             this.btn_logout.TextColor = System.Drawing.Color.White;
@@ -360,9 +363,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(82)))));
-            this.panel2.Location = new System.Drawing.Point(-5, 167);
+            this.panel2.Location = new System.Drawing.Point(10, 167);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(272, 2);
+            this.panel2.Size = new System.Drawing.Size(283, 2);
             this.panel2.TabIndex = 5;
             // 
             // lbl_month
