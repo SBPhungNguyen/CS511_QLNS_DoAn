@@ -28,6 +28,8 @@ namespace CS511_Project_QLNS
         {
             InitializeComponent();
 
+            this.id = uct.id;
+
             Uct_Cus_BookInfo_General uct_Cus_BookInfo_General = new Uct_Cus_BookInfo_General();
             uct_Cus_BookInfo_General.Name = "uct_Cus_BookInfo_General";
             uct_Cus_BookInfo_General.Location = new Point(0, 40);
@@ -39,7 +41,7 @@ namespace CS511_Project_QLNS
             this.Controls.Add(uct_Cus_BookInfo_Detail);
             uct_Cus_BookInfo_Detail.BringToFront();
 
-            Uct_Cus_BookInfo_Comment uct_Cus_BookInfo_Comment = new Uct_Cus_BookInfo_Comment();
+            Uct_Cus_BookInfo_Comment uct_Cus_BookInfo_Comment = new Uct_Cus_BookInfo_Comment(id);
             uct_Cus_BookInfo_Comment.Name = "uct_Cus_BookInfo_Comment";
             this.Controls.Add(uct_Cus_BookInfo_Comment);
             uct_Cus_BookInfo_Comment.BringToFront();
@@ -51,7 +53,7 @@ namespace CS511_Project_QLNS
             is_female = 0;
             ptb_cmtpic.BackgroundImage = Properties.Resources.icon_male;
 
-            this.id = uct.id;
+
 
 
             connect = con.connect;

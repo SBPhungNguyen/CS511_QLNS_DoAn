@@ -60,7 +60,7 @@
             this.rtb_txt.BackColor = System.Drawing.Color.White;
             this.rtb_txt.Location = new System.Drawing.Point(80, 74);
             this.rtb_txt.Name = "rtb_txt";
-            this.rtb_txt.Size = new System.Drawing.Size(627, 61);
+            this.rtb_txt.Size = new System.Drawing.Size(1056, 61);
             this.rtb_txt.TabIndex = 7;
             this.rtb_txt.Text = "";
             // 
@@ -136,9 +136,9 @@
             this.Controls.Add(this.ptb_star2);
             this.Controls.Add(this.ptb_star1);
             this.Controls.Add(this.ptb_img);
-            this.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.Name = "Uct_Cus_Comment";
-            this.Size = new System.Drawing.Size(721, 150);
+            this.Size = new System.Drawing.Size(1150, 150);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_star3)).EndInit();
