@@ -63,11 +63,11 @@
             this.btn_add.BorderSize = 0;
             this.btn_add.FlatAppearance.BorderSize = 0;
             this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.Location = new System.Drawing.Point(960, 0);
+            this.btn_add.Location = new System.Drawing.Point(1200, 3);
             this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(200, 55);
+            this.btn_add.Size = new System.Drawing.Size(240, 55);
             this.btn_add.TabIndex = 48;
             this.btn_add.Text = "Add";
             this.btn_add.TextColor = System.Drawing.Color.White;

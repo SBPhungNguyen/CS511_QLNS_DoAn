@@ -16,7 +16,9 @@ namespace CS511_Project_QLNS
     {
         Uct_Employee_Home parent_uct;
         Form2 parent_form;
-        
+
+        private int lineThickness = 1; // Adjust for desired line thickness
+        private Color lineColor = Color.Black; // 
 
         public int id;
         public string title
@@ -197,6 +199,75 @@ namespace CS511_Project_QLNS
                 }
             }
             return null;
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            //Draw the line using preferred placement and thickness
+            e.Graphics.DrawRectangle(new Pen(lineColor, lineThickness), 0, 0, this.Width - 1, this.Height - 1);
+        }
+
+        private void Uct_Emp_Book_MouseEnter(object sender, EventArgs e)
+        {
+            BackColor = Color.WhiteSmoke;
+        }
+
+        private void Uct_Emp_Book_MouseLeave(object sender, EventArgs e)
+        {
+            BackColor = Color.White;
+        }
+
+        private void ptb_img_MouseEnter(object sender, EventArgs e)
+        {
+            Uct_Emp_Book_MouseEnter(sender, e);
+        }
+
+        private void ptb_img_MouseLeave(object sender, EventArgs e)
+        {
+            Uct_Emp_Book_MouseLeave(sender, e);
+        }
+
+        private void lbl_name_MouseEnter(object sender, EventArgs e)
+        {
+            Uct_Emp_Book_MouseEnter(sender, e);
+        }
+
+        private void lbl_name_MouseLeave(object sender, EventArgs e)
+        {
+            Uct_Emp_Book_MouseLeave(sender, e);
+        }
+
+        private void ptb_edit_MouseEnter(object sender, EventArgs e)
+        {
+            Uct_Emp_Book_MouseEnter(sender, e);
+        }
+
+        private void ptb_edit_MouseLeave(object sender, EventArgs e)
+        {
+            Uct_Emp_Book_MouseLeave(sender, e);
+        }
+
+        private void ptb_delete_MouseEnter(object sender, EventArgs e)
+        {
+            Uct_Emp_Book_MouseEnter(sender, e);
+        }
+
+        private void ptb_delete_MouseLeave(object sender, EventArgs e)
+        {
+            Uct_Emp_Book_MouseLeave(sender, e);
+
+        }
+
+        private void lbl_author_MouseLeave(object sender, EventArgs e)
+        {
+            Uct_Emp_Book_MouseLeave(sender, e);
+        }
+
+        private void lbl_author_MouseEnter(object sender, EventArgs e)
+        {
+            Uct_Emp_Book_MouseEnter(sender, e);
         }
     }
 }
