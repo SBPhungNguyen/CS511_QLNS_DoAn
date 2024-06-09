@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookInfo));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.fpnl_item = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_exit = new System.Windows.Forms.PictureBox();
+            this.fpnl_item = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.SuspendLayout();
@@ -47,16 +47,6 @@
             this.panel1.Size = new System.Drawing.Size(1300, 40);
             this.panel1.TabIndex = 2;
             // 
-            // fpnl_item
-            // 
-            this.fpnl_item.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.fpnl_item.Location = new System.Drawing.Point(0, 49);
-            this.fpnl_item.Name = "fpnl_item";
-            this.fpnl_item.Size = new System.Drawing.Size(1300, 747);
-            this.fpnl_item.TabIndex = 3;
-            // 
             // btn_exit
             // 
             this.btn_exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -70,6 +60,16 @@
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             this.btn_exit.MouseEnter += new System.EventHandler(this.btn_exit_MouseEnter);
             this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
+            // 
+            // fpnl_item
+            // 
+            this.fpnl_item.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.fpnl_item.Location = new System.Drawing.Point(0, 43);
+            this.fpnl_item.Name = "fpnl_item";
+            this.fpnl_item.Size = new System.Drawing.Size(1300, 753);
+            this.fpnl_item.TabIndex = 3;
             // 
             // BookInfo
             // 

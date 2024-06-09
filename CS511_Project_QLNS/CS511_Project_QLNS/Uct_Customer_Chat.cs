@@ -110,6 +110,10 @@ namespace CS511_Project_QLNS
 
         private void ptb_send_Click(object sender, EventArgs e)
         {
+            if (txt_text.Texts == "")
+            {
+                return;
+            }
             count_msg++;
             string name = "Guest";
             Image img = Properties.Resources.icon_user2;
