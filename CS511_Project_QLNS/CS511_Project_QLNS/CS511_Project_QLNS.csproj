@@ -208,6 +208,12 @@
     <Compile Include="Uct_Cus_Book.Designer.cs">
       <DependentUpon>Uct_Cus_Book.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uct_Cus_BookInfo_Comment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uct_Cus_BookInfo_Comment.Designer.cs">
+      <DependentUpon>Uct_Cus_BookInfo_Comment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uct_Cus_BookInfo_Detail.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -397,6 +403,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_Cus_Book.resx">
       <DependentUpon>Uct_Cus_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uct_Cus_BookInfo_Comment.resx">
+      <DependentUpon>Uct_Cus_BookInfo_Comment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Uct_Cus_BookInfo_Detail.resx">
       <DependentUpon>Uct_Cus_BookInfo_Detail.cs</DependentUpon>

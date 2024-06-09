@@ -39,6 +39,11 @@ namespace CS511_Project_QLNS
             this.Controls.Add(uct_Cus_BookInfo_Detail);
             uct_Cus_BookInfo_Detail.BringToFront();
 
+            Uct_Cus_BookInfo_Comment uct_Cus_BookInfo_Comment = new Uct_Cus_BookInfo_Comment();
+            uct_Cus_BookInfo_Comment.Name = "uct_Cus_BookInfo_Comment";
+            this.Controls.Add(uct_Cus_BookInfo_Comment);
+            uct_Cus_BookInfo_Comment.BringToFront();
+
             fpnl_cmt.AutoScroll = true;
             fpnl_cmt.WrapContents = true;
 
