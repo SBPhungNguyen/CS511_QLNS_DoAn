@@ -39,10 +39,10 @@ namespace CS511_Project_QLNS
         {
             Form2 form = this.Parent.Parent.Parent as Form2;
             Emp_CashierInfo emp = new Emp_CashierInfo(id);
-            form.Hide();
+            //form.Hide();
 
             emp.ShowDialog();
-            form.Show();
+            //form.Show();
         }
 
         private void ptb_img_Click(object sender, EventArgs e)
@@ -69,7 +69,7 @@ namespace CS511_Project_QLNS
             parent.emp_img.Dispose();
             Emp_CashierEdit edit = new Emp_CashierEdit(id, parent);
 
-            parent.Hide();
+            //parent.Hide();
             edit.ShowDialog();
 
             //parent_uct.DisposePictureBoxImages();
@@ -80,7 +80,7 @@ namespace CS511_Project_QLNS
             else
                 parent_uct.LoadDataWithCate(parent_uct.is_displayed_button.ToString());
 
-            parent.Show();
+            //parent.Show();
         }
 
         Control FindControlByName(Control control, string controlName)
@@ -152,5 +152,6 @@ namespace CS511_Project_QLNS
             this.OnClick(null);
 
         }
+
     }
 }

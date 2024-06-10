@@ -66,7 +66,7 @@
             this.panel2.Controls.Add(this.monthCalendar1);
             this.panel2.Location = new System.Drawing.Point(-1, 38);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(303, 210);
+            this.panel2.Size = new System.Drawing.Size(303, 208);
             this.panel2.TabIndex = 1;
             // 
             // monthCalendar1
@@ -80,7 +80,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(300, 245);
+            this.ClientSize = new System.Drawing.Size(300, 243);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
