@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Emp_ImportAdd));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_exit = new System.Windows.Forms.PictureBox();
-            this.lbl_title = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_buy = new CS511_Project_QLNS.View.CustomButton();
             this.lbl_sumprice = new System.Windows.Forms.Label();
@@ -63,6 +62,7 @@
             this.lbl_code = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbl_title = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.panel2.SuspendLayout();
@@ -74,45 +74,39 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Green;
             this.panel1.Controls.Add(this.btn_exit);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1300, 40);
+            this.panel1.Size = new System.Drawing.Size(1900, 50);
             this.panel1.TabIndex = 2;
             // 
             // btn_exit
             // 
+            this.btn_exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
             this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_exit.Location = new System.Drawing.Point(1263, 5);
+            this.btn_exit.Location = new System.Drawing.Point(1855, 5);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.Size = new System.Drawing.Size(40, 40);
             this.btn_exit.TabIndex = 18;
             this.btn_exit.TabStop = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             this.btn_exit.MouseEnter += new System.EventHandler(this.btn_exit_MouseEnter);
             this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
             // 
-            // lbl_title
-            // 
-            this.lbl_title.AutoSize = true;
-            this.lbl_title.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_title.ForeColor = System.Drawing.Color.Green;
-            this.lbl_title.Location = new System.Drawing.Point(539, 54);
-            this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(236, 40);
-            this.lbl_title.TabIndex = 51;
-            this.lbl_title.Text = "IMPORT ADD";
-            // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.btn_buy);
             this.panel2.Controls.Add(this.lbl_sumprice);
             this.panel2.Controls.Add(this.label15);
-            this.panel2.Location = new System.Drawing.Point(0, 718);
+            this.panel2.Location = new System.Drawing.Point(0, 997);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1300, 83);
+            this.panel2.Size = new System.Drawing.Size(1900, 105);
             this.panel2.TabIndex = 52;
             // 
             // btn_buy
@@ -163,7 +157,7 @@
             this.customPanel3.Controls.Add(this.fpnl_detail);
             this.customPanel3.Controls.Add(this.customPanel4);
             this.customPanel3.Controls.Add(this.label3);
-            this.customPanel3.Location = new System.Drawing.Point(21, 354);
+            this.customPanel3.Location = new System.Drawing.Point(232, 515);
             this.customPanel3.Name = "customPanel3";
             this.customPanel3.Radius = 10;
             this.customPanel3.Size = new System.Drawing.Size(1254, 358);
@@ -267,7 +261,7 @@
             this.customPanel2.Controls.Add(this.label7);
             this.customPanel2.Controls.Add(this.label11);
             this.customPanel2.Controls.Add(this.label9);
-            this.customPanel2.Location = new System.Drawing.Point(654, 103);
+            this.customPanel2.Location = new System.Drawing.Point(865, 264);
             this.customPanel2.Name = "customPanel2";
             this.customPanel2.Radius = 10;
             this.customPanel2.Size = new System.Drawing.Size(621, 239);
@@ -407,7 +401,7 @@
             this.customPanel1.Controls.Add(this.lbl_code);
             this.customPanel1.Controls.Add(this.label4);
             this.customPanel1.Controls.Add(this.label1);
-            this.customPanel1.Location = new System.Drawing.Point(21, 103);
+            this.customPanel1.Location = new System.Drawing.Point(232, 264);
             this.customPanel1.Name = "customPanel1";
             this.customPanel1.Radius = 10;
             this.customPanel1.Size = new System.Drawing.Size(613, 239);
@@ -416,6 +410,8 @@
             // 
             // lbl_em_name
             // 
+            this.lbl_em_name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_em_name.AutoSize = true;
             this.lbl_em_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_em_name.Location = new System.Drawing.Point(291, 146);
@@ -485,22 +481,36 @@
             this.label1.TabIndex = 52;
             this.label1.Text = "Import Info";
             // 
+            // lbl_title
+            // 
+            this.lbl_title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_title.Font = new System.Drawing.Font("Tahoma", 25.8F, System.Drawing.FontStyle.Bold);
+            this.lbl_title.ForeColor = System.Drawing.Color.Green;
+            this.lbl_title.Location = new System.Drawing.Point(573, 107);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(827, 67);
+            this.lbl_title.TabIndex = 53;
+            this.lbl_title.Text = "IMPORT INFORMATION";
+            this.lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Emp_ImportAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1300, 800);
+            this.ClientSize = new System.Drawing.Size(1900, 1102);
+            this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.customPanel3);
             this.Controls.Add(this.customPanel2);
-            this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.customPanel1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Emp_ImportAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Emp_ImportAdd";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -514,7 +524,6 @@
             this.customPanel1.ResumeLayout(false);
             this.customPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -522,7 +531,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox btn_exit;
-        private System.Windows.Forms.Label lbl_title;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbl_code;
@@ -554,5 +562,6 @@
         private System.Windows.Forms.Label lbl_sumprice;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lbl_title;
     }
 }

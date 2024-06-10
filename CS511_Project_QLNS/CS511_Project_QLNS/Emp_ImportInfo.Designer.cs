@@ -98,10 +98,10 @@
             this.customPanel1.Controls.Add(this.lbl_code);
             this.customPanel1.Controls.Add(this.label4);
             this.customPanel1.Controls.Add(this.label1);
-            this.customPanel1.Location = new System.Drawing.Point(12, 209);
+            this.customPanel1.Location = new System.Drawing.Point(24, 209);
             this.customPanel1.Name = "customPanel1";
             this.customPanel1.Radius = 10;
-            this.customPanel1.Size = new System.Drawing.Size(1876, 193);
+            this.customPanel1.Size = new System.Drawing.Size(1851, 193);
             this.customPanel1.TabIndex = 4;
             this.customPanel1.Thickness = 5F;
             // 
@@ -193,7 +193,7 @@
             this.label1.ForeColor = System.Drawing.Color.Green;
             this.label1.Location = new System.Drawing.Point(719, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(508, 36);
+            this.label1.Size = new System.Drawing.Size(483, 36);
             this.label1.TabIndex = 52;
             this.label1.Text = "General Information";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -221,10 +221,10 @@
             this.customPanel3.Controls.Add(this.fpnl_detail);
             this.customPanel3.Controls.Add(this.customPanel4);
             this.customPanel3.Controls.Add(this.label3);
-            this.customPanel3.Location = new System.Drawing.Point(12, 412);
+            this.customPanel3.Location = new System.Drawing.Point(24, 422);
             this.customPanel3.Name = "customPanel3";
             this.customPanel3.Radius = 10;
-            this.customPanel3.Size = new System.Drawing.Size(1876, 678);
+            this.customPanel3.Size = new System.Drawing.Size(1851, 668);
             this.customPanel3.TabIndex = 53;
             this.customPanel3.Thickness = 5F;
             // 
@@ -235,7 +235,7 @@
             this.fpnl_detail.BackColor = System.Drawing.Color.White;
             this.fpnl_detail.Location = new System.Drawing.Point(44, 144);
             this.fpnl_detail.Name = "fpnl_detail";
-            this.fpnl_detail.Size = new System.Drawing.Size(1788, 486);
+            this.fpnl_detail.Size = new System.Drawing.Size(1763, 457);
             this.fpnl_detail.TabIndex = 55;
             // 
             // customPanel4
@@ -252,7 +252,7 @@
             this.customPanel4.Location = new System.Drawing.Point(44, 78);
             this.customPanel4.Name = "customPanel4";
             this.customPanel4.Radius = 5;
-            this.customPanel4.Size = new System.Drawing.Size(1754, 60);
+            this.customPanel4.Size = new System.Drawing.Size(1729, 60);
             this.customPanel4.TabIndex = 54;
             this.customPanel4.Thickness = 2F;
             // 
@@ -264,7 +264,7 @@
             this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Location = new System.Drawing.Point(1021, 14);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 34);
+            this.label16.Size = new System.Drawing.Size(60, 34);
             this.label16.TabIndex = 9;
             this.label16.Text = "Price";
             // 
@@ -276,7 +276,7 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(499, 14);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 34);
+            this.label5.Size = new System.Drawing.Size(130, 34);
             this.label5.TabIndex = 8;
             this.label5.Text = "Book Title";
             // 
@@ -286,9 +286,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(1690, 14);
+            this.label12.Location = new System.Drawing.Point(1685, 14);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(78, 34);
+            this.label12.Size = new System.Drawing.Size(53, 34);
             this.label12.TabIndex = 7;
             this.label12.Text = "Sum";
             // 
@@ -300,7 +300,7 @@
             this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(52, 14);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(128, 34);
+            this.label13.Size = new System.Drawing.Size(103, 34);
             this.label13.TabIndex = 4;
             this.label13.Text = "Book ID";
             // 
@@ -310,9 +310,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold);
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(1340, 14);
+            this.label14.Location = new System.Drawing.Point(1334, 14);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(138, 34);
+            this.label14.Size = new System.Drawing.Size(156, 34);
             this.label14.TabIndex = 6;
             this.label14.Text = "Quantity";
             // 
@@ -324,7 +324,7 @@
             this.label3.ForeColor = System.Drawing.Color.Green;
             this.label3.Location = new System.Drawing.Point(725, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(502, 43);
+            this.label3.Size = new System.Drawing.Size(477, 43);
             this.label3.TabIndex = 53;
             this.label3.Text = "Import Details";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

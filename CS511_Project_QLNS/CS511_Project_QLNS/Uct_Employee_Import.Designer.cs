@@ -119,7 +119,7 @@
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(970, 62);
+            this.customButton1.Location = new System.Drawing.Point(1222, 62);
             this.customButton1.Name = "customButton1";
             this.customButton1.Size = new System.Drawing.Size(250, 55);
             this.customButton1.TabIndex = 50;

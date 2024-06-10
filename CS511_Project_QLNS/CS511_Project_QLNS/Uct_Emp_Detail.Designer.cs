@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
-            this.lbl_sum = new System.Windows.Forms.Label();
             this.lbl_id = new System.Windows.Forms.Label();
+            this.lbl_title = new System.Windows.Forms.Label();
             this.lbl_price = new System.Windows.Forms.Label();
             this.lbl_quantity = new System.Windows.Forms.Label();
-            this.lbl_title = new System.Windows.Forms.Label();
+            this.lbl_sum = new System.Windows.Forms.Label();
             this.customPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,19 +49,9 @@
             this.customPanel1.Location = new System.Drawing.Point(0, 4);
             this.customPanel1.Name = "customPanel1";
             this.customPanel1.Radius = 20;
-            this.customPanel1.Size = new System.Drawing.Size(1900, 100);
+            this.customPanel1.Size = new System.Drawing.Size(1877, 100);
             this.customPanel1.TabIndex = 4;
             this.customPanel1.Thickness = 0F;
-            // 
-            // lbl_sum
-            // 
-            this.lbl_sum.Font = new System.Drawing.Font("Arial", 16.2F);
-            this.lbl_sum.Location = new System.Drawing.Point(1648, 38);
-            this.lbl_sum.Name = "lbl_sum";
-            this.lbl_sum.Size = new System.Drawing.Size(173, 39);
-            this.lbl_sum.TabIndex = 6;
-            this.lbl_sum.Text = "Sum";
-            this.lbl_sum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_id
             // 
@@ -72,6 +62,16 @@
             this.lbl_id.TabIndex = 6;
             this.lbl_id.Text = "id";
             this.lbl_id.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.Font = new System.Drawing.Font("Arial", 16.2F);
+            this.lbl_title.Location = new System.Drawing.Point(309, 9);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(537, 82);
+            this.lbl_title.TabIndex = 6;
+            this.lbl_title.Text = "Name";
+            this.lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_price
             // 
@@ -93,15 +93,15 @@
             this.lbl_quantity.Text = "Quantity";
             this.lbl_quantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbl_title
+            // lbl_sum
             // 
-            this.lbl_title.Font = new System.Drawing.Font("Arial", 16.2F);
-            this.lbl_title.Location = new System.Drawing.Point(309, 9);
-            this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(537, 82);
-            this.lbl_title.TabIndex = 6;
-            this.lbl_title.Text = "Name";
-            this.lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_sum.Font = new System.Drawing.Font("Arial", 16.2F);
+            this.lbl_sum.Location = new System.Drawing.Point(1640, 38);
+            this.lbl_sum.Name = "lbl_sum";
+            this.lbl_sum.Size = new System.Drawing.Size(173, 39);
+            this.lbl_sum.TabIndex = 6;
+            this.lbl_sum.Text = "Sum";
+            this.lbl_sum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Uct_Emp_Detail
             // 
@@ -109,7 +109,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.customPanel1);
             this.Name = "Uct_Emp_Detail";
-            this.Size = new System.Drawing.Size(1900, 110);
+            this.Size = new System.Drawing.Size(1880, 110);
             this.customPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
