@@ -48,6 +48,8 @@ namespace CS511_Project_QLNS
         private void btn_exit_Click(object sender, EventArgs e)
         {
             ptb_img.BackgroundImage.Dispose();
+            ptb_img.BackgroundImage = null;
+            this.Dispose();
             this.Close();
         }
 
@@ -64,6 +66,8 @@ namespace CS511_Project_QLNS
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             ptb_img.BackgroundImage.Dispose();
+            ptb_img.BackgroundImage = null;
+            this.Dispose();
             this.Close();
         }
 

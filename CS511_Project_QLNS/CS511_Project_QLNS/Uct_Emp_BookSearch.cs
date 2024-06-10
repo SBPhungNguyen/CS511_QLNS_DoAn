@@ -61,6 +61,7 @@ namespace CS511_Project_QLNS
                 book.LoadData(dr.GetInt32(0), img, dr.GetString(2), dr.GetString(3));
                 fpnl_books.Controls.Add(book);
             }
+            dr.Close();
             sqlCon.Close();
         }
 
@@ -156,7 +157,7 @@ namespace CS511_Project_QLNS
                 book.LoadData(rd.GetInt32(0), img, rd.GetString(2), rd.GetString(3));
                 fpnl_books.Controls.Add(book);
             }
-
+            rd.Close();
             sqlCon.Close();
         }
         private void btn_all_Click(object sender, EventArgs e)
@@ -318,6 +319,7 @@ namespace CS511_Project_QLNS
                         fpnl_books.Controls.Add(book);
                     }
                 }
+                rd.Close();
                 sqlCon.Close();
             }
             else if (type == 1)
@@ -346,6 +348,7 @@ namespace CS511_Project_QLNS
                         fpnl_books.Controls.Add(book);
                     }
                 }
+                rd.Close();
                 sqlCon.Close();
             }
             else
@@ -374,6 +377,7 @@ namespace CS511_Project_QLNS
                         fpnl_books.Controls.Add(book);
                     }
                 }
+                rd.Close();
                 sqlCon.Close();
             }
         }
@@ -411,6 +415,7 @@ namespace CS511_Project_QLNS
                         fpnl_books.Controls.Add(book);
                     }
                 }
+                rd.Close();
                 sqlCon.Close();
             }
             else if (type == 1)
@@ -439,6 +444,7 @@ namespace CS511_Project_QLNS
                         fpnl_books.Controls.Add(book);
                     }
                 }
+                rd.Close();
                 sqlCon.Close();
             }
             else
@@ -467,6 +473,7 @@ namespace CS511_Project_QLNS
                         fpnl_books.Controls.Add(book);
                     }
                 }
+                rd.Close();
                 sqlCon.Close();
             }
         }
@@ -478,6 +485,7 @@ namespace CS511_Project_QLNS
             Emp_BookAdd book_add = new Emp_BookAdd(parent_form);
             //parent_form.Hide();
             book_add.ShowDialog();
+            DisposePictureBoxImages();
             ClearFlowPanel();
             if (is_displayed_button == 0)
                 LoadData();
