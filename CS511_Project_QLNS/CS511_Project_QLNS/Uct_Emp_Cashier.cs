@@ -15,6 +15,8 @@ namespace CS511_Project_QLNS
     public partial class Uct_Emp_Cashier : UserControl
     {
         public int id;
+        private int lineThickness = 1; // Adjust for desired line thickness
+        private Color lineColor = Color.Black; // 
         public Uct_Emp_Cashier()
         {
             InitializeComponent();
@@ -22,6 +24,7 @@ namespace CS511_Project_QLNS
         public void LoadData(int id, Image pic, string name, string role)
         {
             this.id = id;
+            lbl_id.Text = id.ToString();
             ptb_img.BackgroundImage = pic;
             lbl_name.Text = name;
             if (role == "0")
@@ -133,6 +136,20 @@ namespace CS511_Project_QLNS
                 // Perform actions for No click
                 return;
             }
+
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            //Draw the line using preferred placement and thickness
+            e.Graphics.DrawRectangle(new Pen(lineColor, lineThickness), 0, 0, this.Width - 1, this.Height - 1);
+        }
+
+        private void lbl_id_Click(object sender, EventArgs e)
+        {
+            this.OnClick(null);
 
         }
     }
