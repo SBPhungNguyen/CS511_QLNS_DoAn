@@ -52,7 +52,7 @@
             // 
             this.pictureBox3.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_phone;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(1330, 83);
+            this.pictureBox3.Location = new System.Drawing.Point(1364, 83);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(35, 35);
             this.pictureBox3.TabIndex = 17;
@@ -61,9 +61,9 @@
             // lbl_phone
             // 
             this.lbl_phone.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_phone.Location = new System.Drawing.Point(1380, 79);
+            this.lbl_phone.Location = new System.Drawing.Point(1414, 79);
             this.lbl_phone.Name = "lbl_phone";
-            this.lbl_phone.Size = new System.Drawing.Size(256, 40);
+            this.lbl_phone.Size = new System.Drawing.Size(177, 40);
             this.lbl_phone.TabIndex = 16;
             this.lbl_phone.Text = "0365254987";
             this.lbl_phone.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -72,7 +72,7 @@
             // 
             this.pictureBox2.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_email;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(972, 84);
+            this.pictureBox2.Location = new System.Drawing.Point(1000, 84);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.TabIndex = 15;
@@ -81,7 +81,7 @@
             // lbl_mail
             // 
             this.lbl_mail.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_mail.Location = new System.Drawing.Point(1018, 71);
+            this.lbl_mail.Location = new System.Drawing.Point(1046, 71);
             this.lbl_mail.Name = "lbl_mail";
             this.lbl_mail.Size = new System.Drawing.Size(302, 63);
             this.lbl_mail.TabIndex = 14;
@@ -148,13 +148,13 @@
             this.txt_phone.BorderSize = 2;
             this.txt_phone.Font = new System.Drawing.Font("Tahoma", 10.2F);
             this.txt_phone.ForeColor = System.Drawing.Color.Black;
-            this.txt_phone.Location = new System.Drawing.Point(1376, 83);
+            this.txt_phone.Location = new System.Drawing.Point(1406, 83);
             this.txt_phone.Margin = new System.Windows.Forms.Padding(4);
             this.txt_phone.Multiline = false;
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.Padding = new System.Windows.Forms.Padding(7);
             this.txt_phone.PasswordChar = false;
-            this.txt_phone.Size = new System.Drawing.Size(258, 36);
+            this.txt_phone.Size = new System.Drawing.Size(194, 36);
             this.txt_phone.TabIndex = 23;
             this.txt_phone.Texts = "";
             this.txt_phone.UnderlineStyle = true;
@@ -167,7 +167,7 @@
             this.txt_mail.BorderSize = 2;
             this.txt_mail.Font = new System.Drawing.Font("Tahoma", 10.2F);
             this.txt_mail.ForeColor = System.Drawing.Color.Black;
-            this.txt_mail.Location = new System.Drawing.Point(1019, 85);
+            this.txt_mail.Location = new System.Drawing.Point(1047, 85);
             this.txt_mail.Margin = new System.Windows.Forms.Padding(4);
             this.txt_mail.Multiline = false;
             this.txt_mail.Name = "txt_mail";
@@ -186,7 +186,7 @@
             this.txt_location.BorderSize = 2;
             this.txt_location.Font = new System.Drawing.Font("Tahoma", 10.2F);
             this.txt_location.ForeColor = System.Drawing.Color.Black;
-            this.txt_location.Location = new System.Drawing.Point(661, 86);
+            this.txt_location.Location = new System.Drawing.Point(664, 86);
             this.txt_location.Margin = new System.Windows.Forms.Padding(4);
             this.txt_location.Multiline = false;
             this.txt_location.Name = "txt_location";

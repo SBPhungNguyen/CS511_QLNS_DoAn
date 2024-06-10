@@ -146,9 +146,6 @@ namespace CS511_Project_QLNS
                 var pa = this.Parent.Parent;
                 parent_uct = (Uct_Emp_BookSearch)pa;
 
-                var pa_pa = pa.Parent;
-                parent_form = (Form2)pa_pa;
-
                 //get the fpnl_books in parent_uct
                 Control fpnl = FindControlByName(parent_uct, "fpnl_books");
 

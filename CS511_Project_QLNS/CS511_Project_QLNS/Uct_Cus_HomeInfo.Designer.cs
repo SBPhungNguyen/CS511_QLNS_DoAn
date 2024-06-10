@@ -77,9 +77,9 @@
             // lbl_location
             // 
             this.lbl_location.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_location.Location = new System.Drawing.Point(647, 85);
+            this.lbl_location.Location = new System.Drawing.Point(644, 73);
             this.lbl_location.Name = "lbl_location";
-            this.lbl_location.Size = new System.Drawing.Size(256, 40);
+            this.lbl_location.Size = new System.Drawing.Size(301, 68);
             this.lbl_location.TabIndex = 3;
             this.lbl_location.Text = "60-62 Lê Lợi, Q.1, TP. HCM";
             this.lbl_location.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -87,9 +87,9 @@
             // lbl_mail
             // 
             this.lbl_mail.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_mail.Location = new System.Drawing.Point(1004, 85);
+            this.lbl_mail.Location = new System.Drawing.Point(1038, 75);
             this.lbl_mail.Name = "lbl_mail";
-            this.lbl_mail.Size = new System.Drawing.Size(256, 40);
+            this.lbl_mail.Size = new System.Drawing.Size(272, 60);
             this.lbl_mail.TabIndex = 5;
             this.lbl_mail.Text = "123@gmail.com";
             this.lbl_mail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -97,9 +97,9 @@
             // lbl_phone
             // 
             this.lbl_phone.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_phone.Location = new System.Drawing.Point(1362, 80);
+            this.lbl_phone.Location = new System.Drawing.Point(1417, 80);
             this.lbl_phone.Name = "lbl_phone";
-            this.lbl_phone.Size = new System.Drawing.Size(256, 40);
+            this.lbl_phone.Size = new System.Drawing.Size(195, 40);
             this.lbl_phone.TabIndex = 7;
             this.lbl_phone.Text = "0365254987";
             this.lbl_phone.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -108,7 +108,7 @@
             // 
             this.pictureBox3.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_phone;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(1312, 84);
+            this.pictureBox3.Location = new System.Drawing.Point(1367, 84);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(35, 35);
             this.pictureBox3.TabIndex = 8;
@@ -118,7 +118,7 @@
             // 
             this.pictureBox2.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_email;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(954, 85);
+            this.pictureBox2.Location = new System.Drawing.Point(992, 85);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.TabIndex = 6;
