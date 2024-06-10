@@ -50,5 +50,13 @@ namespace CS511_Project_QLNS
             ptb_smallimg1.BackgroundImage.Dispose();
             ptb_smallimg2.BackgroundImage.Dispose();
         }
+
+        private void ptb_bigimg_Click(object sender, EventArgs e)
+        {
+            Emp_Adv_Control emp_Adv_Control = new Emp_Adv_Control("c");
+            ptb_bigimg.BackgroundImage.Dispose();
+            emp_Adv_Control.ShowDialog();
+            ptb_bigimg.BackgroundImage = System.Drawing.Image.FromFile(co.emp_dir + "c.png");
+        }
     }
 }

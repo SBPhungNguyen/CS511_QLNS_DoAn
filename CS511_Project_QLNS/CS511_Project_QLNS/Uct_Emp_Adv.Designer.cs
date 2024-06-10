@@ -66,6 +66,7 @@
             this.ptb_bigimg.Size = new System.Drawing.Size(1138, 346);
             this.ptb_bigimg.TabIndex = 3;
             this.ptb_bigimg.TabStop = false;
+            this.ptb_bigimg.Click += new System.EventHandler(this.ptb_bigimg_Click);
             // 
             // Uct_Emp_Adv
             // 
