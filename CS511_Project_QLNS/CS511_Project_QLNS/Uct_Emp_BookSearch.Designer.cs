@@ -51,7 +51,7 @@
             this.fpnl_books.Location = new System.Drawing.Point(0, 150);
             this.fpnl_books.Name = "fpnl_books";
             this.fpnl_books.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.fpnl_books.Size = new System.Drawing.Size(1680, 747);
+            this.fpnl_books.Size = new System.Drawing.Size(1697, 747);
             this.fpnl_books.TabIndex = 50;
             // 
             // btn_add
@@ -287,6 +287,7 @@
             this.Controls.Add(this.btn_cat2);
             this.Controls.Add(this.btn_cat1);
             this.Controls.Add(this.btn_all);
+            this.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.Name = "Uct_Emp_BookSearch";
             this.Size = new System.Drawing.Size(1680, 900);
             this.customPanel1.ResumeLayout(false);

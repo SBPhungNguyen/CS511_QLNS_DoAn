@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -147,6 +148,11 @@ namespace CS511_Project_QLNS
                 ptb_banner.BackgroundImage.Dispose();
                 ptb_banner.BackgroundImage = System.Drawing.Image.FromFile(ofd.FileName);
             }
+        }
+
+        private void customButton2_Click(object sender, EventArgs e)
+        {
+            Process.Start(txt_url.Texts);
         }
     }
 }

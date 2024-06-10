@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Emp_Adv_Control));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ptb_banner = new System.Windows.Forms.PictureBox();
             this.btn_exit = new System.Windows.Forms.PictureBox();
+            this.ptb_banner = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_url = new CS511_Project_QLNS.Uct_textbox();
             this.lbl_title = new System.Windows.Forms.Label();
             this.customButton1 = new CS511_Project_QLNS.View.CustomButton();
             this.customButton2 = new CS511_Project_QLNS.View.CustomButton();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_banner)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_banner)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,17 +53,6 @@
             this.panel1.Size = new System.Drawing.Size(1300, 40);
             this.panel1.TabIndex = 10;
             // 
-            // ptb_banner
-            // 
-            this.ptb_banner.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_banner;
-            this.ptb_banner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_banner.Location = new System.Drawing.Point(104, 173);
-            this.ptb_banner.Name = "ptb_banner";
-            this.ptb_banner.Size = new System.Drawing.Size(1076, 292);
-            this.ptb_banner.TabIndex = 11;
-            this.ptb_banner.TabStop = false;
-            this.ptb_banner.Click += new System.EventHandler(this.ptb_banner_Click);
-            // 
             // btn_exit
             // 
             this.btn_exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -75,6 +64,17 @@
             this.btn_exit.TabIndex = 18;
             this.btn_exit.TabStop = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
+            // ptb_banner
+            // 
+            this.ptb_banner.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_banner;
+            this.ptb_banner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptb_banner.Location = new System.Drawing.Point(104, 173);
+            this.ptb_banner.Name = "ptb_banner";
+            this.ptb_banner.Size = new System.Drawing.Size(1076, 292);
+            this.ptb_banner.TabIndex = 11;
+            this.ptb_banner.TabStop = false;
+            this.ptb_banner.Click += new System.EventHandler(this.ptb_banner_Click);
             // 
             // label1
             // 
@@ -151,9 +151,10 @@
             this.customButton2.Name = "customButton2";
             this.customButton2.Size = new System.Drawing.Size(402, 60);
             this.customButton2.TabIndex = 27;
-            this.customButton2.Text = "Delete the banner";
+            this.customButton2.Text = "Connect to the Web";
             this.customButton2.TextColor = System.Drawing.Color.MidnightBlue;
             this.customButton2.UseVisualStyleBackColor = false;
+            this.customButton2.Click += new System.EventHandler(this.customButton2_Click);
             // 
             // Emp_Adv_Control
             // 
@@ -173,8 +174,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Uct_Emp_Adv_Control";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_banner)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_banner)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -162,12 +162,12 @@ namespace CS511_Project_QLNS
             btn_chat.BackColor = color_btn_normal;
             btn_employee.BackColor = color_btn_normal;
 
-            Uct_Employee_Home ctr = FindControlByName(this, "uct_Employee_Home") as Uct_Employee_Home;
-            if (ctr != null)
-            {
-                ctr.DisposePictureBoxImages();
-                //this.Controls.Remove(ctr);
-            }
+            //Uct_Employee_Home ctr = FindControlByName(this, "uct_Employee_Home") as Uct_Employee_Home;
+            //if (ctr != null)
+            //{
+            //    ctr.DisposePictureBoxImages();
+            //    //this.Controls.Remove(ctr);
+            //}
 
             uct_Employee_Home = new Uct_Employee_Home();
             uct_Employee_Home.Location = new System.Drawing.Point(235, 105);
@@ -606,9 +606,9 @@ namespace CS511_Project_QLNS
         {
             //emp_timer.Stop();
             ptb_em_pic.Dispose();
-            Uct_Employee_Home uct1 = FindControlByName(this,"uct_Employee_Home") as Uct_Employee_Home;
-            if (uct1 != null)
-                uct1.DisposePictureBoxImages();
+            //Uct_Employee_Home uct1 = FindControlByName(this,"uct_Employee_Home") as Uct_Employee_Home;
+            //if (uct1 != null)
+            //    uct1.DisposePictureBoxImages();
             Uct_Employee_Cashier uct2 = FindControlByName(this, "uct_Employee_Cashier") as Uct_Employee_Cashier;
             if (uct2 != null)
                 uct2.DisposeUserControlPictures();
