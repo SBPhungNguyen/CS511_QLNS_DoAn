@@ -162,12 +162,18 @@ namespace CS511_Project_QLNS
             btn_chat.BackColor = color_btn_normal;
             btn_employee.BackColor = color_btn_normal;
 
-            //Uct_Employee_Home ctr = FindControlByName(this, "uct_Employee_Home") as Uct_Employee_Home;
-            //if (ctr != null)
-            //{
-            //    ctr.DisposePictureBoxImages();
-            //    //this.Controls.Remove(ctr);
-            //}
+            Uct_Employee_Home ctr = FindControlByName(this, "uct_Employee_Home") as Uct_Employee_Home;
+            Uct_Emp_BookSearch uct1 = FindControlByName(ctr, "uct_Emp_BookSearch") as Uct_Emp_BookSearch;
+            if (uct1 != null)
+            {
+                uct1.DisposePictureBoxImages();
+                //this.Controls.Remove(ctr);
+            }
+            Uct_Emp_Adv uct2 = FindControlByName(ctr, "uct_Emp_Adv") as Uct_Emp_Adv;  
+            if (uct2 != null)
+            {
+                uct2.DisposePic();
+            }
 
             uct_Employee_Home = new Uct_Employee_Home();
             uct_Employee_Home.Location = new System.Drawing.Point(235, 105);
@@ -609,6 +615,18 @@ namespace CS511_Project_QLNS
             //Uct_Employee_Home uct1 = FindControlByName(this,"uct_Employee_Home") as Uct_Employee_Home;
             //if (uct1 != null)
             //    uct1.DisposePictureBoxImages();
+            Uct_Employee_Home ctr = FindControlByName(this, "uct_Employee_Home") as Uct_Employee_Home;
+            Uct_Emp_BookSearch uct1 = FindControlByName(ctr, "uct_Emp_BookSearch") as Uct_Emp_BookSearch;
+            if (uct1 != null)
+            {
+                uct1.DisposePictureBoxImages();
+                //this.Controls.Remove(ctr);
+            }
+            Uct_Emp_Adv uct22 = FindControlByName(ctr, "uct_Emp_Adv") as Uct_Emp_Adv;
+            if (uct22 != null)
+            {
+                uct22.DisposePic();
+            }
             Uct_Employee_Cashier uct2 = FindControlByName(this, "uct_Employee_Cashier") as Uct_Employee_Cashier;
             if (uct2 != null)
                 uct2.DisposeUserControlPictures();

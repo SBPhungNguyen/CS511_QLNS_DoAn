@@ -192,7 +192,7 @@
             this.txt_location.Name = "txt_location";
             this.txt_location.Padding = new System.Windows.Forms.Padding(7);
             this.txt_location.PasswordChar = false;
-            this.txt_location.Size = new System.Drawing.Size(258, 36);
+            this.txt_location.Size = new System.Drawing.Size(280, 36);
             this.txt_location.TabIndex = 21;
             this.txt_location.Texts = "";
             this.txt_location.UnderlineStyle = true;
@@ -211,7 +211,7 @@
             this.txt_quote.Name = "txt_quote";
             this.txt_quote.Padding = new System.Windows.Forms.Padding(7);
             this.txt_quote.PasswordChar = false;
-            this.txt_quote.Size = new System.Drawing.Size(417, 43);
+            this.txt_quote.Size = new System.Drawing.Size(417, 42);
             this.txt_quote.TabIndex = 20;
             this.txt_quote.Texts = "";
             this.txt_quote.UnderlineStyle = true;
@@ -230,7 +230,7 @@
             this.txt_name.Name = "txt_name";
             this.txt_name.Padding = new System.Windows.Forms.Padding(7);
             this.txt_name.PasswordChar = false;
-            this.txt_name.Size = new System.Drawing.Size(273, 43);
+            this.txt_name.Size = new System.Drawing.Size(273, 42);
             this.txt_name.TabIndex = 19;
             this.txt_name.Texts = "";
             this.txt_name.UnderlineStyle = true;

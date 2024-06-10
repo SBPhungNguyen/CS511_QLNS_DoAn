@@ -51,6 +51,7 @@ namespace CS511_Project_QLNS
         private void btn_exit_Click(object sender, EventArgs e)
         {
             ptb_img.BackgroundImage.Dispose();
+            this.Dispose();
             this.Close();
         }
 
