@@ -240,7 +240,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(998, 52);
             this.label2.TabIndex = 84;
-            this.label2.Text = "BOOK INFO";
+            this.label2.Text = "BOOK INFORMATION";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_name
