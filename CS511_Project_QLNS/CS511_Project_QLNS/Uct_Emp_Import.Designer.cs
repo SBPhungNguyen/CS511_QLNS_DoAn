@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_id = new System.Windows.Forms.Label();
+            this.lbl_name = new System.Windows.Forms.Label();
             this.lbl_date = new System.Windows.Forms.Label();
             this.lbl_sum = new System.Windows.Forms.Label();
-            this.lbl_name = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.customPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,17 +55,6 @@
             this.customPanel1.Thickness = 0F;
             this.customPanel1.Click += new System.EventHandler(this.customPanel1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_bin__2_;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1592, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // lbl_id
             // 
             this.lbl_id.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -76,6 +65,17 @@
             this.lbl_id.Text = "id";
             this.lbl_id.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_id.Click += new System.EventHandler(this.lbl_id_Click);
+            // 
+            // lbl_name
+            // 
+            this.lbl_name.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.Location = new System.Drawing.Point(311, 16);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(457, 66);
+            this.lbl_name.TabIndex = 6;
+            this.lbl_name.Text = "Name";
+            this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_name.Click += new System.EventHandler(this.lbl_name_Click);
             // 
             // lbl_date
             // 
@@ -99,16 +99,16 @@
             this.lbl_sum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_sum.Click += new System.EventHandler(this.lbl_sum_Click);
             // 
-            // lbl_name
+            // pictureBox1
             // 
-            this.lbl_name.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.Location = new System.Drawing.Point(311, 16);
-            this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(457, 66);
-            this.lbl_name.TabIndex = 6;
-            this.lbl_name.Text = "Name";
-            this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_name.Click += new System.EventHandler(this.lbl_name_Click);
+            this.pictureBox1.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_bin__2_;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(1592, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Uct_Emp_Import
             // 
