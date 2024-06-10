@@ -101,12 +101,13 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.btn_buy);
             this.panel2.Controls.Add(this.lbl_sumprice);
             this.panel2.Controls.Add(this.label15);
-            this.panel2.Location = new System.Drawing.Point(0, 997);
+            this.panel2.Location = new System.Drawing.Point(0, 993);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1900, 105);
+            this.panel2.Size = new System.Drawing.Size(1900, 109);
             this.panel2.TabIndex = 52;
             // 
             // btn_buy
@@ -114,15 +115,15 @@
             this.btn_buy.BackColor = System.Drawing.Color.Green;
             this.btn_buy.BackgroundColor = System.Drawing.Color.Green;
             this.btn_buy.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_buy.BorderRadius = 20;
+            this.btn_buy.BorderRadius = 15;
             this.btn_buy.BorderSize = 0;
             this.btn_buy.FlatAppearance.BorderSize = 0;
             this.btn_buy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buy.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_buy.ForeColor = System.Drawing.Color.White;
-            this.btn_buy.Location = new System.Drawing.Point(902, 18);
+            this.btn_buy.Location = new System.Drawing.Point(1373, 25);
             this.btn_buy.Name = "btn_buy";
-            this.btn_buy.Size = new System.Drawing.Size(271, 45);
+            this.btn_buy.Size = new System.Drawing.Size(271, 55);
             this.btn_buy.TabIndex = 5;
             this.btn_buy.Text = "Purchase";
             this.btn_buy.TextColor = System.Drawing.Color.White;
@@ -132,35 +133,37 @@
             // lbl_sumprice
             // 
             this.lbl_sumprice.AutoSize = true;
-            this.lbl_sumprice.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sumprice.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_sumprice.ForeColor = System.Drawing.Color.Red;
-            this.lbl_sumprice.Location = new System.Drawing.Point(416, 25);
+            this.lbl_sumprice.Location = new System.Drawing.Point(697, 31);
             this.lbl_sumprice.Name = "lbl_sumprice";
-            this.lbl_sumprice.Size = new System.Drawing.Size(27, 28);
+            this.lbl_sumprice.Size = new System.Drawing.Size(34, 36);
             this.lbl_sumprice.TabIndex = 4;
             this.lbl_sumprice.Text = "0";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(310, 25);
+            this.label15.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(536, 31);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(79, 28);
+            this.label15.Size = new System.Drawing.Size(102, 36);
             this.label15.TabIndex = 3;
             this.label15.Text = "Total:";
             // 
             // customPanel3
             // 
+            this.customPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.customPanel3.BackColor = System.Drawing.SystemColors.Window;
             this.customPanel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.customPanel3.Controls.Add(this.fpnl_detail);
             this.customPanel3.Controls.Add(this.customPanel4);
             this.customPanel3.Controls.Add(this.label3);
-            this.customPanel3.Location = new System.Drawing.Point(232, 515);
+            this.customPanel3.Location = new System.Drawing.Point(26, 434);
             this.customPanel3.Name = "customPanel3";
             this.customPanel3.Radius = 10;
-            this.customPanel3.Size = new System.Drawing.Size(1254, 358);
+            this.customPanel3.Size = new System.Drawing.Size(1849, 511);
             this.customPanel3.TabIndex = 4;
             this.customPanel3.Thickness = 5F;
             // 
@@ -250,6 +253,7 @@
             // 
             // customPanel2
             // 
+            this.customPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.customPanel2.BackColor = System.Drawing.SystemColors.Window;
             this.customPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.customPanel2.Controls.Add(this.btn_guest);
@@ -261,10 +265,10 @@
             this.customPanel2.Controls.Add(this.label7);
             this.customPanel2.Controls.Add(this.label11);
             this.customPanel2.Controls.Add(this.label9);
-            this.customPanel2.Location = new System.Drawing.Point(865, 264);
+            this.customPanel2.Location = new System.Drawing.Point(865, 177);
             this.customPanel2.Name = "customPanel2";
             this.customPanel2.Radius = 10;
-            this.customPanel2.Size = new System.Drawing.Size(621, 239);
+            this.customPanel2.Size = new System.Drawing.Size(1010, 239);
             this.customPanel2.TabIndex = 4;
             this.customPanel2.Thickness = 5F;
             // 
@@ -392,6 +396,8 @@
             // 
             // customPanel1
             // 
+            this.customPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.customPanel1.BackColor = System.Drawing.SystemColors.Window;
             this.customPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(138)))), ((int)(((byte)(93)))));
             this.customPanel1.Controls.Add(this.lbl_em_name);
@@ -401,10 +407,10 @@
             this.customPanel1.Controls.Add(this.lbl_code);
             this.customPanel1.Controls.Add(this.label4);
             this.customPanel1.Controls.Add(this.label1);
-            this.customPanel1.Location = new System.Drawing.Point(232, 264);
+            this.customPanel1.Location = new System.Drawing.Point(26, 177);
             this.customPanel1.Name = "customPanel1";
             this.customPanel1.Radius = 10;
-            this.customPanel1.Size = new System.Drawing.Size(613, 239);
+            this.customPanel1.Size = new System.Drawing.Size(819, 239);
             this.customPanel1.TabIndex = 3;
             this.customPanel1.Thickness = 5F;
             // 
