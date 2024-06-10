@@ -153,7 +153,7 @@
             this.customButton2.Name = "customButton2";
             this.customButton2.Size = new System.Drawing.Size(402, 60);
             this.customButton2.TabIndex = 27;
-            this.customButton2.Text = "Connect to the Web";
+            this.customButton2.Text = "Connect to the Website";
             this.customButton2.TextColor = System.Drawing.Color.MidnightBlue;
             this.customButton2.UseVisualStyleBackColor = false;
             this.customButton2.Click += new System.EventHandler(this.customButton2_Click);

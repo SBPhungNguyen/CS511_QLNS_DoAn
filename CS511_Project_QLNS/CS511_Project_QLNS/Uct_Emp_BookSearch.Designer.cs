@@ -95,7 +95,7 @@
             this.txt_search.BorderFocusColor = System.Drawing.Color.Green;
             this.txt_search.BorderSize = 2;
             this.txt_search.Font = new System.Drawing.Font("Arial", 12F);
-            this.txt_search.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_search.ForeColor = System.Drawing.Color.Black;
             this.txt_search.Location = new System.Drawing.Point(150, 9);
             this.txt_search.Margin = new System.Windows.Forms.Padding(4);
             this.txt_search.Multiline = false;
@@ -110,7 +110,7 @@
             // cbb_type
             // 
             this.cbb_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbb_type.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.cbb_type.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_type.FormattingEnabled = true;
             this.cbb_type.Items.AddRange(new object[] {
             "All",
