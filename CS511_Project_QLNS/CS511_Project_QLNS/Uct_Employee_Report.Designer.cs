@@ -62,13 +62,13 @@
             this.chart2.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart2.Legends.Add(legend1);
-            this.chart2.Location = new System.Drawing.Point(1090, 307);
+            this.chart2.Location = new System.Drawing.Point(1066, 304);
             this.chart2.Name = "chart2";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart2.Series.Add(series1);
-            this.chart2.Size = new System.Drawing.Size(545, 408);
+            this.chart2.Size = new System.Drawing.Size(657, 436);
             this.chart2.TabIndex = 65;
             this.chart2.Text = "chart2";
             // 
@@ -80,34 +80,34 @@
             this.chart1.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(70, 307);
+            this.chart1.Location = new System.Drawing.Point(40, 329);
             this.chart1.Name = "chart1";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(868, 379);
+            this.chart1.Size = new System.Drawing.Size(945, 379);
             this.chart1.TabIndex = 64;
             this.chart1.Text = "chart1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1233, 779);
+            this.label2.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(1280, 779);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(190, 26);
+            this.label2.Size = new System.Drawing.Size(231, 32);
             this.label2.TabIndex = 63;
             this.label2.Text = "Top 5 best-sellers";
             // 
             // lbl_revenue
             // 
             this.lbl_revenue.AutoSize = true;
-            this.lbl_revenue.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_revenue.Location = new System.Drawing.Point(321, 779);
+            this.lbl_revenue.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_revenue.Location = new System.Drawing.Point(329, 779);
             this.lbl_revenue.Name = "lbl_revenue";
-            this.lbl_revenue.Size = new System.Drawing.Size(238, 26);
+            this.lbl_revenue.Size = new System.Drawing.Size(297, 32);
             this.lbl_revenue.TabIndex = 62;
             this.lbl_revenue.Text = "Revenue by all months";
             // 
@@ -120,6 +120,7 @@
             this.cbb_month.Name = "cbb_month";
             this.cbb_month.Size = new System.Drawing.Size(239, 40);
             this.cbb_month.TabIndex = 61;
+            this.cbb_month.SelectedIndexChanged += new System.EventHandler(this.cbb_month_SelectedIndexChanged);
             // 
             // btn_by_month
             // 
@@ -132,13 +133,14 @@
             this.btn_by_month.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_by_month.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_by_month.ForeColor = System.Drawing.Color.White;
-            this.btn_by_month.Location = new System.Drawing.Point(870, 55);
+            this.btn_by_month.Location = new System.Drawing.Point(870, 62);
             this.btn_by_month.Name = "btn_by_month";
             this.btn_by_month.Size = new System.Drawing.Size(870, 60);
             this.btn_by_month.TabIndex = 60;
             this.btn_by_month.Text = "By Month";
             this.btn_by_month.TextColor = System.Drawing.Color.White;
             this.btn_by_month.UseVisualStyleBackColor = false;
+            this.btn_by_month.Click += new System.EventHandler(this.btn_by_month_Click);
             // 
             // btn_all_the_time
             // 
@@ -151,13 +153,14 @@
             this.btn_all_the_time.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_all_the_time.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_all_the_time.ForeColor = System.Drawing.Color.White;
-            this.btn_all_the_time.Location = new System.Drawing.Point(0, 55);
+            this.btn_all_the_time.Location = new System.Drawing.Point(0, 62);
             this.btn_all_the_time.Name = "btn_all_the_time";
             this.btn_all_the_time.Size = new System.Drawing.Size(870, 60);
             this.btn_all_the_time.TabIndex = 59;
             this.btn_all_the_time.Text = "All The Time";
             this.btn_all_the_time.TextColor = System.Drawing.Color.White;
             this.btn_all_the_time.UseVisualStyleBackColor = false;
+            this.btn_all_the_time.Click += new System.EventHandler(this.btn_all_the_time_Click);
             // 
             // Uct_Employee_Report
             // 

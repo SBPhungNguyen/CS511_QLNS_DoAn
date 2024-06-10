@@ -200,8 +200,62 @@ namespace CS511_Project_QLNS
         }
         private void btn_report_Click(object sender, EventArgs e)
         {
+            //lbl_title.Text = "REPORT";
+            //lbl_revenue.Text = "Revenue by all months";
+
+            //btn_home.BackColor = color_btn_normal;
+            //btn_import.BackColor = color_btn_normal;
+            //btn_report.BackColor = color_btn_chosen;
+            //btn_chat.BackColor = color_btn_normal;
+            //btn_employee.BackColor = color_btn_normal;
+
+            ////uct_Employee_Report = new Uct_Employee_Report();
+            ////uct_Employee_Report.Location = new System.Drawing.Point(235, 105);
+            ////uct_Employee_Report.Name = "uct_Employee_Report";
+            ////this.Controls.Add(uct_Employee_Report);
+            ////uct_Employee_Report.BringToFront();
+
+            ////pnl_report.BringToFront();
+            //foreach (Control ctr1 in this.Controls)
+            //{
+            //    if (ctr1 is Uct_Employee_Home)
+            //    {
+            //        ctr1.Visible = false;
+            //    }
+            //}
+            //foreach (Control ctr1 in this.Controls)
+            //{
+            //    if (ctr1 is Uct_Employee_Import)
+            //    {
+            //        ctr1.Visible = false;
+            //    }
+            //}
+            //foreach (Control ctr1 in this.Controls)
+            //{
+            //    if (ctr1 is Uct_Employee_Chat)
+            //    {
+            //        ctr1.Visible = false;
+            //    }
+            //}
+            //foreach (Control ctr1 in this.Controls)
+            //{
+            //    if (ctr1 is Uct_Employee_Cashier)
+            //    {
+            //        ctr1.Visible = false;
+            //    }
+            //}
+
+            //is_displayed_button = 0;
+            //btn_all_the_time.BackColor = color_btn_cate_chosen;
+            //btn_by_month.BackColor = color_btn_cate_normal;
+
+            //cbb_month.Visible = false;
+            //lbl_month.Visible = false;
+            //LoadDataReportChartA();
+            //LoadDataPieChartA();
+            //LoadChart();
+            //LoadPieChart();
             lbl_title.Text = "REPORT";
-            lbl_revenue.Text = "Revenue by all months";
 
             btn_home.BackColor = color_btn_normal;
             btn_import.BackColor = color_btn_normal;
@@ -209,52 +263,11 @@ namespace CS511_Project_QLNS
             btn_chat.BackColor = color_btn_normal;
             btn_employee.BackColor = color_btn_normal;
 
-            //uct_Employee_Report = new Uct_Employee_Report();
-            //uct_Employee_Report.Location = new System.Drawing.Point(235, 105);
-            //uct_Employee_Report.Name = "uct_Employee_Report";
-            //this.Controls.Add(uct_Employee_Report);
-            //uct_Employee_Report.BringToFront();
-
-            //pnl_report.BringToFront();
-            foreach (Control ctr1 in this.Controls)
-            {
-                if (ctr1 is Uct_Employee_Home)
-                {
-                    ctr1.Visible = false;
-                }
-            }
-            foreach (Control ctr1 in this.Controls)
-            {
-                if (ctr1 is Uct_Employee_Import)
-                {
-                    ctr1.Visible = false;
-                }
-            }
-            foreach (Control ctr1 in this.Controls)
-            {
-                if (ctr1 is Uct_Employee_Chat)
-                {
-                    ctr1.Visible = false;
-                }
-            }
-            foreach (Control ctr1 in this.Controls)
-            {
-                if (ctr1 is Uct_Employee_Cashier)
-                {
-                    ctr1.Visible = false;
-                }
-            }
-
-            is_displayed_button = 0;
-            btn_all_the_time.BackColor = color_btn_cate_chosen;
-            btn_by_month.BackColor = color_btn_cate_normal;
-
-            cbb_month.Visible = false;
-            lbl_month.Visible = false;
-            LoadDataReportChartA();
-            LoadDataPieChartA();
-            LoadChart();
-            LoadPieChart();
+            uct_Employee_Report = new Uct_Employee_Report();
+            uct_Employee_Report.Location = new System.Drawing.Point(235, 105);
+            uct_Employee_Report.Name = "uct_Employee_Report";
+            this.Controls.Add(uct_Employee_Report);
+            uct_Employee_Report.BringToFront();
         }
 
         private void btn_chat_Click(object sender, EventArgs e)
