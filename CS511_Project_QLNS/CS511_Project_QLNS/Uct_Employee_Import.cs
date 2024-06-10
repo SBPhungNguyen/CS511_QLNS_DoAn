@@ -34,13 +34,13 @@ namespace CS511_Project_QLNS
             parent_form = pa as Form2;
 
             Emp_ImportAdd emp_ImportAdd = new Emp_ImportAdd(parent_form);
-            parent_form.Hide();
+            //parent_form.Hide();
 
             emp_ImportAdd.ShowDialog();
 
             ClearFlowPanel();
             LoadData();
-            parent_form.Show();
+            //parent_form.Show();
         }
 
         public void LoadData()

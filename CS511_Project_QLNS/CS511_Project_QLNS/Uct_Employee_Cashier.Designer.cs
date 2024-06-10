@@ -43,10 +43,11 @@
             // 
             // fpnl_emp
             // 
-            this.fpnl_emp.Location = new System.Drawing.Point(1, 103);
+            this.fpnl_emp.BackColor = System.Drawing.Color.White;
+            this.fpnl_emp.Location = new System.Drawing.Point(1, 197);
             this.fpnl_emp.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.fpnl_emp.Name = "fpnl_emp";
-            this.fpnl_emp.Size = new System.Drawing.Size(976, 556);
+            this.fpnl_emp.Size = new System.Drawing.Size(1735, 724);
             this.fpnl_emp.TabIndex = 51;
             // 
             // btn_cat2
@@ -58,11 +59,11 @@
             this.btn_cat2.BorderSize = 0;
             this.btn_cat2.FlatAppearance.BorderSize = 0;
             this.btn_cat2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cat2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cat2.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat2.ForeColor = System.Drawing.Color.White;
-            this.btn_cat2.Location = new System.Drawing.Point(652, 58);
+            this.btn_cat2.Location = new System.Drawing.Point(1160, 133);
             this.btn_cat2.Name = "btn_cat2";
-            this.btn_cat2.Size = new System.Drawing.Size(327, 40);
+            this.btn_cat2.Size = new System.Drawing.Size(580, 60);
             this.btn_cat2.TabIndex = 54;
             this.btn_cat2.Text = "Cashier";
             this.btn_cat2.TextColor = System.Drawing.Color.White;
@@ -78,11 +79,11 @@
             this.btn_cat1.BorderSize = 0;
             this.btn_cat1.FlatAppearance.BorderSize = 0;
             this.btn_cat1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cat1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cat1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cat1.ForeColor = System.Drawing.Color.White;
-            this.btn_cat1.Location = new System.Drawing.Point(326, 58);
+            this.btn_cat1.Location = new System.Drawing.Point(580, 133);
             this.btn_cat1.Name = "btn_cat1";
-            this.btn_cat1.Size = new System.Drawing.Size(327, 40);
+            this.btn_cat1.Size = new System.Drawing.Size(580, 60);
             this.btn_cat1.TabIndex = 53;
             this.btn_cat1.Text = "Manager";
             this.btn_cat1.TextColor = System.Drawing.Color.White;
@@ -98,11 +99,11 @@
             this.btn_all.BorderSize = 0;
             this.btn_all.FlatAppearance.BorderSize = 0;
             this.btn_all.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_all.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_all.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_all.ForeColor = System.Drawing.Color.White;
-            this.btn_all.Location = new System.Drawing.Point(0, 58);
+            this.btn_all.Location = new System.Drawing.Point(0, 133);
             this.btn_all.Name = "btn_all";
-            this.btn_all.Size = new System.Drawing.Size(326, 40);
+            this.btn_all.Size = new System.Drawing.Size(580, 60);
             this.btn_all.TabIndex = 52;
             this.btn_all.Text = "All";
             this.btn_all.TextColor = System.Drawing.Color.White;
@@ -118,11 +119,11 @@
             this.customButton1.BorderSize = 0;
             this.customButton1.FlatAppearance.BorderSize = 0;
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(692, 0);
+            this.customButton1.Location = new System.Drawing.Point(1065, 60);
             this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(150, 40);
+            this.customButton1.Size = new System.Drawing.Size(250, 55);
             this.customButton1.TabIndex = 50;
             this.customButton1.Text = "Add";
             this.customButton1.TextColor = System.Drawing.Color.White;
@@ -136,10 +137,10 @@
             this.customPanel1.Controls.Add(this.txt_search);
             this.customPanel1.Controls.Add(this.cbb_type);
             this.customPanel1.Controls.Add(this.ptb_Search);
-            this.customPanel1.Location = new System.Drawing.Point(1, 1);
+            this.customPanel1.Location = new System.Drawing.Point(1, 60);
             this.customPanel1.Name = "customPanel1";
             this.customPanel1.Radius = 5;
-            this.customPanel1.Size = new System.Drawing.Size(425, 45);
+            this.customPanel1.Size = new System.Drawing.Size(606, 53);
             this.customPanel1.TabIndex = 49;
             this.customPanel1.Thickness = 2F;
             // 
@@ -151,13 +152,13 @@
             this.txt_search.BorderSize = 2;
             this.txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_search.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_search.Location = new System.Drawing.Point(123, 4);
+            this.txt_search.Location = new System.Drawing.Point(150, 9);
             this.txt_search.Margin = new System.Windows.Forms.Padding(4);
             this.txt_search.Multiline = false;
             this.txt_search.Name = "txt_search";
             this.txt_search.Padding = new System.Windows.Forms.Padding(7);
             this.txt_search.PasswordChar = false;
-            this.txt_search.Size = new System.Drawing.Size(245, 35);
+            this.txt_search.Size = new System.Drawing.Size(397, 35);
             this.txt_search.TabIndex = 7;
             this.txt_search.Texts = "";
             this.txt_search.UnderlineStyle = true;
@@ -165,25 +166,25 @@
             // cbb_type
             // 
             this.cbb_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbb_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb_type.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_type.FormattingEnabled = true;
             this.cbb_type.Items.AddRange(new object[] {
             "All",
             "ID",
             "Name",
             "Phone"});
-            this.cbb_type.Location = new System.Drawing.Point(12, 9);
+            this.cbb_type.Location = new System.Drawing.Point(14, 11);
             this.cbb_type.Name = "cbb_type";
-            this.cbb_type.Size = new System.Drawing.Size(100, 26);
+            this.cbb_type.Size = new System.Drawing.Size(121, 32);
             this.cbb_type.TabIndex = 6;
             // 
             // ptb_Search
             // 
             this.ptb_Search.BackgroundImage = global::CS511_Project_QLNS.Properties.Resources.icon_search;
             this.ptb_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptb_Search.Location = new System.Drawing.Point(379, 5);
+            this.ptb_Search.Location = new System.Drawing.Point(559, 6);
             this.ptb_Search.Name = "ptb_Search";
-            this.ptb_Search.Size = new System.Drawing.Size(35, 35);
+            this.ptb_Search.Size = new System.Drawing.Size(40, 40);
             this.ptb_Search.TabIndex = 5;
             this.ptb_Search.TabStop = false;
             this.ptb_Search.Click += new System.EventHandler(this.ptb_Search_Click);
@@ -192,6 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btn_cat2);
             this.Controls.Add(this.btn_cat1);
             this.Controls.Add(this.btn_all);
@@ -199,7 +201,7 @@
             this.Controls.Add(this.customButton1);
             this.Controls.Add(this.customPanel1);
             this.Name = "Uct_Employee_Cashier";
-            this.Size = new System.Drawing.Size(980, 675);
+            this.Size = new System.Drawing.Size(1740, 930);
             this.customPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_Search)).EndInit();
             this.ResumeLayout(false);

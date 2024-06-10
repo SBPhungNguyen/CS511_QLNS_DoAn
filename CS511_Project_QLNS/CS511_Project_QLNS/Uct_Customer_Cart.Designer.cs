@@ -30,9 +30,9 @@
         {
             this.fpnl_cart = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_buy = new CS511_Project_QLNS.View.CustomButton();
             this.lbl_sumprice = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_buy = new CS511_Project_QLNS.View.CustomButton();
             this.customPanel1 = new CS511_Project_QLNS.View.CustomPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -62,27 +62,6 @@
             this.panel1.Size = new System.Drawing.Size(1776, 154);
             this.panel1.TabIndex = 33;
             // 
-            // lbl_sumprice
-            // 
-            this.lbl_sumprice.AutoSize = true;
-            this.lbl_sumprice.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sumprice.ForeColor = System.Drawing.Color.Red;
-            this.lbl_sumprice.Location = new System.Drawing.Point(512, 47);
-            this.lbl_sumprice.Name = "lbl_sumprice";
-            this.lbl_sumprice.Size = new System.Drawing.Size(40, 41);
-            this.lbl_sumprice.TabIndex = 1;
-            this.lbl_sumprice.Text = "0";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(332, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 41);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TOTAL:";
-            // 
             // btn_buy
             // 
             this.btn_buy.BackColor = System.Drawing.Color.Green;
@@ -103,6 +82,27 @@
             this.btn_buy.UseVisualStyleBackColor = false;
             this.btn_buy.Click += new System.EventHandler(this.btn_buy_Click);
             // 
+            // lbl_sumprice
+            // 
+            this.lbl_sumprice.AutoSize = true;
+            this.lbl_sumprice.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sumprice.ForeColor = System.Drawing.Color.Red;
+            this.lbl_sumprice.Location = new System.Drawing.Point(512, 47);
+            this.lbl_sumprice.Name = "lbl_sumprice";
+            this.lbl_sumprice.Size = new System.Drawing.Size(38, 40);
+            this.lbl_sumprice.TabIndex = 1;
+            this.lbl_sumprice.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(332, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(136, 40);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "TOTAL:";
+            // 
             // customPanel1
             // 
             this.customPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(171)))), ((int)(((byte)(116)))));
@@ -121,40 +121,40 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 13.8F);
+            this.label5.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(1362, 18);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 28);
+            this.label5.Size = new System.Drawing.Size(64, 28);
             this.label5.TabIndex = 7;
             this.label5.Text = "Sum";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 13.8F);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(325, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 28);
+            this.label2.Size = new System.Drawing.Size(80, 28);
             this.label2.TabIndex = 4;
             this.label2.Text = "Name";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 13.8F);
+            this.label4.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(1029, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 28);
+            this.label4.Size = new System.Drawing.Size(114, 28);
             this.label4.TabIndex = 6;
             this.label4.Text = "Quantity";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 13.8F);
+            this.label3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(669, 18);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 28);
+            this.label3.Size = new System.Drawing.Size(70, 28);
             this.label3.TabIndex = 5;
             this.label3.Text = "Price";
             // 
