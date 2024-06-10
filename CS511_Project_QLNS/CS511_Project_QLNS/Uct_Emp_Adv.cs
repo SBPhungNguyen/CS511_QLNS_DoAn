@@ -58,5 +58,21 @@ namespace CS511_Project_QLNS
             emp_Adv_Control.ShowDialog();
             ptb_bigimg.BackgroundImage = System.Drawing.Image.FromFile(co.emp_dir + "c.png");
         }
+
+        private void ptb_smallimg1_Click(object sender, EventArgs e)
+        {
+            Emp_Adv_Control emp_Adv_Control = new Emp_Adv_Control("a");
+            ptb_smallimg1.BackgroundImage.Dispose();
+            emp_Adv_Control.ShowDialog();
+            ptb_smallimg1.BackgroundImage = System.Drawing.Image.FromFile(co.emp_dir + "a.png");
+        }
+
+        private void ptb_smallimg2_Click(object sender, EventArgs e)
+        {
+            Emp_Adv_Control emp_Adv_Control = new Emp_Adv_Control("b");
+            ptb_smallimg2.BackgroundImage.Dispose();
+            emp_Adv_Control.ShowDialog();
+            ptb_smallimg2.BackgroundImage = System.Drawing.Image.FromFile(co.emp_dir + "b.png");
+        }
     }
 }

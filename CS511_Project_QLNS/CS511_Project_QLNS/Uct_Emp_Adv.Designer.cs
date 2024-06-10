@@ -46,6 +46,7 @@
             this.ptb_smallimg2.Size = new System.Drawing.Size(503, 170);
             this.ptb_smallimg2.TabIndex = 5;
             this.ptb_smallimg2.TabStop = false;
+            this.ptb_smallimg2.Click += new System.EventHandler(this.ptb_smallimg2_Click);
             // 
             // ptb_smallimg1
             // 
@@ -56,6 +57,7 @@
             this.ptb_smallimg1.Size = new System.Drawing.Size(503, 170);
             this.ptb_smallimg1.TabIndex = 4;
             this.ptb_smallimg1.TabStop = false;
+            this.ptb_smallimg1.Click += new System.EventHandler(this.ptb_smallimg1_Click);
             // 
             // ptb_bigimg
             // 

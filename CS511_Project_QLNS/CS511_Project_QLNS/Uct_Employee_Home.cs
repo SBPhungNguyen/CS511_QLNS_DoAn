@@ -25,6 +25,7 @@ namespace CS511_Project_QLNS
 
         Uct_Emp_Adv uct_Emp_Adv;
         Uct_Emp_BookSearch uct_Emp_BookSearch;
+        Uct_Emp_HomeInfo uct_Emp_HomeInfo;
 
         public Uct_Employee_Home()
         {
@@ -43,6 +44,10 @@ namespace CS511_Project_QLNS
             uct_Emp_BookSearch = new Uct_Emp_BookSearch();
             uct_Emp_BookSearch.Name = "uct_Emp_BookSearch";
             fpnl_item.Controls.Add(uct_Emp_BookSearch);
+
+            uct_Emp_HomeInfo = new Uct_Emp_HomeInfo();
+            uct_Emp_HomeInfo.Name = "uct_Emp_HomeInfo";
+            fpnl_item.Controls.Add(uct_Emp_HomeInfo);
         }
     }
 }

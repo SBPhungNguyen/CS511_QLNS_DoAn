@@ -56,13 +56,9 @@ namespace CS511_Project_QLNS
 
         private void Uct_Emp_Book_Click(object sender, EventArgs e)
         {
-            var pa = this.Parent.Parent;
-            parent_uct = (Uct_Employee_Home)pa;
+            connection co = new connection();
 
-            var pa_pa = parent_uct.Parent;
-            parent_form = (Form2)pa_pa;
-
-            SqlConnection sqlCon = new SqlConnection(parent_uct.connect);
+            SqlConnection sqlCon = new SqlConnection(co.connect);
             sqlCon.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = sqlCon;
@@ -73,14 +69,11 @@ namespace CS511_Project_QLNS
             if (dr.Read())
             {
                 Emp_BookInfo book = new Emp_BookInfo();
-                System.Drawing.Image img = System.Drawing.Image.FromFile(parent_uct.local_dir + dr.GetString(1) + ".png");
+                System.Drawing.Image img = System.Drawing.Image.FromFile(co.local_dir + dr.GetString(1) + ".png");
                 book.LoadData(dr.GetInt32(0), img, dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetDecimal(5).ToString("0.##"), dr.GetDecimal(6).ToString("0.##"), dr.GetString(7), dr.GetInt32(8).ToString());
                 sqlCon.Close();
 
-                parent_form.Hide();
                 book.ShowDialog();
-
-                parent_form.Show();
             }
         }
 

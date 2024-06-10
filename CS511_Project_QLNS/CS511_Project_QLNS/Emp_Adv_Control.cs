@@ -154,5 +154,15 @@ namespace CS511_Project_QLNS
         {
             Process.Start(txt_url.Texts);
         }
+
+        private void btn_exit_MouseEnter(object sender, EventArgs e)
+        {
+            btn_exit.BackgroundImage = Properties.Resources.Cross3_Img;
+        }
+
+        private void btn_exit_MouseLeave(object sender, EventArgs e)
+        {
+            btn_exit.BackgroundImage = Properties.Resources.Cross2_image;
+        }
     }
 }

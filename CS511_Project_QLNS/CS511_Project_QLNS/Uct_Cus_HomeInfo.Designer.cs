@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_name = new System.Windows.Forms.Label();
+            this.lbl_quote = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbl_location = new System.Windows.Forms.Label();
+            this.lbl_mail = new System.Windows.Forms.Label();
+            this.lbl_phone = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -42,27 +42,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_name
             // 
-            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(36, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(399, 45);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "BSB BOOKSTORE";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_name.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.ForeColor = System.Drawing.Color.Green;
+            this.lbl_name.Location = new System.Drawing.Point(36, 32);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(399, 45);
+            this.lbl_name.TabIndex = 0;
+            this.lbl_name.Text = "BSB BOOKSTORE";
+            this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lbl_quote
             // 
-            this.label2.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(27, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(422, 60);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "THE TOP-1 BOOKSTORE IN VIETNAM";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_quote.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_quote.ForeColor = System.Drawing.Color.Black;
+            this.lbl_quote.Location = new System.Drawing.Point(27, 75);
+            this.lbl_quote.Name = "lbl_quote";
+            this.lbl_quote.Size = new System.Drawing.Size(422, 60);
+            this.lbl_quote.TabIndex = 1;
+            this.lbl_quote.Text = "THE TOP-1 BOOKSTORE IN VIETNAM";
+            this.lbl_quote.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -74,35 +74,35 @@
             this.label3.Text = "CONTACT";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label4
+            // lbl_location
             // 
-            this.label4.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(647, 85);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(256, 40);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "60-62 Lê Lợi, Q.1, TP. HCM";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_location.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_location.Location = new System.Drawing.Point(647, 85);
+            this.lbl_location.Name = "lbl_location";
+            this.lbl_location.Size = new System.Drawing.Size(256, 40);
+            this.lbl_location.TabIndex = 3;
+            this.lbl_location.Text = "60-62 Lê Lợi, Q.1, TP. HCM";
+            this.lbl_location.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label5
+            // lbl_mail
             // 
-            this.label5.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1004, 85);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(256, 40);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "123@gmail.com";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_mail.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_mail.Location = new System.Drawing.Point(1004, 85);
+            this.lbl_mail.Name = "lbl_mail";
+            this.lbl_mail.Size = new System.Drawing.Size(256, 40);
+            this.lbl_mail.TabIndex = 5;
+            this.lbl_mail.Text = "123@gmail.com";
+            this.lbl_mail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label6
+            // lbl_phone
             // 
-            this.label6.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1362, 80);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(256, 40);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "0365254987";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_phone.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_phone.Location = new System.Drawing.Point(1362, 80);
+            this.lbl_phone.Name = "lbl_phone";
+            this.lbl_phone.Size = new System.Drawing.Size(256, 40);
+            this.lbl_phone.TabIndex = 7;
+            this.lbl_phone.Text = "0365254987";
+            this.lbl_phone.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox3
             // 
@@ -140,14 +140,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(240)))), ((int)(((byte)(230)))));
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lbl_phone);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbl_mail);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbl_location);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_quote);
+            this.Controls.Add(this.lbl_name);
             this.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
             this.Name = "Uct_Cus_HomeInfo";
             this.Size = new System.Drawing.Size(1680, 160);
@@ -160,14 +160,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_name;
+        private System.Windows.Forms.Label lbl_quote;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_location;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl_mail;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbl_phone;
     }
 }
