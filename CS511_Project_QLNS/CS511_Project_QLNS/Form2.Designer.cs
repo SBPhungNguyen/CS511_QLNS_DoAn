@@ -94,11 +94,11 @@
             // lbl_title
             // 
             this.lbl_title.AutoSize = true;
-            this.lbl_title.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.Font = new System.Drawing.Font("Tahoma", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_title.ForeColor = System.Drawing.Color.Green;
             this.lbl_title.Location = new System.Drawing.Point(308, 74);
             this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(116, 40);
+            this.lbl_title.Size = new System.Drawing.Size(168, 57);
             this.lbl_title.TabIndex = 12;
             this.lbl_title.Text = "HOME";
             // 
