@@ -78,6 +78,13 @@ namespace CS511_Project_QLNS
             }
             else
             {
+                if (!CheckNumber(txt_phone.Texts) || txt_location.Texts=="" || txt_mail.Texts=="" || txt_name.Texts ==""|| txt_quote.Texts == "")
+                {
+                    MessageBox.Show($"The input strings are not valid","Opps");
+                    is_chosen--;
+                    return;
+                }
+
                 btn_edit.BackColor = btn_normal;
                 btn_edit.Text = "Edit";
                 SetStateLabel(true);
@@ -86,7 +93,21 @@ namespace CS511_Project_QLNS
                 SaveData();
             }
         }
+        public bool CheckNumber(string a)
+        {
+            string inputString = a.Trim();
+            long outputValue;
 
+            // TryParse returns true if conversion is successful and assigns the value to outputValue
+            bool isLong = long.TryParse(inputString, out outputValue);
+
+            if (!isLong || outputValue < 0)
+            {
+                // The string is a valid long
+                return false;
+            }
+            return true;
+        }
         public void LoadData()
         {
             if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
