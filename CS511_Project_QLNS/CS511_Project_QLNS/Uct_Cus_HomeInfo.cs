@@ -41,5 +41,20 @@ namespace CS511_Project_QLNS
             dr.Close();
             sqlCon.Close();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(lbl_location.Text);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(lbl_mail.Text);
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(lbl_phone.Text);
+        }
     }
 }
