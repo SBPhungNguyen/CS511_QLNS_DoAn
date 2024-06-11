@@ -139,6 +139,20 @@ namespace CS511_Project_QLNS
                 MessageBox.Show("The amount of book cannot be 0", "Opps");
                 return;
             }
+
+            string inputString = txt_quantity.Texts.Trim();
+            long outputValue;
+
+            // TryParse returns true if conversion is successful and assigns the value to outputValue
+            bool isLong = long.TryParse(inputString, out outputValue);
+
+            if (!isLong || outputValue<0)
+            {
+                // The string is a valid long
+                MessageBox.Show($"The string '{inputString}' is not valid");
+                return;
+            }
+
             if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
             cmd = new SqlCommand();
             cmd.Connection = sqlCon;
@@ -320,6 +334,21 @@ namespace CS511_Project_QLNS
                 GC.Collect();
             }
             fpnl_detail.ResumeLayout();
+        }
+
+        private void txt_quantity__KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9 ||
+                        e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete)
+            {
+                // Allow these keys
+                e.Handled = false;
+            }
+            else
+            {
+                // Consume other key presses (prevent input)
+                e.Handled = true;
+            }
         }
     }
 }

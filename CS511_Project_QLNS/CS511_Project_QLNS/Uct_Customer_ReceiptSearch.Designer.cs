@@ -237,30 +237,30 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 13.8F);
+            this.label8.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(699, 21);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 28);
+            this.label8.Size = new System.Drawing.Size(75, 28);
             this.label8.TabIndex = 8;
             this.label8.Text = "Date:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 13.8F);
+            this.label6.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(131, 64);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 28);
+            this.label6.Size = new System.Drawing.Size(88, 28);
             this.label6.TabIndex = 7;
             this.label6.Text = "Name:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(131, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 28);
+            this.label1.Size = new System.Drawing.Size(77, 28);
             this.label1.TabIndex = 6;
             this.label1.Text = "Code:";
             // 
@@ -289,40 +289,40 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 13.8F);
+            this.label5.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(1385, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 28);
+            this.label5.Size = new System.Drawing.Size(64, 28);
             this.label5.TabIndex = 7;
             this.label5.Text = "Sum";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 13.8F);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(259, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 28);
+            this.label2.Size = new System.Drawing.Size(64, 28);
             this.label2.TabIndex = 4;
             this.label2.Text = "Title";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 13.8F);
+            this.label4.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(1033, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 28);
+            this.label4.Size = new System.Drawing.Size(114, 28);
             this.label4.TabIndex = 6;
             this.label4.Text = "Quantity";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 13.8F);
+            this.label3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(690, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 28);
+            this.label3.Size = new System.Drawing.Size(70, 28);
             this.label3.TabIndex = 5;
             this.label3.Text = "Price";
             // 

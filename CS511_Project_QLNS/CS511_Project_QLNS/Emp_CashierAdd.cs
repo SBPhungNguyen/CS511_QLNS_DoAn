@@ -107,6 +107,20 @@ namespace CS511_Project_QLNS
             }
             else
             {
+                //check if the imput strings were numbers
+                string inputString = txt_phone.Texts.Trim();
+                long outputValue;
+
+                // TryParse returns true if conversion is successful and assigns the value to outputValue
+                bool isLong = long.TryParse(inputString, out outputValue);
+
+                if (!isLong || outputValue < 0)
+                {
+                    // The string is a valid long
+                    MessageBox.Show($"The string '{inputString}' in Phone is not valid");
+                    return;
+                }
+
                 //open sqlCon
                 if (sqlCon.State == ConnectionState.Closed) { sqlCon.Open(); }
 

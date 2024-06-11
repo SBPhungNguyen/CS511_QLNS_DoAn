@@ -73,6 +73,34 @@ namespace CS511_Project_QLNS
 
         private void btn_update_Click(object sender, EventArgs e)
         {
+            if (txt_author.Texts == "" || txt_des.Texts == "" || txt_im_price.Texts == "" || txt_title.Texts == "" || txt_sell_price.Texts == "")
+            {
+                MessageBox.Show("Please fill in all the blank", "Cannot update");
+                return;
+            }
+
+            //check if the imput strings were numbers
+            string inputString = txt_im_price.Texts.Trim();
+            long outputValue;
+
+            // TryParse returns true if conversion is successful and assigns the value to outputValue
+            bool isLong = long.TryParse(inputString, out outputValue);
+
+            if (!isLong || outputValue < 0)
+            {
+                // The string is a valid long
+                MessageBox.Show($"The string '{inputString}' in Import Price is not valid");
+                return;
+            }
+            inputString = txt_sell_price.Texts.Trim();
+            isLong = long.TryParse(inputString, out outputValue);
+            if (!isLong || outputValue < 0)
+            {
+                // The string is a valid long
+                MessageBox.Show($"The string '{inputString}' in Export Price is not valid");
+                return;
+            }
+
             //edit the book detail in TBL_BOOK
             if (sqlCon.State != ConnectionState.Open)
                 sqlCon.Open();

@@ -26,6 +26,18 @@ namespace CS511_Project_QLNS
         }
         //Events
         public event EventHandler _TextChanged;
+        private event KeyEventHandler _KeyDown;
+
+        private int check_num;
+        [Category("Wrote it")]
+        public int is_number
+        {
+            get => check_num;
+            set
+            {
+                check_num = value;
+            }
+        }
 
         [Category("Wrote it")]
         public Color BorderColor
@@ -238,6 +250,31 @@ namespace CS511_Project_QLNS
         {
             isFocused = false;
             this.Invalidate();
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (check_num == 0)
+                return;
+            else
+            {
+                if ((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9) ||
+                    e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete)
+                {
+                    // Allow these keys
+                    e.Handled = false;
+                }
+                else
+                {
+                    // Consume other key presses (prevent input)
+                    e.Handled = true;
+                }
+            }
+        }
+
+        private void Uct_textbox_KeyDown(object sender, KeyEventArgs e)
+        {
+            textBox1_KeyDown(sender, e);
         }
     }
 }

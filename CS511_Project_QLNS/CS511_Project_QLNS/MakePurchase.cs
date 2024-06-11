@@ -72,6 +72,31 @@ namespace CS511_Project_QLNS
                     return;
                 }
 
+                //
+                //check if the imput strings were numbers
+                string inputString = txt_visa.Texts.Trim();
+                long outputValue;
+
+                // TryParse returns true if conversion is successful and assigns the value to outputValue
+                bool isLong = long.TryParse(inputString, out outputValue);
+
+                if (!isLong || outputValue < 0)
+                {
+                    // The string is a valid long
+                    MessageBox.Show($"The string '{inputString}' in Visa is not valid");
+                    return;
+                }
+
+                inputString = txt_secure.Texts.Trim();
+                isLong = long.TryParse((inputString), out outputValue);
+                if (!isLong || outputValue < 0 || outputValue >=1000)
+                {
+                    // The string is a valid long
+                    MessageBox.Show($"The string '{inputString}' in Secure Number is not valid");
+                    return;
+                }
+
+
                 //this is to get the info on the screen
                 string date = DateTime.Now.Date.ToString("yyyy-MM-dd");
                 string name = txt_name.Texts;

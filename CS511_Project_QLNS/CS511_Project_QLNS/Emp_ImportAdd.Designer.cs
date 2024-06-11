@@ -325,6 +325,7 @@
             this.txt_quantity.BorderSize = 2;
             this.txt_quantity.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_quantity.ForeColor = System.Drawing.Color.Black;
+            this.txt_quantity.is_number = 1;
             this.txt_quantity.Location = new System.Drawing.Point(417, 143);
             this.txt_quantity.Margin = new System.Windows.Forms.Padding(4);
             this.txt_quantity.Multiline = false;
