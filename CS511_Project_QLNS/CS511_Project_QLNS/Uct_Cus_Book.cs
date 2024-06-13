@@ -20,6 +20,7 @@ namespace CS511_Project_QLNS
 
         public int id;
         public Form1 parent_form;
+
         public Image img
         {
             get {  return ptb_img.BackgroundImage; }

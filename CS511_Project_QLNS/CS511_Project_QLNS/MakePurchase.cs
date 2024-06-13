@@ -199,6 +199,8 @@ namespace CS511_Project_QLNS
 
                 MessageBox.Show("Thank you for your purchase","Congratulation");
 
+                parent_uct.sumprice = "0";
+
                 this.Close();
             }
             else
