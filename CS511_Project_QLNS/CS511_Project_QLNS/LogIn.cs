@@ -54,17 +54,34 @@ namespace CS511_Project_QLNS
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "SELECT ID, E_NAME, PWORD FROM TBL_EMP";
             SqlDataReader dr = cmd.ExecuteReader();
+            int flag = 0;
+            int emp_id = 0;
             while(dr.Read())
             {
                 if (dr.GetString(1) == txt_name.Texts && dr.GetString(2) == txt_pass.Texts)
                 {
-                    Form2 form = new Form2(dr.GetInt32(0));
-                    this.Hide();
-                    form.ShowDialog();
-                    this.Show();
+                    flag = 1;
+                    emp_id = dr.GetInt32(0);
+
+                    break;
+
                 }
             }
-
+            dr.Close();
+            if (flag == 1)
+            {
+                Form2 form = new Form2(emp_id);
+                txt_name.Texts = "";
+                txt_pass.Texts = "";
+                this.Hide();
+                dr.Close();
+                form.ShowDialog();
+                this.Show();
+            }    
+            else
+            {
+                MessageBox.Show("Wrong username or password", "Opps");
+            }    
         }
     }
 }

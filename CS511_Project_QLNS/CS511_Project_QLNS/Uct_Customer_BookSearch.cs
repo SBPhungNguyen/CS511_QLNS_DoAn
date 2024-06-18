@@ -247,7 +247,7 @@ namespace CS511_Project_QLNS
 
                 while (rd.Read())
                 {
-                    if (rd.GetString(2).Contains(txt_search.Texts) || rd.GetString(3).Contains(txt_search.Texts))
+                    if (rd.GetString(2).ToLower().Contains(txt_search.Texts.ToLower()) || rd.GetString(3).ToLower().Contains(txt_search.Texts.ToLower()))
                     {
                         Uct_Cus_Book uct_Cus_Book = new Uct_Cus_Book();
                         Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
@@ -273,7 +273,7 @@ namespace CS511_Project_QLNS
 
                 while (rd.Read())
                 {
-                    if (rd.GetString(2).Contains(txt_search.Texts))
+                    if (rd.GetString(2).ToLower().Contains(txt_search.Texts.ToLower()))
                     {
                         Uct_Cus_Book uct_Cus_Book = new Uct_Cus_Book();
                         Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
@@ -299,7 +299,7 @@ namespace CS511_Project_QLNS
 
                 while (rd.Read())
                 {
-                    if (rd.GetString(3).Contains(txt_search.Texts))
+                    if (rd.GetString(3).ToLower().Contains(txt_search.Texts.ToLower()))
                     {
                         Uct_Cus_Book uct_Cus_Book = new Uct_Cus_Book();
                         Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
@@ -335,7 +335,7 @@ namespace CS511_Project_QLNS
 
                 while (rd.Read())
                 {
-                    if (rd.GetString(2).Contains(txt_search.Texts) || rd.GetString(3).Contains(txt_search.Texts))
+                    if (rd.GetString(2).ToLower().Contains(txt_search.Texts.ToLower()) || rd.GetString(3).ToLower().Contains(txt_search.Texts.ToLower()))
                     {
                         Uct_Cus_Book uct_Cus_Book = new Uct_Cus_Book();
                         Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
@@ -361,7 +361,7 @@ namespace CS511_Project_QLNS
 
                 while (rd.Read())
                 {
-                    if (rd.GetString(2).Contains(txt_search.Texts))
+                    if (rd.GetString(2).ToLower().Contains(txt_search.Texts.ToLower()))
                     {
                         Uct_Cus_Book uct_Cus_Book = new Uct_Cus_Book();
                         Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
@@ -387,7 +387,7 @@ namespace CS511_Project_QLNS
 
                 while (rd.Read())
                 {
-                    if (rd.GetString(3).Contains(txt_search.Texts))
+                    if (rd.GetString(3).ToLower().Contains(txt_search.Texts.ToLower()))
                     {
                         Uct_Cus_Book uct_Cus_Book = new Uct_Cus_Book();
                         Image img = System.Drawing.Image.FromFile(local_dir + rd.GetString(1) + ".png");
