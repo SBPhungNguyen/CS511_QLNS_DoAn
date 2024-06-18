@@ -60,6 +60,8 @@
             this.lbl_price.Text = "label2";
             this.lbl_price.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_price.Click += new System.EventHandler(this.lbl_price_Click);
+            this.lbl_price.MouseEnter += new System.EventHandler(this.Uct_Emp_Book_MouseEnter);
+            this.lbl_price.MouseLeave += new System.EventHandler(this.Uct_Emp_Book_MouseLeave);
             // 
             // panel1
             // 
@@ -80,6 +82,8 @@
             this.lbl_name.Text = "label1";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_name.Click += new System.EventHandler(this.lbl_name_Click);
+            this.lbl_name.MouseEnter += new System.EventHandler(this.Uct_Emp_Book_MouseEnter);
+            this.lbl_name.MouseLeave += new System.EventHandler(this.Uct_Emp_Book_MouseLeave);
             // 
             // ptb_cart
             // 
@@ -91,6 +95,8 @@
             this.ptb_cart.TabIndex = 8;
             this.ptb_cart.TabStop = false;
             this.ptb_cart.Click += new System.EventHandler(this.ptb_cart_Click);
+            this.ptb_cart.MouseEnter += new System.EventHandler(this.Uct_Emp_Book_MouseEnter);
+            this.ptb_cart.MouseLeave += new System.EventHandler(this.Uct_Emp_Book_MouseLeave);
             // 
             // ptb_img
             // 
@@ -101,6 +107,8 @@
             this.ptb_img.TabIndex = 5;
             this.ptb_img.TabStop = false;
             this.ptb_img.Click += new System.EventHandler(this.ptb_img_Click);
+            this.ptb_img.MouseEnter += new System.EventHandler(this.Uct_Emp_Book_MouseEnter);
+            this.ptb_img.MouseLeave += new System.EventHandler(this.Uct_Emp_Book_MouseLeave);
             // 
             // Uct_Cus_Book
             // 
@@ -115,6 +123,8 @@
             this.Name = "Uct_Cus_Book";
             this.Size = new System.Drawing.Size(285, 400);
             this.Click += new System.EventHandler(this.Uct_Cus_Book_Click);
+            this.MouseEnter += new System.EventHandler(this.Uct_Emp_Book_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.Uct_Emp_Book_MouseLeave);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_cart)).EndInit();

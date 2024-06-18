@@ -110,6 +110,12 @@ namespace CS511_Project_QLNS
                 Form2 parent = this.Parent.Parent.Parent as Form2;
                 Uct_Employee_Cashier parent_uct = this.Parent.Parent as Uct_Employee_Cashier;
 
+                if (parent.emp_id == this.id)
+                {
+                    MessageBox.Show("Cannot delete this user as it's the current user", "Opps");
+                    return;
+                }
+
                 //get the fpnl_emp in parent_uct
                 Control fpnl = FindControlByName(parent_uct, "fpnl_emp");
 
