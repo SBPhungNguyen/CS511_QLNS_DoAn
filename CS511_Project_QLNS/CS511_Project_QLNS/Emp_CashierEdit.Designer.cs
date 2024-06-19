@@ -259,6 +259,7 @@
             this.txt_pass.BorderSize = 2;
             this.txt_pass.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_pass.ForeColor = System.Drawing.Color.Black;
+            this.txt_pass.is_number = 0;
             this.txt_pass.Location = new System.Drawing.Point(1265, 621);
             this.txt_pass.Margin = new System.Windows.Forms.Padding(4);
             this.txt_pass.Multiline = false;
@@ -269,6 +270,7 @@
             this.txt_pass.TabIndex = 82;
             this.txt_pass.Texts = "";
             this.txt_pass.UnderlineStyle = true;
+            this.txt_pass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_pass_KeyDown);
             this.txt_pass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_pass_KeyPress);
             // 
             // txt_bday
@@ -279,6 +281,7 @@
             this.txt_bday.BorderSize = 2;
             this.txt_bday.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_bday.ForeColor = System.Drawing.Color.Black;
+            this.txt_bday.is_number = 0;
             this.txt_bday.Location = new System.Drawing.Point(1265, 462);
             this.txt_bday.Margin = new System.Windows.Forms.Padding(4);
             this.txt_bday.Multiline = false;
@@ -299,6 +302,7 @@
             this.txt_phone.BorderSize = 2;
             this.txt_phone.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_phone.ForeColor = System.Drawing.Color.Black;
+            this.txt_phone.is_number = 0;
             this.txt_phone.Location = new System.Drawing.Point(1265, 386);
             this.txt_phone.Margin = new System.Windows.Forms.Padding(4);
             this.txt_phone.Multiline = false;
@@ -318,6 +322,7 @@
             this.txt_name.BorderSize = 2;
             this.txt_name.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_name.ForeColor = System.Drawing.Color.Black;
+            this.txt_name.is_number = 0;
             this.txt_name.Location = new System.Drawing.Point(1265, 314);
             this.txt_name.Margin = new System.Windows.Forms.Padding(4);
             this.txt_name.Multiline = false;

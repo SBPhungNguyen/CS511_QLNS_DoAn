@@ -138,7 +138,10 @@ namespace CS511_Project_QLNS
             if (is_state ==0)
                 e.Handled = true;
             else
+            {
                 e.Handled = false;
+                //pass = txt_pass.Texts;
+            }
         }
 
         private void ptb_calendar_Click(object sender, EventArgs e)
@@ -184,12 +187,19 @@ namespace CS511_Project_QLNS
 
             ptb_img.BackgroundImage.Dispose();
 
+            if (is_state == 1)
+            {
+                pass = txt_pass.Texts;
+            }
+
             //add code here to save the pic to the desired dir
             if (pic_path != null)
             { 
                 fileInfo = new FileInfo(pic_path);
                 fileInfo.CopyTo(pic_dir + lbl_id.Text + ".png", true);
             }
+
+            //MessageBox.Show(pass);
 
             //update book info in table TBL_BOOK
             cmd.CommandText = "UPDATE TBL_EMP SET E_NAME = @name, PHONE = @phone, BDAY = @bday, E_ROLE = @role, PWORD = @pass WHERE ID = " + lbl_id.Text;
@@ -198,8 +208,9 @@ namespace CS511_Project_QLNS
             cmd.Parameters.AddWithValue("@phone", txt_phone.Texts);
             cmd.Parameters.AddWithValue("@bday", txt_bday.Texts);
             cmd.Parameters.AddWithValue("@role", is_manager);
-            cmd.Parameters.AddWithValue("@pass", pass);
+            cmd.Parameters.AddWithValue("@pass", pass.ToString());
             cmd.ExecuteNonQuery();
+
 
             //Update book info in table TBL_EMP_IMPORT
             cmd = new SqlCommand();
@@ -263,6 +274,16 @@ namespace CS511_Project_QLNS
                 return;
             is_manager = 1;
             radio_manager.Checked = true;
+        }
+
+        private void txt_pass_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (is_state == 0)
+                e.Handled = true;
+            else
+            {
+                e.Handled = false;
+            }
         }
     }
 }
