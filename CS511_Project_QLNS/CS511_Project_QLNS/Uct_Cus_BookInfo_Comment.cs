@@ -336,6 +336,16 @@ namespace CS511_Project_QLNS
                         uct1.star_point = formatted;
                     }
                 }
+
+                //reset all values
+
+                txt_cmtname.Texts = "";
+                rad_male.Checked = true;
+                is_female = 0;
+                star_chosen = 0;
+                star_count = 0;
+                rtb_cmttext.Text = "";
+                ptb_star1.BackgroundImage = ptb_star2.BackgroundImage = ptb_star3.BackgroundImage = ptb_star4.BackgroundImage = ptb_star5.BackgroundImage = Properties.Resources.icon_star_black;
             }
         }
     }

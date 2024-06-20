@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//https://www.fahasa.com/deli?fhs_campaign=homepageslider2 this link is for the main banner 
 namespace CS511_Project_QLNS
 {
     public partial class LogIn : Form
