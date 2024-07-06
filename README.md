@@ -33,30 +33,41 @@
 **Database Configuration:**
 -	**Repository Access:** Firstly, it is essential to ascertain that the repository is configured with a public status. Given that our repository is an open-source project belonging to us, it has been predominantly designated as public.
 - **Code Download:** Navigate to the main repository page and locate the "Code" button. From the dropdown menu, select "Download ZIP" to download the application's source code as a compressed archive.
+![image](https://github.com/SBPhungNguyen/CS511_QLNS_DoAn/assets/145269191/348e9f36-8c66-417b-b0f4-c3ba37fe3e9d)
 -	**File Extraction:** Unzip the downloaded archive on your device.
 -	**Data Directory** Configuration: Locate the "Important Folder" directory within the extracted files. Copy the subdirectories "Emp_Pic" and "Pic" to the D drive on your device. Alternatively, if you choose a different destination drive, ensure the paths in the application's connection string file (connection.cs) are updated accordingly.
+![image](https://github.com/SBPhungNguyen/CS511_QLNS_DoAn/assets/145269191/94f233f9-b630-49d7-a2f6-7c2ce1c421b5)
+
 -	**Database Import:** 
 > -	Open SQL Server Management Studio and right-click on the "Databases" node.
 > -	Select "Import Data-tier Application" from the context menu.
+>   ![image](https://github.com/SBPhungNguyen/CS511_QLNS_DoAn/assets/145269191/a8836667-f106-4fb1-a8f9-25be60e36bb3)
 > -	Click "Next" on the "Introduction" page.
 > - In the "Import Setting" window, choose "Import from Local Disk".
 > -	Click "Browse" and locate the "DB_CS511.bacpac" file within the "Important Folder" directory. Click "Next" after selecting the file.
+>   ![image](https://github.com/SBPhungNguyen/CS511_QLNS_DoAn/assets/145269191/eadbad1a-054f-41cc-8f6a-37163fa90419)
 > -	Accept the default settings in the "Database Settings" window by clicking "Next" on each subsequent page.
 > -	Wait for the database import process to complete. Once finished, click "Close".
 -	**Server Name Retrieval:** 
 > - In SQL Server Management Studio, locate the server name by right-clicking on the topmost node in the left-hand menu and selecting "Properties".
+>   ![image](https://github.com/SBPhungNguyen/CS511_QLNS_DoAn/assets/145269191/e54b363d-bdb6-4855-933d-d0c958f3f87e)
 > - The server name will be displayed in the "Name" field in the "Properties" window.
+>   ![image](https://github.com/SBPhungNguyen/CS511_QLNS_DoAn/assets/145269191/ee0af19f-3f88-4458-aad3-7740bfbd46bd)
 
 **Application Configuration:**
 -	**Project Launch:** Double-click the "CS511_Project_QLNS.sln" file to launch the application's development environment (Design Mode).
 -	**Database Connection:** 
 > -	Navigate to the "Tools" menu and select "Connect to Database...".
+>   ![image](https://github.com/SBPhungNguyen/CS511_QLNS_DoAn/assets/145269191/6aa80d8b-53d4-4e3a-85fd-febf7ef82898)
 > -	In the connection window, verify that "Microsoft SQL Server (SqlClient)" is selected as the data source and "Encrypt" is set to "Optional (false)".
 > -	Paste the server name obtained in the previous step into the "Server name" field.
 > - In the "Select or enter a database name" field, enter "DB_CS511".
+>   ![image](https://github.com/SBPhungNguyen/CS511_QLNS_DoAn/assets/145269191/99255fc4-f578-49d7-b64d-68e43e647ed2)
+
 -	**Advanced Configuration:** 
 > -	Click the "Advanced..." button in the bottom right corner of the connection window.
 > - Copy the entire line displayed at the bottom of the newly opened window.
+>   ![image](https://github.com/SBPhungNguyen/CS511_QLNS_DoAn/assets/145269191/0af79836-7464-4232-81ee-a7d6ebb5e5ed)
 -	**Connection Test:** Click "Test Connection". If the configuration is successful, a notification will appear confirming a successful connection test.
 -	**Confirmation:** Click "OK" to finalize the connection setup. The application is now ready to be executed.
 
@@ -70,6 +81,8 @@
 -	**No Inter-device Usage:** This software is designed to be used on a single device for educational purposes. Do not attempt to modify it to be used between multiple devices or in any way that extends beyond the boundaries of the intended educational context.
 
 **License:** <br>
-Copyright 2024, CS511_QLNS_DoAn Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Copyright 2024, CS511_QLNS_DoAn Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions 
+
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
