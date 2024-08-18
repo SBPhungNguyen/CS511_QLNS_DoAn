@@ -69,7 +69,9 @@
 > - Copy the entire line displayed at the bottom of the newly opened window.
 >   ![image](https://github.com/SBPhungNguyen/CS511_QLNS_DoAn/assets/145269191/0af79836-7464-4232-81ee-a7d6ebb5e5ed)
 -	**Connection Test:** Click "Test Connection". If the configuration is successful, a notification will appear confirming a successful connection test.
--	**Confirmation:** Click "OK" to finalize the connection setup. The application is now ready to be executed.
+-	**Confirmation:** Click "OK" to finalize the connection setup. Eventually, replace the string in "connect" of the connection.cs with the previous copied string. The application is now ready to be executed.
+  ![image](https://github.com/user-attachments/assets/72d83fc1-810d-4f24-b2bb-061de516af9a)
+
 
 **Additional Information:**
 
